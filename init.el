@@ -90,13 +90,178 @@
          nil nil nil)
 	;; -------------------------------------------------------
 
+	;; News
+	;; http://cnnespanol.cnn.com
+	("CNN en Español"
+         "http://cnnespanol.cnn.com/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Health
+	;; http://www.glaucoma.org/
+	("Glaucoma Research Foundation"
+         "http://feeds.feedburner.com/GRFMainFeed"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; BigBlueButton
+	;; http://www.bigbluebutton.org
+	("BigBlueButton"
+         "http://www.bigbluebutton.org/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; LaaS
+	;; http://www.eucalyptus.com/blog
+	("Eucalyptus Blogs"
+         "http://www.eucalyptus.com/blog/feed"
+         nil nil nil)
+
+	;; http://www.openstack.org/blog
+	("The OpenStack Blog"
+         "http://www.openstack.org/blog/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Modeling
+	;; http://modeling-languages.com
+	("Software Modeling Blog"
+         "http://feeds.feedburner.com/ModelingLanguages-blog"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Science
+	
+	("BBCMundo.com | Ciencia y Tecnología"
+         "http://newsrss.bbc.co.uk/rss/spanish/science/rss.xml"
+         nil nil nil)
+
+	;; http://ciencia.nasa.gov
+	("Ciencia @ NASA"
+         "http://ciencia.nasa.gov/rss.xml"
+         nil nil nil)
+
+	;; http://www.librys.com
+	("Ciencia y Tecnología"
+         "http://www.librys.com/feed.rss"
+         nil nil nil)
+
+	;; http://www.tendencias21.net/
+	("Tendencias 21"
+         "http://www.tendencias21.net/xml/syndication.rss"
+         nil nil nil)
+
+	;; http://todo-ciencia.com/ciencia
+	("Todo-Ciencia.com"
+         "http://todo-ciencia.com/ciencia/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Music
+	;; http://angelnavas.wordpress.com
+	("Angel Navas"
+         "http://angelnavas.wordpress.com/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
 	;; Emacs
+	;; http://www.emacswiki.org/
 	("EmacsWiki Recently Change"
          "http://www.emacswiki.org/emacs/index.rss"
          nil nil nil)
+
+	;; http://planet.emacsen.org/
         ("Planet Emacsen"
          "http://planet.emacsen.org/atom.xml"
          nil nil nil)
+
+	;; http://www.masteringemacs.org
+	("Mastering Emacs"
+         "http://www.masteringemacs.org/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; UX
+	;; http://www.uxforthemasses.com
+	("UX for the masses"
+         "http://www.uxforthemasses.com/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Python
+	;; http://www.web-aox.com
+	("aox Weblog"
+         "http://www.web-aox.com/feed"
+         nil nil nil)
+
+	;; http://atmantree.com/go
+	("atmantree.com"
+         "http://atmantree.com/go/feed/"
+         nil nil nil)
+
+	;; http://blog.c42.in/
+	("C42 Engineering"
+         "http://blog.c42.in/blog?format=rss"
+         nil nil nil)
+
+	;; http://ch3m4.org/blog
+	("Hyperreals *R"
+         "http://ch3m4.org/blog/feed/"
+         nil nil nil)
+
+	;; http://pyladies.com/
+	("PyLadies"
+         "http://www.pyladies.com/feed.xml"
+         nil nil nil)
+
+	;; http://sebasmagri.alwaysdata.net/
+	("Sebastián Magrí"
+         "http://sebasmagri.alwaysdata.net/feed.rss"
+         nil nil nil)
+	
+	;; http://silvercorp.wordpress.com
+	("Silvercorp"
+         "http://silvercorp.wordpress.com/feed/"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Jquery
+	;; http://www.trirand.com/blog
+	("jQuery Grid Plugin - jqGrid"
+         "http://www.trirand.com/blog/?feed=rss2"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Free Software
+	;; http://cesarius.net
+	("Cesarius Revolutions | Cibercultura, GNU/Linux y Software Libre"
+         "http://feeds.feedburner.com/CesariusRevolutions"
+         nil nil nil)
+
+	;; http://mako.cc/copyrighteous
+	("copyrighteous"
+         "http://mako.cc/copyrighteous/feed/atom"
+         nil nil nil)
+
+	("Free Software Directory"
+         "http://directory.fsf.org/wiki/Special:Ask/-5B-5BLast-20review-20date::%2B-5D-5D/format%3Drss/sort%3DLast-20review-20date/order%3Ddescending/searchlabel%3DRecent-20updates-20RSS-20feed/title%3DFree-20Software-20Directory/description%3DRecent-20updates-20to-20Free-20Software-20Directory-20(directory.fsf.org)/offset%3D0"
+         nil nil nil)
+
+	;; https://blog.mozilla.org/privacy
+	("Mozilla Privacy Blog"
+         "https://blog.mozilla.org/privacy/feed/"
+         nil nil nil)
+
+	;; http://planet.gnu.org/
+	("Planet GNU"
+         "http://planet.gnu.org/atom.xml"
+         nil nil nil)
+
+	;; http://blog.mozilla.org
+	("The Mozilla Blog"
+         "http://blog.mozilla.org/feed/"
+         nil nil nil)
+
         )
       )
 
