@@ -43,3 +43,68 @@
 ;; nxhtml for web development --nXhtml is an addon to Emacs for editing XHTML, PHP and similar things-- ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (load "~/.emacs.d/nxhtml/autostart.el")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Newsticker.el for Feeds RSS ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'newsticker)
+
+; W3M HTML renderer isn't essential, but it's pretty useful.
+(require 'w3m)
+(setq newsticker-html-renderer 'w3m-region)
+
+; We want our feeds pulled every 10 minutes.
+(setq newsticker-retrieval-interval 600)
+
+; Setup the feeds.
+(setq newsticker-url-list-defaults nil)
+
+(setq newsticker-url-list
+      '(
+	;; Sports
+
+	;; http://espndeportes.espn.go.com
+	("ESPN Deportes"
+         "http://espndeportes.espn.go.com/rss/news"
+         nil nil nil)
+	;; http://www.marca.com
+	("Marca"
+         "http://marca.feedsportal.com/rss/portada.xml"
+         nil nil nil)
+	;; http://es-us.noticias.yahoo.com/deportes/
+	("Yahoo! Noticias: Deportes"
+         "http://d.yimg.com/espanol.rss.news.yahoo.com/rss/deportes"
+         nil nil nil)
+	;; http://www.sport.es
+	("Sport.es: Ultimas Noticias"
+         "http://www.sport.es/es/rss/last_news/rss.xml"
+         nil nil nil)
+	;; http://www.sport.es
+	("Sport.es: Ultimas Noticias Barca"
+         "http://www.sport.es/es/rss/barca/rss.xml"
+         nil nil nil)
+	;; http://www.sport.es
+	("Sport.es: Ultimas Noticias Liga BBVA"
+         "http://www.sport.es/es/rss/liga-bbva/rss.xml"
+         nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Emacs
+	("EmacsWiki Recently Change"
+         "http://www.emacswiki.org/emacs/index.rss"
+         nil nil nil)
+        ("Planet Emacsen"
+         "http://planet.emacsen.org/atom.xml"
+         nil nil nil)
+        )
+      )
+
+;; (setq newsticker-url-list
+;;       (google-reader-to-newsticker "~/Downloads/punketo28@gmail.com-takeout/Google-Reader/subscriptions.xml"))
+
+; Optionally bind a shortcut for your new RSS reader.
+(global-set-key (kbd "C-c r") 'newsticker-treeview)
+
+; Don't forget to start it!
+(newsticker-start)
