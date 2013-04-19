@@ -1,5 +1,5 @@
 ;; -*- coding: utf-8 -*-
-(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20849 16840 330945) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20849 42530 205644) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
 
 <p>Hola, mi nombre es Francisco, soy de argentina, estudiante de Ing. en Sistemas de Información, uso debian hace muchos años, espero poder dar una mano en lo que pueda y/o yo poder aprender algo nuevo de ustedes, un saludo  <img src=\"/sites/all/modules/smileys/packs/drupales/bigsmile.gif\" title=\"bigsmile\" alt=\"bigsmile\" /></p>
 ") (pubDate nil "Wed, 17 Apr 2013 10:48:24 -0500") (dc:creator nil "WSick") (guid ((isPermaLink . "false")) "comment 329309 at http://www.esdebian.org")) (item nil (title nil "ok ya lo reporte como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329308") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
@@ -83,59 +83,7 @@ Ese paquete parece ser que solo esta para dos arquitecturas, avr32 y m68k. Creo 
 <p>Comento esto por si a alguna persona le sirve.</p>
 <p>Saludos<br />
 Rodrigo</p>
-") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("alambre escribió:
-tambien" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
-<div class=\"quote-msg\">
-<div class=\"quote-author\"><em>alambre</em> escribió:</div>
-<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
-si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner https://ip:10000</div>
-<p>Tambien proble con esa opcion poniendo httpS (secure http) pero nada, mismo error, realmente no comprendo donde esta el detalle para poder conectarlo.</p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329347" (20848 13583) obsolete 9 nil nil ((title nil "alambre escribió:
-tambien") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329347") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
-
-<div class=\"quote-msg\">
-<div class=\"quote-author\"><em>alambre</em> escribió:</div>
-<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
-si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner https://ip:10000</div>
-<p>Tambien proble con esa opcion poniendo httpS (secure http) pero nada, mismo error, realmente no comprendo donde esta el detalle para poder conectarlo.</p>
-") (pubDate nil "Thu, 18 Apr 2013 13:01:51 -0500") (dc:creator nil "Shenlong") (guid ((isPermaLink . "false")) "comment 329347 at http://www.esdebian.org"))) ("tambien depende de como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
-<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
-si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner <a href=\"https://ip:10000\" title=\"https://ip:10000\" rel=\"nofollow\">https://ip:10000</a></p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329346" (20848 13263) obsolete 10 nil nil ((title nil "tambien depende de como") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329346") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
-
-<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
-si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner <a href=\"https://ip:10000\" title=\"https://ip:10000\" rel=\"nofollow\">https://ip:10000</a></p>
-") (pubDate nil "Thu, 18 Apr 2013 12:56:31 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329346 at http://www.esdebian.org"))) ("y como verifico de los ini o" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>y como verifico de los ini o como los modifico?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329358" (20848 28627) old 10 nil nil ((title nil "y como verifico de los ini o") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329358") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-
-<p>y como verifico de los ini o como los modifico?</p>
-") (pubDate nil "Thu, 18 Apr 2013 17:12:35 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329358 at http://www.esdebian.org"))) ("Una pregunta
-En que canal de" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-<p>Una pregunta<br />
-En que canal de wifi tienes funcionando tu router ?<br />
-En el caso de que no fuera ni 1, ni 6, te sugeriría optar por alguno de los dos.<br />
-Para tener mas informacion me gustaría que probaras esto</p>
-<div class=\"codeblock\"><code>rob@m101:~$ dmesg | tail -n 30</code></div>
-<p>Y mostraras el resultado.<br />
-Cordiales saludos.</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329359" (20848 29726) old 9 nil nil ((title nil "Una pregunta
-En que canal de") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329359") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-
-<p>Una pregunta<br />
-En que canal de wifi tienes funcionando tu router ?<br />
-En el caso de que no fuera ni 1, ni 6, te sugeriría optar por alguno de los dos.<br />
-Para tener mas informacion me gustaría que probaras esto</p>
-<div class=\"codeblock\"><code>rob@m101:~$ dmesg | tail -n 30</code></div>
-<p>Y mostraras el resultado.<br />
-Cordiales saludos.</p>
-") (pubDate nil "Thu, 18 Apr 2013 17:30:54 -0500") (dc:creator nil "Robx") (guid ((isPermaLink . "false")) "comment 329359 at http://www.esdebian.org"))) ("Hola,
-Pues resulta que como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-<p>Hola,</p>
-<p>Pues resulta que como estaba atascado se me ocurrio desinstalar wicd y volver a instalar , pues ***** porque ahora no se inicia el servicio de wicd.</p>
-<p>Un saludo y gracias</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329360" (20848 40018) old 8 nil nil ((title nil "Hola,
-Pues resulta que como") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329360") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-
-<p>Hola,</p>
-<p>Pues resulta que como estaba atascado se me ocurrio desinstalar wicd y volver a instalar , pues ***** porque ahora no se inicia el servicio de wicd.</p>
-<p>Un saludo y gracias</p>
-") (pubDate nil "Thu, 18 Apr 2013 20:22:26 -0500") (dc:creator nil "Chambe") (guid ((isPermaLink . "false")) "comment 329360 at http://www.esdebian.org"))) ("En ese \"traceback\" faltan" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("En ese \"traceback\" faltan" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
 <p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
 De todas formas... ¿que paquetes tienes instalados de wicd?</p>
 <div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
@@ -144,7 +92,7 @@ De todas formas... ¿que paquetes tienes instalados de wicd?</p>
 También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
 <p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
 <div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
-<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365" (20849 275) old 3 nil nil ((title nil "En ese \"traceback\" faltan") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365" (20849 275) old 8 nil nil ((title nil "En ese \"traceback\" faltan") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
 
 <p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
 De todas formas... ¿que paquetes tienes instalados de wicd?</p>
@@ -156,45 +104,15 @@ También sería interesante ver que version de los paquetes de wicd tienes insta
 <div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
 <p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
 ") (pubDate nil "Fri, 19 Apr 2013 03:32:19 -0500") (dc:creator nil "Panko") (guid ((isPermaLink . "false")) "comment 329365 at http://www.esdebian.org"))) ("no se que guiá seguiste," "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364" (20848 49104) old 4 nil nil ((title nil "no se que guiá seguiste,") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364" (20848 49104) old 9 nil nil ((title nil "no se que guiá seguiste,") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
 
 <p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>
 ") (pubDate nil "Thu, 18 Apr 2013 22:53:52 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329364 at http://www.esdebian.org"))) ("logre abrirlo como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363" (20848 47954) old 5 nil nil ((title nil "logre abrirlo como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363" (20848 47954) old 10 nil nil ((title nil "logre abrirlo como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
 
 <p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>
-") (pubDate nil "Thu, 18 Apr 2013 22:34:42 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329363 at http://www.esdebian.org"))) ("si entre al folder" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>si entre al folder /etc/init.d</p>
-<p>encontre el archivo runsnort.sh el cual tiene una equis a  la izquierda a la diferencia de los demas, ademas no lo puedo editar abrir con gedit.</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329362" (20848 46903) old 6 nil nil ((title nil "si entre al folder") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329362") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-
-<p>si entre al folder /etc/init.d</p>
-<p>encontre el archivo runsnort.sh el cual tiene una equis a  la izquierda a la diferencia de los demas, ademas no lo puedo editar abrir con gedit.</p>
-") (pubDate nil "Thu, 18 Apr 2013 22:17:11 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329362 at http://www.esdebian.org"))) ("una mirada al link del bug" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>una mirada al link del bug <a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" title=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" rel=\"nofollow\">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238</a><br />
-si estas en /etc/init.d<br />
-el seguro es el runsnort.sh<br />
-podes mirar uno por uno o tentativamente hacer un grep y ver si lleva la etiqueta BEGIN INIT INFO</p>
-<p>grep \"BEGIN INIT INFO\" * | awk '{FS=\":\";print $1}' &gt;&gt; /tmp/dir1; ls &gt;&gt; /tmp/dir2 ; diff /tmp/dir2  /tmp/dir1 --suppress-common-lines -y</p>
-<p>las diferencias serán lo posibles modificables (probable no seguro) los que no son ejecutables nop</p>
-<p>que modificar<br />
-<a href=\"http://wiki.debian.org/LSBInitScripts\" title=\"http://wiki.debian.org/LSBInitScripts\" rel=\"nofollow\">http://wiki.debian.org/LSBInitScripts</a> o /etc/init.d/README</p>
-<p>o mirar el ejemplo /etc/init.d/skeleton </p>
-<p>sino mirar en el foro por LSB hay unos cuantos post y bien explicados</p>
-<p>cuando las etiquetas están completas, seguro se te va a desaparecer el bucle grande al actualizar, si es solo uno, me llama la atención, o es muy importante o es mas estricto ahora</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329361" (20848 45223) old 7 nil nil ((title nil "una mirada al link del bug") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329361") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-
-<p>una mirada al link del bug <a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" title=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" rel=\"nofollow\">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238</a><br />
-si estas en /etc/init.d<br />
-el seguro es el runsnort.sh<br />
-podes mirar uno por uno o tentativamente hacer un grep y ver si lleva la etiqueta BEGIN INIT INFO</p>
-<p>grep \"BEGIN INIT INFO\" * | awk '{FS=\":\";print $1}' &gt;&gt; /tmp/dir1; ls &gt;&gt; /tmp/dir2 ; diff /tmp/dir2  /tmp/dir1 --suppress-common-lines -y</p>
-<p>las diferencias serán lo posibles modificables (probable no seguro) los que no son ejecutables nop</p>
-<p>que modificar<br />
-<a href=\"http://wiki.debian.org/LSBInitScripts\" title=\"http://wiki.debian.org/LSBInitScripts\" rel=\"nofollow\">http://wiki.debian.org/LSBInitScripts</a> o /etc/init.d/README</p>
-<p>o mirar el ejemplo /etc/init.d/skeleton </p>
-<p>sino mirar en el foro por LSB hay unos cuantos post y bien explicados</p>
-<p>cuando las etiquetas están completas, seguro se te va a desaparecer el bucle grande al actualizar, si es solo uno, me llama la atención, o es muy importante o es mas estricto ahora</p>
-") (pubDate nil "Thu, 18 Apr 2013 21:49:11 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329361 at http://www.esdebian.org"))) ("Muy buena noticia. Es una" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366" (20849 10180) old 2 nil nil ((title nil "Muy buena noticia. Es una") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+") (pubDate nil "Thu, 18 Apr 2013 22:34:42 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329363 at http://www.esdebian.org"))) ("Muy buena noticia. Es una" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366" (20849 10180) old 7 nil nil ((title nil "Muy buena noticia. Es una") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 
 <p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>
 ") (pubDate nil "Fri, 19 Apr 2013 06:17:24 -0500") (dc:creator nil "cnicolas") (guid ((isPermaLink . "false")) "comment 329366 at http://www.esdebian.org"))) ("[COULD NOT DOWNLOAD HEADLINES!]" "viernes, 08:26: Newsticker could not retrieve news from esDebian.
@@ -203,9 +121,101 @@ Return status: `exited abnormally with code 4
 Command was `(wget -q -O - http://www.esdebian.org/crss)'" "" (20849 16136 952994) obsolete 0 nil nil nil) ("Ya la noticia se está" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 <p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
 <p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
-<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367" (20849 16159) new 1 nil nil ((title nil "Ya la noticia se está") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367" (20849 16159) old 6 nil nil ((title nil "Ya la noticia se está") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 
 <p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
 <p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
 <p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>
-") (pubDate nil "Fri, 19 Apr 2013 07:57:03 -0500") (dc:creator nil "DanielAviles") (guid ((isPermaLink . "false")) "comment 329367 at http://www.esdebian.org"))))
+") (pubDate nil "Fri, 19 Apr 2013 07:57:03 -0500") (dc:creator nil "DanielAviles") (guid ((isPermaLink . "false")) "comment 329367 at http://www.esdebian.org"))) ("cuentos escribió:
+Esperando" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>cuentos</em> escribió:</div>
+<p>Esperando el día y empezamos con la cuenta regresiva.</div>
+<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372" (20849 42228) new 1 nil nil ((title nil "cuentos escribió:
+Esperando") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>cuentos</em> escribió:</div>
+<p>Esperando el día y empezamos con la cuenta regresiva.</div>
+<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>
+") (pubDate nil "Fri, 19 Apr 2013 15:11:32 -0500") (dc:creator nil "nerve_net") (guid ((isPermaLink . "false")) "comment 329372 at http://www.esdebian.org"))) ("Panko escribió:
+En ese" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>Panko</em> escribió:</div>
+<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
+De todas formas... ¿que paquetes tienes instalados de wicd?</p>
+<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
+<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
+<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
+También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
+<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
+<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
+<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
+</div>
+<p>Hola,</p>
+<p>Despues de ejecutar <strong>sudo aptitude search ~iwicd</strong>  me salen todos los paquetes instalados.</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p> sudo aptitude search ~iwicd<br />
+i   python-wicd                     - wired and wireless network manager - Pytho<br />
+i   wicd                            - wired and wireless network manager - metap<br />
+i   wicd-cli                        - wired and wireless network manager - scrip<br />
+i   wicd-curses                     - wired and wireless network manager - Curse<br />
+i   wicd-daemon                     - wired and wireless network manager - daemo<br />
+i   wicd-gtk                        - wired and wireless network manager - GTK+ </p>
+</div>
+<p>Vuelvo a intentar iniciar el servicio y nada.</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p>:~$ sudo service wicd start<br />
+Starting Network connection manager: wicd failed</p>
+</div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371" (20849 36641) new 2 nil nil ((title nil "Panko escribió:
+En ese") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>Panko</em> escribió:</div>
+<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
+De todas formas... ¿que paquetes tienes instalados de wicd?</p>
+<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
+<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
+<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
+También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
+<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
+<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
+<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
+</div>
+<p>Hola,</p>
+<p>Despues de ejecutar <strong>sudo aptitude search ~iwicd</strong>  me salen todos los paquetes instalados.</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p> sudo aptitude search ~iwicd<br />
+i   python-wicd                     - wired and wireless network manager - Pytho<br />
+i   wicd                            - wired and wireless network manager - metap<br />
+i   wicd-cli                        - wired and wireless network manager - scrip<br />
+i   wicd-curses                     - wired and wireless network manager - Curse<br />
+i   wicd-daemon                     - wired and wireless network manager - daemo<br />
+i   wicd-gtk                        - wired and wireless network manager - GTK+ </p>
+</div>
+<p>Vuelvo a intentar iniciar el servicio y nada.</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p>:~$ sudo service wicd start<br />
+Starting Network connection manager: wicd failed</p>
+</div>
+") (pubDate nil "Fri, 19 Apr 2013 13:38:25 -0500") (dc:creator nil "Chambe") (guid ((isPermaLink . "false")) "comment 329371 at http://www.esdebian.org"))) ("Hhmmm hay algo que me suena" "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
+<p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
+<p>¡Sí!, ¡es ELLA!</p>
+<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>" "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370" (20849 36381) new 3 nil nil ((title nil "Hhmmm hay algo que me suena") (link nil "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
+
+<p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
+<p>¡Sí!, ¡es ELLA!</p>
+<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>
+") (pubDate nil "Fri, 19 Apr 2013 13:34:05 -0500") (dc:creator nil "pvaldes") (guid ((isPermaLink . "false")) "comment 329370 at http://www.esdebian.org"))) ("Esperando el día y" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Esperando el día y empezamos con la cuenta regresiva.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369" (20849 32234) new 4 nil nil ((title nil "Esperando el día y") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<p>Esperando el día y empezamos con la cuenta regresiva.</p>
+") (pubDate nil "Fri, 19 Apr 2013 12:24:58 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329369 at http://www.esdebian.org"))) ("muy buena noticia ... ya era" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>muy buena noticia ... ya era hora</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368" (20849 31788) new 5 nil nil ((title nil "muy buena noticia ... ya era") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<p>muy buena noticia ... ya era hora</p>
+") (pubDate nil "Fri, 19 Apr 2013 12:17:32 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329368 at http://www.esdebian.org"))))
