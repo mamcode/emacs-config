@@ -1,0 +1,588 @@
+;; -*- coding: utf-8 -*-
+(("htmlUI Blog << Thoughts on HTML5" nil nil (20849 31277 839444) feed 0 nil nil ((title nil "htmlUI Blog << Thoughts on HTML5") (link ((href . "http://htmlui.com"))) (updated nil "         	 2011-08-23T05:00:00Z	 ") (id nil "http://htmlui.com") (author nil (name nil "Todd Anglin") (uri nil "http://twitter.com/toddanglin")) (atom10:link ((xmlns:atom10 . "http://www.w3.org/2005/Atom") (rel . "self") (type . "application/atom+xml") (href . "http://feeds.feedburner.com/htmlui"))) (feedburner:info ((uri . "htmlui"))) (atom10:link ((xmlns:atom10 . "http://www.w3.org/2005/Atom") (rel . "hub") (href . "http://pubsubhubbub.appspot.com/"))) (entry nil (title nil "5 Obscure Facts About HTML5 LocalStorage") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/C-J56HVaFyA/2011-08-23-5-obscure-facts-about-html5-localstorage.html"))) (updated nil "2011-08-23T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-23-5-obscure-facts-about-html5-localstorage.html") (content ((type . "html")) "<p>LocalStorage is a handy API included in the \"HTML5\" wave that gives web developers an easy to use 5MB store on an users local machine. Using the LocalStorage API really couldn't be easier. It's a simple key/value dictionary with a simple API to match:</p>
+
+<pre class=\"brush: javascript;toolbar: false;\">
+    //Save a value to localStorage
+    localStorage.setItem('key', 'value to save');
+    //OR
+    localStorage.key = 'string value to save';
+
+    //Get the value back out of localStorage
+    localStorage.getItem('key');
+    //OR
+    localStorage.key;
+
+    //Clear all localStorage values
+    localStorage.clear();
+</pre>
+
+<p>Joining LocalStorage in the HTML5 spec (which, technically, is now the separate <a href=\"http://dev.w3.org/html5/webstorage/\">Web Storage spec</a>) is also SessionStorage. It provides an identical API, but a different \"retention policy.\" As the name implies, values in SessionStorage should only survive a single <em>browser session</em> (not <em>server session</em>). More this in a moment.</p>
+
+<p>The Storage APIs are so simple, it's easy to rush past them and overlook some important details about their behavior. Here are five things you may not know (or may have forgotten) about this simple API:</p>
+
+<h3>1. LocalStorge values on Secure (SSL) pages are isolated</h3>
+
+<p>Per the draft spec, browsers isolate LocalStorage values based on scheme + hostname + unique port (also known as an <a href=\"http://www.w3.org/TR/html5/origin-0.html\">HTML5 Origin</a>). Hostname is expected, since we don't want malicious websites to have access to other websites' LocalStorage data. But scheme (i.e. http and https)?</p>
+
+<p>The result of this separation means that a value saved to LocalStorage on <strong><a href='http://htmlui.com'>http://htmlui.com</a></strong> cannot be accessed by pages served from <strong><a href='https://htmlui.com'>https://htmlui.com</a></strong> (and vice versa). There is <em>some</em> good reason for this (I suppose), especially in the case of isolating values created during a secure session from unsecured sessions. But since LocalStorage should never be a place for storing sensitive data, I'm a bit surprised by this separation.</p>
+
+<p>It's the reality, though, so be careful if your site serves both HTTP and HTTPS pages. <em>(NOTE: Firefox provides a proprietary <a href=\"https://developer.mozilla.org/en/dom/storage\">GlobalStorage</a> that does not have this HTTP/HTTPS isolation.)</em></p>
+
+<h3>2. SessionStorage values survive <em>some</em> browser restarts</h3>
+
+<p>SessionStorage, unlike LocalStorage, is not designed for long-term persistence of values in the user's browser. Instead, values in SessionStorage are destroyed when a browser session ends, which is usually when the browser window is closed.</p>
+
+<p>There is an exception, though.</p>
+
+<p>When a browser provides a \"Restore Session\" feature, usually designed to help users quickly recover from a browser/computer crash, values in SessionStorage will be restored, too. So while it's a new \"session\" on the server, from the browser's perspective, it's a continuation of a single session across a browser restart.</p>
+
+<p>This makes SessionStorage an ideal storage technique for things like temporary \"backup\" of user form values, saving input to SessionStorage as it's entered and restoring on page load (if it exists) to further help the user recover from a browser crash or accidental page refresh (though browsers do some of this on their own, especially when recovering from a crash).</p>
+
+<h3>3. LocalStorage values created in \"incognito\" mode are isolated</h3>
+
+<p>When you fire-up a browser in private/incognito/safe mode (sometimes more crudely- and accurately- referred to as \"porn mode\"), it will create a new, temporary database for LocalStorage values. That means anything saved to LocalStorage will be destroyed when the private browsing session is closed, making LocalStorage behave more like SessionStorage.</p>
+
+<p>Additionally, since a browser's \"Session Restore\" feature does not re-open private mode sessions, anything created in SessionStorage will also be lost after the browser window is closed. Really, in short, any data put in Local or SessionStorage during a private browsing session will be lost as soon as the browser window is closed (intentionally or not).</p>
+
+<h3>4. LocalStorage quotas <em>cannot</em> be made bigger than 5MB</h3>
+
+<p>LocalStorage is not supposed to be the <em>primary</em> form of in-browser storage with HTML5 (IndexDB will eventually come along to provide that), but some apps may want more than the default 5MB LocalStorage provides. Is there a way to expand LocalStorage quotas? No and no.</p>
+
+<p><em>Technically</em>, the LocalStorage origin restriction does <em>not</em> block sub-domains of the same host (using the same scheme and port) from accessing the same LocalStorage object. As a result, some browsers have exposed a workaround that grants \"a1.website.com\" and \"a2.website.com\" their own 5MB LocalStorage quotas. And since both sites are on the same origin, they can access each others values. <em>(SECURITY SIDE NOTE: This also means that sites on shared domains, like apphost.com, all share a single HTML5 Storage object. Proceed with caution!)</em></p>
+
+<p>So while a <em>technical</em> workaround exists, it is <a href=\"http://dev.w3.org/html5/webstorage/#disk-space\">specifically frowned upon in the HTML5 Web Storage spec</a>. Browser authors are asked to prevent multiple sub-domains of a single site from being given a bigger LocalStorage pool. That makes this workaround a \"user at your own risk\" solution that is likely to break in the future (if it still works today).</p>
+
+<p>Fortunately, the spec further calls on browser authors to prompt users when LocalStorage quotas are reached (allowing users to increase the storage quota), but so far only Opera has implemented this portion of the spec. So for now, 5MB is your realistic limit. </p>
+
+<h3>5. LocalStorage can be polyfilled in to older browsers (including IE)</h3>
+
+<p>Ah, legacy browsers. The downers at every HTML5 party. Fortunately, LocalStorage is incredibly well supported in Class A browsers. It's natively available in IE8+ (!), Firefox 3.5+, and Chrome 4+. There are few HTML5 specs as broadly and consistently supported as Web Storage.</p>
+
+<p>For older versions of IE, polyfill support is available thanks to an IE-only feature called <a href=\"http://www.javascriptkit.com/javatutors/domstorage2.shtml\">\"userData\"</a>. Introduced in IE5, userData is an IE behavior that opens-up 1MB of local storage. By wrapping the userData API, modern HTML5 applications can address polyfilled LocalStorage all the way back to IE6 (or IE5, technically).</p>
+
+<p>A few libraries exist that do this for you. <a href=\"http://amplifyjs.com/\">Amplify</a> is one such library from appendTo (though it introduces a new API instead of doing pure polyfill), and <a href=\"https://gist.github.com/350433\">Remy Sharp has a simple implementation</a> that wraps standard HTTP cookies (severely limiting the API's usefulness, but providing some functionality for older browsers).</p>
+
+<p>So enjoy the simple LocalStorage APIs, but be aware of the inner workings that could create some confusing debugging.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/C-J56HVaFyA\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-23-5-obscure-facts-about-html5-localstorage.html")) (entry nil (title nil "Presentations on HTML5 and CSS3") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/CT6uln-D614/2011-08-21-presentations-on-html5-css3.html"))) (updated nil "2011-08-21T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-21-presentations-on-html5-css3.html") (content ((type . "html")) "<p>During the past week, I travelled and spoke at the <a href=\"http://devlink.net/\">DevLink conference</a> in Chattanooga, Tennessee. It was my frist visit to Chattanooga, and I was surprised to find a bustling, growing city, trying to be very proactive adopting and cultivating techology. In fact, one city developer described Chattanooga to me as the \"Portland of the South.\" Interesting claim (being myself from the West Coast), but after a week, I can <a href=\"http://www.carta-bus.org/\">see hints</a> of what he was advertising.</p>
+
+<h3>Conference Presentations &amp; Slides</h3>
+
+<p>More importantly for this blog post, I spent a lot of time during the week doing presentations on HTML5, CSS3, and RESTful web services. Specifically, here are the talks I did:</p>
+
+<ul>
+<li>Building RESTful Data Services with OData</li>
+<li>The Rich Standard: Getting Familiar with HTML5</li>
+<li>HTML5 &amp; CSS3 Techniques You Can Adopt Today</li>
+<li>Doing More with LESS for CSS</li>
+</ul>
+
+<p>All of the talks were <em>really</em> well attended, so a big thanks to everyone for visiting the sessions and sharing such positive feedback!</p>
+
+<p>You can find the <a href=\"http://www.slideshare.net/toddanglin\">slides for all of these talks on SlideShare</a>. And you can find many of the HTML5 demos <a href=\"http://htmlui.com/demos.html\">right here on htmlUI</a>.</p>
+
+<h3>Next Stops</h3>
+
+<p>I'm a frequent speaker and presenter at conferences around the world, so I'll be doing many more HTML5 &amp; CSS3 talks as the year winds on. I'd love to meet you at an upcoming conference! Here are some of the shows I'll be doing:</p>
+
+<ul>
+<li><a href=\"http://html5tx.com/\">HTML5TX</a>, Austin, TX (October 8)</li>
+<li><a href=\"http://devreach.com/\">DevReach 2011</a>, Sofia, Bulgaria (October 17 - 18)</li>
+<li><a href=\"http://devconnections.com/home.aspx\">DevConnections 2011</a>, Las Vegas (October 31 - November 3)</li>
+<li><a href=\"http://vslive.com/events/orlando-2011/home.aspx\">Visual Studio LIVE</a>, Orlando (December 5 - 7)</li>
+</ul>
+
+<h3>What Do YOU Want to Learn?</h3>
+
+<p>Presentations are fun, especially when the topics are built around things you <em>really</em> want to learn about. HTML5, CSS3, JavaScript, and related technologies provide a <em>huge</em> surface area for learning, so what do <em>you</em> <strong>most</strong> most want to learn more about? Let me know by sending a tweet to <a href=\"http://twitter.com/htmlui\">@htmlui</a> and maybe I'll make it the subject of one of my next presentations! If I pick your idea, I'll be sure to feature your Twitter handle in the session introduction.</p>
+
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/CT6uln-D614\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-21-presentations-on-html5-css3.html")) (entry nil (title nil "Site Templates with Static HTML and NodeJS") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/SOSpEyz-HEU/2011-08-01-site-templates-with-static-html-nodejs.html"))) (updated nil "2011-08-01T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html") (content ((type . "html")) "<h2>100% HTML</h2>
+
+<p>The current version of htmlUI.com is 100%, pure, static HTML (and JavaScript). No dynamic server-side, run-time HTML generating framework involved. Why? A few reasons:</p>
+
+<ol>
+<li><strong>Performance:</strong> When all you're serving is HTML, performance and scalability are a non-issue (kind of a refreshing change of pace from dynamic runtimes)</li>
+<li><strong>Universal Development &amp; Hosting:</strong> In addition to doing all dev client-side, I wanted to easily develop across OSX, Windows, and anywhere else I had a few minutes to work. I also wanted the option to deploy the result to any host.</li>
+<li><strong>No Crutch:</strong> A key reason I'm doing htmlUI.com is to explore new \"HTML5\" ways for doing things in the browser. By avoiding a server-side technology (for now), I'm forced to find creative development solutions to problems that server-side frameworks make easy.</li>
+</ol>
+
+<p>True, at some point a server-side technology will be required, even if just to provide a RESTful service layer to an otherwise mostly JavaScript-driven application. But want to see how far I can go before that's required.</p>
+
+<p>Of course, eliminating the \"server crutch\" quickly introduced some challenging problems. One challenge jumped-forward from the rest: templates.</p>
+
+<h3>Site Templates with Static HTML</h3>
+
+<p>Even before the days of server-side languages, one of the key challenges involved in maintaining websites was keeping templates in sync. Early on, there were essentially two choices:</p>
+
+<ol>
+<li>Manually update every HTML page when a change to the \"template\" is made (time consuming, error prone)</li>
+<li>Use software, like Dreamweaver (remember Libraries and Templates?), to do HTML partitioning and pre-compilation (clunky, proprietary template technique)</li>
+</ol>
+
+<p>With the advent of dynamic web frameworks, like PHP or ASP, the process of compiling HTML moved to the runtime, eliminating manual precompiling steps. It solved a core problem, and it made sense at the time since more and more of a website's processing was happening on the server.</p>
+
+<p>But as the world explores more of a move back to the client, putting more of a site's front-end dynamic processing in the browser, the server-side runtime dependency for basic HTML templating feels overkill. Is there a better solution for modern client-side sites?</p>
+
+<h3>Client-side Templates</h3>
+
+<p>Let's be clear upfront: <strong>moving away from a server-side tech forces us to go back to some kind of HTML pre-compilation.</strong> </p>
+
+<p>Unfortunately, any kind of JavaScript/Ajaxy run-time templating has too many drawbacks to be a realistic solution. Such a dynamic approach would both penalize SEO (crawlers might not see dynamic content) and would cause a distracting load experience for users. In fact, I think the drawbacks are so widely accepted, few people have tried to go down this path (I can't find any examples on the web of people who have tried).</p>
+
+<p>That means we must use something that precompiles our HTML templates. But if we're not to go back to proprietary software/techniques or server-side runtimes, what do we use?</p>
+
+<h3>Enter NodeJS and DocPad</h3>
+
+<p>As it turns-out, there is a cool solution for this problem built on NodeJS called <a href=\"https://github.com/balupton/docpad/\">DocPad</a>. Built by <a href=\"http://balupton.com/\">Benjamin Loupton</a>, this simple project provides a simple, straightforward model for \"compiling\" HTML at design-time. Here's how it works:</p>
+
+<ul>
+<li>Define your template content in an HTML file (things like your common site header, footer, etc)</li>
+<li>Use the basic templating language to indicate where HTML body content should be rendered during the DocPad compile</li>
+<li>Create a content file and consume the template by including some special syntax at the top of the file</li>
+</ul>
+
+<p>For example, let's say you have this basic template:</p>
+
+<pre class=\"brush: html;\">
+&lt;html>
+    &lt;head>...&lt;/head>
+    &lt;body>
+        &lt;header>...&lt;/header>
+        &lt;div id=\"contentWrapper\">
+        &lt;!--Render Body Content Here-->
+        &lt;%-@content%>
+        &lt;/div>
+        &lt;footer>...&lt;/footer>
+    &lt;/body>
+&lt;/html>
+</pre>
+
+<p>Notice the <code>&lt;%-@content%&gt;</code> marker? That's DocPad's convention for indicating where content from a page using this template should render. To then consume this template (let's assume it's called \"default.html\"), a content page might look like this:</p>
+
+<pre class=\"brush: html;\">
+    - - - 
+    title: \"My page\"
+    layout: 'default'
+    - - -
+    &lt;h1>My Page&lt;/h1>
+</pre>
+
+<p>When DocPad compiles the source for a site, the <code>&lt;h1&gt;My Page&lt;/h1&gt;</code> will get rendered in to the template, and the resulting output will be a complete HTML file (let's say, MyPage.html). <em>(As a side note, DocPad supports a few different HTML markup engines, including Markdown, Jade, and, of course, plain HTML. So we could have written the previous as <code>#My Page#</code>, saved the file as <code>MyPage.md</code>, and produced the same HTML output.)</em></p>
+
+<p>If we need to change the template, we simply change the <code>default.html</code> template file, reprocess the source with DocPad, and all of our HTML pages are painlessly updated.</p>
+
+<h3>Benefits of NodeJS</h3>
+
+<p>Since DocPad is running on NodeJS, some of Node's capabilities are also exposed to the templating process. For example, you can process a list of blog posts in a folder and automatically render a list of links while a template is being processed (that's what's happening on htmlUI!). With Node's ability to access to complete file system and its growing library of plug-ins, it gives you quite of a bit of template processing power.</p>
+
+<p>But if we're really being honest, more than anything it's a good excuse to get your feet wet with NodeJS, which has become very popular with the current surge in JavaScript interest.</p>
+
+<h3>It's like Jekyll <em>and</em> Hyde</h3>
+
+<p>There are some other popular static HTML site generators. The two that I encounter most often are <a href=\"http://jekyllrb.com/\">Jekyll</a>, and it's spiritual successor <a href=\"http://hyde.github.com/\">Hyde</a>. Both, like DocPad, give you a way to define templates and compile static HTML, ready for distribution. Jekyll is written in Ruby. Hyde is written in Python.</p>
+
+<p>Having never really used either, I can't comment fully on their power, but I can still recommend DocPad. If your goal, like mine, is to avoid \"committing\" to a dynamic runtime, DocPad is ideal. You don't have to \"go Ruby\" or \"go Python.\" You remain 100% HTML and JavaScript, even for the dynamic template processing.</p>
+
+<p>It's nothing agains Ruby or Python. It just comes back to my personal goal to see how far I can go with <em>just</em> JavaScript/HTML.</p>
+
+<h3>Final Result</h3>
+
+<p>Let's review:</p>
+
+<ul>
+<li><del>The</del> A goal for htmlUI.com is to do as much as possible without a server-side, dynamic runtime framework</li>
+<li>A key problem is template maintenance.</li>
+<li>DocPad is an elegant, NodeJS-based solution for dynamically generating static HTML</li>
+</ul>
+
+<p>All of htmlUI (including this blog) is compiled with DocPad. It has solved my immediate templating problem, letting me easily maintain site templates and content without involving a dynamic runtime.</p>
+
+<p>Where do I go from here? I'd like to work on a setup that would let me deploy site source from any computer to a server running DocPad, which would then automatically produce the static output and (maybe?) deploy results to my host. It is a <em>bit</em> of a pain to require a computer configured with Node and DocPad just to deploy a simple site update.</p>
+
+<p>But it works, and the site remains 100% HTML. Hope this helps others on the journey to move front-end processing back to the browser.</p>
+
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SOSpEyz-HEU\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html")) (entry nil (title nil "(Not?) Another HTML5 Resource Site") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/SLNEtW61jEs/2011-07-18-another-html5-resource-site.html"))) (updated nil "2011-07-18T05:00:00Z") (id nil "http://htmlui.com/blog/2011-07-18-another-html5-resource-site.html") (content ((type . "html")) "<p>Welcome to the re-boot of htmlUI.com, my personal playground and proving ground for so-called \"HTML5\" techniques. htmlUI is built using many new HTML5, CSS3, and JavaScript goodies on the front-end, while employing some interesting new tools for modern, standards-based web development on the backend, like <a href=\"http://lesscss.org\">LESS</a>, <a href=\"https://github.com/balupton/docpad\">DocPad</a>, <a href=\"http://jashkenas.github.com/coffee-script/\">CoffeeScript</a>, <a href=\"http://nodejs.org/\">NodeJS</a>, among others.</p>
+
+<h3>Another HTML5 site?</h3>
+
+<p>Yes. Another HTML5 site, but not an echo chamber. I value original ideas, and I aim to deliver that through this blog and the demos featured on htmlUI.</p>
+
+<p><strong><em>What's the angle?</em></strong></p>
+
+<p>While HTML5 (and the related) are fun, the \"real world\" usually won't let us instantly ignore all non-HTML5 browsers. htmlUI will highlight techniques that help modern web developers push the envelope while not leaving most (some?) older browsers out to dry.</p>
+
+<p><strong><em>Including IE6?</em></strong></p>
+
+<p>Sometimes. But I make fewer promises for <a href=\"http://www.ie6countdown.com/\">that old dog</a>. Some techniques highlighted on htmlUI will make concessions to play-nice with our standards nemisis, but at other times IE6 will be left for dead (where it generally belongs).</p>
+
+<h3>htmlUI on Twitter</h3>
+
+<p>htmlUI is as much about providing regular, useful updates on Twitter as it is providing this more \"traditional\" resource site. For quick links to cool HTML5 techniques, demos, or articles, <a href=\"http://twitter.com/htmlui\">@htmlUI on Twitter</a> should be one thing you follow.</p>
+
+<p><strong><em>I don't like Twitter.</em></strong></p>
+
+<p>No problem. The htmlUI.com homepage features a few of the latest useful updates from @htmlUI, so if you avoid Twitter like that chatty cousin at a family reunion, just visit <a href=\"http://htmlui.com\">this site's homepage</a> for regular updates.</p>
+
+<h3>What comes next?</h3>
+
+<p>What exists today is just a start. This is a living, evolving experimental site. Through the demos, articles, and information shared on htmlUI, you'll learn from my experience using and deploying HTML5 so you can more quickly master it on your own.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SLNEtW61jEs\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-07-18-another-html5-resource-site.html")))) ("5 Obscure Facts About HTML5 LocalStorage" "<p>LocalStorage is a handy API included in the \"HTML5\" wave that gives web developers an easy to use 5MB store on an users local machine. Using the LocalStorage API really couldn't be easier. It's a simple key/value dictionary with a simple API to match:</p>
+<pre class=\"brush: javascript;toolbar: false;\">
+//Save a value to localStorage
+localStorage.setItem('key', 'value to save');
+//OR
+localStorage.key = 'string value to save';
+//Get the value back out of localStorage
+localStorage.getItem('key');
+//OR
+localStorage.key;
+//Clear all localStorage values
+localStorage.clear();
+</pre>
+<p>Joining LocalStorage in the HTML5 spec (which, technically, is now the separate <a href=\"http://dev.w3.org/html5/webstorage/\">Web Storage spec</a>) is also SessionStorage. It provides an identical API, but a different \"retention policy.\" As the name implies, values in SessionStorage should only survive a single <em>browser session</em> (not <em>server session</em>). More this in a moment.</p>
+<p>The Storage APIs are so simple, it's easy to rush past them and overlook some important details about their behavior. Here are five things you may not know (or may have forgotten) about this simple API:</p>
+<h3>1. LocalStorge values on Secure (SSL) pages are isolated</h3>
+<p>Per the draft spec, browsers isolate LocalStorage values based on scheme + hostname + unique port (also known as an <a href=\"http://www.w3.org/TR/html5/origin-0.html\">HTML5 Origin</a>). Hostname is expected, since we don't want malicious websites to have access to other websites' LocalStorage data. But scheme (i.e. http and https)?</p>
+<p>The result of this separation means that a value saved to LocalStorage on <strong><a href='http://htmlui.com'>http://htmlui.com</a></strong> cannot be accessed by pages served from <strong><a href='https://htmlui.com'>https://htmlui.com</a></strong> (and vice versa). There is <em>some</em> good reason for this (I suppose), especially in the case of isolating values created during a secure session from unsecured sessions. But since LocalStorage should never be a place for storing sensitive data, I'm a bit surprised by this separation.</p>
+<p>It's the reality, though, so be careful if your site serves both HTTP and HTTPS pages. <em>(NOTE: Firefox provides a proprietary <a href=\"https://developer.mozilla.org/en/dom/storage\">GlobalStorage</a> that does not have this HTTP/HTTPS isolation.)</em></p>
+<h3>2. SessionStorage values survive <em>some</em> browser restarts</h3>
+<p>SessionStorage, unlike LocalStorage, is not designed for long-term persistence of values in the user's browser. Instead, values in SessionStorage are destroyed when a browser session ends, which is usually when the browser window is closed.</p>
+<p>There is an exception, though.</p>
+<p>When a browser provides a \"Restore Session\" feature, usually designed to help users quickly recover from a browser/computer crash, values in SessionStorage will be restored, too. So while it's a new \"session\" on the server, from the browser's perspective, it's a continuation of a single session across a browser restart.</p>
+<p>This makes SessionStorage an ideal storage technique for things like temporary \"backup\" of user form values, saving input to SessionStorage as it's entered and restoring on page load (if it exists) to further help the user recover from a browser crash or accidental page refresh (though browsers do some of this on their own, especially when recovering from a crash).</p>
+<h3>3. LocalStorage values created in \"incognito\" mode are isolated</h3>
+<p>When you fire-up a browser in private/incognito/safe mode (sometimes more crudely- and accurately- referred to as \"porn mode\"), it will create a new, temporary database for LocalStorage values. That means anything saved to LocalStorage will be destroyed when the private browsing session is closed, making LocalStorage behave more like SessionStorage.</p>
+<p>Additionally, since a browser's \"Session Restore\" feature does not re-open private mode sessions, anything created in SessionStorage will also be lost after the browser window is closed. Really, in short, any data put in Local or SessionStorage during a private browsing session will be lost as soon as the browser window is closed (intentionally or not).</p>
+<h3>4. LocalStorage quotas <em>cannot</em> be made bigger than 5MB</h3>
+<p>LocalStorage is not supposed to be the <em>primary</em> form of in-browser storage with HTML5 (IndexDB will eventually come along to provide that), but some apps may want more than the default 5MB LocalStorage provides. Is there a way to expand LocalStorage quotas? No and no.</p>
+<p><em>Technically</em>, the LocalStorage origin restriction does <em>not</em> block sub-domains of the same host (using the same scheme and port) from accessing the same LocalStorage object. As a result, some browsers have exposed a workaround that grants \"a1.website.com\" and \"a2.website.com\" their own 5MB LocalStorage quotas. And since both sites are on the same origin, they can access each others values. <em>(SECURITY SIDE NOTE: This also means that sites on shared domains, like apphost.com, all share a single HTML5 Storage object. Proceed with caution!)</em></p>
+<p>So while a <em>technical</em> workaround exists, it is <a href=\"http://dev.w3.org/html5/webstorage/#disk-space\">specifically frowned upon in the HTML5 Web Storage spec</a>. Browser authors are asked to prevent multiple sub-domains of a single site from being given a bigger LocalStorage pool. That makes this workaround a \"user at your own risk\" solution that is likely to break in the future (if it still works today).</p>
+<p>Fortunately, the spec further calls on browser authors to prompt users when LocalStorage quotas are reached (allowing users to increase the storage quota), but so far only Opera has implemented this portion of the spec. So for now, 5MB is your realistic limit. </p>
+<h3>5. LocalStorage can be polyfilled in to older browsers (including IE)</h3>
+<p>Ah, legacy browsers. The downers at every HTML5 party. Fortunately, LocalStorage is incredibly well supported in Class A browsers. It's natively available in IE8+ (!), Firefox 3.5+, and Chrome 4+. There are few HTML5 specs as broadly and consistently supported as Web Storage.</p>
+<p>For older versions of IE, polyfill support is available thanks to an IE-only feature called <a href=\"http://www.javascriptkit.com/javatutors/domstorage2.shtml\">\"userData\"</a>. Introduced in IE5, userData is an IE behavior that opens-up 1MB of local storage. By wrapping the userData API, modern HTML5 applications can address polyfilled LocalStorage all the way back to IE6 (or IE5, technically).</p>
+<p>A few libraries exist that do this for you. <a href=\"http://amplifyjs.com/\">Amplify</a> is one such library from appendTo (though it introduces a new API instead of doing pure polyfill), and <a href=\"https://gist.github.com/350433\">Remy Sharp has a simple implementation</a> that wraps standard HTTP cookies (severely limiting the API's usefulness, but providing some functionality for older browsers).</p>
+<p>So enjoy the simple LocalStorage APIs, but be aware of the inner workings that could create some confusing debugging.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/C-J56HVaFyA\" height=\"1\" width=\"1\"/>" "http://feedproxy.google.com/~r/htmlui/~3/C-J56HVaFyA/2011-08-23-5-obscure-facts-about-html5-localstorage.html" (20051 13264) old 1 nil nil ((title nil "5 Obscure Facts About HTML5 LocalStorage") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/C-J56HVaFyA/2011-08-23-5-obscure-facts-about-html5-localstorage.html"))) (updated nil "2011-08-23T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-23-5-obscure-facts-about-html5-localstorage.html") (content ((type . "html")) "<p>LocalStorage is a handy API included in the \"HTML5\" wave that gives web developers an easy to use 5MB store on an users local machine. Using the LocalStorage API really couldn't be easier. It's a simple key/value dictionary with a simple API to match:</p>
+
+<pre class=\"brush: javascript;toolbar: false;\">
+    //Save a value to localStorage
+    localStorage.setItem('key', 'value to save');
+    //OR
+    localStorage.key = 'string value to save';
+
+    //Get the value back out of localStorage
+    localStorage.getItem('key');
+    //OR
+    localStorage.key;
+
+    //Clear all localStorage values
+    localStorage.clear();
+</pre>
+
+<p>Joining LocalStorage in the HTML5 spec (which, technically, is now the separate <a href=\"http://dev.w3.org/html5/webstorage/\">Web Storage spec</a>) is also SessionStorage. It provides an identical API, but a different \"retention policy.\" As the name implies, values in SessionStorage should only survive a single <em>browser session</em> (not <em>server session</em>). More this in a moment.</p>
+
+<p>The Storage APIs are so simple, it's easy to rush past them and overlook some important details about their behavior. Here are five things you may not know (or may have forgotten) about this simple API:</p>
+
+<h3>1. LocalStorge values on Secure (SSL) pages are isolated</h3>
+
+<p>Per the draft spec, browsers isolate LocalStorage values based on scheme + hostname + unique port (also known as an <a href=\"http://www.w3.org/TR/html5/origin-0.html\">HTML5 Origin</a>). Hostname is expected, since we don't want malicious websites to have access to other websites' LocalStorage data. But scheme (i.e. http and https)?</p>
+
+<p>The result of this separation means that a value saved to LocalStorage on <strong><a href='http://htmlui.com'>http://htmlui.com</a></strong> cannot be accessed by pages served from <strong><a href='https://htmlui.com'>https://htmlui.com</a></strong> (and vice versa). There is <em>some</em> good reason for this (I suppose), especially in the case of isolating values created during a secure session from unsecured sessions. But since LocalStorage should never be a place for storing sensitive data, I'm a bit surprised by this separation.</p>
+
+<p>It's the reality, though, so be careful if your site serves both HTTP and HTTPS pages. <em>(NOTE: Firefox provides a proprietary <a href=\"https://developer.mozilla.org/en/dom/storage\">GlobalStorage</a> that does not have this HTTP/HTTPS isolation.)</em></p>
+
+<h3>2. SessionStorage values survive <em>some</em> browser restarts</h3>
+
+<p>SessionStorage, unlike LocalStorage, is not designed for long-term persistence of values in the user's browser. Instead, values in SessionStorage are destroyed when a browser session ends, which is usually when the browser window is closed.</p>
+
+<p>There is an exception, though.</p>
+
+<p>When a browser provides a \"Restore Session\" feature, usually designed to help users quickly recover from a browser/computer crash, values in SessionStorage will be restored, too. So while it's a new \"session\" on the server, from the browser's perspective, it's a continuation of a single session across a browser restart.</p>
+
+<p>This makes SessionStorage an ideal storage technique for things like temporary \"backup\" of user form values, saving input to SessionStorage as it's entered and restoring on page load (if it exists) to further help the user recover from a browser crash or accidental page refresh (though browsers do some of this on their own, especially when recovering from a crash).</p>
+
+<h3>3. LocalStorage values created in \"incognito\" mode are isolated</h3>
+
+<p>When you fire-up a browser in private/incognito/safe mode (sometimes more crudely- and accurately- referred to as \"porn mode\"), it will create a new, temporary database for LocalStorage values. That means anything saved to LocalStorage will be destroyed when the private browsing session is closed, making LocalStorage behave more like SessionStorage.</p>
+
+<p>Additionally, since a browser's \"Session Restore\" feature does not re-open private mode sessions, anything created in SessionStorage will also be lost after the browser window is closed. Really, in short, any data put in Local or SessionStorage during a private browsing session will be lost as soon as the browser window is closed (intentionally or not).</p>
+
+<h3>4. LocalStorage quotas <em>cannot</em> be made bigger than 5MB</h3>
+
+<p>LocalStorage is not supposed to be the <em>primary</em> form of in-browser storage with HTML5 (IndexDB will eventually come along to provide that), but some apps may want more than the default 5MB LocalStorage provides. Is there a way to expand LocalStorage quotas? No and no.</p>
+
+<p><em>Technically</em>, the LocalStorage origin restriction does <em>not</em> block sub-domains of the same host (using the same scheme and port) from accessing the same LocalStorage object. As a result, some browsers have exposed a workaround that grants \"a1.website.com\" and \"a2.website.com\" their own 5MB LocalStorage quotas. And since both sites are on the same origin, they can access each others values. <em>(SECURITY SIDE NOTE: This also means that sites on shared domains, like apphost.com, all share a single HTML5 Storage object. Proceed with caution!)</em></p>
+
+<p>So while a <em>technical</em> workaround exists, it is <a href=\"http://dev.w3.org/html5/webstorage/#disk-space\">specifically frowned upon in the HTML5 Web Storage spec</a>. Browser authors are asked to prevent multiple sub-domains of a single site from being given a bigger LocalStorage pool. That makes this workaround a \"user at your own risk\" solution that is likely to break in the future (if it still works today).</p>
+
+<p>Fortunately, the spec further calls on browser authors to prompt users when LocalStorage quotas are reached (allowing users to increase the storage quota), but so far only Opera has implemented this portion of the spec. So for now, 5MB is your realistic limit. </p>
+
+<h3>5. LocalStorage can be polyfilled in to older browsers (including IE)</h3>
+
+<p>Ah, legacy browsers. The downers at every HTML5 party. Fortunately, LocalStorage is incredibly well supported in Class A browsers. It's natively available in IE8+ (!), Firefox 3.5+, and Chrome 4+. There are few HTML5 specs as broadly and consistently supported as Web Storage.</p>
+
+<p>For older versions of IE, polyfill support is available thanks to an IE-only feature called <a href=\"http://www.javascriptkit.com/javatutors/domstorage2.shtml\">\"userData\"</a>. Introduced in IE5, userData is an IE behavior that opens-up 1MB of local storage. By wrapping the userData API, modern HTML5 applications can address polyfilled LocalStorage all the way back to IE6 (or IE5, technically).</p>
+
+<p>A few libraries exist that do this for you. <a href=\"http://amplifyjs.com/\">Amplify</a> is one such library from appendTo (though it introduces a new API instead of doing pure polyfill), and <a href=\"https://gist.github.com/350433\">Remy Sharp has a simple implementation</a> that wraps standard HTTP cookies (severely limiting the API's usefulness, but providing some functionality for older browsers).</p>
+
+<p>So enjoy the simple LocalStorage APIs, but be aware of the inner workings that could create some confusing debugging.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/C-J56HVaFyA\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-23-5-obscure-facts-about-html5-localstorage.html"))) ("Presentations on HTML5 and CSS3" "<p>During the past week, I travelled and spoke at the <a href=\"http://devlink.net/\">DevLink conference</a> in Chattanooga, Tennessee. It was my frist visit to Chattanooga, and I was surprised to find a bustling, growing city, trying to be very proactive adopting and cultivating techology. In fact, one city developer described Chattanooga to me as the \"Portland of the South.\" Interesting claim (being myself from the West Coast), but after a week, I can <a href=\"http://www.carta-bus.org/\">see hints</a> of what he was advertising.</p>
+<h3>Conference Presentations &amp; Slides</h3>
+<p>More importantly for this blog post, I spent a lot of time during the week doing presentations on HTML5, CSS3, and RESTful web services. Specifically, here are the talks I did:</p>
+<ul>
+<li>Building RESTful Data Services with OData</li>
+<li>The Rich Standard: Getting Familiar with HTML5</li>
+<li>HTML5 &amp; CSS3 Techniques You Can Adopt Today</li>
+<li>Doing More with LESS for CSS</li>
+</ul>
+<p>All of the talks were <em>really</em> well attended, so a big thanks to everyone for visiting the sessions and sharing such positive feedback!</p>
+<p>You can find the <a href=\"http://www.slideshare.net/toddanglin\">slides for all of these talks on SlideShare</a>. And you can find many of the HTML5 demos <a href=\"http://htmlui.com/demos.html\">right here on htmlUI</a>.</p>
+<h3>Next Stops</h3>
+<p>I'm a frequent speaker and presenter at conferences around the world, so I'll be doing many more HTML5 &amp; CSS3 talks as the year winds on. I'd love to meet you at an upcoming conference! Here are some of the shows I'll be doing:</p>
+<ul>
+<li><a href=\"http://html5tx.com/\">HTML5TX</a>, Austin, TX (October 8)</li>
+<li><a href=\"http://devreach.com/\">DevReach 2011</a>, Sofia, Bulgaria (October 17 - 18)</li>
+<li><a href=\"http://devconnections.com/home.aspx\">DevConnections 2011</a>, Las Vegas (October 31 - November 3)</li>
+<li><a href=\"http://vslive.com/events/orlando-2011/home.aspx\">Visual Studio LIVE</a>, Orlando (December 5 - 7)</li>
+</ul>
+<h3>What Do YOU Want to Learn?</h3>
+<p>Presentations are fun, especially when the topics are built around things you <em>really</em> want to learn about. HTML5, CSS3, JavaScript, and related technologies provide a <em>huge</em> surface area for learning, so what do <em>you</em> <strong>most</strong> most want to learn more about? Let me know by sending a tweet to <a href=\"http://twitter.com/htmlui\">@htmlui</a> and maybe I'll make it the subject of one of my next presentations! If I pick your idea, I'll be sure to feature your Twitter handle in the session introduction.</p>
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/CT6uln-D614\" height=\"1\" width=\"1\"/>" "http://feedproxy.google.com/~r/htmlui/~3/CT6uln-D614/2011-08-21-presentations-on-html5-css3.html" (20048 37072) old 2 nil nil ((title nil "Presentations on HTML5 and CSS3") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/CT6uln-D614/2011-08-21-presentations-on-html5-css3.html"))) (updated nil "2011-08-21T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-21-presentations-on-html5-css3.html") (content ((type . "html")) "<p>During the past week, I travelled and spoke at the <a href=\"http://devlink.net/\">DevLink conference</a> in Chattanooga, Tennessee. It was my frist visit to Chattanooga, and I was surprised to find a bustling, growing city, trying to be very proactive adopting and cultivating techology. In fact, one city developer described Chattanooga to me as the \"Portland of the South.\" Interesting claim (being myself from the West Coast), but after a week, I can <a href=\"http://www.carta-bus.org/\">see hints</a> of what he was advertising.</p>
+
+<h3>Conference Presentations &amp; Slides</h3>
+
+<p>More importantly for this blog post, I spent a lot of time during the week doing presentations on HTML5, CSS3, and RESTful web services. Specifically, here are the talks I did:</p>
+
+<ul>
+<li>Building RESTful Data Services with OData</li>
+<li>The Rich Standard: Getting Familiar with HTML5</li>
+<li>HTML5 &amp; CSS3 Techniques You Can Adopt Today</li>
+<li>Doing More with LESS for CSS</li>
+</ul>
+
+<p>All of the talks were <em>really</em> well attended, so a big thanks to everyone for visiting the sessions and sharing such positive feedback!</p>
+
+<p>You can find the <a href=\"http://www.slideshare.net/toddanglin\">slides for all of these talks on SlideShare</a>. And you can find many of the HTML5 demos <a href=\"http://htmlui.com/demos.html\">right here on htmlUI</a>.</p>
+
+<h3>Next Stops</h3>
+
+<p>I'm a frequent speaker and presenter at conferences around the world, so I'll be doing many more HTML5 &amp; CSS3 talks as the year winds on. I'd love to meet you at an upcoming conference! Here are some of the shows I'll be doing:</p>
+
+<ul>
+<li><a href=\"http://html5tx.com/\">HTML5TX</a>, Austin, TX (October 8)</li>
+<li><a href=\"http://devreach.com/\">DevReach 2011</a>, Sofia, Bulgaria (October 17 - 18)</li>
+<li><a href=\"http://devconnections.com/home.aspx\">DevConnections 2011</a>, Las Vegas (October 31 - November 3)</li>
+<li><a href=\"http://vslive.com/events/orlando-2011/home.aspx\">Visual Studio LIVE</a>, Orlando (December 5 - 7)</li>
+</ul>
+
+<h3>What Do YOU Want to Learn?</h3>
+
+<p>Presentations are fun, especially when the topics are built around things you <em>really</em> want to learn about. HTML5, CSS3, JavaScript, and related technologies provide a <em>huge</em> surface area for learning, so what do <em>you</em> <strong>most</strong> most want to learn more about? Let me know by sending a tweet to <a href=\"http://twitter.com/htmlui\">@htmlui</a> and maybe I'll make it the subject of one of my next presentations! If I pick your idea, I'll be sure to feature your Twitter handle in the session introduction.</p>
+
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/CT6uln-D614\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-21-presentations-on-html5-css3.html"))) ("Site Templates with Static HTML and NodeJS" "<h2>100% HTML</h2>
+<p>The current version of htmlUI.com is 100%, pure, static HTML (and JavaScript). No dynamic server-side, run-time HTML generating framework involved. Why? A few reasons:</p>
+<ol>
+<li><strong>Performance:</strong> When all you're serving is HTML, performance and scalability are a non-issue (kind of a refreshing change of pace from dynamic runtimes)</li>
+<li><strong>Universal Development &amp; Hosting:</strong> In addition to doing all dev client-side, I wanted to easily develop across OSX, Windows, and anywhere else I had a few minutes to work. I also wanted the option to deploy the result to any host.</li>
+<li><strong>No Crutch:</strong> A key reason I'm doing htmlUI.com is to explore new \"HTML5\" ways for doing things in the browser. By avoiding a server-side technology (for now), I'm forced to find creative development solutions to problems that server-side frameworks make easy.</li>
+</ol>
+<p>True, at some point a server-side technology will be required, even if just to provide a RESTful service layer to an otherwise mostly JavaScript-driven application. But want to see how far I can go before that's required.</p>
+<p>Of course, eliminating the \"server crutch\" quickly introduced some challenging problems. One challenge jumped-forward from the rest: templates.</p>
+<h3>Site Templates with Static HTML</h3>
+<p>Even before the days of server-side languages, one of the key challenges involved in maintaining websites was keeping templates in sync. Early on, there were essentially two choices:</p>
+<ol>
+<li>Manually update every HTML page when a change to the \"template\" is made (time consuming, error prone)</li>
+<li>Use software, like Dreamweaver (remember Libraries and Templates?), to do HTML partitioning and pre-compilation (clunky, proprietary template technique)</li>
+</ol>
+<p>With the advent of dynamic web frameworks, like PHP or ASP, the process of compiling HTML moved to the runtime, eliminating manual precompiling steps. It solved a core problem, and it made sense at the time since more and more of a website's processing was happening on the server.</p>
+<p>But as the world explores more of a move back to the client, putting more of a site's front-end dynamic processing in the browser, the server-side runtime dependency for basic HTML templating feels overkill. Is there a better solution for modern client-side sites?</p>
+<h3>Client-side Templates</h3>
+<p>Let's be clear upfront: <strong>moving away from a server-side tech forces us to go back to some kind of HTML pre-compilation.</strong> </p>
+<p>Unfortunately, any kind of JavaScript/Ajaxy run-time templating has too many drawbacks to be a realistic solution. Such a dynamic approach would both penalize SEO (crawlers might not see dynamic content) and would cause a distracting load experience for users. In fact, I think the drawbacks are so widely accepted, few people have tried to go down this path (I can't find any examples on the web of people who have tried).</p>
+<p>That means we must use something that precompiles our HTML templates. But if we're not to go back to proprietary software/techniques or server-side runtimes, what do we use?</p>
+<h3>Enter NodeJS and DocPad</h3>
+<p>As it turns-out, there is a cool solution for this problem built on NodeJS called <a href=\"https://github.com/balupton/docpad/\">DocPad</a>. Built by <a href=\"http://balupton.com/\">Benjamin Loupton</a>, this simple project provides a simple, straightforward model for \"compiling\" HTML at design-time. Here's how it works:</p>
+<ul>
+<li>Define your template content in an HTML file (things like your common site header, footer, etc)</li>
+<li>Use the basic templating language to indicate where HTML body content should be rendered during the DocPad compile</li>
+<li>Create a content file and consume the template by including some special syntax at the top of the file</li>
+</ul>
+<p>For example, let's say you have this basic template:</p>
+<pre class=\"brush: html;\">
+&lt;html>
+&lt;head>...&lt;/head>
+&lt;body>
+&lt;header>...&lt;/header>
+&lt;div id=\"contentWrapper\">
+&lt;!--Render Body Content Here-->
+&lt;%-@content%>
+&lt;/div>
+&lt;footer>...&lt;/footer>
+&lt;/body>
+&lt;/html>
+</pre>
+<p>Notice the <code>&lt;%-@content%&gt;</code> marker? That's DocPad's convention for indicating where content from a page using this template should render. To then consume this template (let's assume it's called \"default.html\"), a content page might look like this:</p>
+<pre class=\"brush: html;\">
+- - -
+title: \"My page\"
+layout: 'default'
+- - -
+&lt;h1>My Page&lt;/h1>
+</pre>
+<p>When DocPad compiles the source for a site, the <code>&lt;h1&gt;My Page&lt;/h1&gt;</code> will get rendered in to the template, and the resulting output will be a complete HTML file (let's say, MyPage.html). <em>(As a side note, DocPad supports a few different HTML markup engines, including Markdown, Jade, and, of course, plain HTML. So we could have written the previous as <code>#My Page#</code>, saved the file as <code>MyPage.md</code>, and produced the same HTML output.)</em></p>
+<p>If we need to change the template, we simply change the <code>default.html</code> template file, reprocess the source with DocPad, and all of our HTML pages are painlessly updated.</p>
+<h3>Benefits of NodeJS</h3>
+<p>Since DocPad is running on NodeJS, some of Node's capabilities are also exposed to the templating process. For example, you can process a list of blog posts in a folder and automatically render a list of links while a template is being processed (that's what's happening on htmlUI!). With Node's ability to access to complete file system and its growing library of plug-ins, it gives you quite of a bit of template processing power.</p>
+<p>But if we're really being honest, more than anything it's a good excuse to get your feet wet with NodeJS, which has become very popular with the current surge in JavaScript interest.</p>
+<h3>It's like Jekyll <em>and</em> Hyde</h3>
+<p>There are some other popular static HTML site generators. The two that I encounter most often are <a href=\"http://jekyllrb.com/\">Jekyll</a>, and it's spiritual successor <a href=\"http://hyde.github.com/\">Hyde</a>. Both, like DocPad, give you a way to define templates and compile static HTML, ready for distribution. Jekyll is written in Ruby. Hyde is written in Python.</p>
+<p>Having never really used either, I can't comment fully on their power, but I can still recommend DocPad. If your goal, like mine, is to avoid \"committing\" to a dynamic runtime, DocPad is ideal. You don't have to \"go Ruby\" or \"go Python.\" You remain 100% HTML and JavaScript, even for the dynamic template processing.</p>
+<p>It's nothing agains Ruby or Python. It just comes back to my personal goal to see how far I can go with <em>just</em> JavaScript/HTML.</p>
+<h3>Final Result</h3>
+<p>Let's review:</p>
+<ul>
+<li><del>The</del> A goal for htmlUI.com is to do as much as possible without a server-side, dynamic runtime framework</li>
+<li>A key problem is template maintenance.</li>
+<li>DocPad is an elegant, NodeJS-based solution for dynamically generating static HTML</li>
+</ul>
+<p>All of htmlUI (including this blog) is compiled with DocPad. It has solved my immediate templating problem, letting me easily maintain site templates and content without involving a dynamic runtime.</p>
+<p>Where do I go from here? I'd like to work on a setup that would let me deploy site source from any computer to a server running DocPad, which would then automatically produce the static output and (maybe?) deploy results to my host. It is a <em>bit</em> of a pain to require a computer configured with Node and DocPad just to deploy a simple site update.</p>
+<p>But it works, and the site remains 100% HTML. Hope this helps others on the journey to move front-end processing back to the browser.</p>
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SOSpEyz-HEU\" height=\"1\" width=\"1\"/>" "http://feedproxy.google.com/~r/htmlui/~3/SOSpEyz-HEU/2011-08-01-site-templates-with-static-html-nodejs.html" (20022 13008) old 3 nil nil ((title nil "Site Templates with Static HTML and NodeJS") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/SOSpEyz-HEU/2011-08-01-site-templates-with-static-html-nodejs.html"))) (updated nil "2011-08-01T05:00:00Z") (id nil "http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html") (content ((type . "html")) "<h2>100% HTML</h2>
+
+<p>The current version of htmlUI.com is 100%, pure, static HTML (and JavaScript). No dynamic server-side, run-time HTML generating framework involved. Why? A few reasons:</p>
+
+<ol>
+<li><strong>Performance:</strong> When all you're serving is HTML, performance and scalability are a non-issue (kind of a refreshing change of pace from dynamic runtimes)</li>
+<li><strong>Universal Development &amp; Hosting:</strong> In addition to doing all dev client-side, I wanted to easily develop across OSX, Windows, and anywhere else I had a few minutes to work. I also wanted the option to deploy the result to any host.</li>
+<li><strong>No Crutch:</strong> A key reason I'm doing htmlUI.com is to explore new \"HTML5\" ways for doing things in the browser. By avoiding a server-side technology (for now), I'm forced to find creative development solutions to problems that server-side frameworks make easy.</li>
+</ol>
+
+<p>True, at some point a server-side technology will be required, even if just to provide a RESTful service layer to an otherwise mostly JavaScript-driven application. But want to see how far I can go before that's required.</p>
+
+<p>Of course, eliminating the \"server crutch\" quickly introduced some challenging problems. One challenge jumped-forward from the rest: templates.</p>
+
+<h3>Site Templates with Static HTML</h3>
+
+<p>Even before the days of server-side languages, one of the key challenges involved in maintaining websites was keeping templates in sync. Early on, there were essentially two choices:</p>
+
+<ol>
+<li>Manually update every HTML page when a change to the \"template\" is made (time consuming, error prone)</li>
+<li>Use software, like Dreamweaver (remember Libraries and Templates?), to do HTML partitioning and pre-compilation (clunky, proprietary template technique)</li>
+</ol>
+
+<p>With the advent of dynamic web frameworks, like PHP or ASP, the process of compiling HTML moved to the runtime, eliminating manual precompiling steps. It solved a core problem, and it made sense at the time since more and more of a website's processing was happening on the server.</p>
+
+<p>But as the world explores more of a move back to the client, putting more of a site's front-end dynamic processing in the browser, the server-side runtime dependency for basic HTML templating feels overkill. Is there a better solution for modern client-side sites?</p>
+
+<h3>Client-side Templates</h3>
+
+<p>Let's be clear upfront: <strong>moving away from a server-side tech forces us to go back to some kind of HTML pre-compilation.</strong> </p>
+
+<p>Unfortunately, any kind of JavaScript/Ajaxy run-time templating has too many drawbacks to be a realistic solution. Such a dynamic approach would both penalize SEO (crawlers might not see dynamic content) and would cause a distracting load experience for users. In fact, I think the drawbacks are so widely accepted, few people have tried to go down this path (I can't find any examples on the web of people who have tried).</p>
+
+<p>That means we must use something that precompiles our HTML templates. But if we're not to go back to proprietary software/techniques or server-side runtimes, what do we use?</p>
+
+<h3>Enter NodeJS and DocPad</h3>
+
+<p>As it turns-out, there is a cool solution for this problem built on NodeJS called <a href=\"https://github.com/balupton/docpad/\">DocPad</a>. Built by <a href=\"http://balupton.com/\">Benjamin Loupton</a>, this simple project provides a simple, straightforward model for \"compiling\" HTML at design-time. Here's how it works:</p>
+
+<ul>
+<li>Define your template content in an HTML file (things like your common site header, footer, etc)</li>
+<li>Use the basic templating language to indicate where HTML body content should be rendered during the DocPad compile</li>
+<li>Create a content file and consume the template by including some special syntax at the top of the file</li>
+</ul>
+
+<p>For example, let's say you have this basic template:</p>
+
+<pre class=\"brush: html;\">
+&lt;html>
+    &lt;head>...&lt;/head>
+    &lt;body>
+        &lt;header>...&lt;/header>
+        &lt;div id=\"contentWrapper\">
+        &lt;!--Render Body Content Here-->
+        &lt;%-@content%>
+        &lt;/div>
+        &lt;footer>...&lt;/footer>
+    &lt;/body>
+&lt;/html>
+</pre>
+
+<p>Notice the <code>&lt;%-@content%&gt;</code> marker? That's DocPad's convention for indicating where content from a page using this template should render. To then consume this template (let's assume it's called \"default.html\"), a content page might look like this:</p>
+
+<pre class=\"brush: html;\">
+    - - - 
+    title: \"My page\"
+    layout: 'default'
+    - - -
+    &lt;h1>My Page&lt;/h1>
+</pre>
+
+<p>When DocPad compiles the source for a site, the <code>&lt;h1&gt;My Page&lt;/h1&gt;</code> will get rendered in to the template, and the resulting output will be a complete HTML file (let's say, MyPage.html). <em>(As a side note, DocPad supports a few different HTML markup engines, including Markdown, Jade, and, of course, plain HTML. So we could have written the previous as <code>#My Page#</code>, saved the file as <code>MyPage.md</code>, and produced the same HTML output.)</em></p>
+
+<p>If we need to change the template, we simply change the <code>default.html</code> template file, reprocess the source with DocPad, and all of our HTML pages are painlessly updated.</p>
+
+<h3>Benefits of NodeJS</h3>
+
+<p>Since DocPad is running on NodeJS, some of Node's capabilities are also exposed to the templating process. For example, you can process a list of blog posts in a folder and automatically render a list of links while a template is being processed (that's what's happening on htmlUI!). With Node's ability to access to complete file system and its growing library of plug-ins, it gives you quite of a bit of template processing power.</p>
+
+<p>But if we're really being honest, more than anything it's a good excuse to get your feet wet with NodeJS, which has become very popular with the current surge in JavaScript interest.</p>
+
+<h3>It's like Jekyll <em>and</em> Hyde</h3>
+
+<p>There are some other popular static HTML site generators. The two that I encounter most often are <a href=\"http://jekyllrb.com/\">Jekyll</a>, and it's spiritual successor <a href=\"http://hyde.github.com/\">Hyde</a>. Both, like DocPad, give you a way to define templates and compile static HTML, ready for distribution. Jekyll is written in Ruby. Hyde is written in Python.</p>
+
+<p>Having never really used either, I can't comment fully on their power, but I can still recommend DocPad. If your goal, like mine, is to avoid \"committing\" to a dynamic runtime, DocPad is ideal. You don't have to \"go Ruby\" or \"go Python.\" You remain 100% HTML and JavaScript, even for the dynamic template processing.</p>
+
+<p>It's nothing agains Ruby or Python. It just comes back to my personal goal to see how far I can go with <em>just</em> JavaScript/HTML.</p>
+
+<h3>Final Result</h3>
+
+<p>Let's review:</p>
+
+<ul>
+<li><del>The</del> A goal for htmlUI.com is to do as much as possible without a server-side, dynamic runtime framework</li>
+<li>A key problem is template maintenance.</li>
+<li>DocPad is an elegant, NodeJS-based solution for dynamically generating static HTML</li>
+</ul>
+
+<p>All of htmlUI (including this blog) is compiled with DocPad. It has solved my immediate templating problem, letting me easily maintain site templates and content without involving a dynamic runtime.</p>
+
+<p>Where do I go from here? I'd like to work on a setup that would let me deploy site source from any computer to a server running DocPad, which would then automatically produce the static output and (maybe?) deploy results to my host. It is a <em>bit</em> of a pain to require a computer configured with Node and DocPad just to deploy a simple site update.</p>
+
+<p>But it works, and the site remains 100% HTML. Hope this helps others on the journey to move front-end processing back to the browser.</p>
+
+<p>-Todd</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SOSpEyz-HEU\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-08-01-site-templates-with-static-html-nodejs.html"))) ("(Not?) Another HTML5 Resource Site" "<p>Welcome to the re-boot of htmlUI.com, my personal playground and proving ground for so-called \"HTML5\" techniques. htmlUI is built using many new HTML5, CSS3, and JavaScript goodies on the front-end, while employing some interesting new tools for modern, standards-based web development on the backend, like <a href=\"http://lesscss.org\">LESS</a>, <a href=\"https://github.com/balupton/docpad\">DocPad</a>, <a href=\"http://jashkenas.github.com/coffee-script/\">CoffeeScript</a>, <a href=\"http://nodejs.org/\">NodeJS</a>, among others.</p>
+<h3>Another HTML5 site?</h3>
+<p>Yes. Another HTML5 site, but not an echo chamber. I value original ideas, and I aim to deliver that through this blog and the demos featured on htmlUI.</p>
+<p><strong><em>What's the angle?</em></strong></p>
+<p>While HTML5 (and the related) are fun, the \"real world\" usually won't let us instantly ignore all non-HTML5 browsers. htmlUI will highlight techniques that help modern web developers push the envelope while not leaving most (some?) older browsers out to dry.</p>
+<p><strong><em>Including IE6?</em></strong></p>
+<p>Sometimes. But I make fewer promises for <a href=\"http://www.ie6countdown.com/\">that old dog</a>. Some techniques highlighted on htmlUI will make concessions to play-nice with our standards nemisis, but at other times IE6 will be left for dead (where it generally belongs).</p>
+<h3>htmlUI on Twitter</h3>
+<p>htmlUI is as much about providing regular, useful updates on Twitter as it is providing this more \"traditional\" resource site. For quick links to cool HTML5 techniques, demos, or articles, <a href=\"http://twitter.com/htmlui\">@htmlUI on Twitter</a> should be one thing you follow.</p>
+<p><strong><em>I don't like Twitter.</em></strong></p>
+<p>No problem. The htmlUI.com homepage features a few of the latest useful updates from @htmlUI, so if you avoid Twitter like that chatty cousin at a family reunion, just visit <a href=\"http://htmlui.com\">this site's homepage</a> for regular updates.</p>
+<h3>What comes next?</h3>
+<p>What exists today is just a start. This is a living, evolving experimental site. Through the demos, articles, and information shared on htmlUI, you'll learn from my experience using and deploying HTML5 so you can more quickly master it on your own.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SLNEtW61jEs\" height=\"1\" width=\"1\"/>" "http://feedproxy.google.com/~r/htmlui/~3/SLNEtW61jEs/2011-07-18-another-html5-resource-site.html" (20003 48592) old 4 nil nil ((title nil "(Not?) Another HTML5 Resource Site") (link ((href . "http://feedproxy.google.com/~r/htmlui/~3/SLNEtW61jEs/2011-07-18-another-html5-resource-site.html"))) (updated nil "2011-07-18T05:00:00Z") (id nil "http://htmlui.com/blog/2011-07-18-another-html5-resource-site.html") (content ((type . "html")) "<p>Welcome to the re-boot of htmlUI.com, my personal playground and proving ground for so-called \"HTML5\" techniques. htmlUI is built using many new HTML5, CSS3, and JavaScript goodies on the front-end, while employing some interesting new tools for modern, standards-based web development on the backend, like <a href=\"http://lesscss.org\">LESS</a>, <a href=\"https://github.com/balupton/docpad\">DocPad</a>, <a href=\"http://jashkenas.github.com/coffee-script/\">CoffeeScript</a>, <a href=\"http://nodejs.org/\">NodeJS</a>, among others.</p>
+
+<h3>Another HTML5 site?</h3>
+
+<p>Yes. Another HTML5 site, but not an echo chamber. I value original ideas, and I aim to deliver that through this blog and the demos featured on htmlUI.</p>
+
+<p><strong><em>What's the angle?</em></strong></p>
+
+<p>While HTML5 (and the related) are fun, the \"real world\" usually won't let us instantly ignore all non-HTML5 browsers. htmlUI will highlight techniques that help modern web developers push the envelope while not leaving most (some?) older browsers out to dry.</p>
+
+<p><strong><em>Including IE6?</em></strong></p>
+
+<p>Sometimes. But I make fewer promises for <a href=\"http://www.ie6countdown.com/\">that old dog</a>. Some techniques highlighted on htmlUI will make concessions to play-nice with our standards nemisis, but at other times IE6 will be left for dead (where it generally belongs).</p>
+
+<h3>htmlUI on Twitter</h3>
+
+<p>htmlUI is as much about providing regular, useful updates on Twitter as it is providing this more \"traditional\" resource site. For quick links to cool HTML5 techniques, demos, or articles, <a href=\"http://twitter.com/htmlui\">@htmlUI on Twitter</a> should be one thing you follow.</p>
+
+<p><strong><em>I don't like Twitter.</em></strong></p>
+
+<p>No problem. The htmlUI.com homepage features a few of the latest useful updates from @htmlUI, so if you avoid Twitter like that chatty cousin at a family reunion, just visit <a href=\"http://htmlui.com\">this site's homepage</a> for regular updates.</p>
+
+<h3>What comes next?</h3>
+
+<p>What exists today is just a start. This is a living, evolving experimental site. Through the demos, articles, and information shared on htmlUI, you'll learn from my experience using and deploying HTML5 so you can more quickly master it on your own.</p><img src=\"http://feeds.feedburner.com/~r/htmlui/~4/SLNEtW61jEs\" height=\"1\" width=\"1\"/>") (feedburner:origLink nil "http://htmlui.com/blog/2011-07-18-another-html5-resource-site.html"))))

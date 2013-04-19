@@ -55,7 +55,7 @@
 (setq newsticker-html-renderer 'w3m-region)
 
 ; We want our feeds pulled every 10 minutes.
-(setq newsticker-retrieval-interval 600)
+(setq newsticker-retrieval-interval 6000)
 
 ; Setup the feeds.
 (setq newsticker-url-list-defaults nil)
@@ -549,3 +549,16 @@
 
 ; Don't forget to start it!
 (newsticker-start)
+
+;;Using customize-group -> 'newsticker' for change retrieval method to wget (to prevent collapse emacs)
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(newsticker-retrieval-method (quote extern)))
+
+;; For add groups of feeds use M-x newsticker-group-add-group NAME PARENT 
+;; -> M-x newsticker-treeview-save
+;; For move feeds to groups M-x newsticker-group-move-feed NAME GROUP 
+;; -> M-x newsticker-treeview-save

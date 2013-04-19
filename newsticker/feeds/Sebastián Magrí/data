@@ -1,0 +1,720 @@
+;; -*- coding: utf-8 -*-
+(("Sebastián Magrí" "Latest entries in sebasmagri.com" "http://sebasmagri.alwaysdata.net/" (20845 61646 234273) feed 0 nil nil ((title nil "Sebastián Magrí") (link nil "http://sebasmagri.alwaysdata.net/") (description nil "Latest entries in sebasmagri.com") (atom:link ((href . "http://sebasmagri.alwaysdata.net/feed.rss") (rel . "self"))) (language nil "es-ve") (copyright nil "Sebastián Magrí 2011. Algunos Derechos Reservados.") (lastBuildDate nil "Thu, 03 Feb 2011 09:14:02 -0530") (item nil (title nil "sebasmagri's overlay disponible en layman") (link nil "http://sebasmagri.alwaysdata.net/sebasmagris-overlay-disponible-en-layman") (description nil "<p>El 28 de Enero fue añadido al <a class=\"reference external\" href=\"http://www.gentoo.org/proj/en/overlays/repositories.xml\">repositories.xml</a> de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> el <a class=\"reference external\" href=\"http://hg.sebasmagri.com/sebasmagri-overlay/\">overlay</a> que mantengo entre mis <a class=\"reference external\" href=\"http://hg.sebasmagri.com/\">repos</a>.</p>
+<p>Entre otras cosas, los usuarios de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> y sus derivados tendrán acceso a ebuilds para el cliente de microblogging <a class=\"reference external\" href=\"http://www.turpial.org.ve/\">Turpial</a>, el frontend para <a class=\"reference external\" href=\"http://www.scummvm.org/\">Scummvm</a> y <a class=\"reference external\" href=\"http://www.dosbox.com/\">DosBox</a> <a class=\"reference external\" href=\"http://www.gr-lida.org/\">GR-lida</a> y el runtime de <a class=\"reference external\" href=\"http://get.adobe.com/air/\">Air-2.5</a></p>
+<p>Para añadirlo a su sistema:</p>
+<pre class=\"literal-block\">
+# emerge layman
+# layman -a sebasmagri
+</pre>
+") (pubDate nil "Thu, 03 Feb 2011 09:14:02 -0530") (guid nil "http://sebasmagri.alwaysdata.net/sebasmagris-overlay-disponible-en-layman")) (item nil (title nil "Esqueleto para proyectos Django, porque la forma importa") (link nil "http://sebasmagri.alwaysdata.net/esqueleto-para-proyectos-django-porque-la-forma-importa") (description nil "<p>Definir la estructura correcta es un punto clave para el éxito de un proyecto de desarrollo en cualquier ámbito. En el caso de <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a>, es necesario que la forma en la que coloquemos los ficheros dentro de nuestro proyecto nos permita tener escalabilidad en el proyecto, nos permita añadir fácilmente nuevas aplicaciones e integrarlas y probarlas continuamente, funcione tanto en el entorno de desarrollo como en el de producción y facilite el despliegue, entre otros. En resumen, es necesario evitarnos malos ratos y optimizar el tiempo de desarrollo.</p>
+<p>En la entrada <a class=\"reference external\" href=\"http://sebasmagri.local/2010/aug/12/pip-fabric-y-virtualenv-herramientas-para-el-desar/\">Fabric, Pip y Virtualenv, esteroides para el desarrollo con Python</a> les presenté a 3 buenos amigos para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. La estructura que utilizo para mis proyectos en <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a> está muy influenciada por el uso de estas herramientas en el proceso de desarrollo.</p>
+<p>Dejando atrás los rodeos...</p>
+<pre class=\"literal-block\">
+nombre del sitio/
+    servidor web/ (puede haber varios si es necesario)
+        ficheros de configuración del servidor web
+    env/
+       espacio para el virtualenv del proyecto
+    fab/
+        fabfile.py (script para Fabric)
+    pip/
+        reqs.txt (fichero de dependencias para Pip)
+    public/ (información pública del sitio)
+        css/
+        files/
+        fonts/
+        images/
+        js/
+    nombre del proyecto/ (como lo genera django-admin startproject)
+        locale/
+            ficheros de i18n del proyecto
+        templates/
+        __init__.py
+        manage.py
+        settings.py
+        urls.py
+</pre>
+<p>Esta estructura base se puede colocar en un control de versiones con dos objetivos; para mejorarlo a medida de que se vayan perfeccionando las prácticas de desarrollo, y para mezclarlo al inicio de los nuevos proyectos. Éste en particular está disponible entre mis repos <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a>, con un <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/\">mirror</a> en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>. Se aceptan sugerencias por este medio, o con <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/issues/\">issues</a> o pull requests en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>.</p>
+") (pubDate nil "Sat, 14 Aug 2010 20:57:36 -0530") (guid nil "http://sebasmagri.alwaysdata.net/esqueleto-para-proyectos-django-porque-la-forma-importa")) (item nil (title nil "Pip, Fabric y Virtualenv, herramientas para el desarrollo Python") (link nil "http://sebasmagri.alwaysdata.net/pip-fabric-y-virtualenv-herramientas-para-el-desarrollo-python") (description nil "<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a>, <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> y <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> son tres herramientas extremadamente útiles y favorables para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. Estas permiten automatizar el proceso de instalación de dependencias y despliegue de proyectos en un ambiente aislado tanto para producción como para pruebas funcionales durante el desarrollo.</p>
+<div class=\"section\" id=\"pip\">
+<h1>Pip</h1>
+<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a> es una herramienta de línea de comandos desarrollada para mejorar el comportamiento del <em>easy_install</em> de <a class=\"reference external\" href=\"http://www.python.org/files/sigs/sc_submission.html\">distutils</a> y solventar sus carencias. Entre sus principales características están:</p>
+<ul class=\"simple\">
+<li>Búsqueda de paquetes en <a class=\"reference external\" href=\"http://pypi.python.org/pypi/\">PyPi</a>.</li>
+<li>Instalación y <strong>desinstalación</strong> de paquetes.</li>
+<li>Instalación de paquetes desde sus sistemas de control de versiones (añade <a class=\"reference external\" href=\"http://www.git-scm.com/\">Git</a>, <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a> y <a class=\"reference external\" href=\"http://bazaar-vcs.org/\">Bazaar</a> a los soportados por <em>easy_install</em>)</li>
+<li>Puede tomar un listado de paquetes como argumento en <em>batch</em> desde un fichero.</li>
+<li>Puede tomar un <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> como argumento e instalar y desinstalar directamente en el ambiente virtual.</li>
+<li>Creación de <strong>bundles</strong>, archivos comprimidos que contienen un conjunto de paquetes.</li>
+</ul>
+<p>Como abreboca:</p>
+<pre class=\"literal-block\">
+$ pip --help
+Usage: pip COMMAND [OPTIONS]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            Show help
+  -E DIR, --environment=DIR
+                        virtualenv environment to run pip in (either give the
+                        interpreter or the environment base directory)
+  -s, --enable-site-packages
+                        Include site-packages in virtualenv if one is to be
+                        created. Ignored if --environment is not used or the
+                        virtualenv already exists.
+  -v, --verbose         Give more output
+  -q, --quiet           Give less output
+  --log=FILENAME        Log file where a complete (maximum verbosity) record
+                        will be kept
+  --proxy=PROXY         Specify a proxy in the form
+                        user:passwd&#64;proxy.server:port. Note that the
+                        user:password&#64; is optional and required only if you
+                        are behind an authenticated proxy.  If you provide
+                        user&#64;proxy.server:port then you will be prompted for a
+                        password.
+  --timeout=SECONDS, --default-timeout=SECONDS
+                        Set the socket timeout (default 15 seconds)
+
+Commands available:
+  bundle: Create pybundles (archives containing multiple packages)
+  freeze: Output all currently installed packages (exact versions) to stdout
+  help: Show available commands
+  install: Install packages
+  search: Search PyPI
+  uninstall: Uninstall packages
+  unzip: Unzip individual packages
+  zip: Zip individual packages
+</pre>
+</div>
+<div class=\"section\" id=\"fabric\">
+<h1>Fabric</h1>
+<p><a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es un módulo <a class=\"reference external\" href=\"http://python.org/\">Python</a> que viene acompañado de la herramienta de línea de comandos <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fab.html\">fab</a>, y provee un conjunto de métodos que potencian el despliegue de aplicaciones o proyectos entre varias máquinas usando <strong>SSH</strong>.</p>
+<p>El centro del trabajo con <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es el <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fabfiles.html\">fabfile</a>, en el cual se definen acciones haciendo uso de métodos provistos por el módulo <strong>fabric</strong>, que permiten, entre otras cosas, cargar y descargar ficheros en un host remoto o ejecutar comandos en un <em>shell</em> <strong>local</strong> o <strong>remoto</strong>.</p>
+<p>El <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/tutorial.html\">Tutorial</a> es un muy buen sitio para comenzar, pero mientras, el abreboca:</p>
+<pre class=\"literal-block\">
+$ fab --help
+Usage: fab [options] command[:arg1,arg2=val2,host=foo,hosts='h1;h2',...] ...
+
+Options:
+  -h, --help            show this help message and exit
+  -V, --version         show program's version number and exit
+  -l, --list            print list of possible commands and exit
+  -d COMMAND, --display=COMMAND
+                        print detailed info about a given command and exit
+  -r, --reject-unknown-hosts
+                        reject unknown hosts
+  -D, --disable-known-hosts
+                        do not load user known_hosts file
+  -u USER, --user=USER  username to use when connecting to remote hosts
+  -p PASSWORD, --password=PASSWORD
+                        password for use with authentication and/or sudo
+  -H HOSTS, --hosts=HOSTS
+                        comma-separated list of hosts to operate on
+  -R ROLES, --roles=ROLES
+                        comma-separated list of roles to operate on
+  -i KEY_FILENAME       path to SSH private key file. May be repeated.
+  -a, --no_agent        don't use the running SSH agent
+  -k, --no-keys         don't load private key files from ~/.ssh/
+  -f FABFILE, --fabfile=FABFILE
+                        Python module file to import, e.g. '../other.py'
+  -w, --warn-only       warn, instead of abort, when commands fail
+  -s SHELL, --shell=SHELL
+                        specify a new shell, defaults to '/bin/bash -l -c'
+  -c RCFILE, --config=RCFILE
+                        specify location of config file to use
+  --hide=LEVELS         comma-separated list of output levels to hide
+  --show=LEVELS         comma-separated list of output levels to show
+</pre>
+</div>
+<div class=\"section\" id=\"virtualenv\">
+<h1>Virtualenv</h1>
+<p><a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> es una herramienta <strong>esencial</strong>, léase <strong>ESENCIAL</strong>, para el desarrollo en <a class=\"reference external\" href=\"http://python.org/\">Python</a>, que nos permite crear <em>ambientes aislados</em> para la ejecución de nuestro código.</p>
+<p>Comúnmente nos encontramos con que las máquinas usadas para el desarrollo terminan infestadas de dependencias usadas para pruebas de concepto, proyectos o experimentos, y cuándo nos damos cuenta es casi imposible limpiar el sistema y terminamos rompiendo otros paquetes que entran en conflicto con las versiones que hemos instalado.</p>
+<p>Es importante declarar como <strong>pecado mortal</strong> la instalación de dependencias específicas a un proyecto en <cite>/usr/lib/pythonX.X/site-packages/</cite>, en cambio, se recomienda utilizar un entorno virtual dedicado para el mismo, y ahí es donde entra en juego <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>.</p>
+<p>Supongamos que vamos a comenzar un nuevo proyecto <em>foo</em>, los pasos a seguir serían, más o menos, los siguientes:</p>
+<pre class=\"literal-block\">
+$ mkdir -p foo/{env,src}
+$ cd foo/
+$ virtualenv --distribute env/
+$ source env/bin/activate
+(env) $ pip -E env/ install dependencia1 dependencia2 dependencia3
+(env) $ cd src/
+(env) $ $EDITOR main.py
+</pre>
+<p>Esto nos deja con un entorno dentro de <tt class=\"docutils literal\"><span class=\"pre\">foo/env/</span></tt> con las dependencias específicas del proyecto, el cual <em>activamos</em> con <cite>source env/bin/activate</cite>. Al activar el entorno la variable de entorno del <em>shell</em> <tt class=\"docutils literal\"><span class=\"pre\">PYTHONPATH</span></tt> (o <tt class=\"docutils literal\"><span class=\"pre\">sys.path</span></tt> en el <em>prompt</em> de <a class=\"reference external\" href=\"http://python.org/\">Python</a>) es actualizada para contener el directorio <cite>env/lib/pythonX.X/site-packages</cite> donde se instalarán los módulos con <tt class=\"docutils literal\"><span class=\"pre\">pip</span> <span class=\"pre\">-E</span> <span class=\"pre\">env/</span> <span class=\"pre\">install</span> <span class=\"pre\">...</span></tt></p>
+<p>Para más, visite la página principal de <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>, por lo pronto:</p>
+<pre class=\"literal-block\">
+$ virtualenv -h
+Usage: virtualenv [OPTIONS] DEST_DIR
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -v, --verbose         Increase verbosity
+  -q, --quiet           Decrease verbosity
+  -p PYTHON_EXE, --python=PYTHON_EXE
+                        The Python interpreter to use, e.g.,
+                        --python=python2.5 will use the python2.5 interpreter
+                        to create the new environment.  The default is the
+                        interpreter that virtualenv was installed with
+                        (/usr/bin/python2.6)
+  --clear               Clear out the non-root install and start from scratch
+  --no-site-packages    Don't give access to the global site-packages dir to
+                        the virtual environment
+  --unzip-setuptools    Unzip Setuptools or Distribute when installing it
+  --relocatable         Make an EXISTING virtualenv environment relocatable.
+                        This fixes up scripts and makes all .pth files
+                        relative
+  --distribute          Use Distribute instead of Setuptools. Set environ
+                        variableVIRTUALENV_USE_DISTRIBUTE to make it the
+                        default
+</pre>
+</div>
+") (pubDate nil "Thu, 12 Aug 2010 19:30:44 -0530") (guid nil "http://sebasmagri.alwaysdata.net/pip-fabric-y-virtualenv-herramientas-para-el-desarrollo-python")) (item nil (title nil "Detectar modem USB en Linux con reglas de udev") (link nil "http://sebasmagri.alwaysdata.net/detectar-modem-usb-en-linux-con-reglas-de-udev") (description nil "<p>En la actualidad los dispositivos USB de banda ancha móvil (<em>mobile broadband</em>) se han hecho populares debido a su practicidad, la necesidad de movilidad y bajo costo. Estos dispositivos se distribuyen con el <em>firmware</em> integrado, en la mayor parte de las ocasiones, para <em>MS Windws</em> y <em>Mac OS X</em>. En <em>Linux</em>, aunque en versiones recientes de <tt class=\"docutils literal\"><span class=\"pre\">udev</span></tt> y <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> se ha mejorado el soporte y algunas distribuciones ya incluyen reglas de identificación para los mismos, es necesario modificar el proceso de detección de los mismos.</p>
+<div class=\"section\" id=\"ingredientes\">
+<h1>Ingredientes</h1>
+<ul class=\"simple\">
+<li><strong>Linux</strong> con núcleo &gt;=2.6.29</li>
+<li><strong>Udev</strong> con extras &gt;=151</li>
+<li><strong>usbutils</strong> &gt;=0.86</li>
+</ul>
+<p>En Gentoo/Linux:</p>
+<pre class=\"literal-block\">
+# echo 'sys-fs/udev extras' &gt;&gt; /etc/portage/package.use
+# emerge \\&gt;=sys-kernel/gentoo-sources-2.6.29 \\&gt;=sys-apps/udev-151 \\&gt;=sys-apps/usbutils-0.86
+</pre>
+<div class=\"section\" id=\"consideraciones-previas\">
+<h2>Consideraciones Previas</h2>
+<p>Compruebe que el dispositivo no es detectado actualmente como modem serial ejecutando</p>
+<pre class=\"literal-block\">
+$ dmesg | grep tty
+</pre>
+<p>Si en la salida puede ver algo como</p>
+<pre class=\"literal-block\">
+usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+</pre>
+<p>o,</p>
+<pre class=\"literal-block\">
+cdc_acm 3-1:1.10: ttyACM0: USB ACM device
+</pre>
+<p>entonces su dispositivo ya es detectado correctamente y no necesita modificar nada. Conectese usando <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> o <tt class=\"docutils literal\"><span class=\"pre\">wvdial</span></tt>.</p>
+<p>Si su dispositivo no está siendo detectado, será necesario crear una regla especial para udev.</p>
+</div>
+</div>
+<div class=\"section\" id=\"procedimiento\">
+<h1>Procedimiento</h1>
+<div class=\"section\" id=\"determinar-el-identificador-del-vendedor-y-el-del-producto\">
+<h2>Determinar el identificador del vendedor y el del producto</h2>
+<p>Ejecutar</p>
+<pre class=\"literal-block\">
+# lsusb
+Bus 001 Device 113: ID 12d1:1003 Huawei Technologies Co., Ltd. E220 HSDPA Modem / E270 HSDPA/HSUPA Modem
+Bus 001 Device 002: ID 0c45:62c0 Bar Baz USB 2.0 Camera
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+</pre>
+<p>La primera línea de la salida nos muestra el dispositivo que deseamos utilizar para conectarnos a internet. Tomamos nota de el <tt class=\"docutils literal\"><span class=\"pre\">ID</span></tt> del dispositivo,  <tt class=\"docutils literal\"><span class=\"pre\">12d1:1003</span></tt>. La primera parte, <tt class=\"docutils literal\"><span class=\"pre\">12d1</span></tt> es la identificación del vendedor, en este caso <em>Huawei</em>, y la segunda parte, <tt class=\"docutils literal\"><span class=\"pre\">1003</span></tt>, es la identificación del producto. Estos dos atributos son suficientes para que udev reconozca el dispositivo.</p>
+</div>
+<div class=\"section\" id=\"crear-la-regla-de-udev-adecuada-para-el-dispositivo\">
+<h2>Crear la regla de udev adecuada para el dispositivo</h2>
+<p>La regla de udev que crearemos está compuesta por dos atributos que deberán coincidir en el dispositivo, y una acción a ejecutar cuando ambos coincidan. Creamos un fichero en <tt class=\"docutils literal\"><span class=\"pre\">/etc/udev/rules.d/</span></tt> con nombre <tt class=\"docutils literal\"><span class=\"pre\">67-option-modeswitch.rules</span></tt> (no es obligatorio, solo afecta el orden de evaluación de la regla) y agregamos las siguientes líneas al mismo:</p>
+<pre class=\"literal-block\">
+ATTRS{idVendor} == &quot;12d1&quot;
+ATTRS{idProduct} == &quot;1446&quot;
+RUN+=&quot;modem-modeswitch -v 0x%s{idVendor} -p 0x%s{idProduct} -t option-zerocd&quot;
+</pre>
+<p>En <tt class=\"docutils literal\"><span class=\"pre\">RUN</span></tt> se cambia el modo del dispositivo para que funcione como modem con modem-modeswitch, parte de los extras de udev.</p>
+</div>
+<div class=\"section\" id=\"reconectar-el-dispositivo\">
+<h2>Reconectar el dispositivo</h2>
+<p>Desconecte y vuelva a conectar el dispositivo y compruebe con el procedimiento descrito en las <a class=\"reference internal\" href=\"#consideraciones-previas\">Consideraciones Previas</a> que su dispositivo es detectado como modem serial.</p>
+<p><em>Nota:</em> la detección del dispositivo puede tomar un tiempo mayor al que tomaría sin una regla udev.</p>
+</div>
+<div class=\"section\" id=\"referencias\">
+<h2>Referencias</h2>
+<ul class=\"simple\">
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=lsusb&amp;section=all\">lsusb</a>.</li>
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=udev&amp;section=all\">udev</a>.</li>
+</ul>
+</div>
+</div>
+") (pubDate nil "Sat, 07 Aug 2010 19:49:44 -0530") (guid nil "http://sebasmagri.alwaysdata.net/detectar-modem-usb-en-linux-con-reglas-de-udev")))) ("sebasmagri's overlay disponible en layman" "<p>El 28 de Enero fue añadido al <a class=\"reference external\" href=\"http://www.gentoo.org/proj/en/overlays/repositories.xml\">repositories.xml</a> de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> el <a class=\"reference external\" href=\"http://hg.sebasmagri.com/sebasmagri-overlay/\">overlay</a> que mantengo entre mis <a class=\"reference external\" href=\"http://hg.sebasmagri.com/\">repos</a>.</p>
+<p>Entre otras cosas, los usuarios de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> y sus derivados tendrán acceso a ebuilds para el cliente de microblogging <a class=\"reference external\" href=\"http://www.turpial.org.ve/\">Turpial</a>, el frontend para <a class=\"reference external\" href=\"http://www.scummvm.org/\">Scummvm</a> y <a class=\"reference external\" href=\"http://www.dosbox.com/\">DosBox</a> <a class=\"reference external\" href=\"http://www.gr-lida.org/\">GR-lida</a> y el runtime de <a class=\"reference external\" href=\"http://get.adobe.com/air/\">Air-2.5</a></p>
+<p>Para añadirlo a su sistema:</p>
+<pre class=\"literal-block\">
+# emerge layman
+# layman -a sebasmagri
+</pre>" "http://sebasmagri.alwaysdata.net/sebasmagris-overlay-disponible-en-layman" (19786 48946) new 1 nil nil ((title nil "sebasmagri's overlay disponible en layman") (link nil "http://sebasmagri.alwaysdata.net/sebasmagris-overlay-disponible-en-layman") (description nil "<p>El 28 de Enero fue añadido al <a class=\"reference external\" href=\"http://www.gentoo.org/proj/en/overlays/repositories.xml\">repositories.xml</a> de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> el <a class=\"reference external\" href=\"http://hg.sebasmagri.com/sebasmagri-overlay/\">overlay</a> que mantengo entre mis <a class=\"reference external\" href=\"http://hg.sebasmagri.com/\">repos</a>.</p>
+<p>Entre otras cosas, los usuarios de <a class=\"reference external\" href=\"http://www.gentoo.org/\">Gentoo</a> y sus derivados tendrán acceso a ebuilds para el cliente de microblogging <a class=\"reference external\" href=\"http://www.turpial.org.ve/\">Turpial</a>, el frontend para <a class=\"reference external\" href=\"http://www.scummvm.org/\">Scummvm</a> y <a class=\"reference external\" href=\"http://www.dosbox.com/\">DosBox</a> <a class=\"reference external\" href=\"http://www.gr-lida.org/\">GR-lida</a> y el runtime de <a class=\"reference external\" href=\"http://get.adobe.com/air/\">Air-2.5</a></p>
+<p>Para añadirlo a su sistema:</p>
+<pre class=\"literal-block\">
+# emerge layman
+# layman -a sebasmagri
+</pre>
+") (pubDate nil "Thu, 03 Feb 2011 09:14:02 -0530") (guid nil "http://sebasmagri.alwaysdata.net/sebasmagris-overlay-disponible-en-layman"))) ("Esqueleto para proyectos Django, porque la forma importa" "<p>Definir la estructura correcta es un punto clave para el éxito de un proyecto de desarrollo en cualquier ámbito. En el caso de <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a>, es necesario que la forma en la que coloquemos los ficheros dentro de nuestro proyecto nos permita tener escalabilidad en el proyecto, nos permita añadir fácilmente nuevas aplicaciones e integrarlas y probarlas continuamente, funcione tanto en el entorno de desarrollo como en el de producción y facilite el despliegue, entre otros. En resumen, es necesario evitarnos malos ratos y optimizar el tiempo de desarrollo.</p>
+<p>En la entrada <a class=\"reference external\" href=\"http://sebasmagri.local/2010/aug/12/pip-fabric-y-virtualenv-herramientas-para-el-desar/\">Fabric, Pip y Virtualenv, esteroides para el desarrollo con Python</a> les presenté a 3 buenos amigos para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. La estructura que utilizo para mis proyectos en <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a> está muy influenciada por el uso de estas herramientas en el proceso de desarrollo.</p>
+<p>Dejando atrás los rodeos...</p>
+<pre class=\"literal-block\">
+nombre del sitio/
+servidor web/ (puede haber varios si es necesario)
+ficheros de configuración del servidor web
+env/
+espacio para el virtualenv del proyecto
+fab/
+fabfile.py (script para Fabric)
+pip/
+reqs.txt (fichero de dependencias para Pip)
+public/ (información pública del sitio)
+css/
+files/
+fonts/
+images/
+js/
+nombre del proyecto/ (como lo genera django-admin startproject)
+locale/
+ficheros de i18n del proyecto
+templates/
+__init__.py
+manage.py
+settings.py
+urls.py
+</pre>
+<p>Esta estructura base se puede colocar en un control de versiones con dos objetivos; para mejorarlo a medida de que se vayan perfeccionando las prácticas de desarrollo, y para mezclarlo al inicio de los nuevos proyectos. Éste en particular está disponible entre mis repos <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a>, con un <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/\">mirror</a> en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>. Se aceptan sugerencias por este medio, o con <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/issues/\">issues</a> o pull requests en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>.</p>" "http://sebasmagri.alwaysdata.net/esqueleto-para-proyectos-django-porque-la-forma-importa" (19559 20632) new 2 nil nil ((title nil "Esqueleto para proyectos Django, porque la forma importa") (link nil "http://sebasmagri.alwaysdata.net/esqueleto-para-proyectos-django-porque-la-forma-importa") (description nil "<p>Definir la estructura correcta es un punto clave para el éxito de un proyecto de desarrollo en cualquier ámbito. En el caso de <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a>, es necesario que la forma en la que coloquemos los ficheros dentro de nuestro proyecto nos permita tener escalabilidad en el proyecto, nos permita añadir fácilmente nuevas aplicaciones e integrarlas y probarlas continuamente, funcione tanto en el entorno de desarrollo como en el de producción y facilite el despliegue, entre otros. En resumen, es necesario evitarnos malos ratos y optimizar el tiempo de desarrollo.</p>
+<p>En la entrada <a class=\"reference external\" href=\"http://sebasmagri.local/2010/aug/12/pip-fabric-y-virtualenv-herramientas-para-el-desar/\">Fabric, Pip y Virtualenv, esteroides para el desarrollo con Python</a> les presenté a 3 buenos amigos para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. La estructura que utilizo para mis proyectos en <a class=\"reference external\" href=\"http://djangoproject.com/\">Django</a> está muy influenciada por el uso de estas herramientas en el proceso de desarrollo.</p>
+<p>Dejando atrás los rodeos...</p>
+<pre class=\"literal-block\">
+nombre del sitio/
+    servidor web/ (puede haber varios si es necesario)
+        ficheros de configuración del servidor web
+    env/
+       espacio para el virtualenv del proyecto
+    fab/
+        fabfile.py (script para Fabric)
+    pip/
+        reqs.txt (fichero de dependencias para Pip)
+    public/ (información pública del sitio)
+        css/
+        files/
+        fonts/
+        images/
+        js/
+    nombre del proyecto/ (como lo genera django-admin startproject)
+        locale/
+            ficheros de i18n del proyecto
+        templates/
+        __init__.py
+        manage.py
+        settings.py
+        urls.py
+</pre>
+<p>Esta estructura base se puede colocar en un control de versiones con dos objetivos; para mejorarlo a medida de que se vayan perfeccionando las prácticas de desarrollo, y para mezclarlo al inicio de los nuevos proyectos. Éste en particular está disponible entre mis repos <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a>, con un <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/\">mirror</a> en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>. Se aceptan sugerencias por este medio, o con <a class=\"reference external\" href=\"http://github.com/sebasmagri/django-project-skeleton/issues/\">issues</a> o pull requests en <a class=\"reference external\" href=\"http://github.com/sebasmagri/\">GitHub</a>.</p>
+") (pubDate nil "Sat, 14 Aug 2010 20:57:36 -0530") (guid nil "http://sebasmagri.alwaysdata.net/esqueleto-para-proyectos-django-porque-la-forma-importa"))) ("Pip, Fabric y Virtualenv, herramientas para el desarrollo Python" "<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a>, <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> y <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> son tres herramientas extremadamente útiles y favorables para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. Estas permiten automatizar el proceso de instalación de dependencias y despliegue de proyectos en un ambiente aislado tanto para producción como para pruebas funcionales durante el desarrollo.</p>
+<div class=\"section\" id=\"pip\">
+<h1>Pip</h1>
+<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a> es una herramienta de línea de comandos desarrollada para mejorar el comportamiento del <em>easy_install</em> de <a class=\"reference external\" href=\"http://www.python.org/files/sigs/sc_submission.html\">distutils</a> y solventar sus carencias. Entre sus principales características están:</p>
+<ul class=\"simple\">
+<li>Búsqueda de paquetes en <a class=\"reference external\" href=\"http://pypi.python.org/pypi/\">PyPi</a>.</li>
+<li>Instalación y <strong>desinstalación</strong> de paquetes.</li>
+<li>Instalación de paquetes desde sus sistemas de control de versiones (añade <a class=\"reference external\" href=\"http://www.git-scm.com/\">Git</a>, <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a> y <a class=\"reference external\" href=\"http://bazaar-vcs.org/\">Bazaar</a> a los soportados por <em>easy_install</em>)</li>
+<li>Puede tomar un listado de paquetes como argumento en <em>batch</em> desde un fichero.</li>
+<li>Puede tomar un <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> como argumento e instalar y desinstalar directamente en el ambiente virtual.</li>
+<li>Creación de <strong>bundles</strong>, archivos comprimidos que contienen un conjunto de paquetes.</li>
+</ul>
+<p>Como abreboca:</p>
+<pre class=\"literal-block\">
+$ pip --help
+Usage: pip COMMAND [OPTIONS]
+Options:
+--version             show program's version number and exit
+-h, --help            Show help
+-E DIR, --environment=DIR
+virtualenv environment to run pip in (either give the
+interpreter or the environment base directory)
+-s, --enable-site-packages
+Include site-packages in virtualenv if one is to be
+created. Ignored if --environment is not used or the
+virtualenv already exists.
+-v, --verbose         Give more output
+-q, --quiet           Give less output
+--log=FILENAME        Log file where a complete (maximum verbosity) record
+will be kept
+--proxy=PROXY         Specify a proxy in the form
+user:passwd@proxy.server:port. Note that the
+user:password@ is optional and required only if you
+are behind an authenticated proxy.  If you provide
+user@proxy.server:port then you will be prompted for a
+password.
+--timeout=SECONDS, --default-timeout=SECONDS
+Set the socket timeout (default 15 seconds)
+Commands available:
+bundle: Create pybundles (archives containing multiple packages)
+freeze: Output all currently installed packages (exact versions) to stdout
+help: Show available commands
+install: Install packages
+search: Search PyPI
+uninstall: Uninstall packages
+unzip: Unzip individual packages
+zip: Zip individual packages
+</pre>
+</div>
+<div class=\"section\" id=\"fabric\">
+<h1>Fabric</h1>
+<p><a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es un módulo <a class=\"reference external\" href=\"http://python.org/\">Python</a> que viene acompañado de la herramienta de línea de comandos <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fab.html\">fab</a>, y provee un conjunto de métodos que potencian el despliegue de aplicaciones o proyectos entre varias máquinas usando <strong>SSH</strong>.</p>
+<p>El centro del trabajo con <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es el <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fabfiles.html\">fabfile</a>, en el cual se definen acciones haciendo uso de métodos provistos por el módulo <strong>fabric</strong>, que permiten, entre otras cosas, cargar y descargar ficheros en un host remoto o ejecutar comandos en un <em>shell</em> <strong>local</strong> o <strong>remoto</strong>.</p>
+<p>El <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/tutorial.html\">Tutorial</a> es un muy buen sitio para comenzar, pero mientras, el abreboca:</p>
+<pre class=\"literal-block\">
+$ fab --help
+Usage: fab [options] command[:arg1,arg2=val2,host=foo,hosts='h1;h2',...] ...
+Options:
+-h, --help            show this help message and exit
+-V, --version         show program's version number and exit
+-l, --list            print list of possible commands and exit
+-d COMMAND, --display=COMMAND
+print detailed info about a given command and exit
+-r, --reject-unknown-hosts
+reject unknown hosts
+-D, --disable-known-hosts
+do not load user known_hosts file
+-u USER, --user=USER  username to use when connecting to remote hosts
+-p PASSWORD, --password=PASSWORD
+password for use with authentication and/or sudo
+-H HOSTS, --hosts=HOSTS
+comma-separated list of hosts to operate on
+-R ROLES, --roles=ROLES
+comma-separated list of roles to operate on
+-i KEY_FILENAME       path to SSH private key file. May be repeated.
+-a, --no_agent        don't use the running SSH agent
+-k, --no-keys         don't load private key files from ~/.ssh/
+-f FABFILE, --fabfile=FABFILE
+Python module file to import, e.g. '../other.py'
+-w, --warn-only       warn, instead of abort, when commands fail
+-s SHELL, --shell=SHELL
+specify a new shell, defaults to '/bin/bash -l -c'
+-c RCFILE, --config=RCFILE
+specify location of config file to use
+--hide=LEVELS         comma-separated list of output levels to hide
+--show=LEVELS         comma-separated list of output levels to show
+</pre>
+</div>
+<div class=\"section\" id=\"virtualenv\">
+<h1>Virtualenv</h1>
+<p><a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> es una herramienta <strong>esencial</strong>, léase <strong>ESENCIAL</strong>, para el desarrollo en <a class=\"reference external\" href=\"http://python.org/\">Python</a>, que nos permite crear <em>ambientes aislados</em> para la ejecución de nuestro código.</p>
+<p>Comúnmente nos encontramos con que las máquinas usadas para el desarrollo terminan infestadas de dependencias usadas para pruebas de concepto, proyectos o experimentos, y cuándo nos damos cuenta es casi imposible limpiar el sistema y terminamos rompiendo otros paquetes que entran en conflicto con las versiones que hemos instalado.</p>
+<p>Es importante declarar como <strong>pecado mortal</strong> la instalación de dependencias específicas a un proyecto en <cite>/usr/lib/pythonX.X/site-packages/</cite>, en cambio, se recomienda utilizar un entorno virtual dedicado para el mismo, y ahí es donde entra en juego <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>.</p>
+<p>Supongamos que vamos a comenzar un nuevo proyecto <em>foo</em>, los pasos a seguir serían, más o menos, los siguientes:</p>
+<pre class=\"literal-block\">
+$ mkdir -p foo/{env,src}
+$ cd foo/
+$ virtualenv --distribute env/
+$ source env/bin/activate
+(env) $ pip -E env/ install dependencia1 dependencia2 dependencia3
+(env) $ cd src/
+(env) $ $EDITOR main.py
+</pre>
+<p>Esto nos deja con un entorno dentro de <tt class=\"docutils literal\"><span class=\"pre\">foo/env/</span></tt> con las dependencias específicas del proyecto, el cual <em>activamos</em> con <cite>source env/bin/activate</cite>. Al activar el entorno la variable de entorno del <em>shell</em> <tt class=\"docutils literal\"><span class=\"pre\">PYTHONPATH</span></tt> (o <tt class=\"docutils literal\"><span class=\"pre\">sys.path</span></tt> en el <em>prompt</em> de <a class=\"reference external\" href=\"http://python.org/\">Python</a>) es actualizada para contener el directorio <cite>env/lib/pythonX.X/site-packages</cite> donde se instalarán los módulos con <tt class=\"docutils literal\"><span class=\"pre\">pip</span> <span class=\"pre\">-E</span> <span class=\"pre\">env/</span> <span class=\"pre\">install</span> <span class=\"pre\">...</span></tt></p>
+<p>Para más, visite la página principal de <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>, por lo pronto:</p>
+<pre class=\"literal-block\">
+$ virtualenv -h
+Usage: virtualenv [OPTIONS] DEST_DIR
+Options:
+--version             show program's version number and exit
+-h, --help            show this help message and exit
+-v, --verbose         Increase verbosity
+-q, --quiet           Decrease verbosity
+-p PYTHON_EXE, --python=PYTHON_EXE
+The Python interpreter to use, e.g.,
+--python=python2.5 will use the python2.5 interpreter
+to create the new environment.  The default is the
+interpreter that virtualenv was installed with
+(/usr/bin/python2.6)
+--clear               Clear out the non-root install and start from scratch
+--no-site-packages    Don't give access to the global site-packages dir to
+the virtual environment
+--unzip-setuptools    Unzip Setuptools or Distribute when installing it
+--relocatable         Make an EXISTING virtualenv environment relocatable.
+This fixes up scripts and makes all .pth files
+relative
+--distribute          Use Distribute instead of Setuptools. Set environ
+variableVIRTUALENV_USE_DISTRIBUTE to make it the
+default
+</pre>
+</div>" "http://sebasmagri.alwaysdata.net/pip-fabric-y-virtualenv-herramientas-para-el-desarrollo-python" (19556 39228) new 3 nil nil ((title nil "Pip, Fabric y Virtualenv, herramientas para el desarrollo Python") (link nil "http://sebasmagri.alwaysdata.net/pip-fabric-y-virtualenv-herramientas-para-el-desarrollo-python") (description nil "<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a>, <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> y <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> son tres herramientas extremadamente útiles y favorables para el desarrollo con <a class=\"reference external\" href=\"http://python.org/\">Python</a>. Estas permiten automatizar el proceso de instalación de dependencias y despliegue de proyectos en un ambiente aislado tanto para producción como para pruebas funcionales durante el desarrollo.</p>
+<div class=\"section\" id=\"pip\">
+<h1>Pip</h1>
+<p><a class=\"reference external\" href=\"http://pip.openplans.org/\">Pip</a> es una herramienta de línea de comandos desarrollada para mejorar el comportamiento del <em>easy_install</em> de <a class=\"reference external\" href=\"http://www.python.org/files/sigs/sc_submission.html\">distutils</a> y solventar sus carencias. Entre sus principales características están:</p>
+<ul class=\"simple\">
+<li>Búsqueda de paquetes en <a class=\"reference external\" href=\"http://pypi.python.org/pypi/\">PyPi</a>.</li>
+<li>Instalación y <strong>desinstalación</strong> de paquetes.</li>
+<li>Instalación de paquetes desde sus sistemas de control de versiones (añade <a class=\"reference external\" href=\"http://www.git-scm.com/\">Git</a>, <a class=\"reference external\" href=\"http://mercurial.selenic.com/\">Mercurial</a> y <a class=\"reference external\" href=\"http://bazaar-vcs.org/\">Bazaar</a> a los soportados por <em>easy_install</em>)</li>
+<li>Puede tomar un listado de paquetes como argumento en <em>batch</em> desde un fichero.</li>
+<li>Puede tomar un <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> como argumento e instalar y desinstalar directamente en el ambiente virtual.</li>
+<li>Creación de <strong>bundles</strong>, archivos comprimidos que contienen un conjunto de paquetes.</li>
+</ul>
+<p>Como abreboca:</p>
+<pre class=\"literal-block\">
+$ pip --help
+Usage: pip COMMAND [OPTIONS]
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            Show help
+  -E DIR, --environment=DIR
+                        virtualenv environment to run pip in (either give the
+                        interpreter or the environment base directory)
+  -s, --enable-site-packages
+                        Include site-packages in virtualenv if one is to be
+                        created. Ignored if --environment is not used or the
+                        virtualenv already exists.
+  -v, --verbose         Give more output
+  -q, --quiet           Give less output
+  --log=FILENAME        Log file where a complete (maximum verbosity) record
+                        will be kept
+  --proxy=PROXY         Specify a proxy in the form
+                        user:passwd&#64;proxy.server:port. Note that the
+                        user:password&#64; is optional and required only if you
+                        are behind an authenticated proxy.  If you provide
+                        user&#64;proxy.server:port then you will be prompted for a
+                        password.
+  --timeout=SECONDS, --default-timeout=SECONDS
+                        Set the socket timeout (default 15 seconds)
+
+Commands available:
+  bundle: Create pybundles (archives containing multiple packages)
+  freeze: Output all currently installed packages (exact versions) to stdout
+  help: Show available commands
+  install: Install packages
+  search: Search PyPI
+  uninstall: Uninstall packages
+  unzip: Unzip individual packages
+  zip: Zip individual packages
+</pre>
+</div>
+<div class=\"section\" id=\"fabric\">
+<h1>Fabric</h1>
+<p><a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es un módulo <a class=\"reference external\" href=\"http://python.org/\">Python</a> que viene acompañado de la herramienta de línea de comandos <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fab.html\">fab</a>, y provee un conjunto de métodos que potencian el despliegue de aplicaciones o proyectos entre varias máquinas usando <strong>SSH</strong>.</p>
+<p>El centro del trabajo con <a class=\"reference external\" href=\"http://fabfile.org/\">Fabric</a> es el <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/usage/fabfiles.html\">fabfile</a>, en el cual se definen acciones haciendo uso de métodos provistos por el módulo <strong>fabric</strong>, que permiten, entre otras cosas, cargar y descargar ficheros en un host remoto o ejecutar comandos en un <em>shell</em> <strong>local</strong> o <strong>remoto</strong>.</p>
+<p>El <a class=\"reference external\" href=\"http://docs.fabfile.org/0.9.1/tutorial.html\">Tutorial</a> es un muy buen sitio para comenzar, pero mientras, el abreboca:</p>
+<pre class=\"literal-block\">
+$ fab --help
+Usage: fab [options] command[:arg1,arg2=val2,host=foo,hosts='h1;h2',...] ...
+
+Options:
+  -h, --help            show this help message and exit
+  -V, --version         show program's version number and exit
+  -l, --list            print list of possible commands and exit
+  -d COMMAND, --display=COMMAND
+                        print detailed info about a given command and exit
+  -r, --reject-unknown-hosts
+                        reject unknown hosts
+  -D, --disable-known-hosts
+                        do not load user known_hosts file
+  -u USER, --user=USER  username to use when connecting to remote hosts
+  -p PASSWORD, --password=PASSWORD
+                        password for use with authentication and/or sudo
+  -H HOSTS, --hosts=HOSTS
+                        comma-separated list of hosts to operate on
+  -R ROLES, --roles=ROLES
+                        comma-separated list of roles to operate on
+  -i KEY_FILENAME       path to SSH private key file. May be repeated.
+  -a, --no_agent        don't use the running SSH agent
+  -k, --no-keys         don't load private key files from ~/.ssh/
+  -f FABFILE, --fabfile=FABFILE
+                        Python module file to import, e.g. '../other.py'
+  -w, --warn-only       warn, instead of abort, when commands fail
+  -s SHELL, --shell=SHELL
+                        specify a new shell, defaults to '/bin/bash -l -c'
+  -c RCFILE, --config=RCFILE
+                        specify location of config file to use
+  --hide=LEVELS         comma-separated list of output levels to hide
+  --show=LEVELS         comma-separated list of output levels to show
+</pre>
+</div>
+<div class=\"section\" id=\"virtualenv\">
+<h1>Virtualenv</h1>
+<p><a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a> es una herramienta <strong>esencial</strong>, léase <strong>ESENCIAL</strong>, para el desarrollo en <a class=\"reference external\" href=\"http://python.org/\">Python</a>, que nos permite crear <em>ambientes aislados</em> para la ejecución de nuestro código.</p>
+<p>Comúnmente nos encontramos con que las máquinas usadas para el desarrollo terminan infestadas de dependencias usadas para pruebas de concepto, proyectos o experimentos, y cuándo nos damos cuenta es casi imposible limpiar el sistema y terminamos rompiendo otros paquetes que entran en conflicto con las versiones que hemos instalado.</p>
+<p>Es importante declarar como <strong>pecado mortal</strong> la instalación de dependencias específicas a un proyecto en <cite>/usr/lib/pythonX.X/site-packages/</cite>, en cambio, se recomienda utilizar un entorno virtual dedicado para el mismo, y ahí es donde entra en juego <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>.</p>
+<p>Supongamos que vamos a comenzar un nuevo proyecto <em>foo</em>, los pasos a seguir serían, más o menos, los siguientes:</p>
+<pre class=\"literal-block\">
+$ mkdir -p foo/{env,src}
+$ cd foo/
+$ virtualenv --distribute env/
+$ source env/bin/activate
+(env) $ pip -E env/ install dependencia1 dependencia2 dependencia3
+(env) $ cd src/
+(env) $ $EDITOR main.py
+</pre>
+<p>Esto nos deja con un entorno dentro de <tt class=\"docutils literal\"><span class=\"pre\">foo/env/</span></tt> con las dependencias específicas del proyecto, el cual <em>activamos</em> con <cite>source env/bin/activate</cite>. Al activar el entorno la variable de entorno del <em>shell</em> <tt class=\"docutils literal\"><span class=\"pre\">PYTHONPATH</span></tt> (o <tt class=\"docutils literal\"><span class=\"pre\">sys.path</span></tt> en el <em>prompt</em> de <a class=\"reference external\" href=\"http://python.org/\">Python</a>) es actualizada para contener el directorio <cite>env/lib/pythonX.X/site-packages</cite> donde se instalarán los módulos con <tt class=\"docutils literal\"><span class=\"pre\">pip</span> <span class=\"pre\">-E</span> <span class=\"pre\">env/</span> <span class=\"pre\">install</span> <span class=\"pre\">...</span></tt></p>
+<p>Para más, visite la página principal de <a class=\"reference external\" href=\"http://pypi.python.org/pypi/virtualenv/\">Virtualenv</a>, por lo pronto:</p>
+<pre class=\"literal-block\">
+$ virtualenv -h
+Usage: virtualenv [OPTIONS] DEST_DIR
+
+Options:
+  --version             show program's version number and exit
+  -h, --help            show this help message and exit
+  -v, --verbose         Increase verbosity
+  -q, --quiet           Decrease verbosity
+  -p PYTHON_EXE, --python=PYTHON_EXE
+                        The Python interpreter to use, e.g.,
+                        --python=python2.5 will use the python2.5 interpreter
+                        to create the new environment.  The default is the
+                        interpreter that virtualenv was installed with
+                        (/usr/bin/python2.6)
+  --clear               Clear out the non-root install and start from scratch
+  --no-site-packages    Don't give access to the global site-packages dir to
+                        the virtual environment
+  --unzip-setuptools    Unzip Setuptools or Distribute when installing it
+  --relocatable         Make an EXISTING virtualenv environment relocatable.
+                        This fixes up scripts and makes all .pth files
+                        relative
+  --distribute          Use Distribute instead of Setuptools. Set environ
+                        variableVIRTUALENV_USE_DISTRIBUTE to make it the
+                        default
+</pre>
+</div>
+") (pubDate nil "Thu, 12 Aug 2010 19:30:44 -0530") (guid nil "http://sebasmagri.alwaysdata.net/pip-fabric-y-virtualenv-herramientas-para-el-desarrollo-python"))) ("Detectar modem USB en Linux con reglas de udev" "<p>En la actualidad los dispositivos USB de banda ancha móvil (<em>mobile broadband</em>) se han hecho populares debido a su practicidad, la necesidad de movilidad y bajo costo. Estos dispositivos se distribuyen con el <em>firmware</em> integrado, en la mayor parte de las ocasiones, para <em>MS Windws</em> y <em>Mac OS X</em>. En <em>Linux</em>, aunque en versiones recientes de <tt class=\"docutils literal\"><span class=\"pre\">udev</span></tt> y <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> se ha mejorado el soporte y algunas distribuciones ya incluyen reglas de identificación para los mismos, es necesario modificar el proceso de detección de los mismos.</p>
+<div class=\"section\" id=\"ingredientes\">
+<h1>Ingredientes</h1>
+<ul class=\"simple\">
+<li><strong>Linux</strong> con núcleo &gt;=2.6.29</li>
+<li><strong>Udev</strong> con extras &gt;=151</li>
+<li><strong>usbutils</strong> &gt;=0.86</li>
+</ul>
+<p>En Gentoo/Linux:</p>
+<pre class=\"literal-block\">
+# echo 'sys-fs/udev extras' &gt;&gt; /etc/portage/package.use
+# emerge \\&gt;=sys-kernel/gentoo-sources-2.6.29 \\&gt;=sys-apps/udev-151 \\&gt;=sys-apps/usbutils-0.86
+</pre>
+<div class=\"section\" id=\"consideraciones-previas\">
+<h2>Consideraciones Previas</h2>
+<p>Compruebe que el dispositivo no es detectado actualmente como modem serial ejecutando</p>
+<pre class=\"literal-block\">
+$ dmesg | grep tty
+</pre>
+<p>Si en la salida puede ver algo como</p>
+<pre class=\"literal-block\">
+usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+</pre>
+<p>o,</p>
+<pre class=\"literal-block\">
+cdc_acm 3-1:1.10: ttyACM0: USB ACM device
+</pre>
+<p>entonces su dispositivo ya es detectado correctamente y no necesita modificar nada. Conectese usando <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> o <tt class=\"docutils literal\"><span class=\"pre\">wvdial</span></tt>.</p>
+<p>Si su dispositivo no está siendo detectado, será necesario crear una regla especial para udev.</p>
+</div>
+</div>
+<div class=\"section\" id=\"procedimiento\">
+<h1>Procedimiento</h1>
+<div class=\"section\" id=\"determinar-el-identificador-del-vendedor-y-el-del-producto\">
+<h2>Determinar el identificador del vendedor y el del producto</h2>
+<p>Ejecutar</p>
+<pre class=\"literal-block\">
+# lsusb
+Bus 001 Device 113: ID 12d1:1003 Huawei Technologies Co., Ltd. E220 HSDPA Modem / E270 HSDPA/HSUPA Modem
+Bus 001 Device 002: ID 0c45:62c0 Bar Baz USB 2.0 Camera
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+</pre>
+<p>La primera línea de la salida nos muestra el dispositivo que deseamos utilizar para conectarnos a internet. Tomamos nota de el <tt class=\"docutils literal\"><span class=\"pre\">ID</span></tt> del dispositivo,  <tt class=\"docutils literal\"><span class=\"pre\">12d1:1003</span></tt>. La primera parte, <tt class=\"docutils literal\"><span class=\"pre\">12d1</span></tt> es la identificación del vendedor, en este caso <em>Huawei</em>, y la segunda parte, <tt class=\"docutils literal\"><span class=\"pre\">1003</span></tt>, es la identificación del producto. Estos dos atributos son suficientes para que udev reconozca el dispositivo.</p>
+</div>
+<div class=\"section\" id=\"crear-la-regla-de-udev-adecuada-para-el-dispositivo\">
+<h2>Crear la regla de udev adecuada para el dispositivo</h2>
+<p>La regla de udev que crearemos está compuesta por dos atributos que deberán coincidir en el dispositivo, y una acción a ejecutar cuando ambos coincidan. Creamos un fichero en <tt class=\"docutils literal\"><span class=\"pre\">/etc/udev/rules.d/</span></tt> con nombre <tt class=\"docutils literal\"><span class=\"pre\">67-option-modeswitch.rules</span></tt> (no es obligatorio, solo afecta el orden de evaluación de la regla) y agregamos las siguientes líneas al mismo:</p>
+<pre class=\"literal-block\">
+ATTRS{idVendor} == &quot;12d1&quot;
+ATTRS{idProduct} == &quot;1446&quot;
+RUN+=&quot;modem-modeswitch -v 0x%s{idVendor} -p 0x%s{idProduct} -t option-zerocd&quot;
+</pre>
+<p>En <tt class=\"docutils literal\"><span class=\"pre\">RUN</span></tt> se cambia el modo del dispositivo para que funcione como modem con modem-modeswitch, parte de los extras de udev.</p>
+</div>
+<div class=\"section\" id=\"reconectar-el-dispositivo\">
+<h2>Reconectar el dispositivo</h2>
+<p>Desconecte y vuelva a conectar el dispositivo y compruebe con el procedimiento descrito en las <a class=\"reference internal\" href=\"#consideraciones-previas\">Consideraciones Previas</a> que su dispositivo es detectado como modem serial.</p>
+<p><em>Nota:</em> la detección del dispositivo puede tomar un tiempo mayor al que tomaría sin una regla udev.</p>
+</div>
+<div class=\"section\" id=\"referencias\">
+<h2>Referencias</h2>
+<ul class=\"simple\">
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=lsusb&amp;section=all\">lsusb</a>.</li>
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=udev&amp;section=all\">udev</a>.</li>
+</ul>
+</div>
+</div>" "http://sebasmagri.alwaysdata.net/detectar-modem-usb-en-linux-con-reglas-de-udev" (19550 1584) new 4 nil nil ((title nil "Detectar modem USB en Linux con reglas de udev") (link nil "http://sebasmagri.alwaysdata.net/detectar-modem-usb-en-linux-con-reglas-de-udev") (description nil "<p>En la actualidad los dispositivos USB de banda ancha móvil (<em>mobile broadband</em>) se han hecho populares debido a su practicidad, la necesidad de movilidad y bajo costo. Estos dispositivos se distribuyen con el <em>firmware</em> integrado, en la mayor parte de las ocasiones, para <em>MS Windws</em> y <em>Mac OS X</em>. En <em>Linux</em>, aunque en versiones recientes de <tt class=\"docutils literal\"><span class=\"pre\">udev</span></tt> y <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> se ha mejorado el soporte y algunas distribuciones ya incluyen reglas de identificación para los mismos, es necesario modificar el proceso de detección de los mismos.</p>
+<div class=\"section\" id=\"ingredientes\">
+<h1>Ingredientes</h1>
+<ul class=\"simple\">
+<li><strong>Linux</strong> con núcleo &gt;=2.6.29</li>
+<li><strong>Udev</strong> con extras &gt;=151</li>
+<li><strong>usbutils</strong> &gt;=0.86</li>
+</ul>
+<p>En Gentoo/Linux:</p>
+<pre class=\"literal-block\">
+# echo 'sys-fs/udev extras' &gt;&gt; /etc/portage/package.use
+# emerge \\&gt;=sys-kernel/gentoo-sources-2.6.29 \\&gt;=sys-apps/udev-151 \\&gt;=sys-apps/usbutils-0.86
+</pre>
+<div class=\"section\" id=\"consideraciones-previas\">
+<h2>Consideraciones Previas</h2>
+<p>Compruebe que el dispositivo no es detectado actualmente como modem serial ejecutando</p>
+<pre class=\"literal-block\">
+$ dmesg | grep tty
+</pre>
+<p>Si en la salida puede ver algo como</p>
+<pre class=\"literal-block\">
+usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+</pre>
+<p>o,</p>
+<pre class=\"literal-block\">
+cdc_acm 3-1:1.10: ttyACM0: USB ACM device
+</pre>
+<p>entonces su dispositivo ya es detectado correctamente y no necesita modificar nada. Conectese usando <tt class=\"docutils literal\"><span class=\"pre\">network-manager</span></tt> o <tt class=\"docutils literal\"><span class=\"pre\">wvdial</span></tt>.</p>
+<p>Si su dispositivo no está siendo detectado, será necesario crear una regla especial para udev.</p>
+</div>
+</div>
+<div class=\"section\" id=\"procedimiento\">
+<h1>Procedimiento</h1>
+<div class=\"section\" id=\"determinar-el-identificador-del-vendedor-y-el-del-producto\">
+<h2>Determinar el identificador del vendedor y el del producto</h2>
+<p>Ejecutar</p>
+<pre class=\"literal-block\">
+# lsusb
+Bus 001 Device 113: ID 12d1:1003 Huawei Technologies Co., Ltd. E220 HSDPA Modem / E270 HSDPA/HSUPA Modem
+Bus 001 Device 002: ID 0c45:62c0 Bar Baz USB 2.0 Camera
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+</pre>
+<p>La primera línea de la salida nos muestra el dispositivo que deseamos utilizar para conectarnos a internet. Tomamos nota de el <tt class=\"docutils literal\"><span class=\"pre\">ID</span></tt> del dispositivo,  <tt class=\"docutils literal\"><span class=\"pre\">12d1:1003</span></tt>. La primera parte, <tt class=\"docutils literal\"><span class=\"pre\">12d1</span></tt> es la identificación del vendedor, en este caso <em>Huawei</em>, y la segunda parte, <tt class=\"docutils literal\"><span class=\"pre\">1003</span></tt>, es la identificación del producto. Estos dos atributos son suficientes para que udev reconozca el dispositivo.</p>
+</div>
+<div class=\"section\" id=\"crear-la-regla-de-udev-adecuada-para-el-dispositivo\">
+<h2>Crear la regla de udev adecuada para el dispositivo</h2>
+<p>La regla de udev que crearemos está compuesta por dos atributos que deberán coincidir en el dispositivo, y una acción a ejecutar cuando ambos coincidan. Creamos un fichero en <tt class=\"docutils literal\"><span class=\"pre\">/etc/udev/rules.d/</span></tt> con nombre <tt class=\"docutils literal\"><span class=\"pre\">67-option-modeswitch.rules</span></tt> (no es obligatorio, solo afecta el orden de evaluación de la regla) y agregamos las siguientes líneas al mismo:</p>
+<pre class=\"literal-block\">
+ATTRS{idVendor} == &quot;12d1&quot;
+ATTRS{idProduct} == &quot;1446&quot;
+RUN+=&quot;modem-modeswitch -v 0x%s{idVendor} -p 0x%s{idProduct} -t option-zerocd&quot;
+</pre>
+<p>En <tt class=\"docutils literal\"><span class=\"pre\">RUN</span></tt> se cambia el modo del dispositivo para que funcione como modem con modem-modeswitch, parte de los extras de udev.</p>
+</div>
+<div class=\"section\" id=\"reconectar-el-dispositivo\">
+<h2>Reconectar el dispositivo</h2>
+<p>Desconecte y vuelva a conectar el dispositivo y compruebe con el procedimiento descrito en las <a class=\"reference internal\" href=\"#consideraciones-previas\">Consideraciones Previas</a> que su dispositivo es detectado como modem serial.</p>
+<p><em>Nota:</em> la detección del dispositivo puede tomar un tiempo mayor al que tomaría sin una regla udev.</p>
+</div>
+<div class=\"section\" id=\"referencias\">
+<h2>Referencias</h2>
+<ul class=\"simple\">
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=lsusb&amp;section=all\">lsusb</a>.</li>
+<li>man <a class=\"reference external\" href=\"http://man.he.net/?topic=udev&amp;section=all\">udev</a>.</li>
+</ul>
+</div>
+</div>
+") (pubDate nil "Sat, 07 Aug 2010 19:49:44 -0530") (guid nil "http://sebasmagri.alwaysdata.net/detectar-modem-usb-en-linux-con-reglas-de-udev"))))

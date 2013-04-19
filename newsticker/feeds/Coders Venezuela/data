@@ -1,0 +1,458 @@
+;; -*- coding: utf-8 -*-
+(("Coders Venezuela" "Programadores de Venezuela" "http://codersvenezuela.com" (20846 59065 765575) feed 0 nil nil ((title nil "Coders Venezuela") (description nil "Programadores de Venezuela") (link nil "http://codersvenezuela.com") (atom:link ((type . "application/rss+xml") (rel . "self") (href . "http://www.codersvenezuela.com/posts.rss"))) (item nil (title nil "Caracas Tech Meetup") (description nil) (content:encoded nil "<p>Reunimos a desarrolladores y emprendedores para que hablen acerca de sus proyectos con un enfoque tecnológico para el primer meetup de Venezuela.</p>
+
+<p>Queremos conectar, inspirar, educar y colaborar con los miembros de la comunidad tecnológica de la ciudad. Creemos que entre todos podemos compartir los recursos que permitan la construcción de compañías de tecnología exitosas y sustentables.</p>
+
+<p>Este es un espacio para mostrar el trabajo de los desarrolladores y emprendedores, compartir conocimientos y conectar con la comunidad para encontrar socios, inspiración, inversionistas y dar a conocer el trabajo del emprendimiento y desarrollo en Caracas.</p>
+
+<p>Estamos por anunciar los temas para este primer encuentro. ¿Tienes ideas? Coméntanos a quién te gustaría ver en este meetup.</p>
+
+<p><strong>Costo</strong>: 150 Bs en la entrada.</p>
+
+<p>Los fondos recaudados serán utilizados para la realización del próximo meetup.</p>
+
+<p>Este primer encuentro será realizado en la Academia Wayra.</p>
+
+<p><strong>Registro e informacion</strong>: <a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\">http://bit.ly/csstechmeetup</a></p>
+
+<p><a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\"><img src=\"http://screencloud.net//img/screenshots/585eb7b299d0cc63a567ce91cc3820f9.png\" alt=\"\" width='300px' /></a></p>") (pubDate nil "Fri, 12 Apr 2013 19:33:35 -0700") (link nil "http://codersvenezuela.com/post/caracas-tech-meetup/198self") (guid nil "http://codersvenezuela.com/post/caracas-tech-meetup/198")) (item nil (title nil "Enlaces de la semana") (description nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/y_nuAwlW7ag\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p>") (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/y_nuAwlW7ag\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Quieres saber algunos de los retos que tuvieron los desarrolladores de google al crear google Apps? soportar múltiples logins en diferentes servicios con diferentes tipos de cuentas creo que fue el mas difícil. Una interesante charla explicando las decisiones que tomaron durante su desarrollo. <a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://www.infoq.com/presentations/Google-Apps-Identity</a></p>
+
+---
+
+<p>Si necesitas ayuda haciendo una animación y encontrando el easing adecuado, easings.net es lo que estas buscando. En esta pagina encontraras la explicación del tipo de easing, un gráfico animado que te ayudara a ver el efecto y el código jQuery, sass y css.</p>
+
+<p>Como siempre el código es open source y ha sido traducido a diferentes idiomas, puedes forkearlo y aportar otras animaciones si lo deseas.</p>
+
+<p><a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://easings.net/</a></p>
+
+---
+
+<p>Siguiendo con las nuevas mejoras a Firefox, se ha introducido el api para fullscreen, esta es una de las muchas mejoras que permitirán el desarrollo de juegos en la web. Otras apis que se esperan ver activas en un futuro son los apis para canvas, audio y Gamepad.</p>
+
+<p>Para usarlo, seleccionamos el elemento y hacemos un llamado a element.mozRequestFullScreen(), este metodo debera llamarse directamente contra una accion del uaurio como presionando un botón y no puede ser activado por ejemplo onload.</p>
+
+<p> Cambien hay unas nuevas pseudo clases en css :full-screen que permite seleccionar el elemento que esta en modo pantalla completa y así poder aplicarle estilos a el o a elementos hijos solo cuando están en pantalla completa.</p>
+
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox 
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/Gecko:FullScreenAPI\">https://wiki.mozilla.org/Gecko:FullScreenAPI</a></p>
+
+<p>Y también puedes ver algunos ejemplos en el blog de desarrollo de firefox <a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode\">https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode</a></p>
+
+---
+
+<p>Otra api a la que se esta desarrollando es el api para gamepads que te permite controlar la pagina web con un gamepad o controlador externo.</p>
+
+<p>Ya hay algunos demos bastante interesantes</p>
+
+<p><a target=\"_blank\" href=\"http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome\">http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome</a></p>
+
+<p><a target=\"_blank\" href=\"http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html\">http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html</a></p>
+
+<p><a target=\"_blank\" href=\"http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/\">http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/</a></p>
+
+<p>Por ahora puedes probar algunos con la versión experimental Nightly builds de Firefox, con el build Dev de Chrome en windows o canary chrome en mac.</p>
+
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox 
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/GamepadAPI\">https://wiki.mozilla.org/GamepadAPI</a></p>") (pubDate nil "Tue, 09 Apr 2013 16:23:43 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/191self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/191")) (item nil (title nil "Ruby Tip") (description nil) (content:encoded nil "<p>Al hacer un modelo en ruby el nombre de la clase esta implícito dentro de los métodos de clase.</p>
+
+<notextile><div class=\"CodeRay\">
+  <div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+  <span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+    new <span class=\"constant\">User</span>.find_by_email(email)
+  <span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>
+
+<p>Equivale a </p>
+
+<notextile><div class=\"CodeRay\">
+  <div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+  <span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+    <span class=\"constant\">PasswordReset</span>.new(<span class=\"constant\">User</span>.find_by_email(email))
+  <span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>") (pubDate nil "Sun, 07 Apr 2013 12:46:27 -0700") (link nil "http://codersvenezuela.com/post/ruby-tip/195self") (guid nil "http://codersvenezuela.com/post/ruby-tip/195")) (item nil (title nil "Webcast AgilVen Enero 2013") (description nil) (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/Hzq9-B1jBuU\" frameborder=\"0\" allowfullscreen></iframe>") (pubDate nil "Fri, 05 Apr 2013 20:35:22 -0700") (link nil "http://codersvenezuela.com/post/webcast-agilven-enero-2013/192self") (guid nil "http://codersvenezuela.com/post/webcast-agilven-enero-2013/192")) (item nil (title nil "Enlaces de la semana") (description nil "<p>Hola Coders, bienvenidos a los enlaces de la semana (en vídeo) un experimento, luego me comentan si les gusta mas escrito o en vídeo.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/ZAnFPPNDows\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p>") (content:encoded nil "<p>Hola Coders, bienvenidos a los enlaces de la semana (en vídeo) un experimento, luego me comentan si les gusta mas escrito o en vídeo.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/ZAnFPPNDows\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Recientemente hablamos sobre algunos <a target=\"_blank\" href=\"http://codersvenezuela.com/post/venezolanos-participando-en-one-game-a-month/178\">Venezolanos desarrollando juegos en el reto OneGameAMonth</a>, he encontrado unos artículos interesantes sobre como hacer guías o tutoriales para demostrar como se juega tu juego, los llaman In-Game Tutorials. 
+Uno de los artículos habla sobre la importancia de crear este tipo de tutorial para tu juego y el otro explica varias técnicas para realizaros. Los dos tutoriales están publicados en la pagina de <a target=\"_blank\" href=\"http://gamedev.tutsplus.com/\">http://gamedev.tutsplus.com/</a> la cual les recomiendo seguir ya que tiene información variada e interesante sobre el desarrollo de vídeo juegos en múltiples plataformas.</p>
+
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial\">http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial</a></p>
+
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/\">http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/</a></p>
+
+---
+
+<p><a target=\"_blank\" href=\"https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up\">https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up</a>/</p>
+
+<p>Esta semana Firefox nos sorprendio con una serie de mejoras que podrian venir en las próximas versiones del navegador, la mas llamativa es que ahora tendremos la posibilidad de editar el css de nuestras paginas en vivo, por ahora solo esta soportado por el editor SublimeText 2 pero gracias al desarrollo del protocolo remoto podremos editar el css y ver los cambios en modo live.</p>
+
+<p>El desarrollo de este protocolo también nos permitirá ejecutar una serie de código en otros dispositivos remotamente, muy útil para la llegada del Firefox OS y para hacer debbug de aplicaciones B2G.</p>
+
+<p>Si te interesa ver el código de este desarrollo interesante puedes encontrarlo en GitHub en <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-remote-styleEditors\">https://github.com/paulrouget/firefox-remote-styleEditors</a></p>
+
+<p>Otra gran noticia es una mejora en la consola de Firefox que ahora podrá soportar CoffeeScript y LiveScript <a target=\"_blank\" href=\"http://paulrouget.com/e/fxterminalv3/\">http://paulrouget.com/e/fxterminalv3/</a></p> 
+
+<p>Recuerda que el proyecto de la consola de firefox también lo puedes encontrar en GitHub y contribuir a el <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-jsterm\">https://github.com/paulrouget/firefox-jsterm</a></p>
+
+<p>Estas mejoras no son oficiales y están basadas en las peticiones de los usuarios a los des arrolladores de Firefox, suponemos que serán implementadas las que tengan mas tracción y soporte entre los usuarios.</p>
+
+<p>Si quieres leer sobre los demás cambios que se tienen preparados te invito a leer el resumen en el blog de Paul Rouget uno de los desarrolladores de Firefox <a target=\"_blank\" href=\"http://paulrouget.com/e/devtoolsnext/\">http://paulrouget.com/e/devtoolsnext/</a></p> 
+
+-- 
+
+<p>Programas en Python y no fuiste a la Pycon 2013? bueno yo no programo en python y tampoco fui pero eso no importa porque ya están publicados los vídeos de la conferencia en la pagina oficial, ahora ya tienes material para entretenerte el fin de semana.</p>
+
+<p><a target=\"_blank\" href=\"http://pyvideo.org/category/33/pycon-us-2013\">http://pyvideo.org/category/33/pycon-us-2013</a></p>
+
+--
+
+<p>Ah que te pidieron hacer un sitio que permita ver imagen vídeo o iframe en pantalla competa BigScreen es una librería que te permite no solo eso si no usarlo con cualquier div o elemento en la pagina, tiene un buen fallback para el caso de los vídeos.</p>
+
+<p>Como siempre puedes encontrar este proyecto en GitHub si quieres revisar su código o ayudar a su desarrollo.</p>
+
+<p><a target=\"_blank\" href=\"http://brad.is/coding/BigScreen/\">http://brad.is/coding/BigScreen/</a></p>
+
+<p><a target=\"_blank\" href=\"https://github.com/bdougherty/BigScreen\">https://github.com/bdougherty/BigScreen</a></p>
+
+--
+
+<p>La gente de Chrome también nos ha dado su dosis de cosas nuevas esta semana,
+si tu navegador preferido para desarrollar es chrome pero no estas muy familiarizado con su panel de desarrollo estas de suerte, CodeSchool ha publicado un tutorial interactivo gratuito donde te ensenara a sacarle provecho a esta herramienta.</p>
+
+<p>En cada una de las lecciones tendrás un vídeo y una serie de tareas que deberás completar para pasar de lección donde también puedes ganar una serie de badges de CodeSchool.</p>
+
+<p>Tanto si manejas el panel de desarrollo como si apenas lo estas conociendo vale la pena ver este pequeño curso, para descubrir todo el potencial de esta herramienta y aumentar tu productividad con los tips que nos dan.</p>
+
+<p><a target=\"_blank\" href=\"http://discover-devtools.codeschool.com/\">http://discover-devtools.codeschool.com/</a></p>
+
+--
+
+<p>Les recordamos seguirnos en nuestras diferentes redes sociales <a target=\"_blank\" href=\"http://twitter.com/coders_vzla\">Twitter</a>, <a target=\"_blank\" href=\"https://www.facebook.com/?q=#/pages/codersvenezuela/\">Facebook</a> y <a target=\"_blank\" href=\"https://plus.google.com/u/0/communities/114890780982298656984\">Google+</a></p>") (pubDate nil "Mon, 01 Apr 2013 19:34:24 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/190self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/190")) (item nil (title nil "Inicia curso MongoDB para desarrolladores Python") (description nil) (content:encoded nil "<p>Tiene una duración de 7 semanas y es gratis. Comienza hoy 01 de abril de 2013. No se lo pierdan.</p>
+<p>
+<a target=\"_blank\" href=\"https://education.10gen.com/courses/10gen/M101P/2013_April/about\">M101P: MongoDB for Developers</a>
+</p>") (pubDate nil "Mon, 01 Apr 2013 10:19:56 -0700") (link nil "http://codersvenezuela.com/post/inicia-curso-mongodb-para-desarrolladores-python/194self") (guid nil "http://codersvenezuela.com/post/inicia-curso-mongodb-para-desarrolladores-python/194")) (item nil (title nil "La busqueda del tesoro Maps API") (description nil) (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/5X1cDKlkGmo\" frameborder=\"0\" allowfullscreen></iframe>") (pubDate nil "Wed, 27 Mar 2013 19:17:00 -0700") (link nil "http://codersvenezuela.com/post/la-busqueda-del-tesoro-maps-api/193self") (guid nil "http://codersvenezuela.com/post/la-busqueda-del-tesoro-maps-api/193")) (item nil (title nil "Enlaces de la semana") (description nil) (content:encoded nil "<p><strong>CSS3 Patterns Gallery</strong>, una buena pagina para encontrar patrones hechos con css3, perfecto para colocarle fondo a tus paginas sin buscar mucho por Internet. Todos están hecho con código css3, sin imágenes y sin js. <a target=\"_blank\" href=\"http://lea.verou.me/css3patterns/\">http://lea.verou.me/css3patterns/</a></p>
+
+<p><strong>TDD Terminology Simplified</strong>, Nettuts nos hace la vida simple y nos habla sobre TDD, si estas buscando introducirte al mundo de TDD, este articulo te ayudara con los términos usados. <a target=\"_blank\" href=\"http://net.tutsplus.com/articles/tdd-terminology-simplified\">http://net.tutsplus.com/articles/tdd-terminology-simplified</a></p> 
+
+<p><strong>¿Por qué tan pocas chicas estudiamos carreras relacionadas con la Informática?</strong>, un articulo de opinión sobre la falta de chicas en las carreras de Informática. <a target=\"_blank\" href=\"http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html\">http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html</a></p>
+
+<p><strong>CRUD en MongoDB (Parte 2-1: Lectura/Find)</strong>, Yohan Graterol <a target=\"_blank\" href=\"https://twitter.com/yograterol\">@yograterol</a> continua con su serie sobre MongoDB esta vez explicando como encontrar documentos, tipo select en mysql. Les recomiendo seguir la serie. <a target=\"_blank\" href=\"http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find\">http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find</a></p>
+
+<p><strong>Making Sprite-based Games with Canvas</strong>, esta también es una serie de artículos donde nos ensenan a crear un juego con sprites y canvas, recomendado. <a target=\"_blank\" href=\"http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas\">http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas</a></p>
+
+<p><strong>Instalación de paquetes Python con Distribute y pip</strong>, Leonardo Caballero <a target=\"_blank\" href=\"https://twitter.com/macagua\">@macagua</a> nos trae la manera actualmente mas recomendada para instalar paquetes Python con las herramientas Distribute y pip. <a target=\"_blank\" href=\"http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/\">http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/</a></p>") (pubDate nil "Wed, 20 Mar 2013 20:18:50 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/189self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/189")) (item nil (title nil "Google Drive SDK: Lo que puedes hacer con el nuevo API de tiempo real") (description nil) (content:encoded nil "<p>Video introductorio donde se muestra lo que se puede hacer con el nuevo API de Google Drive.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/HCyrywLtWIs\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Puedes leer el anuncio del nuevo API en <a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">el blog de google</a> (<a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html</a>) donde tambien podras ver unos demos hechos por algunas empresas.</p>
+
+<p>Si quieres saber mas ve a <a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">la pagina oficial del nuevo API</a> (<a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">https://developers.google.com/drive/realtime/</a>).</p>") (pubDate nil "Wed, 20 Mar 2013 17:48:00 -0700") (link nil "http://codersvenezuela.com/post/google-drive-sdk-lo-que-puedes-hacer-con-el-nuevo-api-de-tiempo-real/188self") (guid nil "http://codersvenezuela.com/post/google-drive-sdk-lo-que-puedes-hacer-con-el-nuevo-api-de-tiempo-real/188")) (item nil (title nil "Alternativas a Github") (description nil) (content:encoded nil "<p>Como todos sabemos <a target=\"_blank\" href=\"https://github.com/\">Github </a>es un servidor de repositorio, basado en Git (sistema distribuido de control de versiones). </p>
+<p>
+¿Pero qué pasa cuando queremos que nuestros repositorios sean privados?</p>
+<p>¿Qué pasa si nos gusta tener en todo momento control del mismo?</p>
+<p>¿Tenemos que pagar en $$? … nada fácil en Venezuela.</p>
+<p>Pues mi primera alternativa es <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>es la misma idea de github de igual forma tiene planes  comerciales y gratuitos; pero de forma gratuita nos ofrecen tener un número ilimitado de repositorios con la condición que solo pueden colaborar 5 usuarios en él.</p>
+<p>Pero ¿Es seguro tener nuestros código en   <a target=\"_blank\" href=\"https://github.com/\">Github </a> o <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>? Así estemos pagando. Ellos no tienen uno o dos días dando sus servicios en la web, hasta el día de hoy no he escuchado una queja sobre ellos.</p>
+<p>La solución es tener nuestros propio servidor de <a target=\"_blank\" href=\"http://git-scm.com/\">Git </a>para ellos debemos instalar en una pc-servidor git-core además de su interface web llamada gitweb y openssh-server para generar las key .ssh,
+Algo que con unas simples líneas de comando es relativamente fácil \"en linux\". <a target=\"_blank\" href=\"http://casidiablo.net/montar-servidor-git/\">Click Aqui</a></p>
+<p>Pero según mi experiencia con git-core, las configuraciones de los usuarios, sus permisos y la generación de keys es algo tosca, por no llamarlas fastidiosas.</p>
+<p>¿Algo rápido, sencillo, seguro y propio?</p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a> es la solución, ya que es servidor Git escrito en java  y está diseñado principalmente como una herramienta para grupos de trabajo pequeños, que deseen alojar repositorios centralizados, es multiplataforma y multilenguaje; incluso se puede corre en un servidor Tomcat.</p>
+<p>Pero ¿Què lo hace especial? Instalación fácil, interface web sencilla \"responsiva\", creación de repositorios y permiso de usuarios de manera rápida, numero de repositorios ilimitados, todo desde tu propio servidor, esto es una gran ayuda para grupo de personas / oficinas/ laboratorios, entre otros. Incluso se puede configurar para que te envie un correo cuando un usuario ha hecho un push. <a target=\"_blank\" href=\"http://gitblit.com/screenshots.html\">Ver Screenshots.</a></p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a>no es todo color de rosa. Ya en la actualidad no tiene soporte para ssh así que solo recomiendo para uso en una red local.</p><p>
+En conclusión ningún servidor de Git es perfecto, Github es excelente pero cuando tienes un proyecto grande y no quieres dejar que nadie lo vea \"solo tu equipo de trabajo\" hay que pagar. En Git-core tenemos todo en un ¿pero tienes tiempo para investigar sus configuraciones y permisos para varios usuarios?  En la mayoría de proyecto el tiempo es lo menos que sobra. Si lo que necesitas es un servidor git para usarlo un grupo de pequeño de personas de manera local \"oficina u laboratorio\" Gitblit es una buena opción muy recomendada. </p>
+<p>¿Conoces otro tipo de servidor de git? Comparte tu opinión y comenta.</p>") (pubDate nil "Fri, 15 Mar 2013 18:53:05 -0700") (link nil "http://codersvenezuela.com/post/alternativas-a-github/186self") (guid nil "http://codersvenezuela.com/post/alternativas-a-github/186")))) ("Caracas Tech Meetup" "<p>Reunimos a desarrolladores y emprendedores para que hablen acerca de sus proyectos con un enfoque tecnológico para el primer meetup de Venezuela.</p>
+<p>Queremos conectar, inspirar, educar y colaborar con los miembros de la comunidad tecnológica de la ciudad. Creemos que entre todos podemos compartir los recursos que permitan la construcción de compañías de tecnología exitosas y sustentables.</p>
+<p>Este es un espacio para mostrar el trabajo de los desarrolladores y emprendedores, compartir conocimientos y conectar con la comunidad para encontrar socios, inspiración, inversionistas y dar a conocer el trabajo del emprendimiento y desarrollo en Caracas.</p>
+<p>Estamos por anunciar los temas para este primer encuentro. ¿Tienes ideas? Coméntanos a quién te gustaría ver en este meetup.</p>
+<p><strong>Costo</strong>: 150 Bs en la entrada.</p>
+<p>Los fondos recaudados serán utilizados para la realización del próximo meetup.</p>
+<p>Este primer encuentro será realizado en la Academia Wayra.</p>
+<p><strong>Registro e informacion</strong>: <a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\">http://bit.ly/csstechmeetup</a></p>
+<p><a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\"><img src=\"http://screencloud.net//img/screenshots/585eb7b299d0cc63a567ce91cc3820f9.png\" alt=\"\" width='300px' /></a></p>" "http://codersvenezuela.com/post/caracas-tech-meetup/198self" (20840 50175) new 1 nil nil ((title nil "Caracas Tech Meetup") (description nil) (content:encoded nil "<p>Reunimos a desarrolladores y emprendedores para que hablen acerca de sus proyectos con un enfoque tecnológico para el primer meetup de Venezuela.</p>
+
+<p>Queremos conectar, inspirar, educar y colaborar con los miembros de la comunidad tecnológica de la ciudad. Creemos que entre todos podemos compartir los recursos que permitan la construcción de compañías de tecnología exitosas y sustentables.</p>
+
+<p>Este es un espacio para mostrar el trabajo de los desarrolladores y emprendedores, compartir conocimientos y conectar con la comunidad para encontrar socios, inspiración, inversionistas y dar a conocer el trabajo del emprendimiento y desarrollo en Caracas.</p>
+
+<p>Estamos por anunciar los temas para este primer encuentro. ¿Tienes ideas? Coméntanos a quién te gustaría ver en este meetup.</p>
+
+<p><strong>Costo</strong>: 150 Bs en la entrada.</p>
+
+<p>Los fondos recaudados serán utilizados para la realización del próximo meetup.</p>
+
+<p>Este primer encuentro será realizado en la Academia Wayra.</p>
+
+<p><strong>Registro e informacion</strong>: <a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\">http://bit.ly/csstechmeetup</a></p>
+
+<p><a target=\"_blank\" href=\"http://bit.ly/csstechmeetup\"><img src=\"http://screencloud.net//img/screenshots/585eb7b299d0cc63a567ce91cc3820f9.png\" alt=\"\" width='300px' /></a></p>") (pubDate nil "Fri, 12 Apr 2013 19:33:35 -0700") (link nil "http://codersvenezuela.com/post/caracas-tech-meetup/198self") (guid nil "http://codersvenezuela.com/post/caracas-tech-meetup/198"))) ("Enlaces de la semana" "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/y_nuAwlW7ag\" frameborder=\"0\" allowfullscreen></iframe>
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Quieres saber algunos de los retos que tuvieron los desarrolladores de google al crear google Apps? soportar múltiples logins en diferentes servicios con diferentes tipos de cuentas creo que fue el mas difícil. Una interesante charla explicando las decisiones que tomaron durante su desarrollo. <a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://www.infoq.com/presentations/Google-Apps-Identity</a></p>
+---
+<p>Si necesitas ayuda haciendo una animación y encontrando el easing adecuado, easings.net es lo que estas buscando. En esta pagina encontraras la explicación del tipo de easing, un gráfico animado que te ayudara a ver el efecto y el código jQuery, sass y css.</p>
+<p>Como siempre el código es open source y ha sido traducido a diferentes idiomas, puedes forkearlo y aportar otras animaciones si lo deseas.</p>
+<p><a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://easings.net/</a></p>
+---
+<p>Siguiendo con las nuevas mejoras a Firefox, se ha introducido el api para fullscreen, esta es una de las muchas mejoras que permitirán el desarrollo de juegos en la web. Otras apis que se esperan ver activas en un futuro son los apis para canvas, audio y Gamepad.</p>
+<p>Para usarlo, seleccionamos el elemento y hacemos un llamado a element.mozRequestFullScreen(), este metodo debera llamarse directamente contra una accion del uaurio como presionando un botón y no puede ser activado por ejemplo onload.</p>
+<p> Cambien hay unas nuevas pseudo clases en css :full-screen que permite seleccionar el elemento que esta en modo pantalla completa y así poder aplicarle estilos a el o a elementos hijos solo cuando están en pantalla completa.</p>
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/Gecko:FullScreenAPI\">https://wiki.mozilla.org/Gecko:FullScreenAPI</a></p>
+<p>Y también puedes ver algunos ejemplos en el blog de desarrollo de firefox <a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode\">https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode</a></p>
+---
+<p>Otra api a la que se esta desarrollando es el api para gamepads que te permite controlar la pagina web con un gamepad o controlador externo.</p>
+<p>Ya hay algunos demos bastante interesantes</p>
+<p><a target=\"_blank\" href=\"http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome\">http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome</a></p>
+<p><a target=\"_blank\" href=\"http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html\">http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html</a></p>
+<p><a target=\"_blank\" href=\"http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/\">http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/</a></p>
+<p>Por ahora puedes probar algunos con la versión experimental Nightly builds de Firefox, con el build Dev de Chrome en windows o canary chrome en mac.</p>
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/GamepadAPI\">https://wiki.mozilla.org/GamepadAPI</a></p>" "http://codersvenezuela.com/post/enlaces-de-la-semana/191self" (20836 41727) new 2 nil nil ((title nil "Enlaces de la semana") (description nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/y_nuAwlW7ag\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p>") (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/y_nuAwlW7ag\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Quieres saber algunos de los retos que tuvieron los desarrolladores de google al crear google Apps? soportar múltiples logins en diferentes servicios con diferentes tipos de cuentas creo que fue el mas difícil. Una interesante charla explicando las decisiones que tomaron durante su desarrollo. <a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://www.infoq.com/presentations/Google-Apps-Identity</a></p>
+
+---
+
+<p>Si necesitas ayuda haciendo una animación y encontrando el easing adecuado, easings.net es lo que estas buscando. En esta pagina encontraras la explicación del tipo de easing, un gráfico animado que te ayudara a ver el efecto y el código jQuery, sass y css.</p>
+
+<p>Como siempre el código es open source y ha sido traducido a diferentes idiomas, puedes forkearlo y aportar otras animaciones si lo deseas.</p>
+
+<p><a target=\"_blank\" href=\"http://www.infoq.com/presentations/Google-Apps-Identity\">http://easings.net/</a></p>
+
+---
+
+<p>Siguiendo con las nuevas mejoras a Firefox, se ha introducido el api para fullscreen, esta es una de las muchas mejoras que permitirán el desarrollo de juegos en la web. Otras apis que se esperan ver activas en un futuro son los apis para canvas, audio y Gamepad.</p>
+
+<p>Para usarlo, seleccionamos el elemento y hacemos un llamado a element.mozRequestFullScreen(), este metodo debera llamarse directamente contra una accion del uaurio como presionando un botón y no puede ser activado por ejemplo onload.</p>
+
+<p> Cambien hay unas nuevas pseudo clases en css :full-screen que permite seleccionar el elemento que esta en modo pantalla completa y así poder aplicarle estilos a el o a elementos hijos solo cuando están en pantalla completa.</p>
+
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox 
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/Gecko:FullScreenAPI\">https://wiki.mozilla.org/Gecko:FullScreenAPI</a></p>
+
+<p>Y también puedes ver algunos ejemplos en el blog de desarrollo de firefox <a target=\"_blank\" href=\"https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode\">https://developer.mozilla.org/en-US/docs/DOM/Using_fullscreen_mode?redirectlocale=en-US&redirectslug=DOM%2FUsing_full-screen_mode</a></p>
+
+---
+
+<p>Otra api a la que se esta desarrollando es el api para gamepads que te permite controlar la pagina web con un gamepad o controlador externo.</p>
+
+<p>Ya hay algunos demos bastante interesantes</p>
+
+<p><a target=\"_blank\" href=\"http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome\">http://rawkes.com/articles/gamepad-api-demo-in-firefox-and-chrome</a></p>
+
+<p><a target=\"_blank\" href=\"http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html\">http://jlongster.com:4001/2011/12/29/rotating-webpages-with-a-gamepad.html</a></p>
+
+<p><a target=\"_blank\" href=\"http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/\">http://hacks.mozilla.org/2011/12/paving-the-way-for-open-games-on-the-web-with-the-gamepad-and-mouse-lock-apis/</a></p>
+
+<p>Por ahora puedes probar algunos con la versión experimental Nightly builds de Firefox, con el build Dev de Chrome en windows o canary chrome en mac.</p>
+
+<p>Puedes leer mas sobre la especificcion en la wiki de firefox 
+<a target=\"_blank\" href=\"https://wiki.mozilla.org/GamepadAPI\">https://wiki.mozilla.org/GamepadAPI</a></p>") (pubDate nil "Tue, 09 Apr 2013 16:23:43 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/191self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/191"))) ("Ruby Tip" "<p>Al hacer un modelo en ruby el nombre de la clase esta implícito dentro de los métodos de clase.</p>
+<notextile><div class=\"CodeRay\">
+<div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+<span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+new <span class=\"constant\">User</span>.find_by_email(email)
+<span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>
+<p>Equivale a </p>
+<notextile><div class=\"CodeRay\">
+<div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+<span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+<span class=\"constant\">PasswordReset</span>.new(<span class=\"constant\">User</span>.find_by_email(email))
+<span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>" "http://codersvenezuela.com/post/ruby-tip/195self" (20833 52499) new 3 nil nil ((title nil "Ruby Tip") (description nil) (content:encoded nil "<p>Al hacer un modelo en ruby el nombre de la clase esta implícito dentro de los métodos de clase.</p>
+
+<notextile><div class=\"CodeRay\">
+  <div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+  <span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+    new <span class=\"constant\">User</span>.find_by_email(email)
+  <span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>
+
+<p>Equivale a </p>
+
+<notextile><div class=\"CodeRay\">
+  <div class=\"code\"><pre>
+<span class=\"keyword\">class</span> <span class=\"class\">PasswordReset</span>
+  <span class=\"keyword\">def</span> <span class=\"predefined-constant\">self</span>.<span class=\"function\">from_email</span>(email)
+    <span class=\"constant\">PasswordReset</span>.new(<span class=\"constant\">User</span>.find_by_email(email))
+  <span class=\"keyword\">end</span>
+<span class=\"keyword\">end</span></pre></div>
+</div>
+</notextile>") (pubDate nil "Sun, 07 Apr 2013 12:46:27 -0700") (link nil "http://codersvenezuela.com/post/ruby-tip/195self") (guid nil "http://codersvenezuela.com/post/ruby-tip/195"))) ("Webcast AgilVen Enero 2013" "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/Hzq9-B1jBuU\" frameborder=\"0\" allowfullscreen></iframe>" "http://codersvenezuela.com/post/webcast-agilven-enero-2013/192self" (20831 38906) new 4 nil nil ((title nil "Webcast AgilVen Enero 2013") (description nil) (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/Hzq9-B1jBuU\" frameborder=\"0\" allowfullscreen></iframe>") (pubDate nil "Fri, 05 Apr 2013 20:35:22 -0700") (link nil "http://codersvenezuela.com/post/webcast-agilven-enero-2013/192self") (guid nil "http://codersvenezuela.com/post/webcast-agilven-enero-2013/192"))) ("Enlaces de la semana" "<p>Hola Coders, bienvenidos a los enlaces de la semana (en vídeo) un experimento, luego me comentan si les gusta mas escrito o en vídeo.</p>
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/ZAnFPPNDows\" frameborder=\"0\" allowfullscreen></iframe>
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Recientemente hablamos sobre algunos <a target=\"_blank\" href=\"http://codersvenezuela.com/post/venezolanos-participando-en-one-game-a-month/178\">Venezolanos desarrollando juegos en el reto OneGameAMonth</a>, he encontrado unos artículos interesantes sobre como hacer guías o tutoriales para demostrar como se juega tu juego, los llaman In-Game Tutorials.
+Uno de los artículos habla sobre la importancia de crear este tipo de tutorial para tu juego y el otro explica varias técnicas para realizaros. Los dos tutoriales están publicados en la pagina de <a target=\"_blank\" href=\"http://gamedev.tutsplus.com/\">http://gamedev.tutsplus.com/</a> la cual les recomiendo seguir ya que tiene información variada e interesante sobre el desarrollo de vídeo juegos en múltiples plataformas.</p>
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial\">http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial</a></p>
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/\">http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/</a></p>
+---
+<p><a target=\"_blank\" href=\"https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up\">https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up</a>/</p>
+<p>Esta semana Firefox nos sorprendio con una serie de mejoras que podrian venir en las próximas versiones del navegador, la mas llamativa es que ahora tendremos la posibilidad de editar el css de nuestras paginas en vivo, por ahora solo esta soportado por el editor SublimeText 2 pero gracias al desarrollo del protocolo remoto podremos editar el css y ver los cambios en modo live.</p>
+<p>El desarrollo de este protocolo también nos permitirá ejecutar una serie de código en otros dispositivos remotamente, muy útil para la llegada del Firefox OS y para hacer debbug de aplicaciones B2G.</p>
+<p>Si te interesa ver el código de este desarrollo interesante puedes encontrarlo en GitHub en <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-remote-styleEditors\">https://github.com/paulrouget/firefox-remote-styleEditors</a></p>
+<p>Otra gran noticia es una mejora en la consola de Firefox que ahora podrá soportar CoffeeScript y LiveScript <a target=\"_blank\" href=\"http://paulrouget.com/e/fxterminalv3/\">http://paulrouget.com/e/fxterminalv3/</a></p>
+<p>Recuerda que el proyecto de la consola de firefox también lo puedes encontrar en GitHub y contribuir a el <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-jsterm\">https://github.com/paulrouget/firefox-jsterm</a></p>
+<p>Estas mejoras no son oficiales y están basadas en las peticiones de los usuarios a los des arrolladores de Firefox, suponemos que serán implementadas las que tengan mas tracción y soporte entre los usuarios.</p>
+<p>Si quieres leer sobre los demás cambios que se tienen preparados te invito a leer el resumen en el blog de Paul Rouget uno de los desarrolladores de Firefox <a target=\"_blank\" href=\"http://paulrouget.com/e/devtoolsnext/\">http://paulrouget.com/e/devtoolsnext/</a></p>
+--
+<p>Programas en Python y no fuiste a la Pycon 2013? bueno yo no programo en python y tampoco fui pero eso no importa porque ya están publicados los vídeos de la conferencia en la pagina oficial, ahora ya tienes material para entretenerte el fin de semana.</p>
+<p><a target=\"_blank\" href=\"http://pyvideo.org/category/33/pycon-us-2013\">http://pyvideo.org/category/33/pycon-us-2013</a></p>
+--
+<p>Ah que te pidieron hacer un sitio que permita ver imagen vídeo o iframe en pantalla competa BigScreen es una librería que te permite no solo eso si no usarlo con cualquier div o elemento en la pagina, tiene un buen fallback para el caso de los vídeos.</p>
+<p>Como siempre puedes encontrar este proyecto en GitHub si quieres revisar su código o ayudar a su desarrollo.</p>
+<p><a target=\"_blank\" href=\"http://brad.is/coding/BigScreen/\">http://brad.is/coding/BigScreen/</a></p>
+<p><a target=\"_blank\" href=\"https://github.com/bdougherty/BigScreen\">https://github.com/bdougherty/BigScreen</a></p>
+--
+<p>La gente de Chrome también nos ha dado su dosis de cosas nuevas esta semana,
+si tu navegador preferido para desarrollar es chrome pero no estas muy familiarizado con su panel de desarrollo estas de suerte, CodeSchool ha publicado un tutorial interactivo gratuito donde te ensenara a sacarle provecho a esta herramienta.</p>
+<p>En cada una de las lecciones tendrás un vídeo y una serie de tareas que deberás completar para pasar de lección donde también puedes ganar una serie de badges de CodeSchool.</p>
+<p>Tanto si manejas el panel de desarrollo como si apenas lo estas conociendo vale la pena ver este pequeño curso, para descubrir todo el potencial de esta herramienta y aumentar tu productividad con los tips que nos dan.</p>
+<p><a target=\"_blank\" href=\"http://discover-devtools.codeschool.com/\">http://discover-devtools.codeschool.com/</a></p>
+--
+<p>Les recordamos seguirnos en nuestras diferentes redes sociales <a target=\"_blank\" href=\"http://twitter.com/coders_vzla\">Twitter</a>, <a target=\"_blank\" href=\"https://www.facebook.com/?q=#/pages/codersvenezuela/\">Facebook</a> y <a target=\"_blank\" href=\"https://plus.google.com/u/0/communities/114890780982298656984\">Google+</a></p>" "http://codersvenezuela.com/post/enlaces-de-la-semana/190self" (20826 17328) new 5 nil nil ((title nil "Enlaces de la semana") (description nil "<p>Hola Coders, bienvenidos a los enlaces de la semana (en vídeo) un experimento, luego me comentan si les gusta mas escrito o en vídeo.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/ZAnFPPNDows\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p>") (content:encoded nil "<p>Hola Coders, bienvenidos a los enlaces de la semana (en vídeo) un experimento, luego me comentan si les gusta mas escrito o en vídeo.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/ZAnFPPNDows\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Los enlaces y la transcripción los puedes leer en el articulo completo.</p><p>Recientemente hablamos sobre algunos <a target=\"_blank\" href=\"http://codersvenezuela.com/post/venezolanos-participando-en-one-game-a-month/178\">Venezolanos desarrollando juegos en el reto OneGameAMonth</a>, he encontrado unos artículos interesantes sobre como hacer guías o tutoriales para demostrar como se juega tu juego, los llaman In-Game Tutorials. 
+Uno de los artículos habla sobre la importancia de crear este tipo de tutorial para tu juego y el otro explica varias técnicas para realizaros. Los dos tutoriales están publicados en la pagina de <a target=\"_blank\" href=\"http://gamedev.tutsplus.com/\">http://gamedev.tutsplus.com/</a> la cual les recomiendo seguir ya que tiene información variada e interesante sobre el desarrollo de vídeo juegos en múltiples plataformas.</p>
+
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial\">http://gamedev.tutsplus.com/articles/game-design-articles/the-often-underestimated-art-of-creating-an-awesome-in-game-tutorial</a></p>
+
+<p><a target=\"_blank\" href=\"http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/\">http://gamedev.tutsplus.com/tutorials/game-design/the-many-ways-to-show-the-player-how-its-done-with-in-game-tutorials/</a></p>
+
+---
+
+<p><a target=\"_blank\" href=\"https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up\">https://hacks.mozilla.org/2013/03/firefox-developer-tools-work-week-wrap-up</a>/</p>
+
+<p>Esta semana Firefox nos sorprendio con una serie de mejoras que podrian venir en las próximas versiones del navegador, la mas llamativa es que ahora tendremos la posibilidad de editar el css de nuestras paginas en vivo, por ahora solo esta soportado por el editor SublimeText 2 pero gracias al desarrollo del protocolo remoto podremos editar el css y ver los cambios en modo live.</p>
+
+<p>El desarrollo de este protocolo también nos permitirá ejecutar una serie de código en otros dispositivos remotamente, muy útil para la llegada del Firefox OS y para hacer debbug de aplicaciones B2G.</p>
+
+<p>Si te interesa ver el código de este desarrollo interesante puedes encontrarlo en GitHub en <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-remote-styleEditors\">https://github.com/paulrouget/firefox-remote-styleEditors</a></p>
+
+<p>Otra gran noticia es una mejora en la consola de Firefox que ahora podrá soportar CoffeeScript y LiveScript <a target=\"_blank\" href=\"http://paulrouget.com/e/fxterminalv3/\">http://paulrouget.com/e/fxterminalv3/</a></p> 
+
+<p>Recuerda que el proyecto de la consola de firefox también lo puedes encontrar en GitHub y contribuir a el <a target=\"_blank\" href=\"https://github.com/paulrouget/firefox-jsterm\">https://github.com/paulrouget/firefox-jsterm</a></p>
+
+<p>Estas mejoras no son oficiales y están basadas en las peticiones de los usuarios a los des arrolladores de Firefox, suponemos que serán implementadas las que tengan mas tracción y soporte entre los usuarios.</p>
+
+<p>Si quieres leer sobre los demás cambios que se tienen preparados te invito a leer el resumen en el blog de Paul Rouget uno de los desarrolladores de Firefox <a target=\"_blank\" href=\"http://paulrouget.com/e/devtoolsnext/\">http://paulrouget.com/e/devtoolsnext/</a></p> 
+
+-- 
+
+<p>Programas en Python y no fuiste a la Pycon 2013? bueno yo no programo en python y tampoco fui pero eso no importa porque ya están publicados los vídeos de la conferencia en la pagina oficial, ahora ya tienes material para entretenerte el fin de semana.</p>
+
+<p><a target=\"_blank\" href=\"http://pyvideo.org/category/33/pycon-us-2013\">http://pyvideo.org/category/33/pycon-us-2013</a></p>
+
+--
+
+<p>Ah que te pidieron hacer un sitio que permita ver imagen vídeo o iframe en pantalla competa BigScreen es una librería que te permite no solo eso si no usarlo con cualquier div o elemento en la pagina, tiene un buen fallback para el caso de los vídeos.</p>
+
+<p>Como siempre puedes encontrar este proyecto en GitHub si quieres revisar su código o ayudar a su desarrollo.</p>
+
+<p><a target=\"_blank\" href=\"http://brad.is/coding/BigScreen/\">http://brad.is/coding/BigScreen/</a></p>
+
+<p><a target=\"_blank\" href=\"https://github.com/bdougherty/BigScreen\">https://github.com/bdougherty/BigScreen</a></p>
+
+--
+
+<p>La gente de Chrome también nos ha dado su dosis de cosas nuevas esta semana,
+si tu navegador preferido para desarrollar es chrome pero no estas muy familiarizado con su panel de desarrollo estas de suerte, CodeSchool ha publicado un tutorial interactivo gratuito donde te ensenara a sacarle provecho a esta herramienta.</p>
+
+<p>En cada una de las lecciones tendrás un vídeo y una serie de tareas que deberás completar para pasar de lección donde también puedes ganar una serie de badges de CodeSchool.</p>
+
+<p>Tanto si manejas el panel de desarrollo como si apenas lo estas conociendo vale la pena ver este pequeño curso, para descubrir todo el potencial de esta herramienta y aumentar tu productividad con los tips que nos dan.</p>
+
+<p><a target=\"_blank\" href=\"http://discover-devtools.codeschool.com/\">http://discover-devtools.codeschool.com/</a></p>
+
+--
+
+<p>Les recordamos seguirnos en nuestras diferentes redes sociales <a target=\"_blank\" href=\"http://twitter.com/coders_vzla\">Twitter</a>, <a target=\"_blank\" href=\"https://www.facebook.com/?q=#/pages/codersvenezuela/\">Facebook</a> y <a target=\"_blank\" href=\"https://plus.google.com/u/0/communities/114890780982298656984\">Google+</a></p>") (pubDate nil "Mon, 01 Apr 2013 19:34:24 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/190self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/190"))) ("Inicia curso MongoDB para desarrolladores Python" "<p>Tiene una duración de 7 semanas y es gratis. Comienza hoy 01 de abril de 2013. No se lo pierdan.</p>
+<p>
+<a target=\"_blank\" href=\"https://education.10gen.com/courses/10gen/M101P/2013_April/about\">M101P: MongoDB for Developers</a>
+</p>" "http://codersvenezuela.com/post/inicia-curso-mongodb-para-desarrolladores-python/194self" (20825 49596) new 6 nil nil ((title nil "Inicia curso MongoDB para desarrolladores Python") (description nil) (content:encoded nil "<p>Tiene una duración de 7 semanas y es gratis. Comienza hoy 01 de abril de 2013. No se lo pierdan.</p>
+<p>
+<a target=\"_blank\" href=\"https://education.10gen.com/courses/10gen/M101P/2013_April/about\">M101P: MongoDB for Developers</a>
+</p>") (pubDate nil "Mon, 01 Apr 2013 10:19:56 -0700") (link nil "http://codersvenezuela.com/post/inicia-curso-mongodb-para-desarrolladores-python/194self") (guid nil "http://codersvenezuela.com/post/inicia-curso-mongodb-para-desarrolladores-python/194"))) ("La busqueda del tesoro Maps API" "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/5X1cDKlkGmo\" frameborder=\"0\" allowfullscreen></iframe>" "http://codersvenezuela.com/post/la-busqueda-del-tesoro-maps-api/193self" (20819 43036) new 7 nil nil ((title nil "La busqueda del tesoro Maps API") (description nil) (content:encoded nil "<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/5X1cDKlkGmo\" frameborder=\"0\" allowfullscreen></iframe>") (pubDate nil "Wed, 27 Mar 2013 19:17:00 -0700") (link nil "http://codersvenezuela.com/post/la-busqueda-del-tesoro-maps-api/193self") (guid nil "http://codersvenezuela.com/post/la-busqueda-del-tesoro-maps-api/193"))) ("Enlaces de la semana" "<p><strong>CSS3 Patterns Gallery</strong>, una buena pagina para encontrar patrones hechos con css3, perfecto para colocarle fondo a tus paginas sin buscar mucho por Internet. Todos están hecho con código css3, sin imágenes y sin js. <a target=\"_blank\" href=\"http://lea.verou.me/css3patterns/\">http://lea.verou.me/css3patterns/</a></p>
+<p><strong>TDD Terminology Simplified</strong>, Nettuts nos hace la vida simple y nos habla sobre TDD, si estas buscando introducirte al mundo de TDD, este articulo te ayudara con los términos usados. <a target=\"_blank\" href=\"http://net.tutsplus.com/articles/tdd-terminology-simplified\">http://net.tutsplus.com/articles/tdd-terminology-simplified</a></p>
+<p><strong>¿Por qué tan pocas chicas estudiamos carreras relacionadas con la Informática?</strong>, un articulo de opinión sobre la falta de chicas en las carreras de Informática. <a target=\"_blank\" href=\"http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html\">http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html</a></p>
+<p><strong>CRUD en MongoDB (Parte 2-1: Lectura/Find)</strong>, Yohan Graterol <a target=\"_blank\" href=\"https://twitter.com/yograterol\">@yograterol</a> continua con su serie sobre MongoDB esta vez explicando como encontrar documentos, tipo select en mysql. Les recomiendo seguir la serie. <a target=\"_blank\" href=\"http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find\">http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find</a></p>
+<p><strong>Making Sprite-based Games with Canvas</strong>, esta también es una serie de artículos donde nos ensenan a crear un juego con sprites y canvas, recomendado. <a target=\"_blank\" href=\"http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas\">http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas</a></p>
+<p><strong>Instalación de paquetes Python con Distribute y pip</strong>, Leonardo Caballero <a target=\"_blank\" href=\"https://twitter.com/macagua\">@macagua</a> nos trae la manera actualmente mas recomendada para instalar paquetes Python con las herramientas Distribute y pip. <a target=\"_blank\" href=\"http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/\">http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/</a></p>" "http://codersvenezuela.com/post/enlaces-de-la-semana/189self" (20810 31770) new 8 nil nil ((title nil "Enlaces de la semana") (description nil) (content:encoded nil "<p><strong>CSS3 Patterns Gallery</strong>, una buena pagina para encontrar patrones hechos con css3, perfecto para colocarle fondo a tus paginas sin buscar mucho por Internet. Todos están hecho con código css3, sin imágenes y sin js. <a target=\"_blank\" href=\"http://lea.verou.me/css3patterns/\">http://lea.verou.me/css3patterns/</a></p>
+
+<p><strong>TDD Terminology Simplified</strong>, Nettuts nos hace la vida simple y nos habla sobre TDD, si estas buscando introducirte al mundo de TDD, este articulo te ayudara con los términos usados. <a target=\"_blank\" href=\"http://net.tutsplus.com/articles/tdd-terminology-simplified\">http://net.tutsplus.com/articles/tdd-terminology-simplified</a></p> 
+
+<p><strong>¿Por qué tan pocas chicas estudiamos carreras relacionadas con la Informática?</strong>, un articulo de opinión sobre la falta de chicas en las carreras de Informática. <a target=\"_blank\" href=\"http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html\">http://www.javiergarzas.com/2013/03/chicas-estudiamos-carreras-informatica.html</a></p>
+
+<p><strong>CRUD en MongoDB (Parte 2-1: Lectura/Find)</strong>, Yohan Graterol <a target=\"_blank\" href=\"https://twitter.com/yograterol\">@yograterol</a> continua con su serie sobre MongoDB esta vez explicando como encontrar documentos, tipo select en mysql. Les recomiendo seguir la serie. <a target=\"_blank\" href=\"http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find\">http://www.yograterol.me/crud-en-mongodb-parte-2-1-lectura-find</a></p>
+
+<p><strong>Making Sprite-based Games with Canvas</strong>, esta también es una serie de artículos donde nos ensenan a crear un juego con sprites y canvas, recomendado. <a target=\"_blank\" href=\"http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas\">http://jlongster.com:4001/Making-Sprite-based-Games-with-Canvas</a></p>
+
+<p><strong>Instalación de paquetes Python con Distribute y pip</strong>, Leonardo Caballero <a target=\"_blank\" href=\"https://twitter.com/macagua\">@macagua</a> nos trae la manera actualmente mas recomendada para instalar paquetes Python con las herramientas Distribute y pip. <a target=\"_blank\" href=\"http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/\">http://lcaballero.wordpress.com/2013/03/20/instalacion-de-paquetes-python-con-distribute-y-pip/</a></p>") (pubDate nil "Wed, 20 Mar 2013 20:18:50 -0700") (link nil "http://codersvenezuela.com/post/enlaces-de-la-semana/189self") (guid nil "http://codersvenezuela.com/post/enlaces-de-la-semana/189"))) ("Google Drive SDK: Lo que puedes hacer con el nuevo API de tiempo real" "<p>Video introductorio donde se muestra lo que se puede hacer con el nuevo API de Google Drive.</p>
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/HCyrywLtWIs\" frameborder=\"0\" allowfullscreen></iframe>
+<p>Puedes leer el anuncio del nuevo API en <a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">el blog de google</a> (<a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html</a>) donde tambien podras ver unos demos hechos por algunas empresas.</p>
+<p>Si quieres saber mas ve a <a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">la pagina oficial del nuevo API</a> (<a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">https://developers.google.com/drive/realtime/</a>).</p>" "http://codersvenezuela.com/post/google-drive-sdk-lo-que-puedes-hacer-con-el-nuevo-api-de-tiempo-real/188self" (20810 22720) new 9 nil nil ((title nil "Google Drive SDK: Lo que puedes hacer con el nuevo API de tiempo real") (description nil) (content:encoded nil "<p>Video introductorio donde se muestra lo que se puede hacer con el nuevo API de Google Drive.</p>
+
+<iframe width=\"880\" height=\"315\" src=\"http://www.youtube.com/embed/HCyrywLtWIs\" frameborder=\"0\" allowfullscreen></iframe>
+
+<p>Puedes leer el anuncio del nuevo API en <a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">el blog de google</a> (<a target=\"_blank\" href=\"http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html\">http://googleappsdeveloper.blogspot.com/2013/03/build-collaborative-apps-with-google.html</a>) donde tambien podras ver unos demos hechos por algunas empresas.</p>
+
+<p>Si quieres saber mas ve a <a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">la pagina oficial del nuevo API</a> (<a target=\"_blank\" href=\"https://developers.google.com/drive/realtime/\">https://developers.google.com/drive/realtime/</a>).</p>") (pubDate nil "Wed, 20 Mar 2013 17:48:00 -0700") (link nil "http://codersvenezuela.com/post/google-drive-sdk-lo-que-puedes-hacer-con-el-nuevo-api-de-tiempo-real/188self") (guid nil "http://codersvenezuela.com/post/google-drive-sdk-lo-que-puedes-hacer-con-el-nuevo-api-de-tiempo-real/188"))) ("Alternativas a Github" "<p>Como todos sabemos <a target=\"_blank\" href=\"https://github.com/\">Github </a>es un servidor de repositorio, basado en Git (sistema distribuido de control de versiones). </p>
+<p>
+¿Pero qué pasa cuando queremos que nuestros repositorios sean privados?</p>
+<p>¿Qué pasa si nos gusta tener en todo momento control del mismo?</p>
+<p>¿Tenemos que pagar en $$? … nada fácil en Venezuela.</p>
+<p>Pues mi primera alternativa es <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>es la misma idea de github de igual forma tiene planes  comerciales y gratuitos; pero de forma gratuita nos ofrecen tener un número ilimitado de repositorios con la condición que solo pueden colaborar 5 usuarios en él.</p>
+<p>Pero ¿Es seguro tener nuestros código en   <a target=\"_blank\" href=\"https://github.com/\">Github </a> o <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>? Así estemos pagando. Ellos no tienen uno o dos días dando sus servicios en la web, hasta el día de hoy no he escuchado una queja sobre ellos.</p>
+<p>La solución es tener nuestros propio servidor de <a target=\"_blank\" href=\"http://git-scm.com/\">Git </a>para ellos debemos instalar en una pc-servidor git-core además de su interface web llamada gitweb y openssh-server para generar las key .ssh,
+Algo que con unas simples líneas de comando es relativamente fácil \"en linux\". <a target=\"_blank\" href=\"http://casidiablo.net/montar-servidor-git/\">Click Aqui</a></p>
+<p>Pero según mi experiencia con git-core, las configuraciones de los usuarios, sus permisos y la generación de keys es algo tosca, por no llamarlas fastidiosas.</p>
+<p>¿Algo rápido, sencillo, seguro y propio?</p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a> es la solución, ya que es servidor Git escrito en java  y está diseñado principalmente como una herramienta para grupos de trabajo pequeños, que deseen alojar repositorios centralizados, es multiplataforma y multilenguaje; incluso se puede corre en un servidor Tomcat.</p>
+<p>Pero ¿Què lo hace especial? Instalación fácil, interface web sencilla \"responsiva\", creación de repositorios y permiso de usuarios de manera rápida, numero de repositorios ilimitados, todo desde tu propio servidor, esto es una gran ayuda para grupo de personas / oficinas/ laboratorios, entre otros. Incluso se puede configurar para que te envie un correo cuando un usuario ha hecho un push. <a target=\"_blank\" href=\"http://gitblit.com/screenshots.html\">Ver Screenshots.</a></p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a>no es todo color de rosa. Ya en la actualidad no tiene soporte para ssh así que solo recomiendo para uso en una red local.</p><p>
+En conclusión ningún servidor de Git es perfecto, Github es excelente pero cuando tienes un proyecto grande y no quieres dejar que nadie lo vea \"solo tu equipo de trabajo\" hay que pagar. En Git-core tenemos todo en un ¿pero tienes tiempo para investigar sus configuraciones y permisos para varios usuarios?  En la mayoría de proyecto el tiempo es lo menos que sobra. Si lo que necesitas es un servidor git para usarlo un grupo de pequeño de personas de manera local \"oficina u laboratorio\" Gitblit es una buena opción muy recomendada. </p>
+<p>¿Conoces otro tipo de servidor de git? Comparte tu opinión y comenta.</p>" "http://codersvenezuela.com/post/alternativas-a-github/186self" (20803 53377) new 10 nil nil ((title nil "Alternativas a Github") (description nil) (content:encoded nil "<p>Como todos sabemos <a target=\"_blank\" href=\"https://github.com/\">Github </a>es un servidor de repositorio, basado en Git (sistema distribuido de control de versiones). </p>
+<p>
+¿Pero qué pasa cuando queremos que nuestros repositorios sean privados?</p>
+<p>¿Qué pasa si nos gusta tener en todo momento control del mismo?</p>
+<p>¿Tenemos que pagar en $$? … nada fácil en Venezuela.</p>
+<p>Pues mi primera alternativa es <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>es la misma idea de github de igual forma tiene planes  comerciales y gratuitos; pero de forma gratuita nos ofrecen tener un número ilimitado de repositorios con la condición que solo pueden colaborar 5 usuarios en él.</p>
+<p>Pero ¿Es seguro tener nuestros código en   <a target=\"_blank\" href=\"https://github.com/\">Github </a> o <a target=\"_blank\" href=\"https://bitbucket.org/\">bitbucket </a>? Así estemos pagando. Ellos no tienen uno o dos días dando sus servicios en la web, hasta el día de hoy no he escuchado una queja sobre ellos.</p>
+<p>La solución es tener nuestros propio servidor de <a target=\"_blank\" href=\"http://git-scm.com/\">Git </a>para ellos debemos instalar en una pc-servidor git-core además de su interface web llamada gitweb y openssh-server para generar las key .ssh,
+Algo que con unas simples líneas de comando es relativamente fácil \"en linux\". <a target=\"_blank\" href=\"http://casidiablo.net/montar-servidor-git/\">Click Aqui</a></p>
+<p>Pero según mi experiencia con git-core, las configuraciones de los usuarios, sus permisos y la generación de keys es algo tosca, por no llamarlas fastidiosas.</p>
+<p>¿Algo rápido, sencillo, seguro y propio?</p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a> es la solución, ya que es servidor Git escrito en java  y está diseñado principalmente como una herramienta para grupos de trabajo pequeños, que deseen alojar repositorios centralizados, es multiplataforma y multilenguaje; incluso se puede corre en un servidor Tomcat.</p>
+<p>Pero ¿Què lo hace especial? Instalación fácil, interface web sencilla \"responsiva\", creación de repositorios y permiso de usuarios de manera rápida, numero de repositorios ilimitados, todo desde tu propio servidor, esto es una gran ayuda para grupo de personas / oficinas/ laboratorios, entre otros. Incluso se puede configurar para que te envie un correo cuando un usuario ha hecho un push. <a target=\"_blank\" href=\"http://gitblit.com/screenshots.html\">Ver Screenshots.</a></p>
+<p><a target=\"_blank\" href=\"http://gitblit.com/\">Gitblit </a>no es todo color de rosa. Ya en la actualidad no tiene soporte para ssh así que solo recomiendo para uso en una red local.</p><p>
+En conclusión ningún servidor de Git es perfecto, Github es excelente pero cuando tienes un proyecto grande y no quieres dejar que nadie lo vea \"solo tu equipo de trabajo\" hay que pagar. En Git-core tenemos todo en un ¿pero tienes tiempo para investigar sus configuraciones y permisos para varios usuarios?  En la mayoría de proyecto el tiempo es lo menos que sobra. Si lo que necesitas es un servidor git para usarlo un grupo de pequeño de personas de manera local \"oficina u laboratorio\" Gitblit es una buena opción muy recomendada. </p>
+<p>¿Conoces otro tipo de servidor de git? Comparte tu opinión y comenta.</p>") (pubDate nil "Fri, 15 Mar 2013 18:53:05 -0700") (link nil "http://codersvenezuela.com/post/alternativas-a-github/186self") (guid nil "http://codersvenezuela.com/post/alternativas-a-github/186"))))

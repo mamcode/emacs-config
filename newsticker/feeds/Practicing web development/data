@@ -1,0 +1,2106 @@
+;; -*- coding: utf-8 -*-
+(("Practicing web development" "Mark van Lent’s weblog" nil (20849 31423 94841) feed 0 nil nil ((author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (rights nil "Copyright © Mark van Lent, Creative Commons Attribution 3.0 Unported License") (title nil "Practicing web development") (subtitle nil "Mark van Lent’s weblog") (id nil "tag:www.vlent.nl,2010-02-04:/feed.atom") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/"))) (link ((rel . "self") (type . "application/atom+xml") (href . "http://www.vlent.nl/feed.atom"))) (icon nil "http://www.vlent.nl/favicon.ico") (logo nil "http://www.vlent.nl/feed-logo.png") (updated nil "2013-04-10T11:45:00Z") (generator ((uri . "https://github.com/posativ/acrylamid/") (version . "0.6.5")) "acrylamid") (entry nil (title nil "Glances") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/04/10/glances/"))) (id nil "tag:www.vlent.nl,2013-04-10:/weblog/2013/04/10/glances/") (updated nil "2013-04-10T11:45:00Z") (category ((term . "devops"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Since I keep forgetting the name of this monitoring tool, I decided to
+create an article so I can jog my memory more&nbsp;easily.</p>
+<p>To get some basic information about your system
+<a href=\"http://en.wikipedia.org/wiki/Top_(software)\">top</a> is a very useful
+tool. But sometimes you need a little bit&nbsp;more.</p>
+<p>If that is the case, you may want to check out
+<a href=\"https://github.com/nicolargo/glances\">Glances</a>. Here&#8217;s an example of
+Glances in action on my virtual&nbsp;machine:</p>
+<p><img alt=\"Glances example\" src=\"http://www.vlent.nl/images/glances.png\" title=\"Glances example\"/></p>
+<p>Besides the basics (like <span class=\"caps\">CPU</span> usage, load, memory usage) it also
+displays information like network usage and disk I/O. And incidentally
+Glances is written in&nbsp;Python.</p>")) (entry nil (title nil "ZODB analysis") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/02/22/zodb-analysis/"))) (id nil "tag:www.vlent.nl,2013-02-22:/weblog/2013/02/22/zodb-analysis/") (updated nil "2013-02-22T23:40:00Z") (category ((term . "development"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>A note to myself on how to get a quick insight in the content in a&nbsp;<span class=\"caps\">ZODB</span>.</p>
+<p>A couple of years ago I created
+<a href=\"http://pypi.python.org/pypi/mr.inquisition/\">mr.inquisition</a> to get
+more insight in the content of a foreign Zope Object Database
+(<span class=\"caps\">ZODB</span>). And while I still believe it still may have its uses (although
+I haven&#8217;t personally used it for a while), you may want to start off
+with the following&nbsp;command:</p>
+<pre><code>$ bin/zopepy -m ZODB.scripts.analyze var/filestorage/Data.fs
+</code></pre>
+<p>This results in for&nbsp;example:</p>
+<pre><code>Processed 10611 records in 150 transactions
+Average record size is  571.80 bytes
+Average transaction size is 40449.41 bytes
+Types used:
+Class Name                                  Count   TBytes    Pct AvgSize
+------------------------------------------ ------ --------  ----- -------
+AccessControl.users.User                        2      262   0.0%  131.00
+App.ApplicationManager.ApplicationManager       1      107   0.0%  107.00
+App.Product.ProductFolder                       1       34   0.0%   34.00
+BTrees.IIBTree.IIBTree                        302    64876   1.1%  214.82
+BTrees.IIBTree.IITreeSet                     1952   114421   1.9%   58.62
+...
+webdav.LockItem.LockItem                       22     5817   0.1%  264.41
+...PersistentAdapterRegistry                    3    13840   0.2% 4613.33
+zope.ramcache.ram.RAMCache                      1      288   0.0%  288.00
+========================================== ====== ========  ===== =======
+                        Total Transactions    150                  39.50k
+                             Total Records  10611    5925k 100.0%  571.80
+                           Current Objects   6286    2696k  45.5%  439.25
+                               Old Objects   4325    3228k  54.5%  764.46
+</code></pre>
+<p>Thanks to an article by Nejc Zupan from about a week ago
+(<a href=\"http://www.niteoweb.com/blog/dexterity-vs.-archetypes\">Dexterity vs. Archetypes</a>)
+in which he used this&#8212;at least for me&#8212;hidden&nbsp;gem.</p>")) (entry nil (title nil "Whiskers behind SSL") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/01/15/whiskers-behind-ssl/"))) (id nil "tag:www.vlent.nl,2013-01-15:/weblog/2013/01/15/whiskers-behind-ssl/") (updated nil "2013-01-15T22:44:00Z") (category ((term . "devops"))) (category ((term . "django"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Since April 2012
+<a href=\"http://www.vlent.nl/weblog/2012/04/27/whiskers-and-buildoutsendpickedversions/\">we are using Whiskers</a>
+to store information about our Plone and Django buildouts. But when I
+moved the setup behind <span class=\"caps\">SSL</span>, the browser started to complain about
+unsafe&nbsp;content.</p>
+<p>While I could access <a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a>
+via <strong>https</strong>://whiskers.example.com, references in the <span class=\"caps\">HTML</span> to the
+favicon and the <span class=\"caps\">CSS</span> were to
+<strong>http</strong>://whiskers.example.com/static/&#8230; And that either generates a
+warning about unsafe content or the browser might decide to not load
+the assets at all. And especially the missing <span class=\"caps\">CSS</span> was severely
+endangered the&nbsp;usability.</p>
+<p>First I tried to solve this in Whiskers itself. But I soon discovered
+that the <code>master.pt</code> template in Whiskers contains several
+<a href=\"http://docs.pylonsproject.org/projects/pyramid/en/latest/api/request.html#pyramid.request.Request.static_url\">static_url</a>s,
+for&nbsp;instance:</p>
+<pre><code>&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/css/bootstrap.css')}\" ... /&gt;
+&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/whiskers.css')}\" ... /&gt;
+</code></pre>
+<p>And those resolved to <strong>http</strong>://whiskers.example.com/static/&#8230; so I
+had to convince Whiskers (or actually Pyramid) that we were using
+<span class=\"caps\">SSL</span>. As a result my next attempts involved changing the Apache
+configuration. But after trying several options I could not get it
+working (possibly also due to an older version of&nbsp;Apache).</p>
+<p>So I left the configuration&nbsp;unchanged:</p>
+<pre><code>&lt;VirtualHost &lt;ip&gt;:443&gt;
+    ... basic stuff about the server name, logs and SSL certificates ...
+
+    RewriteEngine on
+    ProxyPreserveHost on
+
+    # We use a custom CSS file.
+    Alias /static/whiskers.css /var/www/whiskers/static/whiskers.css
+    RewriteRule ^/static/whiskers.css - [L]
+
+    RewriteRule ^(.*) http://127.0.0.1:6543$1 [P]
+
+    &lt;Location /&gt;
+            AuthName \"Whiskers\"
+            AuthType Basic
+            AuthUserFile /path/to/htpasswd
+            require user spam eggs ham
+    &lt;/Location&gt;
+    &lt;Location /buildouts/add&gt;
+            Satisfy Any
+    &lt;/Location&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<h3 id=\"waitress\">Waitress</h3>
+<p>After stumbling on a link to
+<a href=\"https://github.com/Pylons/waitress/blob/master/docs/index.rst#using-behind-a-reverse-proxy\">a part of the Waitress documentation</a>
+I decided to try a different approach. My <code>production.ini</code> was
+basically a copy from the
+<a href=\"https://raw.github.com/pingviini/whiskers/master/production.ini\">example on GitHub</a>
+and it contained this&nbsp;section:</p>
+<pre><code>[server:main]
+use = egg:Paste#http
+host = 0.0.0.0
+port = 6543
+</code></pre>
+<p>I installed <a href=\"http://pypi.python.org/pypi/waitress/\">Waitress</a> in my
+<a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> and replaced the
+above section by&nbsp;this:</p>
+<pre><code>[server:main]
+use = egg:waitress#main
+host = 0.0.0.0
+port = 6543
+url_scheme = https
+</code></pre>
+<p>And now the <span class=\"caps\">CSS</span> is properly&nbsp;loaded!</p>
+<p>I don&#8217;t know if there are easier/better ways to solve this, but this
+works fine for&nbsp;us.</p>")) (entry nil (title nil "CloudFlare experiment") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/12/27/cloudflare-experiment/"))) (id nil "tag:www.vlent.nl,2012-12-27:/weblog/2012/12/27/cloudflare-experiment/") (updated nil "2012-12-27T22:04:00Z") (category ((term . "blog"))) (category ((term . "development"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>For about a month I have served this website using the CloudFlare free
+plan. This article describes what I&nbsp;observed.</p>
+<h3 id=\"why\">Why</h3>
+<p>Let me first explain why I started using
+<a href=\"https://www.cloudflare.com/\">CloudFlare</a>. Earlier this year I
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">migrated this blog</a> from
+Django to a static site.  At the same time I also switched from
+hosting at <a href=\"http://zestsoftware.nl/\">Zest Software</a> back to my hosting
+provider, <a href=\"http://www.bhosted.nl/\">bHosted.nl</a>. Still, I expected to
+see a drop in the time required to download a page and thus in the
+related graph in the
+<a href=\"https://www.google.com/webmasters/tools/home\">Google Webmaster Tools</a>. This
+is what I&nbsp;saw:</p>
+<p><img alt=\"Time to download a page: September vs October\" src=\"http://www.vlent.nl/images/webtoolsstats-october.png\"/></p>
+<p>As of October 1st&#8212;when I made the switch&#8212;the time needed to
+download a page didn&#8217;t necessarily drop; instead it became more
+erratic and often higher than it was&nbsp;before.</p>
+<p>I guessed that the expected speed improvement of having a static site
+was negated by hosting the site on another server. Because at Zest my
+site was dynamic but ran on a server that had a very light load and
+was only hosting a couple of sites. And at bHosted.nl the site is
+running on a shared server with a load of 2&#8211;4 (based on a few
+samples) and several hundred other&nbsp;sites.</p>
+<p>I then by chance stumbled upon the content delivery network provided
+by CloudFlare. And they even have a
+<a href=\"https://www.cloudflare.com/plans\">free plan</a>.</p>
+<h3 id=\"setup-and-first-experience\">Setup and first&nbsp;experience</h3>
+<p>First of all, the video on the CloudFlare homepage is absolutely right
+about how easy it is to setup. Sure, I know a bit about <span class=\"caps\">DNS</span> but
+basically they do not require you to do very hard stuff. In fact, the
+most complicated I had to do was to change the name servers so they
+pointed to CloudFlare. (Actually: I found out that I could not change
+them myself so I had to ask my hosting provider to do so form&nbsp;me.)</p>
+<p>Unfortunately I lost the screenshots I made of my CloudFlare
+statistics. But according to those statistics, CloudFlare handled
+about half of the requests and traffic. And, on the side, also blocked
+quite a few, supposedly, malicious&nbsp;requests.</p>
+<p>I made the switch around the 1st of November. I expected that the
+time to download a page would be more stable but also that is would be
+lower. (That&#8217;s one of the benefits of a content distribution network,
+right?) Well, I was partially&nbsp;right&#8230;</p>
+<p><img alt=\"Time to download a page: October vs November\" src=\"http://www.vlent.nl/images/webtoolsstats-december.png\"/></p>
+<p>As you can see, the time to download a page indeed did not fluctuate
+as much anymore. But the download time increased dramatically! (That&#8217;s
+the reason why I switched back to bHosted.nl at the end of November,
+as you can see in the&nbsp;graph.)</p>
+<p>Google also assigned &#8220;special crawl rate settings&#8221; in the period I was
+using CloudFlare. I am not sure what this means and if it&#8217;s positive
+or not. Either way, within a week after taking CloudFlare out of the
+loop, it was back to&nbsp;normal.</p>
+<p><img alt=\"Google assigned special crawl rate settings\" src=\"http://www.vlent.nl/images/crawlratesetting.png\"/></p>
+<h3 id=\"measurements\">Measurements</h3>
+<p>Before I decided to switch back to just bHosted.nl, I tried to do some
+experiments to see if I could reproduce the differences measured by
+Google. I gathered circa 30 URLs (the home page, the ten most recent
+articles, a number of popular articles and a (more or less) random
+selection) and told <a href=\"http://www.joedog.org/siege-home/\">Siege</a> to have
+a crack at it. More specifically I used the options <code>benchmark</code> (to
+run the requests without a delay), <code>internet</code> (which randomly hits
+the URLs I selected) and <code>concurrent</code> to experiment with different
+number of concurrent users. These tests ran for 60 seconds&nbsp;each.</p>
+<p>Since the bHosted.nl servers are located in The Netherlands, I decided
+to make the measurements a bit more fair. So I did not run the test
+from my home (also in The Netherlands), but a
+<a href=\"http://ramnode.com/\">RamNode</a> <span class=\"caps\">VPS</span>, which is hosted in Atlanta,&nbsp;Georgia.</p>
+<h4 id=\"results\">Results</h4>
+<p>The shortest transaction for both servers was stable: for bHosted.nl
+it was 0.21 seconds and for CloudFlare it was 0.14 seconds. The
+average response time is also comparable (the lower lines in the graph
+below). The longest transactions however, differed a bit&nbsp;more.</p>
+<script src=\"/js/dygraph-combined.js\"></script>
+
+<div id=\"avg-max-transaction-time\" class=\"graph\"></div>
+
+<script type=\"text/javascript\">
+  g = new Dygraph(
+    document.getElementById(\"avg-max-transaction-time\"),
+    \"/cloudflare_csv/avg_max_transaction.csv\",
+    {
+        title: 'Transaction time',
+        xlabel: 'Concurrency',
+        ylabel: 'Seconds',
+        colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+        strokeWidth: 3
+    }
+  );
+</script>
+
+<p>The transaction rate of bHosted.nl and CloudFlare seem to be comparable.
+(Except for a spike in the bHosted.nl setup at 50 concurrent simulated
+users. But this could just be a happy&nbsp;accident&#8230;)</p>
+<div id=\"transaction-rate\" class=\"graph\"></div>
+
+<script type=\"text/javascript\">
+  g = new Dygraph(
+    document.getElementById(\"transaction-rate\"),
+    \"/cloudflare_csv/transaction_rate.csv\",
+    {
+        title: 'Transaction rate',
+        xlabel: 'Concurrency',
+        ylabel: 'Transactions/sec',
+        colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+        strokeWidth: 3
+    }
+  );
+</script>
+
+<h4 id=\"summary\">Summary</h4>
+<p>As you may have guessed, I am absolutely not an expert on the
+matter. But what I conclude from this data is that there is not <em>that</em>
+much difference between bHosted.nl and&nbsp;CloudFlare.</p>
+<p>Sure, the longest transaction time in the CloudFlare setup is larger
+in <em>some</em> situations. But for my blog 100 concurrent users are
+unlikely. (As a matter of fact in December an average of about 150
+pages are requested per day. And Google only indexes an average of 80
+pages per day at the moment of writing.) More importantly: the
+<em>average</em> transaction time for bHosted.nl and CloudFlare is
+practically the&nbsp;same.</p>
+<h3 id=\"conclusion\">Conclusion?</h3>
+<p>I am sure you should <strong>not</strong> draw the conclusion that using CloudFlare
+is a bad thing. Nor do I want to complain about their service&#8212;after
+all I did not pay them a dime. Having said that, my <strong>personal</strong>
+conclusion was that since Google is
+<a href=\"http://googlewebmastercentral.blogspot.nl/2010/04/using-site-speed-in-web-search-ranking.html\">using site speed in web search ranking</a>
+<strong>this site</strong> is better off by not using CloudFlare. Your mileage may&nbsp;vary.</p>")) (entry nil (title nil "Workshop: Theming with Diazo") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/12/14/workshop-theming-with-diazo/"))) (id nil "tag:www.vlent.nl,2012-12-14:/weblog/2012/12/14/workshop-theming-with-diazo/") (updated nil "2012-12-14T20:30:00Z") (category ((term . "development"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>On Wednesday the 12th of December,
+<a href=\"http://www.goldmund-wyldebeast-wunderliebe.com/\">Goldmund, Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe</a>
+organised a Diazo workshop. Douwe van der Meij and Kim Chee Leong
+introduced us to the wonderful world of theming Plone the easy way (my
+words, not theirs). Since this workshop took a full day, this is not a
+complete summary but a more an extended version of the notes I took
+during the&nbsp;day.</p>
+<h3 id=\"introduction\">Introduction</h3>
+<p>Diazo is for (re)theming websites. Not just Plone sites, it works on
+any technology. Diazo combines the <span class=\"caps\">HTML</span> of the website&#8212;the
+content&#8212;with the <span class=\"caps\">HTML</span> of the theme provider&#8212;the theme&#8212;to deliver
+a themed&nbsp;website.</p>
+<p>With Diazo there is a natural separation between the <span class=\"caps\">HTML</span> delivered by
+the designer or frontend developer and the logic (calculations, data,
+etc) which is usually handled by the backend developer. It adds an
+additional level of abstraction to the stack. To put it differently:
+Diazo offers an interface between the developers and the designers,
+while keeping a clear separation of responsibility. Because the
+developer does not have to transform the <span class=\"caps\">HTML</span> from the designer into
+(<a href=\"http://wiki.zope.org/ZPT/TAL\"><span class=\"caps\">TAL</span></a>) templates, this also removes a
+step from the process where normally errors can creep&nbsp;in.</p>
+<p>Diazo can be put in front of your existing website; the technology
+used for the website does not matter. The existing website is still
+there. You can have the multiple designs for a single website at the
+same time. You can even use Diazo to only apply the theme when you are
+on a&nbsp;subsite.</p>
+<p>Diazo uses <span class=\"caps\">XSLT</span> but, theoretically, you do not have to write <span class=\"caps\">XSLT</span>
+yourself. Which is good because <span class=\"caps\">XSLT</span> is hard to read. So if you do
+write <span class=\"caps\">XSLT</span>, don&#8217;t forget to place comments so a month from now you
+still understand what you wrote&nbsp;today.</p>
+<p>To make the rules you have to write less complex and require as little
+<span class=\"caps\">XSLT</span> as necessary, you could change the Plone output so it delivers
+what the Diazo theme expects. You can also create a theme that takes
+the output of Plone into account so less transformation is&nbsp;required.</p>
+<p>Speaking of those rules: for an overview of available rules and the
+order in which they are processed (for instance <code>&lt;drop /&gt;</code> is
+executed before <code>&lt;replace /&gt;</code>), see the
+<a href=\"http://docs.diazo.org/en/latest/\">Diazo documentation</a>.</p>
+<h3 id=\"tooling\">Tooling</h3>
+<p>The package
+<a href=\"http://pypi.python.org/pypi/plone.app.theming\">plone.app.theming</a>
+provides an interface to modify themes. It allows you to edit your
+<code>rules.xml</code> file and the rest of the them from within Plone. By using
+the inspectors you can also select elements in your theme and content
+(Plone site) and have the editor create a rule for you. (From what
+I&#8217;ve seen during the workshop you likely want to tweak the rule
+somewhat but it&#8217;s a starting&nbsp;point.)</p>
+<p>It&#8217;s possible to set hostnames that use the unthemed version of
+the site in the advanced settings of the theming control panel. By
+default <code>127.0.0.1</code> is listed&nbsp;there.</p>
+<h3 id=\"creating-a-theme\">Creating a&nbsp;theme</h3>
+<p>A Diazo theme expects a specific layout. Obviously you&#8217;ll need to have
+your theme: an <span class=\"caps\">HTML</span> file (<code>index.html</code> for example) and accompanying
+assets (<span class=\"caps\">CSS</span>, JavaScript, images). Besides those files, you also need
+to have the files <code>manifest.cfg</code>, <code>rules.xml</code> and an image with a
+preview of the theme, <code>preview.png</code>.</p>
+<p>An example of a <code>manifest.cfg</code> file:</p>
+<pre><code>[theme]
+title = Demo Theme
+description = My first Diazo theme
+preview = preview.png
+</code></pre>
+<p>For details on the content of the <code>manifest.cfg</code> file, check out the
+<a href=\"http://pypi.python.org/pypi/plone.app.theming/#the-manifest-file\">manifest file section</a>
+plone.app.theming&nbsp;documentation.</p>
+<p>A very basic <code>rules.xml</code> file to get&nbsp;started:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+    xmlns=\"http://namespaces.plone.org/diazo\"
+    xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;
+
+    &lt;theme href=\"index.html\" /&gt;
+
+&lt;/rules&gt;
+</code></pre>
+<p>The <code>&lt;theme href=\"...\" /&gt;</code> line makes sure that the <code>index.html</code> file
+from the theme is used. Otherwise you would still see the Plone&nbsp;theme.</p>
+<p>Note that you can split up the rules into several files. For&nbsp;instance:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+    xmlns=\"http://namespaces.plone.org/diazo\"
+    xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"
+    xmlns:xi=\"http://www.w3.org/2001/XInclude\"&gt;
+
+    &lt;theme href=\"index.html\" /&gt;
+
+    &lt;xi:include ref=\"rules_normal.xml\" /&gt;
+
+    &lt;rules if-content=\"/html/head/title[.='foo']\"&gt;
+        &lt;xi:include ref=\"rules_foo.xml\" /&gt;
+    &lt;/rules&gt;
+&lt;/rules&gt;
+</code></pre>
+<p>To make the Plone site editable in the themed site, you need to add
+the following to your&nbsp;rules:</p>
+<pre><code>&lt;after
+    css:theme-children=\"html head\"
+    css:content=\"html head script\"
+/&gt;
+
+&lt;after
+    css:theme-children=\"html head\"
+    css:content=\"html head base\"
+/&gt;
+</code></pre>
+<p>Note that this only includes the JavaScript and the <code>&lt;base /&gt;</code> element
+from Plone. To actually show the edit bar, you&#8217;ll need to add some
+additional rules and also include some <span class=\"caps\">CSS</span> in your theme to style it&nbsp;properly.</p>
+<p>You could also try to use
+<a href=\"http://pypi.python.org/pypi/plone.app.toolbar\">plone.app.toolbar</a>. But
+note that currently (plone.app.toolbar 1.1 and plone.app.theming
+1.1b1) there is a small user interface problem: the toolbar is on top of the
+controls when you expanded the <span class=\"caps\">HTML</span> mockup or unthemed content&nbsp;inspector.</p>
+<figure>
+  <img src=\"/images/theming-plain.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+  <figcaption>
+    Inspecting the unthemed content <strong>without</strong> the Plone Toolbar
+  </figcaption>
+</figure>
+
+<p>If you do not have the Plone Toolbar installed, you can toggle the
+source view and fullscreen mode of the inspector. But when the Plone Toolbar <strong>is</strong> installed, it overlaps
+with these&nbsp;controls.</p>
+<figure>
+  <img src=\"/images/theming-toolbar.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+  <figcaption>
+    Inspecting the unthemed content <strong>with</strong> the Plone Toolbar
+  </figcaption>
+</figure>
+
+<p>As long as the page is long enough that you can scroll down, you can
+do just that to reveal the controls again. (Since the controls scroll
+with the page while the position of the toolbar is fixed, they show up
+when you scroll on the&nbsp;page.)</p>
+<h3 id=\"summary\">Summary</h3>
+<p>Diazo is a wrapper around <span class=\"caps\">XSLT</span>. It provides a seamless integration to
+(re)theme your website. It provides a higher level of abstraction, but
+you can also use <span class=\"caps\">XSLT</span> as a&nbsp;fallback.</p>
+<p>Although you can use Diazo without Plone, there currently is only tooling
+within&nbsp;Plone.</p>
+<h3 id=\"my-conclusion\">My&nbsp;conclusion</h3>
+<p>This was my first introduction to Diazo. My initial reaction is that I
+like the separation of concerns and responsibility between front- and
+backend. I can also imagine that it is easier to work with other
+parties that build the theme (<span class=\"caps\">HTML</span> and <span class=\"caps\">CSS</span>) and do not require
+in-depth Plone knowledge.  I cannot yet judge on potential gains in
+time when comparing the development of a Plone theme with building a
+Diazo&nbsp;theme.</p>
+<p>I am glad that you can edit the rules from within Plone and have the
+inspectors to help you selecting the elements. At the same time I can
+imagine that someone with more knowledge about Diazo, <span class=\"caps\">XSL</span> and the
+actual output of Plone (which isn&#8217;t my expertise) rather just works on
+file system with his/her&nbsp;editor.</p>
+<p>There are also a few things that we at
+<a href=\"http://www.edition1.nl\">Edition1</a> need to investigate and/or solve
+before we can even think about using Diazo for every
+<a href=\"http://www.swordfish.nl\">SwordFish</a> customer. For instance, we use
+<a href=\"http://pypi.python.org/pypi/collective.editskinswitcher/\">collective.editskinswitcher</a>
+combined with
+<a href=\"http://pypi.python.org/pypi/collective.lineage/\">collective.lineage</a>.
+Our customers have a separate edit skin (with a preview of the content
+as the visitors of the site will see it) and can select a theme per
+child site. We&#8217;ll have to see how we can replicate something similar
+with Diazo, perhaps by using
+<a href=\"http://pypi.python.org/pypi/lineage.themeselection/\">lineage.themeselection</a>. That
+is: assuming we want to keep this setup&#8212;the Plone Toolbar also looks
+really&nbsp;nice!</p>
+<p>Either way, I learnt a lot. So thanks Douwe, Kim Chee and Goldmund,
+Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe for organising the&nbsp;workshop!</p>")) (entry nil (title nil "Podcasts I listen to") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/11/12/podcasts-i-listen-to/"))) (id nil "tag:www.vlent.nl,2012-11-12:/weblog/2012/11/12/podcasts-i-listen-to/") (updated nil "2012-11-12T19:33:00Z") (category ((term . "development"))) (category ((term . "django"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>In this article I share the podcasts listen to on my daily&nbsp;commute.</p>
+<p>Note that these podcasts are not Plone or Django specific; they aren&#8217;t
+even about Python. Most of them are web related and keep me informed
+on what&#8217;s new in our field. And I also got a few really nice tips and
+tricks from&nbsp;them.</p>
+<p>This list of podcasts is usually enough to keep me busy during (most
+of) the drive to and from work. (Which totals up to about 6 hours per
+week, just to give you an&nbsp;idea.)</p>
+<p>Anyway, here&#8217;s the list in alphabetic&nbsp;order:</p>
+<ul>
+<li><a href=\"http://shoptalkshow.com/\">ShopTalk</a> is about front end web design,
+   development and&nbsp;<span class=\"caps\">UX</span>.</li>
+<li><a href=\"http://tech45.eu/\">Tech45</a> is a Dutch podcast about tech news in&nbsp;general.</li>
+<li><a href=\"http://5by5.tv/bigwebshow\">The Big Web Show</a> is about everything
+   web that&nbsp;matters.</li>
+<li><a href=\"http://nonbreakingspace.tv/\">The Non Breaking Space Show</a>:
+   interviews with the web’s best and&nbsp;brightest.</li>
+<li><a href=\"http://5by5.tv/webahead\">The Web Ahead</a> is weekly podcast about
+   changing technologies and the future of the&nbsp;web.</li>
+<li><a href=\"http://thisdeveloperslife.com/\">This Developer&#8217;s Life</a>: stories
+   about developers and their&nbsp;lives.</li>
+</ul>
+<p>I have listened to a number of other podcasts over the years, but
+these are the ones I am subscribed to at the moment. If there are
+other interesting (web related) podcasts you can recommend, please
+leave a&nbsp;comment!</p>")) (entry nil (title nil "Acrylamid: a first evaluation") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/11/08/acrylamid-first-evaluation/"))) (id nil "tag:www.vlent.nl,2012-11-08:/weblog/2012/11/08/acrylamid-first-evaluation/") (updated nil "2012-11-08T17:17:00Z") (category ((term . "acrylamid"))) (category ((term . "blog"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>About a month ago I officially migrated this weblog to Acrylamid. This
+is a first&nbsp;evaluation.</p>
+<p>On the one hand, a month may not seem like a long time. So why
+evaluate <a href=\"http://posativ.org/acrylamid/\">Acrylamid</a> now? Well, for one
+thing, I started working with it a bit earlier than
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">October 1st</a> since I had
+to migrate existing content and develop this site. Another reason is
+that during the <a href=\"http://www.ploneconf.org/\">Plone Conference 2012</a> I
+published more articles about those three days than I normally do in
+a whole&nbsp;year.</p>
+<h3 id=\"writing-articles\">Writing&nbsp;articles</h3>
+<p>During the conference I was not able to publish all articles
+immediately after the talk was over. So I got into the habit of
+writing my notes in a drafts folder. When I started making the notes
+ready for publication, I would move the file to the normal
+directory. (Alternatively I could have added a <code>draft</code> field, but this
+way it was easier to see which articles were not published&nbsp;yet.)</p>
+<p>Although the Wi-Fi at the conference was almost perfect and the hotel
+also offered free Wi-Fi, there were a couple of times where I did not
+have a connection to the Internet while I <em>did</em> want to edit my
+articles. But since I could do the writing on my own laptop, that
+hardly mattered. The biggest issues were that I could not look up
+things easily (I had to use my phone) and that the pages were not
+rendered with the right fonts (since I use
+<a href=\"https://typekit.com/\">Typekit</a>).</p>
+<p>Another thing I liked was my tool set. I am still really happy with
+Emacs as an editor. I love that I am able to hit <code>C-x C-s</code> as often as
+I need&#8212;no matter the network state. That beats having to edit
+articles online using e.g. TinyMCE. Not that the latter is a bad thing
+by the way, I just prefer my good old&nbsp;Emacs.</p>
+<p>As for marking up the articles: Markdown also proved to be a good
+syntax to do so. Only once was I not able to get the result that I was
+after. I wanted to have a code block inside an unordered list. I an
+pretty sure it is possible, I just did not know how exactly and
+rewrote the article a little bit. Lets chalk this up to me being too
+lazy and inexperienced with&nbsp;Markdown.</p>
+<h3 id=\"output\">Output</h3>
+<p>One of the things I am currently still struggling with is my <span class=\"caps\">URL</span> structure. Years
+ago I used URLs like <code>/weblog/title-of-the-article/</code>. I switched to
+URLs with dates (<code>/weblog/2012/02/04/title-of-the-article</code>) when I
+<a href=\"http://www.vlent.nl/weblog/2010/05/30/switch-django/\">switched to Django</a>. In Django it
+was very easy to write a view that redirected the old URLs to the new
+ones. But now I only added <em>some</em> of the 2008&#8211;2010 URLs to my
+<code>.htaccess</code> files. But since
+<a href=\"http://www.w3.org/Provider/Style/URI.html\">cool URIs don&#8217;t change</a> I
+have to list all the old URLs in that <code>.htaccess</code> file or else I have
+to find a more generic solution&#8212;for instance by writing a custom
+view for Acrylamid that uses a <code>&lt;meta&gt;</code> element or JavaScript to
+redirect visitors to the new <span class=\"caps\">URL</span>. In the mean while: to mitigate the
+problem for visitors, I am using Google to
+<a href=\"http://googlewebmastercentral.blogspot.nl/2008/08/make-your-404-pages-more-useful.html\">make my 404 pages more useful</a>. Most
+of the times, the search does return the page the visitor was&nbsp;after.</p>
+<p>Another thing that bothers me is that I do not (yet) have views that
+show the articles for a year/month/day. For instance
+<code>/weblog/2012/10/10/</code> to see all articles for the first day of the
+Plone&nbsp;conference.</p>
+<h3 id=\"conclusion\">Conclusion</h3>
+<p>I am quite happy with the current setup. I am not completely done yet,
+but for me it is a huge improvement over the Django (and Plone) setups
+I had earlier. I find it a really nice lightweight
+blogging&nbsp;system.</p>")) (entry nil (title nil "Lightning talks (Friday)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/lightning-talks/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/lightning-talks/") (updated nil "2012-10-12T16:45:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>The lightning talks of the last day of the Plone Conference
+2012. Again only three minutes each since we had 14&nbsp;talks!</p>
+<h3 id=\"paul-j-stevens\">Paul J&nbsp;Stevens</h3>
+<p>Paul had a project where PDFs were workflowed to several sites using
+MultiSite. This meant there was lots of duplication. After migrating
+to Plone 4 and blob storage, there was still a lot of&nbsp;data.</p>
+<p>He created a script (<a href=\"https://github.com/pjstevns/bscompress\">bscompress</a>)&nbsp;for:</p>
+<ul>
+<li>De-duplication of blobs using&nbsp;hard-links</li>
+<li>Less disk-space, faster copy/move&nbsp;actions</li>
+</ul>
+<p>In his case, the blob storage went from 14625 Megabytes to 2395&nbsp;Megabytes.</p>
+<p>Todos:</p>
+<ul>
+<li>Patch <code>ZODB/src/ZODB/blob.py</code>.</li>
+<li>Maintain compatibility and coordinate with other efforts
+     (like <a href=\"http://pypi.python.org/pypi/collective.recipe.backup/\">collective.recipe.backup</a>).</li>
+</ul>
+<h3 id=\"philip-bauer\">Philip&nbsp;Bauer</h3>
+<p>Dylan Jay talked about attracting more new people to get started in
+Plone. Dexterity and PloneIDE are great, but we need more. David Glick
+started to build a theme editor
+(<a href=\"http://pypi.python.org/pypi/plone.app.themeeditor/\">plone.app.themeeditor</a>). It
+uses jQuery <span class=\"caps\">UI</span> and is a lot better than the Zope Management Interface
+(<span class=\"caps\">ZMI</span>). There is going to be a <span class=\"caps\">PLIP</span> about&nbsp;it.</p>
+<h3 id=\"johannes-raggam\">Johannes&nbsp;Raggam</h3>
+<p>Johannes made a new release of
+<a href=\"http://pypi.python.org/pypi/plone.app.event/\">plone.app.event</a>. Please
+take note of the installation instructions. They include configuring
+the right time&nbsp;zone.</p>
+<p>Johannes did a quick demo of the packages. There are still
+<a href=\"https://github.com/plone/plone.app.event/issues\">issues</a>, but it&#8217;s
+safe to call it a beta&nbsp;version.</p>
+<p>Johannes thanks all the contributors for their&nbsp;work.</p>
+<p><em>Mark: note that the package was moved from the Collective to the
+Plone organisation on GitHub on October&nbsp;13th.</em></p>
+<h3 id=\"elizabeth-leddy-eric-steele\">Elizabeth Leddy / Eric&nbsp;Steele</h3>
+<p>All the team leaders (security team, <span class=\"caps\">UI</span> team, etc) went on stage so
+people would know who is who. And whom to talk to if you want to get&nbsp;involved.</p>
+<h3 id=\"lukas-graf\">Lukas&nbsp;Graf</h3>
+<p>His company (4teamwork) created
+<a href=\"http://pypi.python.org/pypi/ftw.tabbedview/\">ftw.tabbedview</a>. It can
+be integrated with
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.js.extjs</a>,
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.quickupload</a>
+(if installed) and
+<a href=\"http://pypi.python.org/pypi/ftw.table/\">ftw.table</a>.</p>
+<p>The package <code>ftw.tabbedview</code> contains filtering, sorting, grouping,
+managing columns, batching, flexible sources (catalog, SQLAlchemy,
+&#8230;), data transformation (icon, authors, dates, &#8230;) and is highly
+configurable. It can also be used on pretty much any&nbsp;context.</p>
+<h3 id=\"philip-bauer_1\">Philip&nbsp;Bauer</h3>
+<p>Philip helped to organise the
+<a href=\"http://konferenz.plone.de/\">Plone Konferenz München 2012</a>. About 150
+people attended and there were lots of new people. The goal of the
+conference was to attract decision makers. It was a very successful&nbsp;conference.</p>
+<p>Tip: include a sprint lounge where people can sprint the whole
+conference. This way you can attract people that want to code and
+work together, but do not speak the language the conference is held&nbsp;in.</p>
+<p>Such local conferences increase the visibility of the Plone
+community and can attract new members to join the&nbsp;community.</p>
+<p>They were able to donate &euro; 3000 to the Plone&nbsp;Foundation.</p>
+<h3 id=\"mikko-ohtamaa\">Mikko&nbsp;Ohtamaa</h3>
+<p>Solving problems in plone package at a&nbsp;time:</p>
+<ul>
+<li><a href=\"http://pypi.python.org/pypi/visualtitle/\">visualtitle</a>: To have
+     a different title on your page and in your&nbsp;navigation.</li>
+<li><a href=\"https://github.com/miohtama/imageportlet\">imageportlet</a>: A new
+     portlet type to show&nbsp;images.</li>
+<li><a href=\"https://github.com/miohtama/silvuple\">silvuple</a> (That&#8217;s
+     French&#8230;): Force the user interface to use your native language
+     an show untranslated&nbsp;items.</li>
+<li><a href=\"https://github.com/miohtama/plomobile\"><strong>plo</strong>mobile</a>: A
+     responsive design for&nbsp;Plone.</li>
+<li><a href=\"https://github.com/opensourcehacker/sevabot\">sevabot</a>: A Skype&nbsp;bot.</li>
+</ul>
+<p><em>[Mark: The
+ <a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg&amp;t=24m53s\">video of this lightning talk</a>
+ is definitely worth&nbsp;watching.]</em></p>
+<h3 id=\"franco-pellegrini\">Franco&nbsp;Pellegrini</h3>
+<p>If we have to believe the Mayan symbols, this year will be the end of
+the world. What better way to experience that day than by joining a
+sprint? So join the &#8220;End of the world&#8221; sprint in Ushuaia, Provincia de
+Tierra del Fuego, Argentina on December 21st,&nbsp;2012.</p>
+<h3 id=\"jukka-ojaniemi\">Jukka&nbsp;Ojaniemi</h3>
+<p><a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a> is a Pyramid
+application that collects all packages used in your buildouts. That
+is, if you use
+<a href=\"http://pypi.python.org/pypi/buildout.sendpickedversions/\">buildout.sendpickedversions</a>. This
+way you can quickly see which buildouts use a certain version of a
+package. You might even be able to use this data to find out which
+eggs in your buildout cache are not used&nbsp;anymore.</p>
+<h3 id=\"erico-andrei\">Érico&nbsp;Andrei</h3>
+<p>A new solution to change how we collaborate: desk surfing. There is a
+Plone core developer dedicated desk in São Paulo. (You can also use it
+if you are not a core developer by the way.) If you are in São Paulo?
+go there, contact&nbsp;Érico.</p>
+<p>(Calvin Hendryx-Parker adds that you are also welcome in&nbsp;Fortville.)</p>
+<h3 id=\"calvin-hendryx-parker\">Calvin&nbsp;Hendryx-Parker</h3>
+<p>Since Calvin missed is own presentation earlier that day, he did the
+three minute version of his talk &#8220;Playing With Blocks: 6 Pro Tips for
+Building Your Next Super-Charged Plone&nbsp;Site&#8221;:</p>
+<ul>
+<li>Use APIs instead of embedded&nbsp;iFrames.</li>
+<li>Criteria for evaluating your options:<ul>
+<li>Mailing lists taken over by&nbsp;spam?</li>
+<li>Mailing list&nbsp;neglected?</li>
+<li>What is the activity in source&nbsp;control?</li>
+<li>Was there a corporate&nbsp;takover?</li>
+<li>Hope</li>
+</ul>
+</li>
+<li>Leverage Single Sign On (like&nbsp;OpenID).</li>
+<li>Supercharge your search with Solr (which can also index external&nbsp;content).</li>
+<li>Beware of over&nbsp;customisation.</li>
+<li>Testing, testing,&nbsp;testing.</li>
+</ul>
+<p>The talk he would have held this morning will be recorded and put&nbsp;online.</p>
+<h3 id=\"radek-jankiewicz\">Radek&nbsp;Jankiewicz</h3>
+<p><span class=\"caps\">STX</span> Next created a small addon for Plone:
+<a href=\"http://pypi.python.org/pypi/stxnext.grayscale/\">stxnext.grayscale</a>. This
+package transforms content of a page to grey scale. It has been
+developed for Polish user requirements related to national mourning
+after a tragedy has occurred. Governmental sites and bank sites change their colour
+scheme to grey scale out of respect. The images are cached on file
+system and are thus not generated each&nbsp;request.</p>
+<h3 id=\"johannes-raggam_1\">Johannes&nbsp;Raggam</h3>
+<p>A talk about amplify.cc, a prototype to replace PostNuke based
+community portals. It uses only one content type. They use Dexterity
+behaviours on content instances instead of on a class. Their
+conclusion is that having one content type for everything is possible
+and even works really&nbsp;nice.</p>
+<h3 id=\"maurizio-delmonte\">Maurizio&nbsp;Delmonte</h3>
+<p>A lot of countries have their own localised Plone site,
+e.g. <a href=\"http://plone.it/\">Italy</a>,
+<a href=\"http://www.plone.nl/\">the Netherlands</a>,
+<a href=\"http://plone.org.br/\">Brazil</a>, <a href=\"http://plone.es/\">Spain</a>,
+<a href=\"http://plone.fr/\">France</a> and <a href=\"http://plone.org.pl/\">Poland</a>. They
+all look different. But by using a bar at the top of the page which
+links to other Plone sites in the world, we can unite those sites and
+make it easier to discover&nbsp;them.</p>
+<p><a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg\">Watch the video</a>.</p>")) (entry nil (title nil "Sprinting for newcomers (Sjoerd van Elferen)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/sprinting-for-newcomers-sjoerd-van-elferen/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/sprinting-for-newcomers-sjoerd-van-elferen/") (updated nil "2012-10-12T15:00:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>What is sprinting all about&nbsp;about?</p>
+<p>A sprint is a great way to discuss a problem with a package. If the
+maintainer is not at the sprint him-/herself, then usually someone
+involved in the package is&nbsp;available.</p>
+<p>The most important&nbsp;rules:</p>
+<ul>
+<li>Don&#8217;t be afraid to approach&nbsp;people.</li>
+<li>Ask&nbsp;questions!</li>
+</ul>
+<p>Basically a sprint is a lot of people who can do anything they
+want. That could be a personal project, <span class=\"caps\">PLIP</span>, a package,
+etc. Everything is fine. You can also join a sprint topic of someone
+else. Just do what you want to do or find interesting. Either way: ask&nbsp;questions.</p>
+<p>People always seem very busy. But people prefer helping you fixing
+stuff than fixing things&nbsp;themselves.</p>
+<p>There&#8217;s a theory: whenever there are more than ten Plone people in a
+room, they start moving the tables. <code>:)</code>.</p>
+<p>Sprinting doesn&#8217;t stop with coding. It&#8217;s the other way around: the
+non-coders might even be more productive. A sprint is also a great
+opportunity to discuss problems or&nbsp;approaches.</p>")) (entry nil (title nil "Jump start your development with ZopeSkel (Cris Ewing)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/jump-start-your-development-with-zopeskel-cris-ewing/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/jump-start-your-development-with-zopeskel-cris-ewing/") (updated nil "2012-10-12T14:00:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Tutorial on how to write templates for&nbsp;ZopeSkel.</p>
+<p>This is the second half of his
+<a href=\"http://www.vlent.nl/weblog/2012/10/12/zopeskel-past-present-and-future-cris-ewing/\">previous talk</a>. This
+talk is about using and extending ZopeSkel.  By creating your own
+templates you can start with a customer project really&nbsp;fast.</p>
+<h3 id=\"why-and-when\">Why and&nbsp;when</h3>
+<p>Do you have code you write over and over again? Is the code almost the
+same each time and are the places where you change stuff always the
+same?  You can avoid writing all that code by creating a&nbsp;template.</p>
+<p>You can write the template the way <em>you</em> want. This is just a
+system. This means you can version control your own process by
+documenting it in a&nbsp;template.</p>
+<h3 id=\"basics-of-template-writing\">Basics of template&nbsp;writing</h3>
+<p>The first question you need to ask yourself is &#8220;what do I want?&#8221;. The
+next thing you will want to investigate is what you have already got.
+You can use &#8220;<code>bin/templer --list</code>&#8221; and &#8220;<code>bin/templer &lt;template_name&gt;
+--list-variables</code>&#8221; to find out more about the templates ZopeSkel has
+to offer. Then have a look at the code provided by the&nbsp;template.</p>
+<p>To wire everything up, you need to do four&nbsp;basic:</p>
+<ol>
+<li>Create a&nbsp;class.</li>
+<li>Import the class to a package&nbsp;namespace.</li>
+<li>Provide an entry&nbsp;point.</li>
+<li>Write the actual template&nbsp;itself.</li>
+</ol>
+<h3 id=\"tips\">Tips</h3>
+<p><em>Cris has already written the documentation for this tutorial. It
+ currently lives on his laptop, but it should be posted online soon. I
+ (Mark) decided to just write down some notes instead of trying to
+ replicate Cris&#8217;&nbsp;documentation.</em></p>
+<p>The related documentation can be found&nbsp;here:</p>
+<ul>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/index.html\">Templer System&nbsp;Manual</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/quickstart.html\">Templer quick&nbsp;start</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/applications/zopeskel.html\">ZopeSkel&nbsp;documentation</a></li>
+</ul>
+<p>Tips:</p>
+<ul>
+<li>Do not install ZopeSkel in your global Python! Always use a
+     <a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> or
+     <a href=\"http://pypi.python.org/pypi/zc.buildout/\">buildout</a>.</li>
+<li>If you want to use <a href=\"http://pypi.python.org/pypi/pip/\">pip</a>, use version 1.1 or&nbsp;later.</li>
+<li>To use the package while developing, use &#8220;<code>python setup.py
+     develop</code>&#8221; (so &#8220;<code>develop</code>&#8221; instead of &#8220;<code>install</code>&#8220;).</li>
+<li>If you are using a buildout, you can also use
+     <a href=\"http://pypi.python.org/pypi/mr.developer/\">mr.developer</a>.</li>
+<li>The modes are incrementally inclusive: the questions for the
+     &#8220;easy&#8221; mode are also asked in the &#8220;expert&#8221; mode,&nbsp;etc.</li>
+<li>Which namespace to choose: if you want to contribute the
+     templates and they might be useful for others: use the <code>templer</code>
+     namespace; for your own project/infrastructure specific
+     templates, use your company&#8217;s&nbsp;namespace.</li>
+</ul>
+<p><a href=\"http://www.slideshare.net/cewing/jumpstart-your-development-with-zopeskel-14719067\">View the slides</a>.</p>")))) ("Glances" "<p>Since I keep forgetting the name of this monitoring tool, I decided to
+create an article so I can jog my memory more&nbsp;easily.</p>
+<p>To get some basic information about your system
+<a href=\"http://en.wikipedia.org/wiki/Top_(software)\">top</a> is a very useful
+tool. But sometimes you need a little bit&nbsp;more.</p>
+<p>If that is the case, you may want to check out
+<a href=\"https://github.com/nicolargo/glances\">Glances</a>. Here’s an example of
+Glances in action on my virtual&nbsp;machine:</p>
+<p><img alt=\"Glances example\" src=\"http://www.vlent.nl/images/glances.png\" title=\"Glances example\"/></p>
+<p>Besides the basics (like <span class=\"caps\">CPU</span> usage, load, memory usage) it also
+displays information like network usage and disk I/O. And incidentally
+Glances is written in&nbsp;Python.</p>" "http://www.vlent.nl/weblog/2013/04/10/glances/" (20837 20668) old 1 nil nil ((title nil "Glances") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/04/10/glances/"))) (id nil "tag:www.vlent.nl,2013-04-10:/weblog/2013/04/10/glances/") (updated nil "2013-04-10T11:45:00Z") (category ((term . "devops"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Since I keep forgetting the name of this monitoring tool, I decided to
+create an article so I can jog my memory more&nbsp;easily.</p>
+<p>To get some basic information about your system
+<a href=\"http://en.wikipedia.org/wiki/Top_(software)\">top</a> is a very useful
+tool. But sometimes you need a little bit&nbsp;more.</p>
+<p>If that is the case, you may want to check out
+<a href=\"https://github.com/nicolargo/glances\">Glances</a>. Here&#8217;s an example of
+Glances in action on my virtual&nbsp;machine:</p>
+<p><img alt=\"Glances example\" src=\"http://www.vlent.nl/images/glances.png\" title=\"Glances example\"/></p>
+<p>Besides the basics (like <span class=\"caps\">CPU</span> usage, load, memory usage) it also
+displays information like network usage and disk I/O. And incidentally
+Glances is written in&nbsp;Python.</p>"))) ("ZODB analysis" "<p>A note to myself on how to get a quick insight in the content in a&nbsp;<span class=\"caps\">ZODB</span>.</p>
+<p>A couple of years ago I created
+<a href=\"http://pypi.python.org/pypi/mr.inquisition/\">mr.inquisition</a> to get
+more insight in the content of a foreign Zope Object Database
+(<span class=\"caps\">ZODB</span>). And while I still believe it still may have its uses (although
+I haven’t personally used it for a while), you may want to start off
+with the following&nbsp;command:</p>
+<pre><code>$ bin/zopepy -m ZODB.scripts.analyze var/filestorage/Data.fs
+</code></pre>
+<p>This results in for&nbsp;example:</p>
+<pre><code>Processed 10611 records in 150 transactions
+Average record size is  571.80 bytes
+Average transaction size is 40449.41 bytes
+Types used:
+Class Name                                  Count   TBytes    Pct AvgSize
+------------------------------------------ ------ --------  ----- -------
+AccessControl.users.User                        2      262   0.0%  131.00
+App.ApplicationManager.ApplicationManager       1      107   0.0%  107.00
+App.Product.ProductFolder                       1       34   0.0%   34.00
+BTrees.IIBTree.IIBTree                        302    64876   1.1%  214.82
+BTrees.IIBTree.IITreeSet                     1952   114421   1.9%   58.62
+...
+webdav.LockItem.LockItem                       22     5817   0.1%  264.41
+...PersistentAdapterRegistry                    3    13840   0.2% 4613.33
+zope.ramcache.ram.RAMCache                      1      288   0.0%  288.00
+========================================== ====== ========  ===== =======
+Total Transactions    150                  39.50k
+Total Records  10611    5925k 100.0%  571.80
+Current Objects   6286    2696k  45.5%  439.25
+Old Objects   4325    3228k  54.5%  764.46
+</code></pre>
+<p>Thanks to an article by Nejc Zupan from about a week ago
+(<a href=\"http://www.niteoweb.com/blog/dexterity-vs.-archetypes\">Dexterity vs. Archetypes</a>)
+in which he used this—at least for me—hidden&nbsp;gem.</p>" "http://www.vlent.nl/weblog/2013/02/22/zodb-analysis/" (20776 464) old 2 nil nil ((title nil "ZODB analysis") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/02/22/zodb-analysis/"))) (id nil "tag:www.vlent.nl,2013-02-22:/weblog/2013/02/22/zodb-analysis/") (updated nil "2013-02-22T23:40:00Z") (category ((term . "development"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>A note to myself on how to get a quick insight in the content in a&nbsp;<span class=\"caps\">ZODB</span>.</p>
+<p>A couple of years ago I created
+<a href=\"http://pypi.python.org/pypi/mr.inquisition/\">mr.inquisition</a> to get
+more insight in the content of a foreign Zope Object Database
+(<span class=\"caps\">ZODB</span>). And while I still believe it still may have its uses (although
+I haven&#8217;t personally used it for a while), you may want to start off
+with the following&nbsp;command:</p>
+<pre><code>$ bin/zopepy -m ZODB.scripts.analyze var/filestorage/Data.fs
+</code></pre>
+<p>This results in for&nbsp;example:</p>
+<pre><code>Processed 10611 records in 150 transactions
+Average record size is  571.80 bytes
+Average transaction size is 40449.41 bytes
+Types used:
+Class Name                                  Count   TBytes    Pct AvgSize
+------------------------------------------ ------ --------  ----- -------
+AccessControl.users.User                        2      262   0.0%  131.00
+App.ApplicationManager.ApplicationManager       1      107   0.0%  107.00
+App.Product.ProductFolder                       1       34   0.0%   34.00
+BTrees.IIBTree.IIBTree                        302    64876   1.1%  214.82
+BTrees.IIBTree.IITreeSet                     1952   114421   1.9%   58.62
+...
+webdav.LockItem.LockItem                       22     5817   0.1%  264.41
+...PersistentAdapterRegistry                    3    13840   0.2% 4613.33
+zope.ramcache.ram.RAMCache                      1      288   0.0%  288.00
+========================================== ====== ========  ===== =======
+                        Total Transactions    150                  39.50k
+                             Total Records  10611    5925k 100.0%  571.80
+                           Current Objects   6286    2696k  45.5%  439.25
+                               Old Objects   4325    3228k  54.5%  764.46
+</code></pre>
+<p>Thanks to an article by Nejc Zupan from about a week ago
+(<a href=\"http://www.niteoweb.com/blog/dexterity-vs.-archetypes\">Dexterity vs. Archetypes</a>)
+in which he used this&#8212;at least for me&#8212;hidden&nbsp;gem.</p>"))) ("Whiskers behind SSL" "<p>Since April 2012
+<a href=\"http://www.vlent.nl/weblog/2012/04/27/whiskers-and-buildoutsendpickedversions/\">we are using Whiskers</a>
+to store information about our Plone and Django buildouts. But when I
+moved the setup behind <span class=\"caps\">SSL</span>, the browser started to complain about
+unsafe&nbsp;content.</p>
+<p>While I could access <a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a>
+via <strong>https</strong>://whiskers.example.com, references in the <span class=\"caps\">HTML</span> to the
+favicon and the <span class=\"caps\">CSS</span> were to
+<strong>http</strong>://whiskers.example.com/static/… And that either generates a
+warning about unsafe content or the browser might decide to not load
+the assets at all. And especially the missing <span class=\"caps\">CSS</span> was severely
+endangered the&nbsp;usability.</p>
+<p>First I tried to solve this in Whiskers itself. But I soon discovered
+that the <code>master.pt</code> template in Whiskers contains several
+<a href=\"http://docs.pylonsproject.org/projects/pyramid/en/latest/api/request.html#pyramid.request.Request.static_url\">static_url</a>s,
+for&nbsp;instance:</p>
+<pre><code>&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/css/bootstrap.css')}\" ... /&gt;
+&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/whiskers.css')}\" ... /&gt;
+</code></pre>
+<p>And those resolved to <strong>http</strong>://whiskers.example.com/static/… so I
+had to convince Whiskers (or actually Pyramid) that we were using
+<span class=\"caps\">SSL</span>. As a result my next attempts involved changing the Apache
+configuration. But after trying several options I could not get it
+working (possibly also due to an older version of&nbsp;Apache).</p>
+<p>So I left the configuration&nbsp;unchanged:</p>
+<pre><code>&lt;VirtualHost &lt;ip&gt;:443&gt;
+... basic stuff about the server name, logs and SSL certificates ...
+RewriteEngine on
+ProxyPreserveHost on
+# We use a custom CSS file.
+Alias /static/whiskers.css /var/www/whiskers/static/whiskers.css
+RewriteRule ^/static/whiskers.css - [L]
+RewriteRule ^(.*) http://127.0.0.1:6543$1 [P]
+&lt;Location /&gt;
+AuthName \"Whiskers\"
+AuthType Basic
+AuthUserFile /path/to/htpasswd
+require user spam eggs ham
+&lt;/Location&gt;
+&lt;Location /buildouts/add&gt;
+Satisfy Any
+&lt;/Location&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<h3 id=\"waitress\">Waitress</h3>
+<p>After stumbling on a link to
+<a href=\"https://github.com/Pylons/waitress/blob/master/docs/index.rst#using-behind-a-reverse-proxy\">a part of the Waitress documentation</a>
+I decided to try a different approach. My <code>production.ini</code> was
+basically a copy from the
+<a href=\"https://raw.github.com/pingviini/whiskers/master/production.ini\">example on GitHub</a>
+and it contained this&nbsp;section:</p>
+<pre><code>[server:main]
+use = egg:Paste#http
+host = 0.0.0.0
+port = 6543
+</code></pre>
+<p>I installed <a href=\"http://pypi.python.org/pypi/waitress/\">Waitress</a> in my
+<a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> and replaced the
+above section by&nbsp;this:</p>
+<pre><code>[server:main]
+use = egg:waitress#main
+host = 0.0.0.0
+port = 6543
+url_scheme = https
+</code></pre>
+<p>And now the <span class=\"caps\">CSS</span> is properly&nbsp;loaded!</p>
+<p>I don’t know if there are easier/better ways to solve this, but this
+works fine for&nbsp;us.</p>" "http://www.vlent.nl/weblog/2013/01/15/whiskers-behind-ssl/" (20725 56240) old 3 nil nil ((title nil "Whiskers behind SSL") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2013/01/15/whiskers-behind-ssl/"))) (id nil "tag:www.vlent.nl,2013-01-15:/weblog/2013/01/15/whiskers-behind-ssl/") (updated nil "2013-01-15T22:44:00Z") (category ((term . "devops"))) (category ((term . "django"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Since April 2012
+<a href=\"http://www.vlent.nl/weblog/2012/04/27/whiskers-and-buildoutsendpickedversions/\">we are using Whiskers</a>
+to store information about our Plone and Django buildouts. But when I
+moved the setup behind <span class=\"caps\">SSL</span>, the browser started to complain about
+unsafe&nbsp;content.</p>
+<p>While I could access <a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a>
+via <strong>https</strong>://whiskers.example.com, references in the <span class=\"caps\">HTML</span> to the
+favicon and the <span class=\"caps\">CSS</span> were to
+<strong>http</strong>://whiskers.example.com/static/&#8230; And that either generates a
+warning about unsafe content or the browser might decide to not load
+the assets at all. And especially the missing <span class=\"caps\">CSS</span> was severely
+endangered the&nbsp;usability.</p>
+<p>First I tried to solve this in Whiskers itself. But I soon discovered
+that the <code>master.pt</code> template in Whiskers contains several
+<a href=\"http://docs.pylonsproject.org/projects/pyramid/en/latest/api/request.html#pyramid.request.Request.static_url\">static_url</a>s,
+for&nbsp;instance:</p>
+<pre><code>&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/css/bootstrap.css')}\" ... /&gt;
+&lt;link rel=\"stylesheet\" href=\"${request.static_url('whiskers:static/whiskers.css')}\" ... /&gt;
+</code></pre>
+<p>And those resolved to <strong>http</strong>://whiskers.example.com/static/&#8230; so I
+had to convince Whiskers (or actually Pyramid) that we were using
+<span class=\"caps\">SSL</span>. As a result my next attempts involved changing the Apache
+configuration. But after trying several options I could not get it
+working (possibly also due to an older version of&nbsp;Apache).</p>
+<p>So I left the configuration&nbsp;unchanged:</p>
+<pre><code>&lt;VirtualHost &lt;ip&gt;:443&gt;
+    ... basic stuff about the server name, logs and SSL certificates ...
+
+    RewriteEngine on
+    ProxyPreserveHost on
+
+    # We use a custom CSS file.
+    Alias /static/whiskers.css /var/www/whiskers/static/whiskers.css
+    RewriteRule ^/static/whiskers.css - [L]
+
+    RewriteRule ^(.*) http://127.0.0.1:6543$1 [P]
+
+    &lt;Location /&gt;
+            AuthName \"Whiskers\"
+            AuthType Basic
+            AuthUserFile /path/to/htpasswd
+            require user spam eggs ham
+    &lt;/Location&gt;
+    &lt;Location /buildouts/add&gt;
+            Satisfy Any
+    &lt;/Location&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+<h3 id=\"waitress\">Waitress</h3>
+<p>After stumbling on a link to
+<a href=\"https://github.com/Pylons/waitress/blob/master/docs/index.rst#using-behind-a-reverse-proxy\">a part of the Waitress documentation</a>
+I decided to try a different approach. My <code>production.ini</code> was
+basically a copy from the
+<a href=\"https://raw.github.com/pingviini/whiskers/master/production.ini\">example on GitHub</a>
+and it contained this&nbsp;section:</p>
+<pre><code>[server:main]
+use = egg:Paste#http
+host = 0.0.0.0
+port = 6543
+</code></pre>
+<p>I installed <a href=\"http://pypi.python.org/pypi/waitress/\">Waitress</a> in my
+<a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> and replaced the
+above section by&nbsp;this:</p>
+<pre><code>[server:main]
+use = egg:waitress#main
+host = 0.0.0.0
+port = 6543
+url_scheme = https
+</code></pre>
+<p>And now the <span class=\"caps\">CSS</span> is properly&nbsp;loaded!</p>
+<p>I don&#8217;t know if there are easier/better ways to solve this, but this
+works fine for&nbsp;us.</p>"))) ("CloudFlare experiment" "<p>For about a month I have served this website using the CloudFlare free
+plan. This article describes what I&nbsp;observed.</p>
+<h3 id=\"why\">Why</h3>
+<p>Let me first explain why I started using
+<a href=\"https://www.cloudflare.com/\">CloudFlare</a>. Earlier this year I
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">migrated this blog</a> from
+Django to a static site.  At the same time I also switched from
+hosting at <a href=\"http://zestsoftware.nl/\">Zest Software</a> back to my hosting
+provider, <a href=\"http://www.bhosted.nl/\">bHosted.nl</a>. Still, I expected to
+see a drop in the time required to download a page and thus in the
+related graph in the
+<a href=\"https://www.google.com/webmasters/tools/home\">Google Webmaster Tools</a>. This
+is what I&nbsp;saw:</p>
+<p><img alt=\"Time to download a page: September vs October\" src=\"http://www.vlent.nl/images/webtoolsstats-october.png\"/></p>
+<p>As of October 1st—when I made the switch—the time needed to
+download a page didn’t necessarily drop; instead it became more
+erratic and often higher than it was&nbsp;before.</p>
+<p>I guessed that the expected speed improvement of having a static site
+was negated by hosting the site on another server. Because at Zest my
+site was dynamic but ran on a server that had a very light load and
+was only hosting a couple of sites. And at bHosted.nl the site is
+running on a shared server with a load of 2–4 (based on a few
+samples) and several hundred other&nbsp;sites.</p>
+<p>I then by chance stumbled upon the content delivery network provided
+by CloudFlare. And they even have a
+<a href=\"https://www.cloudflare.com/plans\">free plan</a>.</p>
+<h3 id=\"setup-and-first-experience\">Setup and first&nbsp;experience</h3>
+<p>First of all, the video on the CloudFlare homepage is absolutely right
+about how easy it is to setup. Sure, I know a bit about <span class=\"caps\">DNS</span> but
+basically they do not require you to do very hard stuff. In fact, the
+most complicated I had to do was to change the name servers so they
+pointed to CloudFlare. (Actually: I found out that I could not change
+them myself so I had to ask my hosting provider to do so form&nbsp;me.)</p>
+<p>Unfortunately I lost the screenshots I made of my CloudFlare
+statistics. But according to those statistics, CloudFlare handled
+about half of the requests and traffic. And, on the side, also blocked
+quite a few, supposedly, malicious&nbsp;requests.</p>
+<p>I made the switch around the 1st of November. I expected that the
+time to download a page would be more stable but also that is would be
+lower. (That’s one of the benefits of a content distribution network,
+right?) Well, I was partially&nbsp;right…</p>
+<p><img alt=\"Time to download a page: October vs November\" src=\"http://www.vlent.nl/images/webtoolsstats-december.png\"/></p>
+<p>As you can see, the time to download a page indeed did not fluctuate
+as much anymore. But the download time increased dramatically! (That’s
+the reason why I switched back to bHosted.nl at the end of November,
+as you can see in the&nbsp;graph.)</p>
+<p>Google also assigned “special crawl rate settings” in the period I was
+using CloudFlare. I am not sure what this means and if it’s positive
+or not. Either way, within a week after taking CloudFlare out of the
+loop, it was back to&nbsp;normal.</p>
+<p><img alt=\"Google assigned special crawl rate settings\" src=\"http://www.vlent.nl/images/crawlratesetting.png\"/></p>
+<h3 id=\"measurements\">Measurements</h3>
+<p>Before I decided to switch back to just bHosted.nl, I tried to do some
+experiments to see if I could reproduce the differences measured by
+Google. I gathered circa 30 URLs (the home page, the ten most recent
+articles, a number of popular articles and a (more or less) random
+selection) and told <a href=\"http://www.joedog.org/siege-home/\">Siege</a> to have
+a crack at it. More specifically I used the options <code>benchmark</code> (to
+run the requests without a delay), <code>internet</code> (which randomly hits
+the URLs I selected) and <code>concurrent</code> to experiment with different
+number of concurrent users. These tests ran for 60 seconds&nbsp;each.</p>
+<p>Since the bHosted.nl servers are located in The Netherlands, I decided
+to make the measurements a bit more fair. So I did not run the test
+from my home (also in The Netherlands), but a
+<a href=\"http://ramnode.com/\">RamNode</a> <span class=\"caps\">VPS</span>, which is hosted in Atlanta,&nbsp;Georgia.</p>
+<h4 id=\"results\">Results</h4>
+<p>The shortest transaction for both servers was stable: for bHosted.nl
+it was 0.21 seconds and for CloudFlare it was 0.14 seconds. The
+average response time is also comparable (the lower lines in the graph
+below). The longest transactions however, differed a bit&nbsp;more.</p>
+<script src=\"/js/dygraph-combined.js\"></script>
+<div id=\"avg-max-transaction-time\" class=\"graph\"></div>
+<script type=\"text/javascript\">
+g = new Dygraph(
+document.getElementById(\"avg-max-transaction-time\"),
+\"/cloudflare_csv/avg_max_transaction.csv\",
+{
+title: 'Transaction time',
+xlabel: 'Concurrency',
+ylabel: 'Seconds',
+colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+strokeWidth: 3
+}
+);
+</script>
+<p>The transaction rate of bHosted.nl and CloudFlare seem to be comparable.
+(Except for a spike in the bHosted.nl setup at 50 concurrent simulated
+users. But this could just be a happy&nbsp;accident…)</p>
+<div id=\"transaction-rate\" class=\"graph\"></div>
+<script type=\"text/javascript\">
+g = new Dygraph(
+document.getElementById(\"transaction-rate\"),
+\"/cloudflare_csv/transaction_rate.csv\",
+{
+title: 'Transaction rate',
+xlabel: 'Concurrency',
+ylabel: 'Transactions/sec',
+colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+strokeWidth: 3
+}
+);
+</script>
+<h4 id=\"summary\">Summary</h4>
+<p>As you may have guessed, I am absolutely not an expert on the
+matter. But what I conclude from this data is that there is not <em>that</em>
+much difference between bHosted.nl and&nbsp;CloudFlare.</p>
+<p>Sure, the longest transaction time in the CloudFlare setup is larger
+in <em>some</em> situations. But for my blog 100 concurrent users are
+unlikely. (As a matter of fact in December an average of about 150
+pages are requested per day. And Google only indexes an average of 80
+pages per day at the moment of writing.) More importantly: the
+<em>average</em> transaction time for bHosted.nl and CloudFlare is
+practically the&nbsp;same.</p>
+<h3 id=\"conclusion\">Conclusion?</h3>
+<p>I am sure you should <strong>not</strong> draw the conclusion that using CloudFlare
+is a bad thing. Nor do I want to complain about their service—after
+all I did not pay them a dime. Having said that, my <strong>personal</strong>
+conclusion was that since Google is
+<a href=\"http://googlewebmastercentral.blogspot.nl/2010/04/using-site-speed-in-web-search-ranking.html\">using site speed in web search ranking</a>
+<strong>this site</strong> is better off by not using CloudFlare. Your mileage may&nbsp;vary.</p>" "http://www.vlent.nl/weblog/2012/12/27/cloudflare-experiment/" (20700 50640) old 4 nil nil ((title nil "CloudFlare experiment") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/12/27/cloudflare-experiment/"))) (id nil "tag:www.vlent.nl,2012-12-27:/weblog/2012/12/27/cloudflare-experiment/") (updated nil "2012-12-27T22:04:00Z") (category ((term . "blog"))) (category ((term . "development"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>For about a month I have served this website using the CloudFlare free
+plan. This article describes what I&nbsp;observed.</p>
+<h3 id=\"why\">Why</h3>
+<p>Let me first explain why I started using
+<a href=\"https://www.cloudflare.com/\">CloudFlare</a>. Earlier this year I
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">migrated this blog</a> from
+Django to a static site.  At the same time I also switched from
+hosting at <a href=\"http://zestsoftware.nl/\">Zest Software</a> back to my hosting
+provider, <a href=\"http://www.bhosted.nl/\">bHosted.nl</a>. Still, I expected to
+see a drop in the time required to download a page and thus in the
+related graph in the
+<a href=\"https://www.google.com/webmasters/tools/home\">Google Webmaster Tools</a>. This
+is what I&nbsp;saw:</p>
+<p><img alt=\"Time to download a page: September vs October\" src=\"http://www.vlent.nl/images/webtoolsstats-october.png\"/></p>
+<p>As of October 1st&#8212;when I made the switch&#8212;the time needed to
+download a page didn&#8217;t necessarily drop; instead it became more
+erratic and often higher than it was&nbsp;before.</p>
+<p>I guessed that the expected speed improvement of having a static site
+was negated by hosting the site on another server. Because at Zest my
+site was dynamic but ran on a server that had a very light load and
+was only hosting a couple of sites. And at bHosted.nl the site is
+running on a shared server with a load of 2&#8211;4 (based on a few
+samples) and several hundred other&nbsp;sites.</p>
+<p>I then by chance stumbled upon the content delivery network provided
+by CloudFlare. And they even have a
+<a href=\"https://www.cloudflare.com/plans\">free plan</a>.</p>
+<h3 id=\"setup-and-first-experience\">Setup and first&nbsp;experience</h3>
+<p>First of all, the video on the CloudFlare homepage is absolutely right
+about how easy it is to setup. Sure, I know a bit about <span class=\"caps\">DNS</span> but
+basically they do not require you to do very hard stuff. In fact, the
+most complicated I had to do was to change the name servers so they
+pointed to CloudFlare. (Actually: I found out that I could not change
+them myself so I had to ask my hosting provider to do so form&nbsp;me.)</p>
+<p>Unfortunately I lost the screenshots I made of my CloudFlare
+statistics. But according to those statistics, CloudFlare handled
+about half of the requests and traffic. And, on the side, also blocked
+quite a few, supposedly, malicious&nbsp;requests.</p>
+<p>I made the switch around the 1st of November. I expected that the
+time to download a page would be more stable but also that is would be
+lower. (That&#8217;s one of the benefits of a content distribution network,
+right?) Well, I was partially&nbsp;right&#8230;</p>
+<p><img alt=\"Time to download a page: October vs November\" src=\"http://www.vlent.nl/images/webtoolsstats-december.png\"/></p>
+<p>As you can see, the time to download a page indeed did not fluctuate
+as much anymore. But the download time increased dramatically! (That&#8217;s
+the reason why I switched back to bHosted.nl at the end of November,
+as you can see in the&nbsp;graph.)</p>
+<p>Google also assigned &#8220;special crawl rate settings&#8221; in the period I was
+using CloudFlare. I am not sure what this means and if it&#8217;s positive
+or not. Either way, within a week after taking CloudFlare out of the
+loop, it was back to&nbsp;normal.</p>
+<p><img alt=\"Google assigned special crawl rate settings\" src=\"http://www.vlent.nl/images/crawlratesetting.png\"/></p>
+<h3 id=\"measurements\">Measurements</h3>
+<p>Before I decided to switch back to just bHosted.nl, I tried to do some
+experiments to see if I could reproduce the differences measured by
+Google. I gathered circa 30 URLs (the home page, the ten most recent
+articles, a number of popular articles and a (more or less) random
+selection) and told <a href=\"http://www.joedog.org/siege-home/\">Siege</a> to have
+a crack at it. More specifically I used the options <code>benchmark</code> (to
+run the requests without a delay), <code>internet</code> (which randomly hits
+the URLs I selected) and <code>concurrent</code> to experiment with different
+number of concurrent users. These tests ran for 60 seconds&nbsp;each.</p>
+<p>Since the bHosted.nl servers are located in The Netherlands, I decided
+to make the measurements a bit more fair. So I did not run the test
+from my home (also in The Netherlands), but a
+<a href=\"http://ramnode.com/\">RamNode</a> <span class=\"caps\">VPS</span>, which is hosted in Atlanta,&nbsp;Georgia.</p>
+<h4 id=\"results\">Results</h4>
+<p>The shortest transaction for both servers was stable: for bHosted.nl
+it was 0.21 seconds and for CloudFlare it was 0.14 seconds. The
+average response time is also comparable (the lower lines in the graph
+below). The longest transactions however, differed a bit&nbsp;more.</p>
+<script src=\"/js/dygraph-combined.js\"></script>
+
+<div id=\"avg-max-transaction-time\" class=\"graph\"></div>
+
+<script type=\"text/javascript\">
+  g = new Dygraph(
+    document.getElementById(\"avg-max-transaction-time\"),
+    \"/cloudflare_csv/avg_max_transaction.csv\",
+    {
+        title: 'Transaction time',
+        xlabel: 'Concurrency',
+        ylabel: 'Seconds',
+        colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+        strokeWidth: 3
+    }
+  );
+</script>
+
+<p>The transaction rate of bHosted.nl and CloudFlare seem to be comparable.
+(Except for a spike in the bHosted.nl setup at 50 concurrent simulated
+users. But this could just be a happy&nbsp;accident&#8230;)</p>
+<div id=\"transaction-rate\" class=\"graph\"></div>
+
+<script type=\"text/javascript\">
+  g = new Dygraph(
+    document.getElementById(\"transaction-rate\"),
+    \"/cloudflare_csv/transaction_rate.csv\",
+    {
+        title: 'Transaction rate',
+        xlabel: 'Concurrency',
+        ylabel: 'Transactions/sec',
+        colors: ['#1F77B4', '#FE7F0E', '#1F77B4', '#FE7F0E'],
+        strokeWidth: 3
+    }
+  );
+</script>
+
+<h4 id=\"summary\">Summary</h4>
+<p>As you may have guessed, I am absolutely not an expert on the
+matter. But what I conclude from this data is that there is not <em>that</em>
+much difference between bHosted.nl and&nbsp;CloudFlare.</p>
+<p>Sure, the longest transaction time in the CloudFlare setup is larger
+in <em>some</em> situations. But for my blog 100 concurrent users are
+unlikely. (As a matter of fact in December an average of about 150
+pages are requested per day. And Google only indexes an average of 80
+pages per day at the moment of writing.) More importantly: the
+<em>average</em> transaction time for bHosted.nl and CloudFlare is
+practically the&nbsp;same.</p>
+<h3 id=\"conclusion\">Conclusion?</h3>
+<p>I am sure you should <strong>not</strong> draw the conclusion that using CloudFlare
+is a bad thing. Nor do I want to complain about their service&#8212;after
+all I did not pay them a dime. Having said that, my <strong>personal</strong>
+conclusion was that since Google is
+<a href=\"http://googlewebmastercentral.blogspot.nl/2010/04/using-site-speed-in-web-search-ranking.html\">using site speed in web search ranking</a>
+<strong>this site</strong> is better off by not using CloudFlare. Your mileage may&nbsp;vary.</p>"))) ("Workshop: Theming with Diazo" "<p>On Wednesday the 12th of December,
+<a href=\"http://www.goldmund-wyldebeast-wunderliebe.com/\">Goldmund, Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe</a>
+organised a Diazo workshop. Douwe van der Meij and Kim Chee Leong
+introduced us to the wonderful world of theming Plone the easy way (my
+words, not theirs). Since this workshop took a full day, this is not a
+complete summary but a more an extended version of the notes I took
+during the&nbsp;day.</p>
+<h3 id=\"introduction\">Introduction</h3>
+<p>Diazo is for (re)theming websites. Not just Plone sites, it works on
+any technology. Diazo combines the <span class=\"caps\">HTML</span> of the website—the
+content—with the <span class=\"caps\">HTML</span> of the theme provider—the theme—to deliver
+a themed&nbsp;website.</p>
+<p>With Diazo there is a natural separation between the <span class=\"caps\">HTML</span> delivered by
+the designer or frontend developer and the logic (calculations, data,
+etc) which is usually handled by the backend developer. It adds an
+additional level of abstraction to the stack. To put it differently:
+Diazo offers an interface between the developers and the designers,
+while keeping a clear separation of responsibility. Because the
+developer does not have to transform the <span class=\"caps\">HTML</span> from the designer into
+(<a href=\"http://wiki.zope.org/ZPT/TAL\"><span class=\"caps\">TAL</span></a>) templates, this also removes a
+step from the process where normally errors can creep&nbsp;in.</p>
+<p>Diazo can be put in front of your existing website; the technology
+used for the website does not matter. The existing website is still
+there. You can have the multiple designs for a single website at the
+same time. You can even use Diazo to only apply the theme when you are
+on a&nbsp;subsite.</p>
+<p>Diazo uses <span class=\"caps\">XSLT</span> but, theoretically, you do not have to write <span class=\"caps\">XSLT</span>
+yourself. Which is good because <span class=\"caps\">XSLT</span> is hard to read. So if you do
+write <span class=\"caps\">XSLT</span>, don’t forget to place comments so a month from now you
+still understand what you wrote&nbsp;today.</p>
+<p>To make the rules you have to write less complex and require as little
+<span class=\"caps\">XSLT</span> as necessary, you could change the Plone output so it delivers
+what the Diazo theme expects. You can also create a theme that takes
+the output of Plone into account so less transformation is&nbsp;required.</p>
+<p>Speaking of those rules: for an overview of available rules and the
+order in which they are processed (for instance <code>&lt;drop /&gt;</code> is
+executed before <code>&lt;replace /&gt;</code>), see the
+<a href=\"http://docs.diazo.org/en/latest/\">Diazo documentation</a>.</p>
+<h3 id=\"tooling\">Tooling</h3>
+<p>The package
+<a href=\"http://pypi.python.org/pypi/plone.app.theming\">plone.app.theming</a>
+provides an interface to modify themes. It allows you to edit your
+<code>rules.xml</code> file and the rest of the them from within Plone. By using
+the inspectors you can also select elements in your theme and content
+(Plone site) and have the editor create a rule for you. (From what
+I’ve seen during the workshop you likely want to tweak the rule
+somewhat but it’s a starting&nbsp;point.)</p>
+<p>It’s possible to set hostnames that use the unthemed version of
+the site in the advanced settings of the theming control panel. By
+default <code>127.0.0.1</code> is listed&nbsp;there.</p>
+<h3 id=\"creating-a-theme\">Creating a&nbsp;theme</h3>
+<p>A Diazo theme expects a specific layout. Obviously you’ll need to have
+your theme: an <span class=\"caps\">HTML</span> file (<code>index.html</code> for example) and accompanying
+assets (<span class=\"caps\">CSS</span>, JavaScript, images). Besides those files, you also need
+to have the files <code>manifest.cfg</code>, <code>rules.xml</code> and an image with a
+preview of the theme, <code>preview.png</code>.</p>
+<p>An example of a <code>manifest.cfg</code> file:</p>
+<pre><code>[theme]
+title = Demo Theme
+description = My first Diazo theme
+preview = preview.png
+</code></pre>
+<p>For details on the content of the <code>manifest.cfg</code> file, check out the
+<a href=\"http://pypi.python.org/pypi/plone.app.theming/#the-manifest-file\">manifest file section</a>
+plone.app.theming&nbsp;documentation.</p>
+<p>A very basic <code>rules.xml</code> file to get&nbsp;started:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+xmlns=\"http://namespaces.plone.org/diazo\"
+xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;
+&lt;theme href=\"index.html\" /&gt;
+&lt;/rules&gt;
+</code></pre>
+<p>The <code>&lt;theme href=\"...\" /&gt;</code> line makes sure that the <code>index.html</code> file
+from the theme is used. Otherwise you would still see the Plone&nbsp;theme.</p>
+<p>Note that you can split up the rules into several files. For&nbsp;instance:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+xmlns=\"http://namespaces.plone.org/diazo\"
+xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"
+xmlns:xi=\"http://www.w3.org/2001/XInclude\"&gt;
+&lt;theme href=\"index.html\" /&gt;
+&lt;xi:include ref=\"rules_normal.xml\" /&gt;
+&lt;rules if-content=\"/html/head/title[.='foo']\"&gt;
+&lt;xi:include ref=\"rules_foo.xml\" /&gt;
+&lt;/rules&gt;
+&lt;/rules&gt;
+</code></pre>
+<p>To make the Plone site editable in the themed site, you need to add
+the following to your&nbsp;rules:</p>
+<pre><code>&lt;after
+css:theme-children=\"html head\"
+css:content=\"html head script\"
+/&gt;
+&lt;after
+css:theme-children=\"html head\"
+css:content=\"html head base\"
+/&gt;
+</code></pre>
+<p>Note that this only includes the JavaScript and the <code>&lt;base /&gt;</code> element
+from Plone. To actually show the edit bar, you’ll need to add some
+additional rules and also include some <span class=\"caps\">CSS</span> in your theme to style it&nbsp;properly.</p>
+<p>You could also try to use
+<a href=\"http://pypi.python.org/pypi/plone.app.toolbar\">plone.app.toolbar</a>. But
+note that currently (plone.app.toolbar 1.1 and plone.app.theming
+1.1b1) there is a small user interface problem: the toolbar is on top of the
+controls when you expanded the <span class=\"caps\">HTML</span> mockup or unthemed content&nbsp;inspector.</p>
+<figure>
+<img src=\"/images/theming-plain.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+<figcaption>
+Inspecting the unthemed content <strong>without</strong> the Plone Toolbar
+</figcaption>
+</figure>
+<p>If you do not have the Plone Toolbar installed, you can toggle the
+source view and fullscreen mode of the inspector. But when the Plone Toolbar <strong>is</strong> installed, it overlaps
+with these&nbsp;controls.</p>
+<figure>
+<img src=\"/images/theming-toolbar.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+<figcaption>
+Inspecting the unthemed content <strong>with</strong> the Plone Toolbar
+</figcaption>
+</figure>
+<p>As long as the page is long enough that you can scroll down, you can
+do just that to reveal the controls again. (Since the controls scroll
+with the page while the position of the toolbar is fixed, they show up
+when you scroll on the&nbsp;page.)</p>
+<h3 id=\"summary\">Summary</h3>
+<p>Diazo is a wrapper around <span class=\"caps\">XSLT</span>. It provides a seamless integration to
+(re)theme your website. It provides a higher level of abstraction, but
+you can also use <span class=\"caps\">XSLT</span> as a&nbsp;fallback.</p>
+<p>Although you can use Diazo without Plone, there currently is only tooling
+within&nbsp;Plone.</p>
+<h3 id=\"my-conclusion\">My&nbsp;conclusion</h3>
+<p>This was my first introduction to Diazo. My initial reaction is that I
+like the separation of concerns and responsibility between front- and
+backend. I can also imagine that it is easier to work with other
+parties that build the theme (<span class=\"caps\">HTML</span> and <span class=\"caps\">CSS</span>) and do not require
+in-depth Plone knowledge.  I cannot yet judge on potential gains in
+time when comparing the development of a Plone theme with building a
+Diazo&nbsp;theme.</p>
+<p>I am glad that you can edit the rules from within Plone and have the
+inspectors to help you selecting the elements. At the same time I can
+imagine that someone with more knowledge about Diazo, <span class=\"caps\">XSL</span> and the
+actual output of Plone (which isn’t my expertise) rather just works on
+file system with his/her&nbsp;editor.</p>
+<p>There are also a few things that we at
+<a href=\"http://www.edition1.nl\">Edition1</a> need to investigate and/or solve
+before we can even think about using Diazo for every
+<a href=\"http://www.swordfish.nl\">SwordFish</a> customer. For instance, we use
+<a href=\"http://pypi.python.org/pypi/collective.editskinswitcher/\">collective.editskinswitcher</a>
+combined with
+<a href=\"http://pypi.python.org/pypi/collective.lineage/\">collective.lineage</a>.
+Our customers have a separate edit skin (with a preview of the content
+as the visitors of the site will see it) and can select a theme per
+child site. We’ll have to see how we can replicate something similar
+with Diazo, perhaps by using
+<a href=\"http://pypi.python.org/pypi/lineage.themeselection/\">lineage.themeselection</a>. That
+is: assuming we want to keep this setup—the Plone Toolbar also looks
+really&nbsp;nice!</p>
+<p>Either way, I learnt a lot. So thanks Douwe, Kim Chee and Goldmund,
+Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe for organising the&nbsp;workshop!</p>" "http://www.vlent.nl/weblog/2012/12/14/workshop-theming-with-diazo/" (20683 35912) old 5 nil nil ((title nil "Workshop: Theming with Diazo") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/12/14/workshop-theming-with-diazo/"))) (id nil "tag:www.vlent.nl,2012-12-14:/weblog/2012/12/14/workshop-theming-with-diazo/") (updated nil "2012-12-14T20:30:00Z") (category ((term . "development"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>On Wednesday the 12th of December,
+<a href=\"http://www.goldmund-wyldebeast-wunderliebe.com/\">Goldmund, Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe</a>
+organised a Diazo workshop. Douwe van der Meij and Kim Chee Leong
+introduced us to the wonderful world of theming Plone the easy way (my
+words, not theirs). Since this workshop took a full day, this is not a
+complete summary but a more an extended version of the notes I took
+during the&nbsp;day.</p>
+<h3 id=\"introduction\">Introduction</h3>
+<p>Diazo is for (re)theming websites. Not just Plone sites, it works on
+any technology. Diazo combines the <span class=\"caps\">HTML</span> of the website&#8212;the
+content&#8212;with the <span class=\"caps\">HTML</span> of the theme provider&#8212;the theme&#8212;to deliver
+a themed&nbsp;website.</p>
+<p>With Diazo there is a natural separation between the <span class=\"caps\">HTML</span> delivered by
+the designer or frontend developer and the logic (calculations, data,
+etc) which is usually handled by the backend developer. It adds an
+additional level of abstraction to the stack. To put it differently:
+Diazo offers an interface between the developers and the designers,
+while keeping a clear separation of responsibility. Because the
+developer does not have to transform the <span class=\"caps\">HTML</span> from the designer into
+(<a href=\"http://wiki.zope.org/ZPT/TAL\"><span class=\"caps\">TAL</span></a>) templates, this also removes a
+step from the process where normally errors can creep&nbsp;in.</p>
+<p>Diazo can be put in front of your existing website; the technology
+used for the website does not matter. The existing website is still
+there. You can have the multiple designs for a single website at the
+same time. You can even use Diazo to only apply the theme when you are
+on a&nbsp;subsite.</p>
+<p>Diazo uses <span class=\"caps\">XSLT</span> but, theoretically, you do not have to write <span class=\"caps\">XSLT</span>
+yourself. Which is good because <span class=\"caps\">XSLT</span> is hard to read. So if you do
+write <span class=\"caps\">XSLT</span>, don&#8217;t forget to place comments so a month from now you
+still understand what you wrote&nbsp;today.</p>
+<p>To make the rules you have to write less complex and require as little
+<span class=\"caps\">XSLT</span> as necessary, you could change the Plone output so it delivers
+what the Diazo theme expects. You can also create a theme that takes
+the output of Plone into account so less transformation is&nbsp;required.</p>
+<p>Speaking of those rules: for an overview of available rules and the
+order in which they are processed (for instance <code>&lt;drop /&gt;</code> is
+executed before <code>&lt;replace /&gt;</code>), see the
+<a href=\"http://docs.diazo.org/en/latest/\">Diazo documentation</a>.</p>
+<h3 id=\"tooling\">Tooling</h3>
+<p>The package
+<a href=\"http://pypi.python.org/pypi/plone.app.theming\">plone.app.theming</a>
+provides an interface to modify themes. It allows you to edit your
+<code>rules.xml</code> file and the rest of the them from within Plone. By using
+the inspectors you can also select elements in your theme and content
+(Plone site) and have the editor create a rule for you. (From what
+I&#8217;ve seen during the workshop you likely want to tweak the rule
+somewhat but it&#8217;s a starting&nbsp;point.)</p>
+<p>It&#8217;s possible to set hostnames that use the unthemed version of
+the site in the advanced settings of the theming control panel. By
+default <code>127.0.0.1</code> is listed&nbsp;there.</p>
+<h3 id=\"creating-a-theme\">Creating a&nbsp;theme</h3>
+<p>A Diazo theme expects a specific layout. Obviously you&#8217;ll need to have
+your theme: an <span class=\"caps\">HTML</span> file (<code>index.html</code> for example) and accompanying
+assets (<span class=\"caps\">CSS</span>, JavaScript, images). Besides those files, you also need
+to have the files <code>manifest.cfg</code>, <code>rules.xml</code> and an image with a
+preview of the theme, <code>preview.png</code>.</p>
+<p>An example of a <code>manifest.cfg</code> file:</p>
+<pre><code>[theme]
+title = Demo Theme
+description = My first Diazo theme
+preview = preview.png
+</code></pre>
+<p>For details on the content of the <code>manifest.cfg</code> file, check out the
+<a href=\"http://pypi.python.org/pypi/plone.app.theming/#the-manifest-file\">manifest file section</a>
+plone.app.theming&nbsp;documentation.</p>
+<p>A very basic <code>rules.xml</code> file to get&nbsp;started:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+    xmlns=\"http://namespaces.plone.org/diazo\"
+    xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"&gt;
+
+    &lt;theme href=\"index.html\" /&gt;
+
+&lt;/rules&gt;
+</code></pre>
+<p>The <code>&lt;theme href=\"...\" /&gt;</code> line makes sure that the <code>index.html</code> file
+from the theme is used. Otherwise you would still see the Plone&nbsp;theme.</p>
+<p>Note that you can split up the rules into several files. For&nbsp;instance:</p>
+<pre><code>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;rules
+    xmlns=\"http://namespaces.plone.org/diazo\"
+    xmlns:css=\"http://namespaces.plone.org/diazo/css\"
+    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"
+    xmlns:xi=\"http://www.w3.org/2001/XInclude\"&gt;
+
+    &lt;theme href=\"index.html\" /&gt;
+
+    &lt;xi:include ref=\"rules_normal.xml\" /&gt;
+
+    &lt;rules if-content=\"/html/head/title[.='foo']\"&gt;
+        &lt;xi:include ref=\"rules_foo.xml\" /&gt;
+    &lt;/rules&gt;
+&lt;/rules&gt;
+</code></pre>
+<p>To make the Plone site editable in the themed site, you need to add
+the following to your&nbsp;rules:</p>
+<pre><code>&lt;after
+    css:theme-children=\"html head\"
+    css:content=\"html head script\"
+/&gt;
+
+&lt;after
+    css:theme-children=\"html head\"
+    css:content=\"html head base\"
+/&gt;
+</code></pre>
+<p>Note that this only includes the JavaScript and the <code>&lt;base /&gt;</code> element
+from Plone. To actually show the edit bar, you&#8217;ll need to add some
+additional rules and also include some <span class=\"caps\">CSS</span> in your theme to style it&nbsp;properly.</p>
+<p>You could also try to use
+<a href=\"http://pypi.python.org/pypi/plone.app.toolbar\">plone.app.toolbar</a>. But
+note that currently (plone.app.toolbar 1.1 and plone.app.theming
+1.1b1) there is a small user interface problem: the toolbar is on top of the
+controls when you expanded the <span class=\"caps\">HTML</span> mockup or unthemed content&nbsp;inspector.</p>
+<figure>
+  <img src=\"/images/theming-plain.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+  <figcaption>
+    Inspecting the unthemed content <strong>without</strong> the Plone Toolbar
+  </figcaption>
+</figure>
+
+<p>If you do not have the Plone Toolbar installed, you can toggle the
+source view and fullscreen mode of the inspector. But when the Plone Toolbar <strong>is</strong> installed, it overlaps
+with these&nbsp;controls.</p>
+<figure>
+  <img src=\"/images/theming-toolbar.png\" alt=\"Inspecting the unthemed content without the Plone Toolbar\">
+  <figcaption>
+    Inspecting the unthemed content <strong>with</strong> the Plone Toolbar
+  </figcaption>
+</figure>
+
+<p>As long as the page is long enough that you can scroll down, you can
+do just that to reveal the controls again. (Since the controls scroll
+with the page while the position of the toolbar is fixed, they show up
+when you scroll on the&nbsp;page.)</p>
+<h3 id=\"summary\">Summary</h3>
+<p>Diazo is a wrapper around <span class=\"caps\">XSLT</span>. It provides a seamless integration to
+(re)theme your website. It provides a higher level of abstraction, but
+you can also use <span class=\"caps\">XSLT</span> as a&nbsp;fallback.</p>
+<p>Although you can use Diazo without Plone, there currently is only tooling
+within&nbsp;Plone.</p>
+<h3 id=\"my-conclusion\">My&nbsp;conclusion</h3>
+<p>This was my first introduction to Diazo. My initial reaction is that I
+like the separation of concerns and responsibility between front- and
+backend. I can also imagine that it is easier to work with other
+parties that build the theme (<span class=\"caps\">HTML</span> and <span class=\"caps\">CSS</span>) and do not require
+in-depth Plone knowledge.  I cannot yet judge on potential gains in
+time when comparing the development of a Plone theme with building a
+Diazo&nbsp;theme.</p>
+<p>I am glad that you can edit the rules from within Plone and have the
+inspectors to help you selecting the elements. At the same time I can
+imagine that someone with more knowledge about Diazo, <span class=\"caps\">XSL</span> and the
+actual output of Plone (which isn&#8217;t my expertise) rather just works on
+file system with his/her&nbsp;editor.</p>
+<p>There are also a few things that we at
+<a href=\"http://www.edition1.nl\">Edition1</a> need to investigate and/or solve
+before we can even think about using Diazo for every
+<a href=\"http://www.swordfish.nl\">SwordFish</a> customer. For instance, we use
+<a href=\"http://pypi.python.org/pypi/collective.editskinswitcher/\">collective.editskinswitcher</a>
+combined with
+<a href=\"http://pypi.python.org/pypi/collective.lineage/\">collective.lineage</a>.
+Our customers have a separate edit skin (with a preview of the content
+as the visitors of the site will see it) and can select a theme per
+child site. We&#8217;ll have to see how we can replicate something similar
+with Diazo, perhaps by using
+<a href=\"http://pypi.python.org/pypi/lineage.themeselection/\">lineage.themeselection</a>. That
+is: assuming we want to keep this setup&#8212;the Plone Toolbar also looks
+really&nbsp;nice!</p>
+<p>Either way, I learnt a lot. So thanks Douwe, Kim Chee and Goldmund,
+Wyldebeast <span class=\"amp\">&amp;</span> Wunderliebe for organising the&nbsp;workshop!</p>"))) ("Podcasts I listen to" "<p>In this article I share the podcasts listen to on my daily&nbsp;commute.</p>
+<p>Note that these podcasts are not Plone or Django specific; they aren’t
+even about Python. Most of them are web related and keep me informed
+on what’s new in our field. And I also got a few really nice tips and
+tricks from&nbsp;them.</p>
+<p>This list of podcasts is usually enough to keep me busy during (most
+of) the drive to and from work. (Which totals up to about 6 hours per
+week, just to give you an&nbsp;idea.)</p>
+<p>Anyway, here’s the list in alphabetic&nbsp;order:</p>
+<ul>
+<li><a href=\"http://shoptalkshow.com/\">ShopTalk</a> is about front end web design,
+development and&nbsp;<span class=\"caps\">UX</span>.</li>
+<li><a href=\"http://tech45.eu/\">Tech45</a> is a Dutch podcast about tech news in&nbsp;general.</li>
+<li><a href=\"http://5by5.tv/bigwebshow\">The Big Web Show</a> is about everything
+web that&nbsp;matters.</li>
+<li><a href=\"http://nonbreakingspace.tv/\">The Non Breaking Space Show</a>:
+interviews with the web’s best and&nbsp;brightest.</li>
+<li><a href=\"http://5by5.tv/webahead\">The Web Ahead</a> is weekly podcast about
+changing technologies and the future of the&nbsp;web.</li>
+<li><a href=\"http://thisdeveloperslife.com/\">This Developer’s Life</a>: stories
+about developers and their&nbsp;lives.</li>
+</ul>
+<p>I have listened to a number of other podcasts over the years, but
+these are the ones I am subscribed to at the moment. If there are
+other interesting (web related) podcasts you can recommend, please
+leave a&nbsp;comment!</p>" "http://www.vlent.nl/weblog/2012/11/12/podcasts-i-listen-to/" (20641 20204) old 6 nil nil ((title nil "Podcasts I listen to") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/11/12/podcasts-i-listen-to/"))) (id nil "tag:www.vlent.nl,2012-11-12:/weblog/2012/11/12/podcasts-i-listen-to/") (updated nil "2012-11-12T19:33:00Z") (category ((term . "development"))) (category ((term . "django"))) (category ((term . "plone"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>In this article I share the podcasts listen to on my daily&nbsp;commute.</p>
+<p>Note that these podcasts are not Plone or Django specific; they aren&#8217;t
+even about Python. Most of them are web related and keep me informed
+on what&#8217;s new in our field. And I also got a few really nice tips and
+tricks from&nbsp;them.</p>
+<p>This list of podcasts is usually enough to keep me busy during (most
+of) the drive to and from work. (Which totals up to about 6 hours per
+week, just to give you an&nbsp;idea.)</p>
+<p>Anyway, here&#8217;s the list in alphabetic&nbsp;order:</p>
+<ul>
+<li><a href=\"http://shoptalkshow.com/\">ShopTalk</a> is about front end web design,
+   development and&nbsp;<span class=\"caps\">UX</span>.</li>
+<li><a href=\"http://tech45.eu/\">Tech45</a> is a Dutch podcast about tech news in&nbsp;general.</li>
+<li><a href=\"http://5by5.tv/bigwebshow\">The Big Web Show</a> is about everything
+   web that&nbsp;matters.</li>
+<li><a href=\"http://nonbreakingspace.tv/\">The Non Breaking Space Show</a>:
+   interviews with the web’s best and&nbsp;brightest.</li>
+<li><a href=\"http://5by5.tv/webahead\">The Web Ahead</a> is weekly podcast about
+   changing technologies and the future of the&nbsp;web.</li>
+<li><a href=\"http://thisdeveloperslife.com/\">This Developer&#8217;s Life</a>: stories
+   about developers and their&nbsp;lives.</li>
+</ul>
+<p>I have listened to a number of other podcasts over the years, but
+these are the ones I am subscribed to at the moment. If there are
+other interesting (web related) podcasts you can recommend, please
+leave a&nbsp;comment!</p>"))) ("Acrylamid: a first evaluation" "<p>About a month ago I officially migrated this weblog to Acrylamid. This
+is a first&nbsp;evaluation.</p>
+<p>On the one hand, a month may not seem like a long time. So why
+evaluate <a href=\"http://posativ.org/acrylamid/\">Acrylamid</a> now? Well, for one
+thing, I started working with it a bit earlier than
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">October 1st</a> since I had
+to migrate existing content and develop this site. Another reason is
+that during the <a href=\"http://www.ploneconf.org/\">Plone Conference 2012</a> I
+published more articles about those three days than I normally do in
+a whole&nbsp;year.</p>
+<h3 id=\"writing-articles\">Writing&nbsp;articles</h3>
+<p>During the conference I was not able to publish all articles
+immediately after the talk was over. So I got into the habit of
+writing my notes in a drafts folder. When I started making the notes
+ready for publication, I would move the file to the normal
+directory. (Alternatively I could have added a <code>draft</code> field, but this
+way it was easier to see which articles were not published&nbsp;yet.)</p>
+<p>Although the Wi-Fi at the conference was almost perfect and the hotel
+also offered free Wi-Fi, there were a couple of times where I did not
+have a connection to the Internet while I <em>did</em> want to edit my
+articles. But since I could do the writing on my own laptop, that
+hardly mattered. The biggest issues were that I could not look up
+things easily (I had to use my phone) and that the pages were not
+rendered with the right fonts (since I use
+<a href=\"https://typekit.com/\">Typekit</a>).</p>
+<p>Another thing I liked was my tool set. I am still really happy with
+Emacs as an editor. I love that I am able to hit <code>C-x C-s</code> as often as
+I need—no matter the network state. That beats having to edit
+articles online using e.g. TinyMCE. Not that the latter is a bad thing
+by the way, I just prefer my good old&nbsp;Emacs.</p>
+<p>As for marking up the articles: Markdown also proved to be a good
+syntax to do so. Only once was I not able to get the result that I was
+after. I wanted to have a code block inside an unordered list. I an
+pretty sure it is possible, I just did not know how exactly and
+rewrote the article a little bit. Lets chalk this up to me being too
+lazy and inexperienced with&nbsp;Markdown.</p>
+<h3 id=\"output\">Output</h3>
+<p>One of the things I am currently still struggling with is my <span class=\"caps\">URL</span> structure. Years
+ago I used URLs like <code>/weblog/title-of-the-article/</code>. I switched to
+URLs with dates (<code>/weblog/2012/02/04/title-of-the-article</code>) when I
+<a href=\"http://www.vlent.nl/weblog/2010/05/30/switch-django/\">switched to Django</a>. In Django it
+was very easy to write a view that redirected the old URLs to the new
+ones. But now I only added <em>some</em> of the 2008–2010 URLs to my
+<code>.htaccess</code> files. But since
+<a href=\"http://www.w3.org/Provider/Style/URI.html\">cool URIs don’t change</a> I
+have to list all the old URLs in that <code>.htaccess</code> file or else I have
+to find a more generic solution—for instance by writing a custom
+view for Acrylamid that uses a <code>&lt;meta&gt;</code> element or JavaScript to
+redirect visitors to the new <span class=\"caps\">URL</span>. In the mean while: to mitigate the
+problem for visitors, I am using Google to
+<a href=\"http://googlewebmastercentral.blogspot.nl/2008/08/make-your-404-pages-more-useful.html\">make my 404 pages more useful</a>. Most
+of the times, the search does return the page the visitor was&nbsp;after.</p>
+<p>Another thing that bothers me is that I do not (yet) have views that
+show the articles for a year/month/day. For instance
+<code>/weblog/2012/10/10/</code> to see all articles for the first day of the
+Plone&nbsp;conference.</p>
+<h3 id=\"conclusion\">Conclusion</h3>
+<p>I am quite happy with the current setup. I am not completely done yet,
+but for me it is a huge improvement over the Django (and Plone) setups
+I had earlier. I find it a really nice lightweight
+blogging&nbsp;system.</p>" "http://www.vlent.nl/weblog/2012/11/08/acrylamid-first-evaluation/" (20635 59660) old 7 nil nil ((title nil "Acrylamid: a first evaluation") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/11/08/acrylamid-first-evaluation/"))) (id nil "tag:www.vlent.nl,2012-11-08:/weblog/2012/11/08/acrylamid-first-evaluation/") (updated nil "2012-11-08T17:17:00Z") (category ((term . "acrylamid"))) (category ((term . "blog"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>About a month ago I officially migrated this weblog to Acrylamid. This
+is a first&nbsp;evaluation.</p>
+<p>On the one hand, a month may not seem like a long time. So why
+evaluate <a href=\"http://posativ.org/acrylamid/\">Acrylamid</a> now? Well, for one
+thing, I started working with it a bit earlier than
+<a href=\"http://www.vlent.nl/weblog/2012/10/01/migrating-to-acrylamid/\">October 1st</a> since I had
+to migrate existing content and develop this site. Another reason is
+that during the <a href=\"http://www.ploneconf.org/\">Plone Conference 2012</a> I
+published more articles about those three days than I normally do in
+a whole&nbsp;year.</p>
+<h3 id=\"writing-articles\">Writing&nbsp;articles</h3>
+<p>During the conference I was not able to publish all articles
+immediately after the talk was over. So I got into the habit of
+writing my notes in a drafts folder. When I started making the notes
+ready for publication, I would move the file to the normal
+directory. (Alternatively I could have added a <code>draft</code> field, but this
+way it was easier to see which articles were not published&nbsp;yet.)</p>
+<p>Although the Wi-Fi at the conference was almost perfect and the hotel
+also offered free Wi-Fi, there were a couple of times where I did not
+have a connection to the Internet while I <em>did</em> want to edit my
+articles. But since I could do the writing on my own laptop, that
+hardly mattered. The biggest issues were that I could not look up
+things easily (I had to use my phone) and that the pages were not
+rendered with the right fonts (since I use
+<a href=\"https://typekit.com/\">Typekit</a>).</p>
+<p>Another thing I liked was my tool set. I am still really happy with
+Emacs as an editor. I love that I am able to hit <code>C-x C-s</code> as often as
+I need&#8212;no matter the network state. That beats having to edit
+articles online using e.g. TinyMCE. Not that the latter is a bad thing
+by the way, I just prefer my good old&nbsp;Emacs.</p>
+<p>As for marking up the articles: Markdown also proved to be a good
+syntax to do so. Only once was I not able to get the result that I was
+after. I wanted to have a code block inside an unordered list. I an
+pretty sure it is possible, I just did not know how exactly and
+rewrote the article a little bit. Lets chalk this up to me being too
+lazy and inexperienced with&nbsp;Markdown.</p>
+<h3 id=\"output\">Output</h3>
+<p>One of the things I am currently still struggling with is my <span class=\"caps\">URL</span> structure. Years
+ago I used URLs like <code>/weblog/title-of-the-article/</code>. I switched to
+URLs with dates (<code>/weblog/2012/02/04/title-of-the-article</code>) when I
+<a href=\"http://www.vlent.nl/weblog/2010/05/30/switch-django/\">switched to Django</a>. In Django it
+was very easy to write a view that redirected the old URLs to the new
+ones. But now I only added <em>some</em> of the 2008&#8211;2010 URLs to my
+<code>.htaccess</code> files. But since
+<a href=\"http://www.w3.org/Provider/Style/URI.html\">cool URIs don&#8217;t change</a> I
+have to list all the old URLs in that <code>.htaccess</code> file or else I have
+to find a more generic solution&#8212;for instance by writing a custom
+view for Acrylamid that uses a <code>&lt;meta&gt;</code> element or JavaScript to
+redirect visitors to the new <span class=\"caps\">URL</span>. In the mean while: to mitigate the
+problem for visitors, I am using Google to
+<a href=\"http://googlewebmastercentral.blogspot.nl/2008/08/make-your-404-pages-more-useful.html\">make my 404 pages more useful</a>. Most
+of the times, the search does return the page the visitor was&nbsp;after.</p>
+<p>Another thing that bothers me is that I do not (yet) have views that
+show the articles for a year/month/day. For instance
+<code>/weblog/2012/10/10/</code> to see all articles for the first day of the
+Plone&nbsp;conference.</p>
+<h3 id=\"conclusion\">Conclusion</h3>
+<p>I am quite happy with the current setup. I am not completely done yet,
+but for me it is a huge improvement over the Django (and Plone) setups
+I had earlier. I find it a really nice lightweight
+blogging&nbsp;system.</p>"))) ("Lightning talks (Friday)" "<p>The lightning talks of the last day of the Plone Conference
+2012. Again only three minutes each since we had 14&nbsp;talks!</p>
+<h3 id=\"paul-j-stevens\">Paul J&nbsp;Stevens</h3>
+<p>Paul had a project where PDFs were workflowed to several sites using
+MultiSite. This meant there was lots of duplication. After migrating
+to Plone 4 and blob storage, there was still a lot of&nbsp;data.</p>
+<p>He created a script (<a href=\"https://github.com/pjstevns/bscompress\">bscompress</a>)&nbsp;for:</p>
+<ul>
+<li>De-duplication of blobs using&nbsp;hard-links</li>
+<li>Less disk-space, faster copy/move&nbsp;actions</li>
+</ul>
+<p>In his case, the blob storage went from 14625 Megabytes to 2395&nbsp;Megabytes.</p>
+<p>Todos:</p>
+<ul>
+<li>Patch <code>ZODB/src/ZODB/blob.py</code>.</li>
+<li>Maintain compatibility and coordinate with other efforts
+(like <a href=\"http://pypi.python.org/pypi/collective.recipe.backup/\">collective.recipe.backup</a>).</li>
+</ul>
+<h3 id=\"philip-bauer\">Philip&nbsp;Bauer</h3>
+<p>Dylan Jay talked about attracting more new people to get started in
+Plone. Dexterity and PloneIDE are great, but we need more. David Glick
+started to build a theme editor
+(<a href=\"http://pypi.python.org/pypi/plone.app.themeeditor/\">plone.app.themeeditor</a>). It
+uses jQuery <span class=\"caps\">UI</span> and is a lot better than the Zope Management Interface
+(<span class=\"caps\">ZMI</span>). There is going to be a <span class=\"caps\">PLIP</span> about&nbsp;it.</p>
+<h3 id=\"johannes-raggam\">Johannes&nbsp;Raggam</h3>
+<p>Johannes made a new release of
+<a href=\"http://pypi.python.org/pypi/plone.app.event/\">plone.app.event</a>. Please
+take note of the installation instructions. They include configuring
+the right time&nbsp;zone.</p>
+<p>Johannes did a quick demo of the packages. There are still
+<a href=\"https://github.com/plone/plone.app.event/issues\">issues</a>, but it’s
+safe to call it a beta&nbsp;version.</p>
+<p>Johannes thanks all the contributors for their&nbsp;work.</p>
+<p><em>Mark: note that the package was moved from the Collective to the
+Plone organisation on GitHub on October&nbsp;13th.</em></p>
+<h3 id=\"elizabeth-leddy-eric-steele\">Elizabeth Leddy / Eric&nbsp;Steele</h3>
+<p>All the team leaders (security team, <span class=\"caps\">UI</span> team, etc) went on stage so
+people would know who is who. And whom to talk to if you want to get&nbsp;involved.</p>
+<h3 id=\"lukas-graf\">Lukas&nbsp;Graf</h3>
+<p>His company (4teamwork) created
+<a href=\"http://pypi.python.org/pypi/ftw.tabbedview/\">ftw.tabbedview</a>. It can
+be integrated with
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.js.extjs</a>,
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.quickupload</a>
+(if installed) and
+<a href=\"http://pypi.python.org/pypi/ftw.table/\">ftw.table</a>.</p>
+<p>The package <code>ftw.tabbedview</code> contains filtering, sorting, grouping,
+managing columns, batching, flexible sources (catalog, SQLAlchemy,
+…), data transformation (icon, authors, dates, …) and is highly
+configurable. It can also be used on pretty much any&nbsp;context.</p>
+<h3 id=\"philip-bauer_1\">Philip&nbsp;Bauer</h3>
+<p>Philip helped to organise the
+<a href=\"http://konferenz.plone.de/\">Plone Konferenz München 2012</a>. About 150
+people attended and there were lots of new people. The goal of the
+conference was to attract decision makers. It was a very successful&nbsp;conference.</p>
+<p>Tip: include a sprint lounge where people can sprint the whole
+conference. This way you can attract people that want to code and
+work together, but do not speak the language the conference is held&nbsp;in.</p>
+<p>Such local conferences increase the visibility of the Plone
+community and can attract new members to join the&nbsp;community.</p>
+<p>They were able to donate &euro; 3000 to the Plone&nbsp;Foundation.</p>
+<h3 id=\"mikko-ohtamaa\">Mikko&nbsp;Ohtamaa</h3>
+<p>Solving problems in plone package at a&nbsp;time:</p>
+<ul>
+<li><a href=\"http://pypi.python.org/pypi/visualtitle/\">visualtitle</a>: To have
+a different title on your page and in your&nbsp;navigation.</li>
+<li><a href=\"https://github.com/miohtama/imageportlet\">imageportlet</a>: A new
+portlet type to show&nbsp;images.</li>
+<li><a href=\"https://github.com/miohtama/silvuple\">silvuple</a> (That’s
+French…): Force the user interface to use your native language
+an show untranslated&nbsp;items.</li>
+<li><a href=\"https://github.com/miohtama/plomobile\"><strong>plo</strong>mobile</a>: A
+responsive design for&nbsp;Plone.</li>
+<li><a href=\"https://github.com/opensourcehacker/sevabot\">sevabot</a>: A Skype&nbsp;bot.</li>
+</ul>
+<p><em>[Mark: The
+<a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg&amp;t=24m53s\">video of this lightning talk</a>
+is definitely worth&nbsp;watching.]</em></p>
+<h3 id=\"franco-pellegrini\">Franco&nbsp;Pellegrini</h3>
+<p>If we have to believe the Mayan symbols, this year will be the end of
+the world. What better way to experience that day than by joining a
+sprint? So join the “End of the world” sprint in Ushuaia, Provincia de
+Tierra del Fuego, Argentina on December 21st,&nbsp;2012.</p>
+<h3 id=\"jukka-ojaniemi\">Jukka&nbsp;Ojaniemi</h3>
+<p><a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a> is a Pyramid
+application that collects all packages used in your buildouts. That
+is, if you use
+<a href=\"http://pypi.python.org/pypi/buildout.sendpickedversions/\">buildout.sendpickedversions</a>. This
+way you can quickly see which buildouts use a certain version of a
+package. You might even be able to use this data to find out which
+eggs in your buildout cache are not used&nbsp;anymore.</p>
+<h3 id=\"erico-andrei\">Érico&nbsp;Andrei</h3>
+<p>A new solution to change how we collaborate: desk surfing. There is a
+Plone core developer dedicated desk in São Paulo. (You can also use it
+if you are not a core developer by the way.) If you are in São Paulo?
+go there, contact&nbsp;Érico.</p>
+<p>(Calvin Hendryx-Parker adds that you are also welcome in&nbsp;Fortville.)</p>
+<h3 id=\"calvin-hendryx-parker\">Calvin&nbsp;Hendryx-Parker</h3>
+<p>Since Calvin missed is own presentation earlier that day, he did the
+three minute version of his talk “Playing With Blocks: 6 Pro Tips for
+Building Your Next Super-Charged Plone&nbsp;Site”:</p>
+<ul>
+<li>Use APIs instead of embedded&nbsp;iFrames.</li>
+<li>Criteria for evaluating your options:<ul>
+<li>Mailing lists taken over by&nbsp;spam?</li>
+<li>Mailing list&nbsp;neglected?</li>
+<li>What is the activity in source&nbsp;control?</li>
+<li>Was there a corporate&nbsp;takover?</li>
+<li>Hope</li>
+</ul>
+</li>
+<li>Leverage Single Sign On (like&nbsp;OpenID).</li>
+<li>Supercharge your search with Solr (which can also index external&nbsp;content).</li>
+<li>Beware of over&nbsp;customisation.</li>
+<li>Testing, testing,&nbsp;testing.</li>
+</ul>
+<p>The talk he would have held this morning will be recorded and put&nbsp;online.</p>
+<h3 id=\"radek-jankiewicz\">Radek&nbsp;Jankiewicz</h3>
+<p><span class=\"caps\">STX</span> Next created a small addon for Plone:
+<a href=\"http://pypi.python.org/pypi/stxnext.grayscale/\">stxnext.grayscale</a>. This
+package transforms content of a page to grey scale. It has been
+developed for Polish user requirements related to national mourning
+after a tragedy has occurred. Governmental sites and bank sites change their colour
+scheme to grey scale out of respect. The images are cached on file
+system and are thus not generated each&nbsp;request.</p>
+<h3 id=\"johannes-raggam_1\">Johannes&nbsp;Raggam</h3>
+<p>A talk about amplify.cc, a prototype to replace PostNuke based
+community portals. It uses only one content type. They use Dexterity
+behaviours on content instances instead of on a class. Their
+conclusion is that having one content type for everything is possible
+and even works really&nbsp;nice.</p>
+<h3 id=\"maurizio-delmonte\">Maurizio&nbsp;Delmonte</h3>
+<p>A lot of countries have their own localised Plone site,
+e.g. <a href=\"http://plone.it/\">Italy</a>,
+<a href=\"http://www.plone.nl/\">the Netherlands</a>,
+<a href=\"http://plone.org.br/\">Brazil</a>, <a href=\"http://plone.es/\">Spain</a>,
+<a href=\"http://plone.fr/\">France</a> and <a href=\"http://plone.org.pl/\">Poland</a>. They
+all look different. But by using a bar at the top of the page which
+links to other Plone sites in the world, we can unite those sites and
+make it easier to discover&nbsp;them.</p>
+<p><a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg\">Watch the video</a>.</p>" "http://www.vlent.nl/weblog/2012/10/12/lightning-talks/" (20600 18700) old 8 nil nil ((title nil "Lightning talks (Friday)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/lightning-talks/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/lightning-talks/") (updated nil "2012-10-12T16:45:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>The lightning talks of the last day of the Plone Conference
+2012. Again only three minutes each since we had 14&nbsp;talks!</p>
+<h3 id=\"paul-j-stevens\">Paul J&nbsp;Stevens</h3>
+<p>Paul had a project where PDFs were workflowed to several sites using
+MultiSite. This meant there was lots of duplication. After migrating
+to Plone 4 and blob storage, there was still a lot of&nbsp;data.</p>
+<p>He created a script (<a href=\"https://github.com/pjstevns/bscompress\">bscompress</a>)&nbsp;for:</p>
+<ul>
+<li>De-duplication of blobs using&nbsp;hard-links</li>
+<li>Less disk-space, faster copy/move&nbsp;actions</li>
+</ul>
+<p>In his case, the blob storage went from 14625 Megabytes to 2395&nbsp;Megabytes.</p>
+<p>Todos:</p>
+<ul>
+<li>Patch <code>ZODB/src/ZODB/blob.py</code>.</li>
+<li>Maintain compatibility and coordinate with other efforts
+     (like <a href=\"http://pypi.python.org/pypi/collective.recipe.backup/\">collective.recipe.backup</a>).</li>
+</ul>
+<h3 id=\"philip-bauer\">Philip&nbsp;Bauer</h3>
+<p>Dylan Jay talked about attracting more new people to get started in
+Plone. Dexterity and PloneIDE are great, but we need more. David Glick
+started to build a theme editor
+(<a href=\"http://pypi.python.org/pypi/plone.app.themeeditor/\">plone.app.themeeditor</a>). It
+uses jQuery <span class=\"caps\">UI</span> and is a lot better than the Zope Management Interface
+(<span class=\"caps\">ZMI</span>). There is going to be a <span class=\"caps\">PLIP</span> about&nbsp;it.</p>
+<h3 id=\"johannes-raggam\">Johannes&nbsp;Raggam</h3>
+<p>Johannes made a new release of
+<a href=\"http://pypi.python.org/pypi/plone.app.event/\">plone.app.event</a>. Please
+take note of the installation instructions. They include configuring
+the right time&nbsp;zone.</p>
+<p>Johannes did a quick demo of the packages. There are still
+<a href=\"https://github.com/plone/plone.app.event/issues\">issues</a>, but it&#8217;s
+safe to call it a beta&nbsp;version.</p>
+<p>Johannes thanks all the contributors for their&nbsp;work.</p>
+<p><em>Mark: note that the package was moved from the Collective to the
+Plone organisation on GitHub on October&nbsp;13th.</em></p>
+<h3 id=\"elizabeth-leddy-eric-steele\">Elizabeth Leddy / Eric&nbsp;Steele</h3>
+<p>All the team leaders (security team, <span class=\"caps\">UI</span> team, etc) went on stage so
+people would know who is who. And whom to talk to if you want to get&nbsp;involved.</p>
+<h3 id=\"lukas-graf\">Lukas&nbsp;Graf</h3>
+<p>His company (4teamwork) created
+<a href=\"http://pypi.python.org/pypi/ftw.tabbedview/\">ftw.tabbedview</a>. It can
+be integrated with
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.js.extjs</a>,
+<a href=\"http://pypi.python.org/pypi/collective.js.extjs/\">collective.quickupload</a>
+(if installed) and
+<a href=\"http://pypi.python.org/pypi/ftw.table/\">ftw.table</a>.</p>
+<p>The package <code>ftw.tabbedview</code> contains filtering, sorting, grouping,
+managing columns, batching, flexible sources (catalog, SQLAlchemy,
+&#8230;), data transformation (icon, authors, dates, &#8230;) and is highly
+configurable. It can also be used on pretty much any&nbsp;context.</p>
+<h3 id=\"philip-bauer_1\">Philip&nbsp;Bauer</h3>
+<p>Philip helped to organise the
+<a href=\"http://konferenz.plone.de/\">Plone Konferenz München 2012</a>. About 150
+people attended and there were lots of new people. The goal of the
+conference was to attract decision makers. It was a very successful&nbsp;conference.</p>
+<p>Tip: include a sprint lounge where people can sprint the whole
+conference. This way you can attract people that want to code and
+work together, but do not speak the language the conference is held&nbsp;in.</p>
+<p>Such local conferences increase the visibility of the Plone
+community and can attract new members to join the&nbsp;community.</p>
+<p>They were able to donate &euro; 3000 to the Plone&nbsp;Foundation.</p>
+<h3 id=\"mikko-ohtamaa\">Mikko&nbsp;Ohtamaa</h3>
+<p>Solving problems in plone package at a&nbsp;time:</p>
+<ul>
+<li><a href=\"http://pypi.python.org/pypi/visualtitle/\">visualtitle</a>: To have
+     a different title on your page and in your&nbsp;navigation.</li>
+<li><a href=\"https://github.com/miohtama/imageportlet\">imageportlet</a>: A new
+     portlet type to show&nbsp;images.</li>
+<li><a href=\"https://github.com/miohtama/silvuple\">silvuple</a> (That&#8217;s
+     French&#8230;): Force the user interface to use your native language
+     an show untranslated&nbsp;items.</li>
+<li><a href=\"https://github.com/miohtama/plomobile\"><strong>plo</strong>mobile</a>: A
+     responsive design for&nbsp;Plone.</li>
+<li><a href=\"https://github.com/opensourcehacker/sevabot\">sevabot</a>: A Skype&nbsp;bot.</li>
+</ul>
+<p><em>[Mark: The
+ <a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg&amp;t=24m53s\">video of this lightning talk</a>
+ is definitely worth&nbsp;watching.]</em></p>
+<h3 id=\"franco-pellegrini\">Franco&nbsp;Pellegrini</h3>
+<p>If we have to believe the Mayan symbols, this year will be the end of
+the world. What better way to experience that day than by joining a
+sprint? So join the &#8220;End of the world&#8221; sprint in Ushuaia, Provincia de
+Tierra del Fuego, Argentina on December 21st,&nbsp;2012.</p>
+<h3 id=\"jukka-ojaniemi\">Jukka&nbsp;Ojaniemi</h3>
+<p><a href=\"http://pypi.python.org/pypi/whiskers/\">Whiskers</a> is a Pyramid
+application that collects all packages used in your buildouts. That
+is, if you use
+<a href=\"http://pypi.python.org/pypi/buildout.sendpickedversions/\">buildout.sendpickedversions</a>. This
+way you can quickly see which buildouts use a certain version of a
+package. You might even be able to use this data to find out which
+eggs in your buildout cache are not used&nbsp;anymore.</p>
+<h3 id=\"erico-andrei\">Érico&nbsp;Andrei</h3>
+<p>A new solution to change how we collaborate: desk surfing. There is a
+Plone core developer dedicated desk in São Paulo. (You can also use it
+if you are not a core developer by the way.) If you are in São Paulo?
+go there, contact&nbsp;Érico.</p>
+<p>(Calvin Hendryx-Parker adds that you are also welcome in&nbsp;Fortville.)</p>
+<h3 id=\"calvin-hendryx-parker\">Calvin&nbsp;Hendryx-Parker</h3>
+<p>Since Calvin missed is own presentation earlier that day, he did the
+three minute version of his talk &#8220;Playing With Blocks: 6 Pro Tips for
+Building Your Next Super-Charged Plone&nbsp;Site&#8221;:</p>
+<ul>
+<li>Use APIs instead of embedded&nbsp;iFrames.</li>
+<li>Criteria for evaluating your options:<ul>
+<li>Mailing lists taken over by&nbsp;spam?</li>
+<li>Mailing list&nbsp;neglected?</li>
+<li>What is the activity in source&nbsp;control?</li>
+<li>Was there a corporate&nbsp;takover?</li>
+<li>Hope</li>
+</ul>
+</li>
+<li>Leverage Single Sign On (like&nbsp;OpenID).</li>
+<li>Supercharge your search with Solr (which can also index external&nbsp;content).</li>
+<li>Beware of over&nbsp;customisation.</li>
+<li>Testing, testing,&nbsp;testing.</li>
+</ul>
+<p>The talk he would have held this morning will be recorded and put&nbsp;online.</p>
+<h3 id=\"radek-jankiewicz\">Radek&nbsp;Jankiewicz</h3>
+<p><span class=\"caps\">STX</span> Next created a small addon for Plone:
+<a href=\"http://pypi.python.org/pypi/stxnext.grayscale/\">stxnext.grayscale</a>. This
+package transforms content of a page to grey scale. It has been
+developed for Polish user requirements related to national mourning
+after a tragedy has occurred. Governmental sites and bank sites change their colour
+scheme to grey scale out of respect. The images are cached on file
+system and are thus not generated each&nbsp;request.</p>
+<h3 id=\"johannes-raggam_1\">Johannes&nbsp;Raggam</h3>
+<p>A talk about amplify.cc, a prototype to replace PostNuke based
+community portals. It uses only one content type. They use Dexterity
+behaviours on content instances instead of on a class. Their
+conclusion is that having one content type for everything is possible
+and even works really&nbsp;nice.</p>
+<h3 id=\"maurizio-delmonte\">Maurizio&nbsp;Delmonte</h3>
+<p>A lot of countries have their own localised Plone site,
+e.g. <a href=\"http://plone.it/\">Italy</a>,
+<a href=\"http://www.plone.nl/\">the Netherlands</a>,
+<a href=\"http://plone.org.br/\">Brazil</a>, <a href=\"http://plone.es/\">Spain</a>,
+<a href=\"http://plone.fr/\">France</a> and <a href=\"http://plone.org.pl/\">Poland</a>. They
+all look different. But by using a bar at the top of the page which
+links to other Plone sites in the world, we can unite those sites and
+make it easier to discover&nbsp;them.</p>
+<p><a href=\"http://www.youtube.com/watch?v=BlLSWmOFmwg\">Watch the video</a>.</p>"))) ("Sprinting for newcomers (Sjoerd van Elferen)" "<p>What is sprinting all about&nbsp;about?</p>
+<p>A sprint is a great way to discuss a problem with a package. If the
+maintainer is not at the sprint him-/herself, then usually someone
+involved in the package is&nbsp;available.</p>
+<p>The most important&nbsp;rules:</p>
+<ul>
+<li>Don’t be afraid to approach&nbsp;people.</li>
+<li>Ask&nbsp;questions!</li>
+</ul>
+<p>Basically a sprint is a lot of people who can do anything they
+want. That could be a personal project, <span class=\"caps\">PLIP</span>, a package,
+etc. Everything is fine. You can also join a sprint topic of someone
+else. Just do what you want to do or find interesting. Either way: ask&nbsp;questions.</p>
+<p>People always seem very busy. But people prefer helping you fixing
+stuff than fixing things&nbsp;themselves.</p>
+<p>There’s a theory: whenever there are more than ten Plone people in a
+room, they start moving the tables. <code>:)</code>.</p>
+<p>Sprinting doesn’t stop with coding. It’s the other way around: the
+non-coders might even be more productive. A sprint is also a great
+opportunity to discuss problems or&nbsp;approaches.</p>" "http://www.vlent.nl/weblog/2012/10/12/sprinting-for-newcomers-sjoerd-van-elferen/" (20600 12400) old 9 nil nil ((title nil "Sprinting for newcomers (Sjoerd van Elferen)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/sprinting-for-newcomers-sjoerd-van-elferen/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/sprinting-for-newcomers-sjoerd-van-elferen/") (updated nil "2012-10-12T15:00:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>What is sprinting all about&nbsp;about?</p>
+<p>A sprint is a great way to discuss a problem with a package. If the
+maintainer is not at the sprint him-/herself, then usually someone
+involved in the package is&nbsp;available.</p>
+<p>The most important&nbsp;rules:</p>
+<ul>
+<li>Don&#8217;t be afraid to approach&nbsp;people.</li>
+<li>Ask&nbsp;questions!</li>
+</ul>
+<p>Basically a sprint is a lot of people who can do anything they
+want. That could be a personal project, <span class=\"caps\">PLIP</span>, a package,
+etc. Everything is fine. You can also join a sprint topic of someone
+else. Just do what you want to do or find interesting. Either way: ask&nbsp;questions.</p>
+<p>People always seem very busy. But people prefer helping you fixing
+stuff than fixing things&nbsp;themselves.</p>
+<p>There&#8217;s a theory: whenever there are more than ten Plone people in a
+room, they start moving the tables. <code>:)</code>.</p>
+<p>Sprinting doesn&#8217;t stop with coding. It&#8217;s the other way around: the
+non-coders might even be more productive. A sprint is also a great
+opportunity to discuss problems or&nbsp;approaches.</p>"))) ("Jump start your development with ZopeSkel (Cris Ewing)" "<p>Tutorial on how to write templates for&nbsp;ZopeSkel.</p>
+<p>This is the second half of his
+<a href=\"http://www.vlent.nl/weblog/2012/10/12/zopeskel-past-present-and-future-cris-ewing/\">previous talk</a>. This
+talk is about using and extending ZopeSkel.  By creating your own
+templates you can start with a customer project really&nbsp;fast.</p>
+<h3 id=\"why-and-when\">Why and&nbsp;when</h3>
+<p>Do you have code you write over and over again? Is the code almost the
+same each time and are the places where you change stuff always the
+same?  You can avoid writing all that code by creating a&nbsp;template.</p>
+<p>You can write the template the way <em>you</em> want. This is just a
+system. This means you can version control your own process by
+documenting it in a&nbsp;template.</p>
+<h3 id=\"basics-of-template-writing\">Basics of template&nbsp;writing</h3>
+<p>The first question you need to ask yourself is “what do I want?”. The
+next thing you will want to investigate is what you have already got.
+You can use “<code>bin/templer --list</code>” and “<code>bin/templer &lt;template_name&gt;
+--list-variables</code>” to find out more about the templates ZopeSkel has
+to offer. Then have a look at the code provided by the&nbsp;template.</p>
+<p>To wire everything up, you need to do four&nbsp;basic:</p>
+<ol>
+<li>Create a&nbsp;class.</li>
+<li>Import the class to a package&nbsp;namespace.</li>
+<li>Provide an entry&nbsp;point.</li>
+<li>Write the actual template&nbsp;itself.</li>
+</ol>
+<h3 id=\"tips\">Tips</h3>
+<p><em>Cris has already written the documentation for this tutorial. It
+currently lives on his laptop, but it should be posted online soon. I
+(Mark) decided to just write down some notes instead of trying to
+replicate Cris’&nbsp;documentation.</em></p>
+<p>The related documentation can be found&nbsp;here:</p>
+<ul>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/index.html\">Templer System&nbsp;Manual</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/quickstart.html\">Templer quick&nbsp;start</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/applications/zopeskel.html\">ZopeSkel&nbsp;documentation</a></li>
+</ul>
+<p>Tips:</p>
+<ul>
+<li>Do not install ZopeSkel in your global Python! Always use a
+<a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> or
+<a href=\"http://pypi.python.org/pypi/zc.buildout/\">buildout</a>.</li>
+<li>If you want to use <a href=\"http://pypi.python.org/pypi/pip/\">pip</a>, use version 1.1 or&nbsp;later.</li>
+<li>To use the package while developing, use “<code>python setup.py
+develop</code>” (so “<code>develop</code>” instead of “<code>install</code>“).</li>
+<li>If you are using a buildout, you can also use
+<a href=\"http://pypi.python.org/pypi/mr.developer/\">mr.developer</a>.</li>
+<li>The modes are incrementally inclusive: the questions for the
+“easy” mode are also asked in the “expert” mode,&nbsp;etc.</li>
+<li>Which namespace to choose: if you want to contribute the
+templates and they might be useful for others: use the <code>templer</code>
+namespace; for your own project/infrastructure specific
+templates, use your company’s&nbsp;namespace.</li>
+</ul>
+<p><a href=\"http://www.slideshare.net/cewing/jumpstart-your-development-with-zopeskel-14719067\">View the slides</a>.</p>" "http://www.vlent.nl/weblog/2012/10/12/jump-start-your-development-with-zopeskel-cris-ewing/" (20600 8800) old 10 nil nil ((title nil "Jump start your development with ZopeSkel (Cris Ewing)") (link ((rel . "alternate") (type . "text/html") (href . "http://www.vlent.nl/weblog/2012/10/12/jump-start-your-development-with-zopeskel-cris-ewing/"))) (id nil "tag:www.vlent.nl,2012-10-12:/weblog/2012/10/12/jump-start-your-development-with-zopeskel-cris-ewing/") (updated nil "2012-10-12T14:00:00Z") (category ((term . "plone"))) (category ((term . "ploneconf"))) (author nil (name nil "Mark van Lent") (uri nil "http://www.vlent.nl/about/")) (content ((type . "html")) "<p>Tutorial on how to write templates for&nbsp;ZopeSkel.</p>
+<p>This is the second half of his
+<a href=\"http://www.vlent.nl/weblog/2012/10/12/zopeskel-past-present-and-future-cris-ewing/\">previous talk</a>. This
+talk is about using and extending ZopeSkel.  By creating your own
+templates you can start with a customer project really&nbsp;fast.</p>
+<h3 id=\"why-and-when\">Why and&nbsp;when</h3>
+<p>Do you have code you write over and over again? Is the code almost the
+same each time and are the places where you change stuff always the
+same?  You can avoid writing all that code by creating a&nbsp;template.</p>
+<p>You can write the template the way <em>you</em> want. This is just a
+system. This means you can version control your own process by
+documenting it in a&nbsp;template.</p>
+<h3 id=\"basics-of-template-writing\">Basics of template&nbsp;writing</h3>
+<p>The first question you need to ask yourself is &#8220;what do I want?&#8221;. The
+next thing you will want to investigate is what you have already got.
+You can use &#8220;<code>bin/templer --list</code>&#8221; and &#8220;<code>bin/templer &lt;template_name&gt;
+--list-variables</code>&#8221; to find out more about the templates ZopeSkel has
+to offer. Then have a look at the code provided by the&nbsp;template.</p>
+<p>To wire everything up, you need to do four&nbsp;basic:</p>
+<ol>
+<li>Create a&nbsp;class.</li>
+<li>Import the class to a package&nbsp;namespace.</li>
+<li>Provide an entry&nbsp;point.</li>
+<li>Write the actual template&nbsp;itself.</li>
+</ol>
+<h3 id=\"tips\">Tips</h3>
+<p><em>Cris has already written the documentation for this tutorial. It
+ currently lives on his laptop, but it should be posted online soon. I
+ (Mark) decided to just write down some notes instead of trying to
+ replicate Cris&#8217;&nbsp;documentation.</em></p>
+<p>The related documentation can be found&nbsp;here:</p>
+<ul>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/index.html\">Templer System&nbsp;Manual</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/quickstart.html\">Templer quick&nbsp;start</a></li>
+<li><a href=\"http://templer-manual.readthedocs.org/en/latest/applications/zopeskel.html\">ZopeSkel&nbsp;documentation</a></li>
+</ul>
+<p>Tips:</p>
+<ul>
+<li>Do not install ZopeSkel in your global Python! Always use a
+     <a href=\"http://pypi.python.org/pypi/virtualenv/\">virtualenv</a> or
+     <a href=\"http://pypi.python.org/pypi/zc.buildout/\">buildout</a>.</li>
+<li>If you want to use <a href=\"http://pypi.python.org/pypi/pip/\">pip</a>, use version 1.1 or&nbsp;later.</li>
+<li>To use the package while developing, use &#8220;<code>python setup.py
+     develop</code>&#8221; (so &#8220;<code>develop</code>&#8221; instead of &#8220;<code>install</code>&#8220;).</li>
+<li>If you are using a buildout, you can also use
+     <a href=\"http://pypi.python.org/pypi/mr.developer/\">mr.developer</a>.</li>
+<li>The modes are incrementally inclusive: the questions for the
+     &#8220;easy&#8221; mode are also asked in the &#8220;expert&#8221; mode,&nbsp;etc.</li>
+<li>Which namespace to choose: if you want to contribute the
+     templates and they might be useful for others: use the <code>templer</code>
+     namespace; for your own project/infrastructure specific
+     templates, use your company&#8217;s&nbsp;namespace.</li>
+</ul>
+<p><a href=\"http://www.slideshare.net/cewing/jumpstart-your-development-with-zopeskel-14719067\">View the slides</a>.</p>"))))

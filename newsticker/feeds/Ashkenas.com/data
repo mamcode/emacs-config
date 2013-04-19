@@ -1,0 +1,307 @@
+;; -*- coding: utf-8 -*-
+(("Ashkenas.com" "Wanderbloggin'" "http://ashkenas.com" (20847 37746 819223) feed 0 nil nil ((title nil "Ashkenas.com") (description nil "Wanderbloggin'") (link nil "http://ashkenas.com") (generator nil "NodeJS RSS Module") (lastBuildDate nil "Sat, 13 Apr 2013 06:31:19 GMT") (atom:link ((href . "http://ashkenas.com/rss.xml") (rel . "self") (type . "application/rss+xml"))) (item nil (title nil "Day 42. Flock Hill") (description nil "<p>Met up with Marcy Sutton for the annual
+<a href=\"http://www.funcycling.net/flock-hill-station-adventure-ride/\">Flock Hill mountain bike race</a>
+(or &quot;casual&quot; ride for us neophytes). I&#39;ve never mountain biked in earnest before, but it was a
+savage thing. I slept like a dead man that evening.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-42-flock-hill/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-42-flock-hill/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 12 Apr 2013 14:10:04 GMT")) (item nil (title nil "Day 41. Fox River Cave") (description nil "<p>Long stretch north along the Tasman Sea, from Franz Josef to Hokitika. Kayaking
+on a misty lagoon, empty beaches for miles, jungle river valleys, and islands
+off the coast ... but the highlight by far is the  Fox River Cave — an hour and
+a half trek off the beaten path.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-41-fox-river-cave/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-41-fox-river-cave/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 12 Apr 2013 13:45:56 GMT")) (item nil (title nil "Day 40. Franz Josef Glacier") (description nil "<p>A road trippin&#39; day starting from Queenstown winding North out to the
+coast and the Tasman Sea. Accompanied by the ever-patient Carmen and Tammy from
+Kuala Lumpur. Much swimming was had.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-40-franz-josef-glacier/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-40-franz-josef-glacier/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sat, 06 Apr 2013 06:41:35 GMT")) (item nil (title nil "Day 37 &ndash; Day 39. The Routeburn") (description nil "<p>Popped back down to the South Island for mo&#39; mountains and general splendor.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-37-routeburn/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-37-routeburn/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Mar 2013 07:13:06 GMT")) (item nil (title nil "Day 30 &ndash; Day 36. Wellington") (description nil "<p>A week in Wellington as part of the cast of shady characters
+in the <a href=\"http://www.webstock.org.nz/13/\">Webstock 2013</a> lineup. Quite a time was
+had — including hill runs, geezer skateboarding, inanimate bird shooting, archery
+and knife throwing (the last of which one <a href=\"http://en.wikipedia.org/wiki/Clay_Johnson_(technologist\">Mr. Clay Johnson</a>
+was the undisputed master — <em>never</em> get into an argument with him at a dinner party or
+in a kitchen).
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-30-wellington/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-30-wellington/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Mar 2013 06:23:03 GMT")) (item nil (title nil "Backbone 1.0") (description nil "<p>I&#39;m pleased and gratified to announce the oft-promised <b>1.0</b> release of
+<a href=\"http://backbonejs.org\">Backbone.js</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/backbonejs-1.0/") (guid ((isPermaLink . "true")) "http://ashkenas.com/backbonejs-1.0/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 20 Mar 2013 10:36:13 GMT")) (item nil (title nil "Day 23 &ndash; Day 29. South Island Road Trip") (description nil "<p>A high summer, week long road trip around New Zealand&#39;s South Island. With
+<a href=\"http://chriscoyier.net\">Chris Coyier</a>,
+<a href=\"http://karenmcgrane.com\">Karen McGrane</a> and
+<a href=\"http://germanforblack.com\">Ben Schwarz</a>. Days:
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-23-road-trip/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-23-road-trip/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 20 Mar 2013 09:05:26 GMT")) (item nil (title nil "Code Reads") (description nil "<p>Have you ever written a piece of code, and wanted someone to give it a second look
+and a second opinion? Had your team start using a new web technology,
+and wanted someone to hold your hand as you work through the first few weeks?
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/code-reads/") (guid ((isPermaLink . "true")) "http://ashkenas.com/code-reads/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 13 Mar 2013 09:34:29 GMT")) (item nil (title nil "Journo & Literate CoffeeScript") (description nil "<p><a href=\"http://coffeescript.org\">CoffeeScript</a> 1.5.0 is out (with 1.5.1 impending),
+which means that the first release of Literate CoffeeScript is ready for public
+consumption.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/literate-coffeescript/") (guid ((isPermaLink . "true")) "http://ashkenas.com/literate-coffeescript/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Feb 2013 19:31:12 GMT")) (item nil (title nil "Day 17 &ndash; Day 22. Melbourne") (description nil "<p>The better part of a week in Melbourne. A grand central library, runs
+along the Yarra, fantastic coffee and cocktails,
+and the inimitable hospitality and barbecue skills of
+<a href=\"http://f.cl.ly/items/1i3p3U472j2W0e1T2c2u/slapben.gif\">Ben Schwarz</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-17-melbourne/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-17-melbourne/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Mon, 25 Feb 2013 03:23:46 GMT")) (item nil (title nil "Day 15 &ndash; Day 16. Cape Tribulation / Great Barrier Reef") (description nil "<p>Through Mossman Gorge,
+across the ferry into the Daintree Rainforest and along the coastal road past
+Mt. Sorrow to Cape Tribulation (excellent names, as always, courtesy
+of Captain Cook). The end of the road for my lil&#39; car was here, at Emmagen
+Creek, a deep water crossing that only four wheel drive vehicles
+(preferably ones with air intake snorkels) dare attempt.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-15-cape-tribulation/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-15-cape-tribulation/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sun, 10 Feb 2013 04:35:10 GMT")) (item nil (title nil "Day 14. Yungaburra") (description nil "<p>A drive from Townsville through the Atherton Tablelands up behind Cairns,
+along the Millaa Millaa Waterfall Circuit, ending up in Yungaburra.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-14-yungaburra/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-14-yungaburra/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sat, 09 Feb 2013 04:35:05 GMT")) (item nil (title nil "dotJS. Symbiotic Languages") (description nil "<p>In Paris, this past November, I had the privilege of talking about CoffeeScript and
+symbiotic programming languages for a twenty minutes in a
+<a href=\"https://www.google.com/search?&amp;q=Th%C3%A9%C3%A2tre%20des%20Vari%C3%A9t%C3%A9s&amp;tbm=isch&amp;tab=wi\">beautiful theater</a>,
+at the <a href=\"http://www.dotjs.eu\">inaugural dotJS conference</a>.
+The talk was recently posted:
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/dotjs/") (guid ((isPermaLink . "true")) "http://ashkenas.com/dotjs/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 08 Feb 2013 11:45:07 GMT")) (item nil (title nil "Day 13. Magnetic Island") (description nil "<p><a href=\"https://maps.google.com/maps?q=Magnetic%20Island%2C%20Queensland%2C%20Australia&t=h&z=11\">Magnetic Island</a>
+(named erroneously when Captain Cook&#39;s compass fritzed out while
+passing by) was a gorgeous bit of land. Took a brief ferry ride across
+from the Townsville harbor, and spent the night.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-13-magnetic-island/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-13-magnetic-island/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 07 Feb 2013 19:05:46 GMT")) (item nil (title nil "Day 12. Ex-Cyclone Oswald") (description nil "<p>A whiteknuckle day of driving through the heart of Ex-Tropical Cyclone Oswald,
+from <a href=\"https://maps.google.com/maps?q=Agnes%20Water%2C%20Queensland%2C%20Australia&t=h&z=12\">Agnes Water</a> to
+<a href=\"https://maps.google.com/maps?q=Airlie%20Beach%2C%20Queensland%2C%20Australia&t=h&z=12\">Airlie Beach</a>. Pouring sheets
+of water, lots of hydroplaning. Later, they would report that about half a meter
+of rain had fallen in the area, causing
+<a href=\"http://en.wikipedia.org/wiki/2013_Eastern_Australia_floods\">severe flooding</a>
+starting the following day.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-12-oswald/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-12-oswald/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Mon, 04 Feb 2013 03:31:10 GMT")) (item nil (title nil "Day 11. Glass House Mountains &amp; Sunshine Coast") (description nil "<p>North of Brisbane, the <a href=\"https://maps.google.com/maps?q=Glass%20House%20Mountains%2C%20Queensland%2C%20Australia&t=h&z=13\">Glass House Mountains</a> are wooded molar stumps, each
+standing several hundred meters tall. I walked up Mount Ngungun (and definitely
+failed to pronounce that one in proper Australian on my first try).
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-11-sunshine-coast/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-11-sunshine-coast/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:20:35 GMT")) (item nil (title nil "Day 10. Brisbane") (description nil "<p>After a quick run out to the easternmost point in Australia, by the lighthouse at
+<a href=\"https://maps.google.com/maps?q=Byron%20Bay%2C%20Lighthouse%2C%20NSW%2C%20Australia&t=h&z=15\">Byron Bay</a> ...
+started in earnest by driving up <a href=\"https://maps.google.com/maps?q=Tambourine%20Mountain%2C%20NSW%2C%20Australia&t=h&z=12\">Tambourine Mountain</a>. The little golf-cart engine in the
+rental car wasn&#39;t cut out for the steep grade &mdash; 3rd gear could barely
+handle it. Amazing view from the top.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-10-brisbane/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-10-brisbane/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:18:38 GMT")) (item nil (title nil "Day 9. Dorrigo &amp; Byron Bay") (description nil "<p>Heading in from the coast, I took a beautiful mountain drive up towards the
+New South Wales hinterlands. <a href=\"https://maps.google.com/maps?q=Dorrigo%2C%20National%20Park%2C%20NSW%2C%20Australia&t=h&z=12\">Dorrigo</a> is a town, rainforest, and national park
+that has subtropical trees and wildlife, and several waterfalls.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-9-dorrigo/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-9-dorrigo/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:15:04 GMT")) (item nil (title nil "Day 8. Port Macquarie") (description nil "<p>A mostly rainy day driving from Sydney to <a href=\"https://maps.google.com/maps?q=Port%20Macquarie%2C%20Australia&t=h&z=11\">Port Macquarie</a>.
+The <a href=\"https://maps.google.com/maps?q=Myall%20Lakes%2C%20NSW%2C%20Australia&t=h&z=11\">Myall Lakes</a> were
+misty and quiet, and there was some nice skimboarding to be had at
+the 9 mile beach at <a href=\"https://maps.google.com/maps?q=Booti%20Booti%2C%20NSW%2C%20Australia&t=h&z=11\">Booti Booti</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-8-port-macquarie/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-8-port-macquarie/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:11:16 GMT")) (item nil (title nil "Day 7. The Blue Mountains") (description nil "<p>Hiking in the Blue Mountains down the cliffs below <a href=\"https://maps.google.com/maps?q=Katoomba%2C%20NSW%2C%20Australia&t=h&z=12\">Katoomba</a>,
+with Maxine, Julio, Irina, Chelsea, and Simon.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-7-the-blue-mountains/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-7-the-blue-mountains/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:09:29 GMT")))) ("Day 42. Flock Hill" "<p>Met up with Marcy Sutton for the annual
+<a href=\"http://www.funcycling.net/flock-hill-station-adventure-ride/\">Flock Hill mountain bike race</a>
+(or &quot;casual&quot; ride for us neophytes). I've never mountain biked in earnest before, but it was a
+savage thing. I slept like a dead man that evening.
+</p><p>...</p>" "http://ashkenas.com/day-42-flock-hill/" (20840 5564) new 1 nil nil ((title nil "Day 42. Flock Hill") (description nil "<p>Met up with Marcy Sutton for the annual
+<a href=\"http://www.funcycling.net/flock-hill-station-adventure-ride/\">Flock Hill mountain bike race</a>
+(or &quot;casual&quot; ride for us neophytes). I&#39;ve never mountain biked in earnest before, but it was a
+savage thing. I slept like a dead man that evening.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-42-flock-hill/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-42-flock-hill/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 12 Apr 2013 14:10:04 GMT"))) ("Day 41. Fox River Cave" "<p>Long stretch north along the Tasman Sea, from Franz Josef to Hokitika. Kayaking
+on a misty lagoon, empty beaches for miles, jungle river valleys, and islands
+off the coast ... but the highlight by far is the  Fox River Cave — an hour and
+a half trek off the beaten path.
+</p><p>...</p>" "http://ashkenas.com/day-41-fox-river-cave/" (20840 4116) new 2 nil nil ((title nil "Day 41. Fox River Cave") (description nil "<p>Long stretch north along the Tasman Sea, from Franz Josef to Hokitika. Kayaking
+on a misty lagoon, empty beaches for miles, jungle river valleys, and islands
+off the coast ... but the highlight by far is the  Fox River Cave — an hour and
+a half trek off the beaten path.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-41-fox-river-cave/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-41-fox-river-cave/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 12 Apr 2013 13:45:56 GMT"))) ("Day 40. Franz Josef Glacier" "<p>A road trippin' day starting from Queenstown winding North out to the
+coast and the Tasman Sea. Accompanied by the ever-patient Carmen and Tammy from
+Kuala Lumpur. Much swimming was had.
+</p><p>...</p>" "http://ashkenas.com/day-40-franz-josef-glacier/" (20831 50079) new 3 nil nil ((title nil "Day 40. Franz Josef Glacier") (description nil "<p>A road trippin&#39; day starting from Queenstown winding North out to the
+coast and the Tasman Sea. Accompanied by the ever-patient Carmen and Tammy from
+Kuala Lumpur. Much swimming was had.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-40-franz-josef-glacier/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-40-franz-josef-glacier/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sat, 06 Apr 2013 06:41:35 GMT"))) ("Day 37 &ndash; Day 39. The Routeburn" "<p>Popped back down to the South Island for mo' mountains and general splendor.
+</p><p>...</p>" "http://ashkenas.com/day-37-routeburn/" (20819 60802) new 4 nil nil ((title nil "Day 37 &ndash; Day 39. The Routeburn") (description nil "<p>Popped back down to the South Island for mo&#39; mountains and general splendor.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-37-routeburn/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-37-routeburn/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Mar 2013 07:13:06 GMT"))) ("Day 30 &ndash; Day 36. Wellington" "<p>A week in Wellington as part of the cast of shady characters
+in the <a href=\"http://www.webstock.org.nz/13/\">Webstock 2013</a> lineup. Quite a time was
+had — including hill runs, geezer skateboarding, inanimate bird shooting, archery
+and knife throwing (the last of which one <a href=\"http://en.wikipedia.org/wiki/Clay_Johnson_(technologist\">Mr. Clay Johnson</a>
+was the undisputed master — <em>never</em> get into an argument with him at a dinner party or
+in a kitchen).
+</p><p>...</p>" "http://ashkenas.com/day-30-wellington/" (20819 57799) new 5 nil nil ((title nil "Day 30 &ndash; Day 36. Wellington") (description nil "<p>A week in Wellington as part of the cast of shady characters
+in the <a href=\"http://www.webstock.org.nz/13/\">Webstock 2013</a> lineup. Quite a time was
+had — including hill runs, geezer skateboarding, inanimate bird shooting, archery
+and knife throwing (the last of which one <a href=\"http://en.wikipedia.org/wiki/Clay_Johnson_(technologist\">Mr. Clay Johnson</a>
+was the undisputed master — <em>never</em> get into an argument with him at a dinner party or
+in a kitchen).
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-30-wellington/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-30-wellington/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Mar 2013 06:23:03 GMT"))) ("Backbone 1.0" "<p>I'm pleased and gratified to announce the oft-promised <b>1.0</b> release of
+<a href=\"http://backbonejs.org\">Backbone.js</a>.
+</p><p>...</p>" "http://ashkenas.com/backbonejs-1.0/" (20809 37149) new 6 nil nil ((title nil "Backbone 1.0") (description nil "<p>I&#39;m pleased and gratified to announce the oft-promised <b>1.0</b> release of
+<a href=\"http://backbonejs.org\">Backbone.js</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/backbonejs-1.0/") (guid ((isPermaLink . "true")) "http://ashkenas.com/backbonejs-1.0/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 20 Mar 2013 10:36:13 GMT"))) ("Day 23 &ndash; Day 29. South Island Road Trip" "<p>A high summer, week long road trip around New Zealand's South Island. With
+<a href=\"http://chriscoyier.net\">Chris Coyier</a>,
+<a href=\"http://karenmcgrane.com\">Karen McGrane</a> and
+<a href=\"http://germanforblack.com\">Ben Schwarz</a>. Days:
+</p><p>...</p>" "http://ashkenas.com/day-23-road-trip/" (20809 31702) new 7 nil nil ((title nil "Day 23 &ndash; Day 29. South Island Road Trip") (description nil "<p>A high summer, week long road trip around New Zealand&#39;s South Island. With
+<a href=\"http://chriscoyier.net\">Chris Coyier</a>,
+<a href=\"http://karenmcgrane.com\">Karen McGrane</a> and
+<a href=\"http://germanforblack.com\">Ben Schwarz</a>. Days:
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-23-road-trip/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-23-road-trip/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 20 Mar 2013 09:05:26 GMT"))) ("Code Reads" "<p>Have you ever written a piece of code, and wanted someone to give it a second look
+and a second opinion? Had your team start using a new web technology,
+and wanted someone to hold your hand as you work through the first few weeks?
+</p><p>...</p>" "http://ashkenas.com/code-reads/" (20800 18469) new 8 nil nil ((title nil "Code Reads") (description nil "<p>Have you ever written a piece of code, and wanted someone to give it a second look
+and a second opinion? Had your team start using a new web technology,
+and wanted someone to hold your hand as you work through the first few weeks?
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/code-reads/") (guid ((isPermaLink . "true")) "http://ashkenas.com/code-reads/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Wed, 13 Mar 2013 09:34:29 GMT"))) ("Journo & Literate CoffeeScript" "<p><a href=\"http://coffeescript.org\">CoffeeScript</a> 1.5.0 is out (with 1.5.1 impending),
+which means that the first release of Literate CoffeeScript is ready for public
+consumption.
+</p><p>...</p>" "http://ashkenas.com/literate-coffeescript/" (20783 45184) new 9 nil nil ((title nil "Journo & Literate CoffeeScript") (description nil "<p><a href=\"http://coffeescript.org\">CoffeeScript</a> 1.5.0 is out (with 1.5.1 impending),
+which means that the first release of Literate CoffeeScript is ready for public
+consumption.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/literate-coffeescript/") (guid ((isPermaLink . "true")) "http://ashkenas.com/literate-coffeescript/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 28 Feb 2013 19:31:12 GMT"))) ("Day 17 &ndash; Day 22. Melbourne" "<p>The better part of a week in Melbourne. A grand central library, runs
+along the Yarra, fantastic coffee and cocktails,
+and the inimitable hospitality and barbecue skills of
+<a href=\"http://f.cl.ly/items/1i3p3U472j2W0e1T2c2u/slapben.gif\">Ben Schwarz</a>.
+</p><p>...</p>" "http://ashkenas.com/day-17-melbourne/" (20778 55618) new 10 nil nil ((title nil "Day 17 &ndash; Day 22. Melbourne") (description nil "<p>The better part of a week in Melbourne. A grand central library, runs
+along the Yarra, fantastic coffee and cocktails,
+and the inimitable hospitality and barbecue skills of
+<a href=\"http://f.cl.ly/items/1i3p3U472j2W0e1T2c2u/slapben.gif\">Ben Schwarz</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-17-melbourne/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-17-melbourne/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Mon, 25 Feb 2013 03:23:46 GMT"))) ("Day 15 &ndash; Day 16. Cape Tribulation / Great Barrier Reef" "<p>Through Mossman Gorge,
+across the ferry into the Daintree Rainforest and along the coastal road past
+Mt. Sorrow to Cape Tribulation (excellent names, as always, courtesy
+of Captain Cook). The end of the road for my lil' car was here, at Emmagen
+Creek, a deep water crossing that only four wheel drive vehicles
+(preferably ones with air intake snorkels) dare attempt.
+</p><p>...</p>" "http://ashkenas.com/day-15-cape-tribulation/" (20759 9086) new 11 nil nil ((title nil "Day 15 &ndash; Day 16. Cape Tribulation / Great Barrier Reef") (description nil "<p>Through Mossman Gorge,
+across the ferry into the Daintree Rainforest and along the coastal road past
+Mt. Sorrow to Cape Tribulation (excellent names, as always, courtesy
+of Captain Cook). The end of the road for my lil&#39; car was here, at Emmagen
+Creek, a deep water crossing that only four wheel drive vehicles
+(preferably ones with air intake snorkels) dare attempt.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-15-cape-tribulation/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-15-cape-tribulation/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sun, 10 Feb 2013 04:35:10 GMT"))) ("Day 14. Yungaburra" "<p>A drive from Townsville through the Atherton Tablelands up behind Cairns,
+along the Millaa Millaa Waterfall Circuit, ending up in Yungaburra.
+</p><p>...</p>" "http://ashkenas.com/day-14-yungaburra/" (20757 53753) new 12 nil nil ((title nil "Day 14. Yungaburra") (description nil "<p>A drive from Townsville through the Atherton Tablelands up behind Cairns,
+along the Millaa Millaa Waterfall Circuit, ending up in Yungaburra.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-14-yungaburra/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-14-yungaburra/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Sat, 09 Feb 2013 04:35:05 GMT"))) ("dotJS. Symbiotic Languages" "<p>In Paris, this past November, I had the privilege of talking about CoffeeScript and
+symbiotic programming languages for a twenty minutes in a
+<a href=\"https://www.google.com/search?&amp;q=Th%C3%A9%C3%A2tre%20des%20Vari%C3%A9t%C3%A9s&amp;tbm=isch&amp;tab=wi\">beautiful theater</a>,
+at the <a href=\"http://www.dotjs.eu\">inaugural dotJS conference</a>.
+The talk was recently posted:
+</p><p>...</p>" "http://ashkenas.com/dotjs/" (20756 58691) new 13 nil nil ((title nil "dotJS. Symbiotic Languages") (description nil "<p>In Paris, this past November, I had the privilege of talking about CoffeeScript and
+symbiotic programming languages for a twenty minutes in a
+<a href=\"https://www.google.com/search?&amp;q=Th%C3%A9%C3%A2tre%20des%20Vari%C3%A9t%C3%A9s&amp;tbm=isch&amp;tab=wi\">beautiful theater</a>,
+at the <a href=\"http://www.dotjs.eu\">inaugural dotJS conference</a>.
+The talk was recently posted:
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/dotjs/") (guid ((isPermaLink . "true")) "http://ashkenas.com/dotjs/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 08 Feb 2013 11:45:07 GMT"))) ("Day 13. Magnetic Island" "<p><a href=\"https://maps.google.com/maps?q=Magnetic%20Island%2C%20Queensland%2C%20Australia&t=h&z=11\">Magnetic Island</a>
+(named erroneously when Captain Cook's compass fritzed out while
+passing by) was a gorgeous bit of land. Took a brief ferry ride across
+from the Townsville harbor, and spent the night.
+</p><p>...</p>" "http://ashkenas.com/day-13-magnetic-island/" (20755 64266) new 14 nil nil ((title nil "Day 13. Magnetic Island") (description nil "<p><a href=\"https://maps.google.com/maps?q=Magnetic%20Island%2C%20Queensland%2C%20Australia&t=h&z=11\">Magnetic Island</a>
+(named erroneously when Captain Cook&#39;s compass fritzed out while
+passing by) was a gorgeous bit of land. Took a brief ferry ride across
+from the Townsville harbor, and spent the night.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-13-magnetic-island/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-13-magnetic-island/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Thu, 07 Feb 2013 19:05:46 GMT"))) ("Day 12. Ex-Cyclone Oswald" "<p>A whiteknuckle day of driving through the heart of Ex-Tropical Cyclone Oswald,
+from <a href=\"https://maps.google.com/maps?q=Agnes%20Water%2C%20Queensland%2C%20Australia&t=h&z=12\">Agnes Water</a> to
+<a href=\"https://maps.google.com/maps?q=Airlie%20Beach%2C%20Queensland%2C%20Australia&t=h&z=12\">Airlie Beach</a>. Pouring sheets
+of water, lots of hydroplaning. Later, they would report that about half a meter
+of rain had fallen in the area, causing
+<a href=\"http://en.wikipedia.org/wiki/2013_Eastern_Australia_floods\">severe flooding</a>
+starting the following day.
+</p><p>...</p>" "http://ashkenas.com/day-12-oswald/" (20751 11134) new 15 nil nil ((title nil "Day 12. Ex-Cyclone Oswald") (description nil "<p>A whiteknuckle day of driving through the heart of Ex-Tropical Cyclone Oswald,
+from <a href=\"https://maps.google.com/maps?q=Agnes%20Water%2C%20Queensland%2C%20Australia&t=h&z=12\">Agnes Water</a> to
+<a href=\"https://maps.google.com/maps?q=Airlie%20Beach%2C%20Queensland%2C%20Australia&t=h&z=12\">Airlie Beach</a>. Pouring sheets
+of water, lots of hydroplaning. Later, they would report that about half a meter
+of rain had fallen in the area, causing
+<a href=\"http://en.wikipedia.org/wiki/2013_Eastern_Australia_floods\">severe flooding</a>
+starting the following day.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-12-oswald/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-12-oswald/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Mon, 04 Feb 2013 03:31:10 GMT"))) ("Day 11. Glass House Mountains &amp; Sunshine Coast" "<p>North of Brisbane, the <a href=\"https://maps.google.com/maps?q=Glass%20House%20Mountains%2C%20Queensland%2C%20Australia&t=h&z=13\">Glass House Mountains</a> are wooded molar stumps, each
+standing several hundred meters tall. I walked up Mount Ngungun (and definitely
+failed to pronounce that one in proper Australian on my first try).
+</p><p>...</p>" "http://ashkenas.com/day-11-sunshine-coast/" (20747 13443) new 16 nil nil ((title nil "Day 11. Glass House Mountains &amp; Sunshine Coast") (description nil "<p>North of Brisbane, the <a href=\"https://maps.google.com/maps?q=Glass%20House%20Mountains%2C%20Queensland%2C%20Australia&t=h&z=13\">Glass House Mountains</a> are wooded molar stumps, each
+standing several hundred meters tall. I walked up Mount Ngungun (and definitely
+failed to pronounce that one in proper Australian on my first try).
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-11-sunshine-coast/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-11-sunshine-coast/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:20:35 GMT"))) ("Day 10. Brisbane" "<p>After a quick run out to the easternmost point in Australia, by the lighthouse at
+<a href=\"https://maps.google.com/maps?q=Byron%20Bay%2C%20Lighthouse%2C%20NSW%2C%20Australia&t=h&z=15\">Byron Bay</a> ...
+started in earnest by driving up <a href=\"https://maps.google.com/maps?q=Tambourine%20Mountain%2C%20NSW%2C%20Australia&t=h&z=12\">Tambourine Mountain</a>. The little golf-cart engine in the
+rental car wasn't cut out for the steep grade &mdash; 3rd gear could barely
+handle it. Amazing view from the top.
+</p><p>...</p>" "http://ashkenas.com/day-10-brisbane/" (20747 13326) new 17 nil nil ((title nil "Day 10. Brisbane") (description nil "<p>After a quick run out to the easternmost point in Australia, by the lighthouse at
+<a href=\"https://maps.google.com/maps?q=Byron%20Bay%2C%20Lighthouse%2C%20NSW%2C%20Australia&t=h&z=15\">Byron Bay</a> ...
+started in earnest by driving up <a href=\"https://maps.google.com/maps?q=Tambourine%20Mountain%2C%20NSW%2C%20Australia&t=h&z=12\">Tambourine Mountain</a>. The little golf-cart engine in the
+rental car wasn&#39;t cut out for the steep grade &mdash; 3rd gear could barely
+handle it. Amazing view from the top.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-10-brisbane/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-10-brisbane/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:18:38 GMT"))) ("Day 9. Dorrigo &amp; Byron Bay" "<p>Heading in from the coast, I took a beautiful mountain drive up towards the
+New South Wales hinterlands. <a href=\"https://maps.google.com/maps?q=Dorrigo%2C%20National%20Park%2C%20NSW%2C%20Australia&t=h&z=12\">Dorrigo</a> is a town, rainforest, and national park
+that has subtropical trees and wildlife, and several waterfalls.
+</p><p>...</p>" "http://ashkenas.com/day-9-dorrigo/" (20747 13112) new 18 nil nil ((title nil "Day 9. Dorrigo &amp; Byron Bay") (description nil "<p>Heading in from the coast, I took a beautiful mountain drive up towards the
+New South Wales hinterlands. <a href=\"https://maps.google.com/maps?q=Dorrigo%2C%20National%20Park%2C%20NSW%2C%20Australia&t=h&z=12\">Dorrigo</a> is a town, rainforest, and national park
+that has subtropical trees and wildlife, and several waterfalls.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-9-dorrigo/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-9-dorrigo/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:15:04 GMT"))) ("Day 8. Port Macquarie" "<p>A mostly rainy day driving from Sydney to <a href=\"https://maps.google.com/maps?q=Port%20Macquarie%2C%20Australia&t=h&z=11\">Port Macquarie</a>.
+The <a href=\"https://maps.google.com/maps?q=Myall%20Lakes%2C%20NSW%2C%20Australia&t=h&z=11\">Myall Lakes</a> were
+misty and quiet, and there was some nice skimboarding to be had at
+the 9 mile beach at <a href=\"https://maps.google.com/maps?q=Booti%20Booti%2C%20NSW%2C%20Australia&t=h&z=11\">Booti Booti</a>.
+</p><p>...</p>" "http://ashkenas.com/day-8-port-macquarie/" (20747 12884) new 19 nil nil ((title nil "Day 8. Port Macquarie") (description nil "<p>A mostly rainy day driving from Sydney to <a href=\"https://maps.google.com/maps?q=Port%20Macquarie%2C%20Australia&t=h&z=11\">Port Macquarie</a>.
+The <a href=\"https://maps.google.com/maps?q=Myall%20Lakes%2C%20NSW%2C%20Australia&t=h&z=11\">Myall Lakes</a> were
+misty and quiet, and there was some nice skimboarding to be had at
+the 9 mile beach at <a href=\"https://maps.google.com/maps?q=Booti%20Booti%2C%20NSW%2C%20Australia&t=h&z=11\">Booti Booti</a>.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-8-port-macquarie/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-8-port-macquarie/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:11:16 GMT"))) ("Day 7. The Blue Mountains" "<p>Hiking in the Blue Mountains down the cliffs below <a href=\"https://maps.google.com/maps?q=Katoomba%2C%20NSW%2C%20Australia&t=h&z=12\">Katoomba</a>,
+with Maxine, Julio, Irina, Chelsea, and Simon.
+</p><p>...</p>" "http://ashkenas.com/day-7-the-blue-mountains/" (20747 12777) new 20 nil nil ((title nil "Day 7. The Blue Mountains") (description nil "<p>Hiking in the Blue Mountains down the cliffs below <a href=\"https://maps.google.com/maps?q=Katoomba%2C%20NSW%2C%20Australia&t=h&z=12\">Katoomba</a>,
+with Maxine, Julio, Irina, Chelsea, and Simon.
+
+</p><p>...</p>
+") (link nil "http://ashkenas.com/day-7-the-blue-mountains/") (guid ((isPermaLink . "true")) "http://ashkenas.com/day-7-the-blue-mountains/") (dc:creator nil "Jeremy Ashkenas") (pubDate nil "Fri, 01 Feb 2013 03:09:29 GMT"))))

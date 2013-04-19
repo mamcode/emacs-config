@@ -1,0 +1,211 @@
+;; -*- coding: utf-8 -*-
+(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20849 16840 330945) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+
+<p>Hola, mi nombre es Francisco, soy de argentina, estudiante de Ing. en Sistemas de Información, uso debian hace muchos años, espero poder dar una mano en lo que pueda y/o yo poder aprender algo nuevo de ustedes, un saludo  <img src=\"/sites/all/modules/smileys/packs/drupales/bigsmile.gif\" title=\"bigsmile\" alt=\"bigsmile\" /></p>
+") (pubDate nil "Wed, 17 Apr 2013 10:48:24 -0500") (dc:creator nil "WSick") (guid ((isPermaLink . "false")) "comment 329309 at http://www.esdebian.org")) (item nil (title nil "ok ya lo reporte como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329308") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>ok ya lo reporte como bug.</p>
+<p><a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" title=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" rel=\"nofollow\">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238</a></p>
+") (pubDate nil "Wed, 17 Apr 2013 09:56:27 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329308 at http://www.esdebian.org")) (item nil (title nil "laremi400 escribió:
+[...]") (link nil "http://www.esdebian.org/foro/49276/instalacion-webcam-server#comment-329307") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49276/instalacion-webcam-server\">instalacion webcam-server</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>laremi400</em> escribió:</div>
+<p>[...] Sidd: ¿Este paquete permite el uso via web de la webcam?. Lo que quiero es ver con un navegador cualquiera una cámara web que voy a poner en casa [...]</div>
+<div class=\"codeblock\"><code>$ aptitude show webcam<br />[...]<br />Description: image grabber and uploader<br />This package provides an utility that captures images from a video4linux device<br />such as bttv, annotates them and uploads them to a webserver in an endless loop<br />using FTP or SSH.<br />[...]</code></div>
+<p>No transmite en vivo, sino que captura una imagen y puede enviarla a otro equipo vía SSH o FTP. En mi caso no la envío a ningún otro equipo sino que en el archivo de configuración de webcam indico que la ruta en donde se debe guardar el archivo JPG es la misma ruta en la que se encuentra un archivo index.html en un servidor web local (por ej. ~/webserver/webcam/), y dentro del archivo index.htm está la etiqueta \"img\" que invoca el archivo .jpg.</p>
+<p>En realidad mi configuración total es más compleja pues incluso llevo un archivo histórico, además creé unos scripts para generar videos a partir de las imágenes capturadas ... pero eso fue cuestión de creatividad adicional, no es algo que webcam ofrezca de forma nativa.</p>
+<p>Saludos,<br />
+Sidd.</p>
+") (pubDate nil "Wed, 17 Apr 2013 08:46:40 -0500") (dc:creator nil "siddharta") (guid ((isPermaLink . "false")) "comment 329307 at http://www.esdebian.org")) (item nil (title nil "[    4.557826]  sda:") (link nil "http://www.esdebian.org/foro/49269/vueltas-actualizacion-kernel-fuse-ntfs-3g#comment-329306") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49269/vueltas-actualizacion-kernel-fuse-ntfs-3g\">A vueltas con actualización del kernel, fuse y ntfs-3g</a>:</p>
+
+<div class=\"codeblock\"><code>[&nbsp;&nbsp;&nbsp; 4.557826]&nbsp; sda: sda1 sda2<br />[&nbsp;&nbsp;&nbsp; 4.581150] sd 0:0:0:0: [sda] No Caching mode page present<br />[&nbsp;&nbsp;&nbsp; 4.590778] sd 0:0:0:0: [sda] Assuming drive cache: write through<br />[&nbsp;&nbsp;&nbsp; 4.600912] sd 0:0:0:0: [sda] Attached SCSI disk<br />[&nbsp;&nbsp;&nbsp; 4.635273] EXT4-fs (sda1): warning: maximal mount count reached, running e2fsck is recommended</code></div>
+<p>No aparece error ni intento de montaje, pero al menos se ve que si reconoce que dicha partición se encuenta en ese disco.<br />
+Después te recomienda que le hagas un chequeo a la partición sda1 debido a las veces que ha sido montada (usado el sistema, digamos) y, supongo, por que no está configurado para hacerlo automáticamente cuando se haya montado un cierto número de veces (antes venía configurado así en Debian, no se desde cuando no se incluye esa configuración).<br />
+Para \"provocar\" un escaneo del disco en el siguiente reinicio del sistema, basta con crear un archivo vacío en el directorio raíz con el nombre <strong>forcefsck</strong>.</p>
+<p>También se puede \"programar\" para que lo haga cada cierto numero de montajes:</p>
+<div class=\"codeblock\"><code>~# tune2fs -c N /dev/sdaX</code></div>
+<p>donde N es el número de veces que se tiene que haber montado el disco/partición para que se haga un chequeo automático, y X (sdaX) es la partición sobre la que se quiere cambiar ese valor.<br />
+Es recomendable usar valores distintos para cada partición, así esto hará que no se ralentice demasiado el arranque cuando se de el caso.</p>
+<p>y ya puestos, para seguir comprobando cosas, no estaría de más que pusieras el resultado de los comandos <strong>blkid, mount</strong>, y el contenido de <strong>fstab</strong>.</p>
+") (pubDate nil "Wed, 17 Apr 2013 08:46:35 -0500") (dc:creator nil "Panko") (guid ((isPermaLink . "false")) "comment 329306 at http://www.esdebian.org")) (item nil (title nil "SicoBulo escribió:
+He") (link nil "http://www.esdebian.org/foro/49207/instalar-interfaz-joli-os-debian-estable#comment-329305") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49207/instalar-interfaz-joli-os-debian-estable\">Cómo instalar la interfaz de joli os en debian estable?</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>SicoBulo</em> escribió:</div>
+<p>He probado joliOS, y este es un sistema operativo actualmente muy completo, pero pensado para la nube.... </p>
+<p>Y hablando de su interfaz... usa Gnome 2.30.2. </p>
+<p>Pero lo que ves en la pantalla con iconos es un navegador web que ocupa toda la pantalla + El gnome panel (le puedes poner applets como el menú clásico de \"Aplicaciones Lugares Sistema\"). </p>
+<p>Y te da un login directo al jolidrive, si es que tienes uno ya registrado o comprado (que se yo), como quiera si no tienes jolidrive puedes usar una cuenta de facebook. </p>
+<p>Ese navegador se llama \"nickel-browser\" como lo dijiste en un comentario anterior. </p>
+<p>Pero instalar y configurar nickel-browser tal y como está en JoliOS en Debian... como que la veo difícil, puesto que no sabemos mucho que dependencias tiene ni mucho menos que cambios le han hecho a que paquetes quienes desarrollan joliOS, para tenerlo funcionando de esa manera. (digo esto por que pude salirme de nickel-browser, pero no tengo manera de conectarme a internet sin nickel-browser y al escritorio no pude ponerle un tapiz). </p>
+<p>A menos que ellos tengan el código fuente libre y abierto y sobre todo documentación para el resto del mundo. </p>
+<p>vamos no es cosa de instalar con apt-get nickel-browser y tarán! tiener todo tal y como lo ofrece JoliOS. </p>
+<p>Hay muchos pasos por hacer, pero no es garante que funcione: <a href=\"https://getsatisfaction.com/jolicloud/topics/how_to_compile_nickel_browser\" title=\"https://getsatisfaction.com/jolicloud/topics/how_to_compile_nickel_browser\" rel=\"nofollow\">https://getsatisfaction.com/jolicloud/topics/how_to_compile_nickel_brows...</a></p>
+<p>Y compilar nickel-browser según la web del enlace, no es posible, puesto que no hay documentación.</p>
+<p>Yo te recomendaría usar Joli OS. </p>
+</div>
+<p>Entonces no es software libre. Con joli os tengo problemas en el apagado por eso no lo uso mejor espero hasta que haya más información. Gracias por responder.</p>
+") (pubDate nil "Wed, 17 Apr 2013 07:13:44 -0500") (dc:creator nil "odontoranger") (guid ((isPermaLink . "false")) "comment 329305 at http://www.esdebian.org")) (item nil (title nil "Qué hago:
+- Guardo mi") (link nil "http://www.esdebian.org/que-haces#comment-329304") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+
+<p>Qué hago:</p>
+<p>- Guardo mi magnífico Kabar Bowie después de usarlo para afilar unas estacas y darle un repaso con los pedruscos de afilar.<br />
+- Aprovecho para afilar el Kukri, que lo tenía un poco abandonado.<br />
+- Ya que estoy, me tiro una foto actualizada con mi última adquisición y la cuelgo en mi sitio web.<br />
+- Subo a mi personaje \"Falken el Determinado\" a nivel 12 en el juego de rol del canal #stacked.</p>
+<p>Ahí es nada.</p>
+") (pubDate nil "Wed, 17 Apr 2013 06:36:00 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329304 at http://www.esdebian.org")) (item nil (title nil "Cuando dije que no había") (link nil "http://www.esdebian.org/foro/49269/vueltas-actualizacion-kernel-fuse-ntfs-3g#comment-329303") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49269/vueltas-actualizacion-kernel-fuse-ntfs-3g\">A vueltas con actualización del kernel, fuse y ntfs-3g</a>:</p>
+
+<p>Cuando dije que no había ninguna línea que hiciera referencia a /dev/sda2 me refería a que no salía ninguna línea en la que se intentara montar esa partición, con su error correspondiente.</p>
+<p>Con dmesg | grep sd me muestra esto:</p>
+<div class=\"codeblock\"><code>root@RP1:~# root@RP1:~# dmesg | grep sd<br />[&nbsp;&nbsp;&nbsp; 2.039373] sdhci: Secure Digital Host Controller Interface driver<br />[&nbsp;&nbsp;&nbsp; 2.049179] sdhci: Copyright(c) Pierre Ossman<br />[&nbsp;&nbsp;&nbsp; 2.057396] sdhci: Enable low-latency mode<br />[&nbsp;&nbsp;&nbsp; 2.135556] sdhci-pltfm: SDHCI platform and OF driver helper<br />[&nbsp;&nbsp;&nbsp; 2.303462] Waiting for root device /dev/sda1...<br />[&nbsp;&nbsp;&nbsp; 4.440922] sd 0:0:0:0: [sda] 398294975 512-byte logical blocks: (203 GB/189 GiB)<br />[&nbsp;&nbsp;&nbsp; 4.461747] sd 0:0:0:0: [sda] Write Protect is off<br />[&nbsp;&nbsp;&nbsp; 4.470746] sd 0:0:0:0: [sda] Mode Sense: 38 00 00 00<br />[&nbsp;&nbsp;&nbsp; 4.477913] sd 0:0:0:0: [sda] No Caching mode page present<br />[&nbsp;&nbsp;&nbsp; 4.487561] sd 0:0:0:0: [sda] Assuming drive cache: write through<br />[&nbsp;&nbsp;&nbsp; 4.513523] sd 0:0:0:0: [sda] No Caching mode page present<br />[&nbsp;&nbsp;&nbsp; 4.523154] sd 0:0:0:0: [sda] Assuming drive cache: write through<br />[&nbsp;&nbsp;&nbsp; 4.557826]&nbsp; sda: sda1 sda2<br />[&nbsp;&nbsp;&nbsp; 4.581150] sd 0:0:0:0: [sda] No Caching mode page present<br />[&nbsp;&nbsp;&nbsp; 4.590778] sd 0:0:0:0: [sda] Assuming drive cache: write through<br />[&nbsp;&nbsp;&nbsp; 4.600912] sd 0:0:0:0: [sda] Attached SCSI disk<br />[&nbsp;&nbsp;&nbsp; 4.635273] EXT4-fs (sda1): warning: maximal mount count reached, running e2fsck is recommended<br />[&nbsp;&nbsp;&nbsp; 4.649271] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)<br />[&nbsp;&nbsp; 11.592135] EXT4-fs (sda1): re-mounted. Opts: (null)</code></div>
+<p>El problema de hacer las pruebas desconectando el disco duro externo es que el propio SO está instalado ahí, es decir, la partición sda1 en ext4 es donde está el sistema, de hecho siempre enciendo antes el disco duro externo que el Raspberry para que arranque. Luego ya sda2, en ese mismo disco, es la partición ntfs problemática que no puedo montar con el nuevo kernel.</p>
+") (pubDate nil "Wed, 17 Apr 2013 06:29:38 -0500") (dc:creator nil "Demon_X") (guid ((isPermaLink . "false")) "comment 329303 at http://www.esdebian.org")) (item nil (title nil "Efelion escribió:
+Hola.
+Ese") (link nil "http://www.esdebian.org/foro/49276/instalacion-webcam-server#comment-329302") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49276/instalacion-webcam-server\">instalacion webcam-server</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>Efelion</em> escribió:</div>
+<p>Hola.<br />
+Ese paquete parece ser que solo esta para dos arquitecturas, avr32 y m68k. Creo que por eso no encuentra el paquete ya que no esta portado para la arquitectura de tu maquina. <img src=\"/sites/all/modules/smileys/packs/drupales/eyebrows.gif\" title=\"eyebrows\" alt=\"eyebrows\" />  saludos. </div>
+<p>Ok. Pues parece que el problema era este, así que lo marco como solucionado.</p>
+") (pubDate nil "Wed, 17 Apr 2013 03:34:16 -0500") (dc:creator nil "laremi400") (guid ((isPermaLink . "false")) "comment 329302 at http://www.esdebian.org")) (item nil (title nil "Lo unico que oberve") (link nil "http://www.esdebian.org/foro/49261/firefox-iceweasel-desactivar-placeholder#comment-329301") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49261/firefox-iceweasel-desactivar-placeholder\">Firefox-Iceweasel desactivar placeholder</a>:</p>
+
+<p>Lo unico que oberve ingresando a la configuracion de firefox/iceweasel es que puedes deshabilitar <em>browser.display.show_image_placeholders</em> , pero no se si es eso lo que estas buscando</p>
+<div class=\"codeblock\"><code>about:config</p>
+<p>browser.display.show_image_placeholders</code></div>
+<p>y tiene dos valores true (por defecto) y false.</p>
+<p>Saludos</p>
+") (pubDate nil "Wed, 17 Apr 2013 02:02:44 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329301 at http://www.esdebian.org")) (item nil (title nil "Recuerdo haber tenido") (link nil "http://www.esdebian.org/wiki/moc-music-on-console#comment-329300") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/wiki/moc-music-on-console\">MOC - Music on console</a>:</p>
+
+<p>Recuerdo haber tenido problemas con el paquete <em>moc-ffmpeg-plugin</em> me generaba conflictos al reproducir mp3, por lo tanto desinstale ese paquete y funciono todo bien nuevamente.</p>
+<p>Comento esto por si a alguna persona le sirve.</p>
+<p>Saludos<br />
+Rodrigo</p>
+") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("alambre escribió:
+tambien" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
+si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner https://ip:10000</div>
+<p>Tambien proble con esa opcion poniendo httpS (secure http) pero nada, mismo error, realmente no comprendo donde esta el detalle para poder conectarlo.</p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329347" (20848 13583) obsolete 9 nil nil ((title nil "alambre escribió:
+tambien") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329347") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
+si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner https://ip:10000</div>
+<p>Tambien proble con esa opcion poniendo httpS (secure http) pero nada, mismo error, realmente no comprendo donde esta el detalle para poder conectarlo.</p>
+") (pubDate nil "Thu, 18 Apr 2013 13:01:51 -0500") (dc:creator nil "Shenlong") (guid ((isPermaLink . "false")) "comment 329347 at http://www.esdebian.org"))) ("tambien depende de como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
+si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner <a href=\"https://ip:10000\" title=\"https://ip:10000\" rel=\"nofollow\">https://ip:10000</a></p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329346" (20848 13263) obsolete 10 nil nil ((title nil "tambien depende de como") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329346") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+
+<p>tambien depende de como tenga configurado el server http, puede ser medio feo (el problema es cuando se hace la redirecion, o como la maneje el navegador),<br />
+si le das por defecto http siempre te va a redirecionar y segun como este los nombres, podes caer en el apache, lo correcto seria poner <a href=\"https://ip:10000\" title=\"https://ip:10000\" rel=\"nofollow\">https://ip:10000</a></p>
+") (pubDate nil "Thu, 18 Apr 2013 12:56:31 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329346 at http://www.esdebian.org"))) ("y como verifico de los ini o" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>y como verifico de los ini o como los modifico?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329358" (20848 28627) old 10 nil nil ((title nil "y como verifico de los ini o") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329358") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>y como verifico de los ini o como los modifico?</p>
+") (pubDate nil "Thu, 18 Apr 2013 17:12:35 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329358 at http://www.esdebian.org"))) ("Una pregunta
+En que canal de" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>Una pregunta<br />
+En que canal de wifi tienes funcionando tu router ?<br />
+En el caso de que no fuera ni 1, ni 6, te sugeriría optar por alguno de los dos.<br />
+Para tener mas informacion me gustaría que probaras esto</p>
+<div class=\"codeblock\"><code>rob@m101:~$ dmesg | tail -n 30</code></div>
+<p>Y mostraras el resultado.<br />
+Cordiales saludos.</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329359" (20848 29726) old 9 nil nil ((title nil "Una pregunta
+En que canal de") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329359") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<p>Una pregunta<br />
+En que canal de wifi tienes funcionando tu router ?<br />
+En el caso de que no fuera ni 1, ni 6, te sugeriría optar por alguno de los dos.<br />
+Para tener mas informacion me gustaría que probaras esto</p>
+<div class=\"codeblock\"><code>rob@m101:~$ dmesg | tail -n 30</code></div>
+<p>Y mostraras el resultado.<br />
+Cordiales saludos.</p>
+") (pubDate nil "Thu, 18 Apr 2013 17:30:54 -0500") (dc:creator nil "Robx") (guid ((isPermaLink . "false")) "comment 329359 at http://www.esdebian.org"))) ("Hola,
+Pues resulta que como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>Hola,</p>
+<p>Pues resulta que como estaba atascado se me ocurrio desinstalar wicd y volver a instalar , pues ***** porque ahora no se inicia el servicio de wicd.</p>
+<p>Un saludo y gracias</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329360" (20848 40018) old 8 nil nil ((title nil "Hola,
+Pues resulta que como") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329360") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<p>Hola,</p>
+<p>Pues resulta que como estaba atascado se me ocurrio desinstalar wicd y volver a instalar , pues ***** porque ahora no se inicia el servicio de wicd.</p>
+<p>Un saludo y gracias</p>
+") (pubDate nil "Thu, 18 Apr 2013 20:22:26 -0500") (dc:creator nil "Chambe") (guid ((isPermaLink . "false")) "comment 329360 at http://www.esdebian.org"))) ("En ese \"traceback\" faltan" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
+De todas formas... ¿que paquetes tienes instalados de wicd?</p>
+<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
+<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
+<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
+También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
+<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
+<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
+<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365" (20849 275) old 3 nil nil ((title nil "En ese \"traceback\" faltan") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
+De todas formas... ¿que paquetes tienes instalados de wicd?</p>
+<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
+<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
+<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
+También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
+<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
+<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
+<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
+") (pubDate nil "Fri, 19 Apr 2013 03:32:19 -0500") (dc:creator nil "Panko") (guid ((isPermaLink . "false")) "comment 329365 at http://www.esdebian.org"))) ("no se que guiá seguiste," "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364" (20848 49104) old 4 nil nil ((title nil "no se que guiá seguiste,") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>
+") (pubDate nil "Thu, 18 Apr 2013 22:53:52 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329364 at http://www.esdebian.org"))) ("logre abrirlo como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363" (20848 47954) old 5 nil nil ((title nil "logre abrirlo como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>
+") (pubDate nil "Thu, 18 Apr 2013 22:34:42 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329363 at http://www.esdebian.org"))) ("si entre al folder" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>si entre al folder /etc/init.d</p>
+<p>encontre el archivo runsnort.sh el cual tiene una equis a  la izquierda a la diferencia de los demas, ademas no lo puedo editar abrir con gedit.</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329362" (20848 46903) old 6 nil nil ((title nil "si entre al folder") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329362") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>si entre al folder /etc/init.d</p>
+<p>encontre el archivo runsnort.sh el cual tiene una equis a  la izquierda a la diferencia de los demas, ademas no lo puedo editar abrir con gedit.</p>
+") (pubDate nil "Thu, 18 Apr 2013 22:17:11 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329362 at http://www.esdebian.org"))) ("una mirada al link del bug" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+<p>una mirada al link del bug <a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" title=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" rel=\"nofollow\">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238</a><br />
+si estas en /etc/init.d<br />
+el seguro es el runsnort.sh<br />
+podes mirar uno por uno o tentativamente hacer un grep y ver si lleva la etiqueta BEGIN INIT INFO</p>
+<p>grep \"BEGIN INIT INFO\" * | awk '{FS=\":\";print $1}' &gt;&gt; /tmp/dir1; ls &gt;&gt; /tmp/dir2 ; diff /tmp/dir2  /tmp/dir1 --suppress-common-lines -y</p>
+<p>las diferencias serán lo posibles modificables (probable no seguro) los que no son ejecutables nop</p>
+<p>que modificar<br />
+<a href=\"http://wiki.debian.org/LSBInitScripts\" title=\"http://wiki.debian.org/LSBInitScripts\" rel=\"nofollow\">http://wiki.debian.org/LSBInitScripts</a> o /etc/init.d/README</p>
+<p>o mirar el ejemplo /etc/init.d/skeleton </p>
+<p>sino mirar en el foro por LSB hay unos cuantos post y bien explicados</p>
+<p>cuando las etiquetas están completas, seguro se te va a desaparecer el bucle grande al actualizar, si es solo uno, me llama la atención, o es muy importante o es mas estricto ahora</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329361" (20848 45223) old 7 nil nil ((title nil "una mirada al link del bug") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329361") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
+
+<p>una mirada al link del bug <a href=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" title=\"http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238\" rel=\"nofollow\">http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=589238</a><br />
+si estas en /etc/init.d<br />
+el seguro es el runsnort.sh<br />
+podes mirar uno por uno o tentativamente hacer un grep y ver si lleva la etiqueta BEGIN INIT INFO</p>
+<p>grep \"BEGIN INIT INFO\" * | awk '{FS=\":\";print $1}' &gt;&gt; /tmp/dir1; ls &gt;&gt; /tmp/dir2 ; diff /tmp/dir2  /tmp/dir1 --suppress-common-lines -y</p>
+<p>las diferencias serán lo posibles modificables (probable no seguro) los que no son ejecutables nop</p>
+<p>que modificar<br />
+<a href=\"http://wiki.debian.org/LSBInitScripts\" title=\"http://wiki.debian.org/LSBInitScripts\" rel=\"nofollow\">http://wiki.debian.org/LSBInitScripts</a> o /etc/init.d/README</p>
+<p>o mirar el ejemplo /etc/init.d/skeleton </p>
+<p>sino mirar en el foro por LSB hay unos cuantos post y bien explicados</p>
+<p>cuando las etiquetas están completas, seguro se te va a desaparecer el bucle grande al actualizar, si es solo uno, me llama la atención, o es muy importante o es mas estricto ahora</p>
+") (pubDate nil "Thu, 18 Apr 2013 21:49:11 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329361 at http://www.esdebian.org"))) ("Muy buena noticia. Es una" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366" (20849 10180) old 2 nil nil ((title nil "Muy buena noticia. Es una") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>
+") (pubDate nil "Fri, 19 Apr 2013 06:17:24 -0500") (dc:creator nil "cnicolas") (guid ((isPermaLink . "false")) "comment 329366 at http://www.esdebian.org"))) ("[COULD NOT DOWNLOAD HEADLINES!]" "viernes, 08:26: Newsticker could not retrieve news from esDebian.
+Return status: `exited abnormally with code 4
+'
+Command was `(wget -q -O - http://www.esdebian.org/crss)'" "" (20849 16136 952994) obsolete 0 nil nil nil) ("Ya la noticia se está" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
+<p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
+<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367" (20849 16159) new 1 nil nil ((title nil "Ya la noticia se está") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
+<p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
+<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>
+") (pubDate nil "Fri, 19 Apr 2013 07:57:03 -0500") (dc:creator nil "DanielAviles") (guid ((isPermaLink . "false")) "comment 329367 at http://www.esdebian.org"))))

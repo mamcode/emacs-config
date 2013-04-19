@@ -1,0 +1,964 @@
+;; -*- coding: utf-8 -*-
+(("Coursera Blog" "We offer high quality courses from the top universities, for free to everyone. We are changing the face of education globally, and we invite you to join us." "http://blog.coursera.org/" (20849 9799 810537) feed 0 nil nil ((atom:link ((rel . "hub") (href . "http://tumblr.superfeedr.com/") (xmlns:atom . "http://www.w3.org/2005/Atom"))) (description nil "We offer high quality courses from the top universities, for free to everyone. We are changing the face of education globally, and we invite you to join us.") (title nil "Coursera Blog") (generator nil "Tumblr (3.0; @coursera)") (link nil "http://blog.coursera.org/") (item nil (title nil "Stay on Track with the Deadlines Calendar Feature!") (description nil "<i>Editor&#8217;s Note: <a href=\"http://www.pamelafox.org\">Pamela Fox</a> is Coursera’s Lead Student Team Engineer.  Here is her post about a useful new Coursera feature called &#8220;Deadline Calendar&#8221;!</i><br/><br/><p>
+I know it&#8217;s a matter of much debate, but I personally love that Coursera 
+classes actually impose schedules and deadlines on students. 
+I have a lot of things I want to get done in life, and if I don&#8217;t have a deadline for them, 
+I don&#8217;t accomplish 99% of them. There&#8217;s always something else that needs to be done first, you know?
+</p>
+
+<p>
+But I hate the feeling of missing a deadline in a class, especially if I&#8217;ve been meeting all the deadlines 
+for a few weeks and been feeling good about my steak of good-student-ness. It&#8217;s that sudden, sinking feeling of 
+&#8220;Awww, man, why didn&#8217;t I remember that an hour ago?&#8221; that can throw off your motivation for the rest of the class. 
+</p>
+
+<p>
+So we have been working on ways to make it easier for all of us to remember our deadlines, 
+because we think there should be less sinking feelings in the world. <br/><br/>Over the last week, 
+we&#8217;ve started enabling a new feature in our classes: Deadlines Calendar. <br/><br/><img src=\"http://media.tumblr.com/351b03b68c87dfcaff6a2a8201095f90/tumblr_inline_ml288q9wft1qz4rgp.png\" width=\"200\" alt=\"image\"/><br/>We&#8217;re outputting 
+the deadlines for all the currently opened quizzes, assignments, homeworks, exams, and assessments, 
+in the ICS or &#8220;iCal&#8221; format. This is a standard format that&#8217;s supported by many calendaring applications, 
+notably the two most popular: Google Calendar and iCal, so that you can visualize the deadlines alongside 
+your other very important life events.
+</p>
+
+<p>
+<b>Here is how it works</b>: <br/><br/>
+1. If the calendar is available for your class, you&#8217;ll see it on the sidebar underneath the upcoming 
+deadlines on the main page:<br/><br/><img src=\"http://media.tumblr.com/28a6a80fec1599257d33fba61faacad4/tumblr_inline_ml27rugUeP1qz4rgp.png\" alt=\"image\"/></p>
+
+<p>
+2. When you click that link, you&#8217;ll be brought to a page with instructions on how to use the iCal
+file in Google Calendar and iCal.
+</p>
+
+<p>
+3. Once I followed those instructions, here&#8217;s what my calendar looked like with Dan Ariely&#8217;s 
+class added (and yes, I&#8217;m happy to report that I already finished this week&#8217;s quizzes!): <br/><br/><img src=\"http://media.tumblr.com/49676c21262457becb56e7e444702503/tumblr_inline_ml27fpsaL31qz4rgp.png\" alt=\"image\"/></p>
+
+<p>
+4. I also followed the last step to set notifications on that calendar so that I&#8217;ll automatically get an email a day before: <br/><br/><img src=\"http://media.tumblr.com/53aadcc7dbb25e6ec0832adee883cef0/tumblr_inline_ml27g4mgzt1qz4rgp.png\" alt=\"image\"/></p>
+<p>
+Please try it out and let us know what you think. Hopefully it helps you plan and prioritize your life better, 
+so that you can be a (bum ba BUM BUM) super student!
+</p>") (link nil "http://blog.coursera.org/post/47649042190") (guid nil "http://blog.coursera.org/post/47649042190") (pubDate nil "Wed, 10 Apr 2013 18:04:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "A Pilot Translation Collaboration with Digital October in Russia") (description nil "<p><span>Coursera’s mission is “learning without limits by connecting the world to a great education.” One way we are accomplishing this goal is by making select course lectures subtitles available in different languages.</span></p>
+<p><span>Since January 2013, Coursera has received more than 1.1 million unique visitors from Russia, and today, we’re </span><span>excited to announce a collaboration pilot </span><span>with <a href=\"http://www.digitaloctober.com\">Digital October</a>, a center for new technology and entrepreneurship located in the heart of Moscow. We’ll be working with Digital October to bring more courses to Russian-speaking students, starting with University of Pennsylvania’s popular course on </span><a href=\"https://www.coursera.org/course/gamification\"><span>Gamification</span></a><span>, taught by <a href=\"https://twitter.com/kwerb\">Kevin Werbach</a>.</span></p>
+
+<p></p><center><strong><img src=\"http://media.tumblr.com/e8f9214de612025259aeb925ac07f6dd/tumblr_inline_mkzul23c6B1qz4rgp.png\" alt=\"image\" width=\"350\"/></strong></center>
+<p><span>The Digital October team has already begun translating subtitles for this course.  They will also translate a talk that Kevin Werbach is giving today called the “Shall We Play,” available on </span><a href=\"http://knowledgestream.ru/en\"><span>KnowledgeStream</span></a><span>, an online distance-learning initiative run by Digital October.</span></p>
+<p><i>You can <a href=\"http://digitaloctober.com/events/knowledge_stream_biznes_poigraem\">watch</a> Professor Werbach&#8217;s talk live at 9AM PT this morning</i>.</p>
+<p><span>In addition to translating courses, Digital October will also host in-person meet-ups for Russia-based Courserians, beginning with a in-person meet-up for Gamification students at the Digital October headquarters soon.  “We hope that this is only the beginning,” says Yulia Lesnikova, Director of Educational Programs at Digital October.</span></p>
+<p><br/><span>Digital October describes themselves as a place “where great content meets great people.”  Like Coursera, they believe that knowledge should be available to everyone, regardless of location, income, language, age or gender.  We are excited to be working together on this pilot. </span></p>") (link nil "http://blog.coursera.org/post/47541935276") (guid nil "http://blog.coursera.org/post/47541935276") (pubDate nil "Tue, 09 Apr 2013 11:07:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "One of Coursera's Most Highly Anticipated Courses Is Finally Here!") (description nil "<p>Never before have so many <a href=\"http://www.coursera.org/team\">Coursera Team members</a> all enrolled for the same course&#8230; until now.  We are so thrilled to introduce to you a new course from world-renowned anthropologist, Phineas Dunne.  It is called <a href=\"http://bit.ly/YPz96z\">Underwater Basketweaving</a>. 
+<br/><br/></p><center>
+<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/l1Vvyu99GxA\" frameborder=\"0\"></iframe><br/><br/></center>
+In this course, you will learn to weave beautiful, structurally superior wet-weave baskets in the ancient Aquacamamata style. Underwater basket weaving is a craft that seamlessly merges scientific intellectualism, manual dexterity, and deep spiritual engagement. We look forward to having you with us on this exciting journey into art and anthropology!
+<br/><br/>
+This course will consist of short lecture and demonstration videos, between 8 and 10 minutes in length, short quizzes, and practical weaving exercises. Course officially starts soon.  <font color=\"maroon\">Make sure you sign up and tell your friends, as this course is surely one of the most highly anticipated courses we have ever had.  The first 1000 students may be chosen to participate in a real life research project with the Professor!</font>
+<center><br/><br/><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"http://bit.ly/YPz96z\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll Now!</a></div></center>") (link nil "http://blog.coursera.org/post/46726153527") (guid nil "http://blog.coursera.org/post/46726153527") (pubDate nil "Sat, 30 Mar 2013 22:55:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "The 1 Year MOOC BA Experiment: Degree of Freedom") (description nil "<p><i><b>Editor&#8217;s note: Jonathan Haber is a Courserian who is taking classes for 12 months on Coursera to experiment with a project of his called &#8220;Degree of Freedom&#8221;.  He will be guest blogging on our site throughout this next year to keep us up-to-date on his progress!<br/><br/></b></i>
+Greetings fellow Courserians!
+<br/><br/>
+Like you, I am enjoying the thrill of learning new things from some of the world&#8217;s best professors for
+free. But, unlike you, I may be taking more courses than would generally be considered healthy.
+<br/><br/>
+You see, I decided earlier this year to try my own experiment within the greater MOOC experiment and
+find out if it&#8217;s possible to learn as much as I&#8217;d get out of a four year liberal arts degree in just twelve
+months using entirely free learning tools like Coursera.
+<br/><br/>
+At my <a href=\"http://degreeoffreedom.org/\">Degree of Freedom</a> web site, I&#8217;ve been writing about the experience in order to help students,
+teachers, educational technology providers, and policy makers understand what works and what still
+needs work in different areas of massive online learning.
+<br/><br/>
+But while my site is communicating with many audiences, the kind folks at Coursera thought it would be
+valuable to share insights with fellow students regarding how to get the most out of their own MOOC
+experiences. Which is why I&#8217;ll be visiting the Coursera blog semi-regularly to offer suggestions on how to
+maximize success (which really translates to maximizing learning) based on what I discover as I continue
+to cram four years of college into a single year.
+<br/><br/>
+Here&#8217;s a video to give you an idea of what I look like…
+<br/><br/><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/z2znYceI0Ys\" frameborder=\"0\"></iframe>
+
+<br/><br/>
+As you can see, I&#8217;m old enough to have gone to a traditional brick-and-mortar college (during a decade
+when we still used typewriters – albeit electric ones). Which has helped me identity a key theme for
+success in online learning that will inform most of the things I&#8217;ll be sharing with you over the coming
+months.
+<br/><br/>
+It&#8217;s kind of a cliché to say that you get as much out of college as you put into it, but this seemingly
+trite observation becomes critical in an online world where classroom attendance and attentiveness,
+dedication to keeping up with reading, and a commitment to doing your best on homework, tests,
+papers and other types of assignments are all in your hands.
+<br/><br/>
+I&#8217;ll be talking about what this translates to over the coming months, but in the meantime you should be
+thinking about not just what Coursera can do for you, but what you can do to maximize your own self-
+motivated learning experience.</p>") (link nil "http://blog.coursera.org/post/46610254827") (guid nil "http://blog.coursera.org/post/46610254827") (pubDate nil "Fri, 29 Mar 2013 14:33:29 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "An Easier Way to Find Yourselves in the Forums") (description nil "<b><i>Editor’s Note: Coursera’s Lead Student Team Engineer <a href=\"http://www.pamelafox.org\">Pamela Fox</a> shares with us a useful new Coursera feature: Forum Activity Profiles!<br/><br/></i></b><p>
+I have to admit something embarrassing that all of our active forum participants know: before this week, the only way to find your posts or the posts of classmates in the forums was to search by name (or to keep a long list of browser bookmarks). 
+</p>
+<p>
+We know that you are all really keen to keep up to date with the threads you&#8217;re participating in, and to find interesting posts by your classmates, so we&#8217;ve rolled out new functionality this week to make that all easier for you.
+</p>
+
+<h3>Forum Activity Profiles</h3>
+
+<p>
+For every student that participates in the forums, we&#8217;ve created a forum profile with their name, link to Coursera profile (if they&#8217;ve made one), and a list of their most recent threads, posts, and comments. There&#8217;s also an option to browse back further, for those prolific posters.
+</p>
+<p>Here&#8217;s what the forum profile looks like for Joe Warren, a professor from our Interactive Python course that loves to answer questions and give students more challenges:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/~_6z_6c6tmyl.png\" alt=\"screenshot of Joe's forum profile\" style=\"border:1px solid #ccc\"/></p>
+
+<h3>Your Own Activity</h3>
+
+<p>
+We&#8217;ve added a quick link for your own profile to the forums. Just visit the main page of the forums and click &#8220;View your own activity&#8221;:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/2bit~ni6oz5u.png\" alt=\"screenshot of link to your own profile\" style=\"border:1px solid #ccc\"/></p>
+
+<p>Like always, we will continue looking for ways to make it easier for you to learn with eachother.</p>") (link nil "http://blog.coursera.org/post/46449155066") (guid nil "http://blog.coursera.org/post/46449155066") (pubDate nil "Wed, 27 Mar 2013 17:35:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "Our New Front Page: So Fresh and So Clean! ") (description nil "<i><b>Editor&#8217;s Note:  Coursera&#8217;s Lead Student Team Engineer <a href=\"http://www.pamelafox.org/\">Pamela Fox</a> shares her reflections on our <a href=\"http://www.coursera.org\">front page&#8217;s</a> new look!</b></i><br/><br/><p>I joined Coursera wayyyyy back in the day, almost a year ago, and I remember
+my first project was to redesign our front page in anticipation of our upcoming growth
+from 4 to 17 universities. So many! How would we showcase them all?! But hey, I figured it out and we moved on.
+</p>
+<p>
+We&#8217;ve grown quite a bit since then and we&#8217;re now up to 62 universities and  320+ courses, plus we&#8217;ve added the options for
+Signature Track and ACE, all the while managing never to upgrade our poor year-old front page.
+By the time we realized it was high time for renovation, it was quite the &#8220;fixer-upper.&#8221;
+</p>
+<p>
+With the combined efforts of our designer Payam, our prolific intern Marc, and our newest
+full-time web engineer Josh, we crafted a new front page and browsing experience.
+Our new <a href=\"http://www.coursera.org/welcome\">front page</a> includes:
+<br/><br/>• A prominent
+search box, which takes potential students directly to our new course catalog.
+<br/>• A showcase of beautiful imagery from our universities (seriously, have you seen <a href=\"https://www.coursera.org/ep\">École Polytechnique</a>? I know where I&#8217;m traveling for next vacation). 
+<br/>• A highlight of the courses that are starting soon as well as recently added courses.
+</p>
+<p>
+We hope that we can help students find what they&#8217;re looking for faster, because 
+that means more students to learn alongside all of you. ☺
+</p>
+<center><img src=\"http://media.tumblr.com/7092ae9fe0ab4f16565c99e84411bca9/tumblr_inline_mk4vf1YNnV1qz4rgp.png\" alt=\"image\"/><br/><br/><a href=\"https://www.coursera.org/welcome\" style=\"font-size:20px;\">See Our New Front Page</a></center>") (link nil "http://blog.coursera.org/post/46173491209") (guid nil "http://blog.coursera.org/post/46173491209") (pubDate nil "Sun, 24 Mar 2013 13:27:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "My Coursera Experience: Empowering Local Communities through MOOC") (description nil "<p><i><b>Editor&#8217;s note:  Sharon Watkins is a Coursera student who runs an Ohio-based  Non-Profit <a href=\"http://www.spr.k12.oh.us/LearningCafe.cfm?subpage=1418\">&#8220;The Learning Cafe&#8221;</a>.  She&#8217;s empowering her local community by encouraging people to take courses together &amp; improve their careers.</b></i>
+
+</p><center><img src=\"http://media.tumblr.com/4aad7166bd9ebe66cb4f386bcde62cc3/tumblr_inline_mjzc80zIAu1qz4rgp.jpg\" alt=\"image\"/></center>
+
+The Learning Cafe (TLC) is an evening hours community ‘learning environment’ housed
+in our public high school located in a high poverty community. The purpose of our
+program is to raise community engagement in education by providing fresh enrichment
+and advancement learning opportunities.We do what many community schools do: offer
+a dinner, transportation, access to social services and childcare along with a wide range
+of classes. We want to entice reluctant learners back to school while we challenge our
+seasoned students with new learning choices as well.
+<br/><br/>
+My husband brought MOOC’s and Coursera to my attention last fall. We host TED
+Talk discussion groups at TLC and so I watched Daphne Koller’s talk on Coursera.
+This seemed a perfect option to offer. It was free. It honored and enticed our people by
+providing instruction from some of the best in our country. It offered not only knowledge
+but the potential to lead to additional learning or employment pursuits.
+<br/><br/>
+We marketed the opportunity for 3 months by word of mouth, online newsletters and
+general announcements throughout the community. I wanted to deliberately reach out to
+adults who did not have a college background and to high school students. I personally
+approached several folks and asked them to take the risk with me. We had 14 show up
+to our informational meeting and ended up with 10 who enrolled in the business class
+they selected. Their ages ranged from 16 to 70+ and all but two had no college degree.
+I hired a facilitator to assist. Of the 10 who initially enrolled, nine completed the class,
+8 took the exam and 6 passed the exam! Most of them are on low or fixed income - not
+the typical successful MOOC student. But they are eager, enthusiastic learners and
+their pride in doing this was inspiring! I was so excited to hear about what this meant to
+them!
+<br/><br/>
+Working as a cohort matters. Everyone talked about the importance of a peer group and
+the facilitator in helping them complete the course. We provided access to a computer
+lab several hours a week and worked hard to regularly encourage and follow up with
+our students. They have greater confidence now as learners. I will never forget their
+courage and joy when they finished and we celebrated together!<br/><br/>&#8212;<i>Sharon Watkins</i><br/><br/><i>If you&#8217;re interested in taking a business course like The Learning Cafe group did, please click below!
+
+<br/><br/><br/></i><center>
+
+												<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=business\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Business Courses</a></div></center>") (link nil "http://blog.coursera.org/post/45931984951") (guid nil "http://blog.coursera.org/post/45931984951") (pubDate nil "Thu, 21 Mar 2013 16:11:26 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "Dan Ariely's Course on \"A Beginner's Guide to Irrational Behavior\" Open for Enrollment!") (description nil "<p><center><img src=\"http://media.tumblr.com/dacc1a27f13823c9d1e52436361859f3/tumblr_inline_mjvb657xFs1qz4rgp.png\" alt=\"image\"/><br/></center>
+
+Professor of Psychology and Behavioral Economics at Duke, Dan Ariely is no ordinary man. With 70% of his body burned in an explosion when he was a teenager, a day in the life of Dan is plagued with aching limbs and hands that don’t always work, much less fit into ski gloves. But that doesn’t stop him from conquering the field of behavioral economics as the expert on all things “irrational.” One of the main themes in Dan’s research is the contrast between what a rational agent should do, at least according to standard economic theory, and how we humans actually behave. In his upcoming course on Coursera, “A Beginner’s Guide to Irrational Behavior,” Dan will provide an introduction to behavioral economics that makes you scratch your head and wonder why we act in the curious ways we do. How stable and consistent are our preferences? How do we think about money? How do we justify unethical behavior? What motivates us to work? How can we exhibit self-control in our lives? And what effect can emotion have on our behavior?
+<br/><br/>
+Back home in Durham, North Carolina, Dan is taking advantage of his experience with Coursera in a different way. At Duke, he is currently teaching an interdisciplinary undergraduate class that culminates in the production of MOOC-like material from the students themselves (<a href=\"http://today.duke.edu/2013/02/davidsonariely\" target=\"_blank\">which you can read about here</a>), and will experiment with the flipped classroom approach with his next batch of MBA students using the videos he created for Coursera to generate discussion in the classroom. 
+
+<br/><br/>
+If you’re interested, you can check out Dan’s book bundle.  The bundle isn&#8217;t required for the course but provides an interesting perspective on irrational behavior.  They are available here: <a href=\"http://www.amazon.com/The-Irrational-Bundle-Irrationality-ebook/dp/B00BHEJ4IW/ref=sr_1_1?ie=UTF8&amp;qid=1363210779&amp;sr=8-1&amp;keywords=irrational+bundle&amp;tag=coursera-course123-20\" target=\"_blank\">Kindle</a>, <a href=\"http://www.barnesandnoble.com/w/the-irrational-bundle-dan-ariely/1114763210?ean=9780062288745\" target=\"_blank\">Nook</a>, <a href=\"https://itunes.apple.com/us/book/the-irrational-bundle/id606715318?mt=11\" target=\"_blank\">iBookstore</a>, <a href=\"http://www.kobobooks.com/ebook/The-Irrational-Bundle/book-EhitrXpidUq3OFuPXr1jQw/page1.html?s=dSd0sPFawEuz-tMJmjSZjQ&amp;r=1\" target=\"_blank\">Kobo</a>, or <a href=\"https://play.google.com/store/books/details/Dan_Ariely_Dan_Ariely_s_Irrational_Bundle?id=ogcCO9qMTCAC\" target=\"_blank\">Google</a>. 
+
+<br/><br/>
+Want to learn more about the class? See the Course Introduction Video:<br/><br/><center><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/dzSfmkbQClk\" frameborder=\"0\"></iframe></center>
+
+<br/><br/>Although the course will formally begin next Monday, the site is already open for you to start! See you in class!
+
+
+<br/><br/><center>
+
+												<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/behavioralecon\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll In Irrational Behavior Course</a></div></center></p>") (link nil "http://blog.coursera.org/post/45684999023") (guid nil "http://blog.coursera.org/post/45684999023") (pubDate nil "Mon, 18 Mar 2013 14:17:00 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "Instructor Profile: Larry Randles Lagerstrom, getting creative with Einstein!") (description nil "<p><strong><em>Editor’s note: Dr. Larry Randles Lagerstrom from Stanford University will be teaching a new course on “<a href=\"https://www.coursera.org/course/einstein\">Understanding Einstein: The Special Theory of Relativity</a>,” starting on April 8. We caught up with him and asked him a few questions about his background and his course.</em></strong></p>
+
+
+<p></p><center><img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/460px-Albert_Einstein_Head.jpg\" width=\"200;\" align=\"center;\" padding=\"10px\"/></center><br/><br/>&#8220;Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as &#8216;Person of the Century&#8217; by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity.&#8221; - Dr. Larry Randles Lagerstrom<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/einstein\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll in Einstein Course</a></div></center><br/><br/><br/><b>Here is the full Q&amp;A with Larry:</b><br/><br/><p><em><strong>Q: Tell us a little about yourself.</strong></em></p>
+<p><span>A: I have taken a circuitous academic path to where I am today at Stanford. As an undergraduate I focused on physics and mathematics, with a few forays into English literature. I then went to the University of California at Berkeley to pursue a Ph.D. in physics. Along the way, however, I discovered that I was most interested in the history and philosophy of science, so I ended up with an M.A. in physics and a Ph.D. in history. I then made another detour and taught computer science for a number of years, first at Berkeley and then at the University of California at Davis. Coming to Stanford four years ago as an Academic Director has allowed me to return to some of my interests in the history of science. The energy and vibrancy of a place like Stanford is incredible, for all the obvious reasons, but especially because of its emphasis on the importance of a liberal education that crosses disciplinary boundaries. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What attracted you to the history of science? </strong></em></p>
+<p><span>A: Besides the opportunity to retrace the paths of great thinkers like Galileo, Descartes, Newton, Darwin, and Einstein, I am particularly fascinated by the period of physics from the second half of the nineteenth century into the early twentieth century, because it’s a time of grand unifying theories (thermodynamics and electromagnetism), startling discoveries (X rays, radioactivity, and the electron), the rise of physics-based industries (the telegraph, electric lighting and power, and radio), and the transition from classical to modern physics (relativity and quantum mechanics). </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What course are you teaching?</strong> </em></p>
+<p><span>A: I am teaching “Understanding Einstein: The Special Theory of Relativity.” </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Why should students be interested in this course? </strong></em></p>
+<p><span>A: Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as “Person of the Century” by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Will students need to do a lot of math in the course? </strong></em></p>
+<p><span>A: The good news is that the level of math required to gain a deeper understanding of the special theory of relativity is basic algebra. The even better news is that students will have a choice as to how much math they want to do. I have designed the course so that students can choose to follow a more quantitative approach or a more qualitative approach to the material. Those who choose the more quantitative approach will be doing some math (at the level of algebra), while those who choose the more qualitative approach will have to do little or no math in their assignments (though they need to be willing to try to follow along with the math in some of the video clips). Instead, one of the main assignments for the qualitative approach will be the completion of a creative project. In addition, a brief math review will be provided for those whose algebra skills are rusty. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Can you tell us more about the creative project?</strong></em></p>
+<p><span>A: I hope that the opportunity to do a creative project on the young Einstein and/or the special theory of relativity will allow students to engage with the material in a way that’s different from what is usually done. The project might consist of a video, musical piece, work of art, poem, or animation, and the approach may be instructional, humorous, serious, or dramatic, or some combination thereof. So although I will have a few general guidelines within which students must work, there will be a lot of room for creativity.</span></p>
+<p><span> </span></p>
+<p><span><i><b>Q: What is the one thing that you hope students will take away from your course?</b></i> </span></p>
+<p><span>A: Einstein talked about how the quest for understanding is an enriching and even an ennobling experience, and I hope that students will find the course to be exactly that kind of experience for them.</span></p>
+<p><span> </span></p>
+See Larry&#8217;s Profile <a href=\"https://www.coursera.org/instructor/larrylagerstrom\">here</a>.<br/><img src=\"http://media.tumblr.com/5afdf5f1b734fe7125f27f84e3c334ee/tumblr_inline_mjkzvuSVMm1qz4rgp.png\" width=\"100\"/>") (link nil "http://blog.coursera.org/post/45249294376") (guid nil "http://blog.coursera.org/post/45249294376") (pubDate nil "Wed, 13 Mar 2013 00:53:46 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "My Coursera Experience: A Letter to Our Professor") (description nil "<p><i>Editor&#8217;s Note: The following is a letter written by a group of Iranian students who took &#8220;<a href=\"https://www.coursera.org/course/thinkagain\">Think Again: How to Reason and Argue</a>&#8221; taught by Walter Sinnott-Armstrong and Ram Neta of <a href=\"https://www.coursera.org/duke\">Duke University</a>.</i>
+<br/><br/>
+Dear Walter and Ram,
+<br/><br/>
+I am writing on behalf of a study group for your Think Again course in Mashad, Iran. You guys probably get this kind of reaction a lot, but I can barely begin to communicate all the excitement your course caused among us. Not only did it inspire us to study the material you provided on Coursera, but we also got hold of a copy of Walter&#8217;s book (Understanding Arguments) and read the corresponding chapters every week. So, in the spirit of thanking you for all the time and effort you put into preparing the material, we decided to email you guys to thank you personally. Also, apparently, you are planning to offer the course again shortly, but we were wondering if any of you were planning to offer any new courses with a similar theme?
+<br/><br/>
+We learned a lot, and hope we can put it to some good use in our lives, and we are forever grateful.
+<br/><br/>
+Best,<br/>
+Dan.
+<br/></p><center>[In the photo, from left to right, we are Zahra, Mahyar, Marjan, Danial, Maryam, Mostafa]<br/><br/><img src=\"http://media.tumblr.com/41f9041f7340724e39ca6c9e884f32b2/tumblr_inline_mjej1yVe2R1qz4rgp.jpg\" alt=\"image\"/><br/>
+To learn more about this class that Dan and his friends took as well as other humanities classes, see our humanities courses offerings.<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=humanities\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Humanities Classes</a></div></center></center>") (link nil "http://blog.coursera.org/post/45027354913") (guid nil "http://blog.coursera.org/post/45027354913") (pubDate nil "Sun, 10 Mar 2013 11:22:36 -0400") (dc:creator nil "helloyinner")) (item nil (title nil "In Celebration of International Women's Day...") (description nil "<p><i>Dear Courserians,<br/><br/>We believe that everyone should be able to learn without limits. We are proud to have a strong and growing women presence from over 220 countries, actively contributing to their communities, bringing positive change in society through education.  There are many long and enduring <a href=\"http://www.prb.org/Publications/PolicyBriefs/EmpoweringWomenDevelopingSocietyFemaleEducationintheMiddleEastandNorthAfrica.aspx\">benefits</a> to educating women not only in specific countries but across the globe.  I, along with all the members of the Coursera team, thank you for being part of this community.  <br/><br/>Happy Learning,<br/><a href=\"https://www.coursera.org/about/founders\">Daphne Koller</a><br/>Coursera Co-Founder<br/><br/><img src=\"http://media.tumblr.com/99e2ffea03c1affee307023e19ac18aa/tumblr_inline_mjdpkjcuXE1qz4rgp.png\" alt=\"image\"/><br/>[Daphne Koller]<br/><br/><img src=\"http://media.tumblr.com/f06e6631bb271bbe3c172eb967d34045/tumblr_inline_mjdruzLLys1qz4rgp.png\" alt=\"image\" style=\"text-align: center;\"/><br/>[Women at Coursera, celebrating <a href=\"http://www.internationalwomensday.com/\">International Women&#8217;s Day 2013</a>]</i></p>") (link nil "http://blog.coursera.org/post/44920820124") (guid nil "http://blog.coursera.org/post/44920820124") (pubDate nil "Sat, 09 Mar 2013 01:05:00 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "Forum Refresh: Coming Soon to a Class Near You") (description nil "<p>
+When most people think of Coursera, they think about the video lectures, 
+the quizzes,and the peer-graded assignments. But there is another part which we 
+think is equally important: the discussion forums. That&#8217;s where students debate 
+what they&#8217;ve learnt in class, where instructors see what creative things their 
+students have done on the side, where community TAs help guide students through 
+problems, and where students give feedback about improving the platform and course. 
+</p>
+<p>
+We&#8217;ve been collecting feedback from students and instructors about the forums, 
+and finally found the time to start addressing that feedback. To start with, we 
+realized that we want to be able to iterate quickly on our forums in the future, 
+so we&#8217;ve re-written the forum codebase to use a more modern architecture and 
+web technologies (it&#8217;s now a Backbone single-page web app, for the techies out there). 
+Along with that re-writing, we&#8217;ve addressed some of the top usability concerns. 
+Here&#8217;s a run-down of the changes you might notice:
+</p>
+<ul><li>When you post, comment or vote, the page will not reload and you will
+ not lose your place by going to the top of the page.</li>
+ <li>You will be able to undo votes and vote in the opposite direction.</li>
+ <li>You will be able to link to specific posts or comments, not just the whole thread.
+ If you click the timestamp on a post or comment, your window URL will change to
+  the permalink for that post and you can share that URL.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/pqhrx-gnd3_1.png\">See screenshot.</a>
+  </li>
+  <li>Forum notification emails will link to specific posts/comments, not 
+  just the whole thread, and the comment being linked to will be highlighted.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/w1qyz20-0-7p.png\">See screenshot.</a>
+  </li>
+  <li>The threads are no longer paginated, but instead use &#8220;infinite loading&#8221;, so that you can scroll
+  up or down to load earlier/later posts in the thread.
+  </li>
+  <li>The original poster will now be able to edit the title of his/her thread without deleting it.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/uk6yiwbtukur.png\">See screenshot.</a></li>
+  <li>The post labels (pinned, approved, etc) now use a yellow/red color scheme.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/gh8nw4vzq4-r.png\">See screenshot.</a>
+  </li>
+  <li>Forum posts are now composed using a Wysiwyg editor instead of the Markdown editor,
+  so the preview is the same as when you’re typing it. The wysiwig editor includes options for inserting
+  links, code, images, and MathJax.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/2zok6983aov1.png\">See screenshot.</a>
+  </li>
+  <li>When creating a new thread, you can change the subforum it will be posted in.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/7~6m93~952c3.png\">See screenshot.</a>
+  </li>
+  <li>We added a way for students to see their own forum activity as well as see other students&#8217; (non-anonymous) activities. To view the forum activity for another student, you can click on their name in bylines in the forum. To view your own activity, click &#8220;View your latest activity&#8221; from main forum page. (<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/b8_q6mg5b8dp.png\">See screenshot.</a>) </li>
+</ul><p>
+We will start to roll out the new forums to classes this week, so you should all 
+see it quite soon. We look forward to continuing to iterate on the forums, like 
+giving you ways to follow eachother&#8217;s posts, better subscription options, 
+a better dashboard of the posts you care about, and forums embedded in other parts 
+of the class experience.  
+</p>
+<p>
+We love seeing what all of you post in the forums. Thank you for all of your feedback in making forum functionalities more connected and dynamic.
+</p>") (link nil "http://blog.coursera.org/post/44892051303") (guid nil "http://blog.coursera.org/post/44892051303") (pubDate nil "Fri, 08 Mar 2013 18:21:00 -0500") (dc:creator nil "footedandfabulous")) (item nil (title nil "University Spotlight: See courses offered by UCSD, Case Western, UNC, Northwestern and more!") (description nil "<p><span>At Coursera, w</span><span>e’re lucky to work amongst a </span><a href=\"https://www.coursera.org/about/team\"><span>team</span></a><span> comprised of people with a diverse array of nationalities, career paths, skills and cool talents (like teaching yoga and speaking Quechua). We also take pride in offering many different courses from universities around the world, like the ones we&#8217;ve highlighted this past week from Europe</span><span> and Latin America to Asia. Most importantly, we’re constantly inspired and humbled by Coursera students; right now, 2.8 million people from over 200 countries have signed up at least 1 course out of the<a href=\"http://www.coursera.org/courses\"> 327 course</a> catalogue. If you haven&#8217;t seen it already, our analytics team created a visualization of our universities and student population on an interactive </span><a href=\"http://viz.coursera.org/2013-02-20-globe/\"><span>map</span></a><span>! </span><span>We’re working hard to create even more great courses for Courserians to take. An important part of that strategy is to continually build partnerships with the top universities globally and in the United States. </span></p>
+<p><strong id=\"internal-source-marker_0.2467341753654182\"><span>Below are links to the courses offered by our awesome new US partner universities as well as some neat facts you may not have known! </span></strong></p>
+<ul><li><a href=\"https://www.coursera.org/casewestern\"><span>Case Western Reserve University</span></a><span>: Case Western Reserve is a leading national urban research university committed to imagining and influencing the future. Their alumni includes the inventor of the Nike Air Sole, the developer of Gmail and founders of Fortune 500 companies. Already ranked as one of the nation’s best colleges, Case Western Reserve was recently listed by </span><a href=\"http://www.huffingtonpost.com/2011/06/30/the-trendiest-colleges_n_887602.html?ref=fb&amp;src=sp#s299822&amp;title=Macalester_Trendiest_Quirky\"><span>Huffington Post</span></a><span> </span><span>as one of the “trendiest colleges” in the States. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/northwestern\"><span>Northwestern University</span></a><span>: Founded in 1851, Northwestern University is a private research and teaching university. The school combines innovative teaching and pioneering research in a highly collaborative environment that transcends traditional academic boundaries. The university’s twelve schools and colleges span disciplines from arts, sciences and communication to social policy, medicine, and music. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/psu\"><span>Penn State University</span></a><span>: Penn State was chartered in 1855 as one of the nation’s first colleges of agricultural science. Today, the institution has a broader mission of teaching, research, and public service, with an emphasis on encouraging student leadership with a global perspective. Annual enrollment at the school’s University Park campus totals more than 44,000 undergraduate and graduate students, making it one of the largest universities in the United States.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rutgers\"><span>Rutgers University</span></a><span>: Rutgers is the sole university in the United States that is a colonial college, a land-grant institution, and a public university. Founded in 1766, the heart of the Rutgers mission is preparing students to become productive members of society and good citizens of the world. Rutgers teaches across the full educational spectrum: preschool to precollege; undergraduate to graduate and postdoctoral; and continuing education for professional and personal advancement.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsd\"><span>UC San Diego</span></a><span>: UC San Diego is an academic powerhouse and economic engine, recognized as one of the top 10 public universities by </span><span>U.S. News and World Report</span><span>. Innovation is central to the university, which takes pride in teaching students that knowledge isn&#8217;t just acquired in the classroom—life is their laboratory. The campus is committed to community engagement, public service and industry partnerships in order to advance the health and well-being of our region, state, nation and the world.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsc\"><span>UC Santa Cruz</span></a><span>: UC Santa Cruz is an outstanding public research university with a deep commitment to undergraduate education. The institution connects people and programs in unexpected ways while providing unparalleled opportunities for students to learn through hands-on experience. In its 45 years, UC Santa Cruz has earned national and international recognition for quality research and world-class teaching.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/boulder\"><span>University of Colorado, Boulder</span></a><span>: CU-Boulder is a dynamic community of scholars and learners on one of the most spectacular college campuses in the country. As one of 34 U.S. public institutions in the prestigious Association of American Universities (AAU), the school has a proud tradition of academic excellence, with five Nobel laureates and more than 50 members of prestigious academic academies.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rochester\"><span>University of Rochester</span></a><span>: The University of Rochester is one of the nation&#8217;s leading private universities. Located in Rochester, N.Y., the university provides exceptional opportunities for interdisciplinary study and close collaboration with faculty through its unique cluster-based curriculum. Its College, School of Arts and Sciences, and Hajim School of Engineering and Applied Sciences are complemented by its Eastman School of Music, Simon School of Business, Warner School of Education, Laboratory for Laser Energetics, School of Medicine and Dentistry, School of Nursing, Eastman Institute for Oral Health, and the Memorial Art Gallery.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/minnesota\"><span>University of Minnesota, Twin Cities</span></a><span>: The University of Minnesota is among the largest public research universities in the country, offering undergraduate, graduate, and professional students a multitude of opportunities for study and research. Located at the heart of one of the nation’s most vibrant, diverse metropolitan communities, students on the campuses in Minneapolis and St. Paul benefit from extensive partnerships with world-renowned health centers, international corporations, government agencies, and arts, nonprofit, and public service organizations.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/unc\"><span>University of North Carolina, Chapel Hill</span></a><span>: The University of North Carolina at Chapel Hill, the nation’s first public university, is known around the world for innovative teaching and research. Regularly ranked as the nation’s best value for academic quality, UNC has produced the most Rhodes Scholars for the past 25 years among U.S. public research universities.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/wisconsin\"><span>University of Wisconsin, Madison</span></a><span>: In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America&#8217;s great universities. A public, land-grant institution, UW–Madison offers a complete spectrum of liberal arts studies, professional programs and student activities. Many of its programs are hailed as world leaders in instruction, research and public service.</span></li>
+</ul>") (link nil "http://blog.coursera.org/post/44688625384") (guid nil "http://blog.coursera.org/post/44688625384") (pubDate nil "Wed, 06 Mar 2013 00:22:24 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "My Coursera Experience: Modern Poetry for a Physics Major") (description nil "<p><strong><strong><em>Editor’s Note: </em></strong></strong><strong><strong><em>This is the third in a series of guest posts from Courserians, called “My Coursera Experience”.</em></strong></strong></p>
+<p><span>My name is Ines Cifuentes. I am 58 and living with Stage 4 breast cancer. One of the tough things about advanced cancer is how much it takes away. My days are long as I can no longer work.</span></p>
+<p><span>I took the Coursera course, &#8220;Modern and Contemporary American Poetry&#8221;, taught by Al Filreis of the University of Pennsylvania. I chose it because as a physics major in college I didn&#8217;t have time to take a poetry course. When I saw that we would be reading William Carlos Williams, one of my favorite poets, I signed up. I didn&#8217;t learn about Coursera until the course had already started so I began the third week in and tried to catch up. I never did; I am now signed up to take it again in September. I am very happy that I can do that. And they are adding Wallace Stevens!</span></p>
+<p><span>It was wonderful to be able to take a class on poetry taught by a fabulous teacher and a great group of TA&#8217;s. </span><span>I was impressed by how Professor Filreis used a variety of instructional strategies and technology to create a community of learners.</span></p>
+<p><span>The TA&#8217;s were great and they provided an in-house classroom that we could all watch and be a part of. We learned from watching and listening to them how to read poems closely and talk about them. The class included weekly live webcasts, online readings of the poems, quizzes and writing assignments. Participants joined online forums and in some parts of the world met in person. In the last live webcast several students talked about how the course was transformative. </span></p>
+<p><span>In my experience one is lucky to have a teacher who is passionate about what s/he studies and wants to share it with you. Al Filreis does that with modern poetry. His enthusiasm is infectious and his deep knowledge of literature reminds us that reading poetry matters in life.</span></p>") (link nil "http://blog.coursera.org/post/44385047250") (guid nil "http://blog.coursera.org/post/44385047250") (pubDate nil "Sat, 02 Mar 2013 13:22:41 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "Bienvenidos A Las Nuevas Universidades de Latinoamérica") (description nil "<p><br/>Two new universities joining Coursera are particularly exciting for two reasons: (1) they’re the first universities on Coursera located in Latin America, and (2) both universities will be offering select courses in Spanish! <br/><br/><a href=\"https://www.coursera.org/unam\">The Universidad Nacional Autónoma de México</a> and <a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a> are extremely high-ranking and well-respected universities located in Mexico, and will be offering classes across a broad range of disciplines. Here’s some more information about the schools:<br/><br/></p>
+<ul><li><a href=\"https://www.coursera.org/unam\">Universidad Nacional Autónoma de México:</a> Universidad Nacional Autónoma de México was founded in 1551,and is the only university in Mexico with Nobel Prize laureates among its alumni. The institution’s primary purpose is to serve the country and humanity, train professionals useful to society, organize and conduct research (mainly on national problems and conditions) and spread cultural benefits.</li>
+</ul>
+<ul><li><a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a>: Tecnológico de Monterrey is one of the largest private, non-profit educational institutions in Latin America, with over 90,000 students at the high school, undergraduate, and graduate levels. The school is known for becoming the first university ever connected to the Internet in Latin America!</li>
+</ul><p> </p>
+<p>If you want to learn more about Latin America, you might be interested in signing up for Tecnológico de Monterrey’s <a href=\"https://www.coursera.org/course/latinamericanculture\">Latin American Culture</a> course!</p>") (link nil "http://blog.coursera.org/post/44227940791") (guid nil "http://blog.coursera.org/post/44227940791") (pubDate nil "Thu, 28 Feb 2013 13:09:00 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "University Spotlight: Take Courses from the #1 Business School in Europe") (description nil "<p><strong id=\"internal-source-marker_0.32612958922982216\"><span>We offer </span><a href=\"https://www.coursera.org/category/business\"><span>Business &amp; Management</span></a><span> courses from universities around the world, including courses from the newest universities to join Coursera. These courses cover everything from business strategy and leadership to finance and operations management. </span><br/><span></span><br/><span>Today, we’d like to share a little more information about </span><a href=\"https://www.coursera.org/ie\"><span>IE Business School in Spain</span></a><span>, which was ranked the #1 business school in Europe by the </span><a href=\"http://rankings.ft.com/businessschoolrankings/european-business-school-rankings-2012\"><span>Financial Times</span></a><span> last year! </span><br/><span></span><br/><span>IE is dedicated to educating business leaders around the world, with core values of global focus, entrepreneurial spirit, and a humanistic approach to learning. They have an international faculty with more than 500 professors; and their alumni (numbering more than 40,000) hold management positions in 100+ countries around the world.</span><br/><span></span><br/><span>The two courses IE currently lists are </span><a href=\"https://www.coursera.org/course/criticalmanagement\"><span>Critical Perspectives on Management</span></a><span> (which will begin in Fall 2013) and </span><a href=\"https://www.coursera.org/course/econpolicy\"><span>Undertaking Economic Policymaking</span></a><span> (start date to be announced). </span></strong></p>") (link nil "http://blog.coursera.org/post/44110657467") (guid nil "http://blog.coursera.org/post/44110657467") (pubDate nil "Tue, 26 Feb 2013 21:40:17 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "University Spotlight: Learn from Top Universities in Hong Kong, Taiwan, Singapore and Japan") (description nil "<p><br/><span>In September 2012, </span><a href=\"http://www.ust.hk/eng/news/press_20120919-978.html\"><span>we announced</span></a><span> that courses from </span><a href=\"https://www.coursera.org/hkust\"><span>The Hong Kong University of Science and Technology</span></a><span> would be joining the Coursera platform. Now, we’re excited to welcome four more schools from Asia to our community! These universities will be offering courses across all disciplines, and select courses will be taught in Chinese.  </span><br/><span></span><br/><span>Learn more about these universities below: </span><br/><span></span></p>
+<ul><li><a href=\"https://www.coursera.org/cuhk\"><span>The Chinese University of Hong Kong</span><span>:</span><span> </span></a><span>Founded in 1963, The Chinese University of Hong Kong (CUHK) is a forward looking comprehensive research university. With the motto, “Through learning and temperance to virtue,” the university has a global vision and mission to nurture students with both specialized knowledge and wisdom for life. CUHK teachers and students hail from all corners of the world. <br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/taiwan\"><span>National Taiwan University</span></a><span>:</span><span>  National Taiwan University’s motto is “Cultivate virtue, advance intellect; love one&#8217;s country, love one&#8217;s people.” The school firmly believes that open access to learning is a powerful socioeconomic equalizer. By offering quality university courses to the Chinese-speaking population, they hope to transform the rich rewards of learning from a limited commodity to an experience available to all.<br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/nus\"><span>National University of Singapore</span></a><span>: The National University of Singapore is Singapore’s flagship university, and offers a global approach to education and research with a focus on Asian perspectives and expertise. Its transformative education includes a broad-based curriculum underscored by multi-disciplinary courses and cross-faculty enrichment; the institution aims to have a “no walls” culture and a spirit of enterprise which strives for positive influence and impact through education, research, and service.</span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/todai\"><span>University of Tokyo, Japan</span></a><span>: The University of Tokyo, also known as &#8220;Todai,&#8221; was established in 1877 as the first national university in Japan. As a leading research university, Todai is committed to fulfilling its public responsibility through academic research and by fostering new talent, thus providing a reliable compass to the future. The school offers courses in essentially all academic disciplines at both undergraduate and graduate levels and conducts research across the full spectrum of academic activity.</span></li>
+</ul>") (link nil "http://blog.coursera.org/post/44026583687") (guid nil "http://blog.coursera.org/post/44026583687") (pubDate nil "Mon, 25 Feb 2013 20:33:28 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "Why not an option for online chat/conversation for a course ?") (description nil "<p>We’ve gotten a lot of good ideas on how to make the coursera experience more interactive, thank you for this suggestion!</p>") (link nil "http://blog.coursera.org/post/44025356473") (guid nil "http://blog.coursera.org/post/44025356473") (pubDate nil "Mon, 25 Feb 2013 20:18:55 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "Please create calendar events for each course. As a working professional, I create manually calendar events for my courses, I have enrolled for the coming months. It would be great if you can create google calendar/ iCal events for us.") (description nil "<p>Thank you for the feedback, great suggestions!</p>") (link nil "http://blog.coursera.org/post/44025316210") (guid nil "http://blog.coursera.org/post/44025316210") (pubDate nil "Mon, 25 Feb 2013 20:18:28 -0500") (dc:creator nil "helloyinner")) (item nil (title nil "University Spotlight: Exploring Art and Music on Coursera") (description nil "<p><strong><span>Some people hear the phrase “online education” and think it refers to engineering, programming, math and science courses. If you’ve ever browsed our </span><a href=\"https://www.coursera.org/courses\"><span>course list</span></a><span>, you’ll notice that we offer a neat group of humanities courses, ranging from history to literature. We’ve also been working with some of the most well-known universities that specialize in the arts and music. In September 2012, </span><a href=\"http://www.marketwire.com/press-release/berklee-college-music-brown-columbia-emory-hebrew-university-jerusalem-hong-kong-university-1703075.htm\"><span>we announced</span></a><span> that </span><a href=\"https://www.coursera.org/berklee\"><span>Berklee College of Music</span></a><span> would be offering courses like </span><a href=\"https://www.coursera.org/course/songwriting\"><span>Songwriting</span></a><span> and </span><a href=\"https://www.coursera.org/course/guitar\"><span>Introduction to Guitar</span></a><span>; you can now sign up for those courses, which start on either March 1 or April 22, depending on the class.</span><br/><span></span><br/><span>Included in our </span><a href=\"http://blog.coursera.org/post/43625628117/29-new-schools-92-new-courses-5-languages-4\"><span>recent addition</span></a><span> of 29 new universities are California Institute of the Arts and Curtis Institute of Music, two highly ranked institutions that offer students creative courses in subjects like dance and performing arts, history of art and music and digital art. Here’s some more information about the universities:  </span><br/><span></span><br/></strong></p>
+<ul><li><a href=\"https://www.coursera.org/calarts\"><span>California Institute of the Arts</span></a><span>:</span><span> Established in 1970, California Institute of the Arts has been ranked as America’s top college for students in the arts by </span><a href=\"http://calarts.edu/news/2011-sep-1/calarts-ranked-number-1-newsweekdaily-beast\"><span>Newsweek/The Daily Beast</span></a><span>. The school champions creative excellence, critical reflection, and the development of new forms and expressions.</span></li>
+</ul><ul><li><a href=\"https://www.coursera.org/curtis\"><span>Curtis Institute of Music</span></a><span>:</span><span> Curtis has been educating and training musicians for careers as performing artists on the highest professional level since its founding in 1924. As a forward-thinking institution, Curtis is on a mission to spread the word about classical music, opening up their normally selective enrollment (which hovers around 165 students) to the Coursera community.</span></li>
+</ul><p><strong id=\"internal-source-marker_0.31701326137408614\"><span></span><br/><span>Whether you’re an artist, music enthusiast or someone just looking to explore your creativity, be sure to browse and sign up for some of the many Coursera classes in <a href=\"https://www.coursera.org/category/arts\">arts</a> and <a href=\"https://www.coursera.org/category/music\">music</a>!</span><span><br/></span></strong></p>") (link nil "http://blog.coursera.org/post/43797242088") (guid nil "http://blog.coursera.org/post/43797242088") (pubDate nil "Sat, 23 Feb 2013 07:00:00 -0500") (dc:creator nil "helloyinner")))) ("Stay on Track with the Deadlines Calendar Feature!" "<i>Editor’s Note: <a href=\"http://www.pamelafox.org\">Pamela Fox</a> is Coursera’s Lead Student Team Engineer.  Here is her post about a useful new Coursera feature called “Deadline Calendar”!</i><br/><br/><p>
+I know it’s a matter of much debate, but I personally love that Coursera
+classes actually impose schedules and deadlines on students.
+I have a lot of things I want to get done in life, and if I don’t have a deadline for them,
+I don’t accomplish 99% of them. There’s always something else that needs to be done first, you know?
+</p>
+<p>
+But I hate the feeling of missing a deadline in a class, especially if I’ve been meeting all the deadlines
+for a few weeks and been feeling good about my steak of good-student-ness. It’s that sudden, sinking feeling of
+“Awww, man, why didn’t I remember that an hour ago?” that can throw off your motivation for the rest of the class.
+</p>
+<p>
+So we have been working on ways to make it easier for all of us to remember our deadlines,
+because we think there should be less sinking feelings in the world. <br/><br/>Over the last week,
+we’ve started enabling a new feature in our classes: Deadlines Calendar. <br/><br/><img src=\"http://media.tumblr.com/351b03b68c87dfcaff6a2a8201095f90/tumblr_inline_ml288q9wft1qz4rgp.png\" width=\"200\" alt=\"image\"/><br/>We’re outputting
+the deadlines for all the currently opened quizzes, assignments, homeworks, exams, and assessments,
+in the ICS or “iCal” format. This is a standard format that’s supported by many calendaring applications,
+notably the two most popular: Google Calendar and iCal, so that you can visualize the deadlines alongside
+your other very important life events.
+</p>
+<p>
+<b>Here is how it works</b>: <br/><br/>
+1. If the calendar is available for your class, you’ll see it on the sidebar underneath the upcoming
+deadlines on the main page:<br/><br/><img src=\"http://media.tumblr.com/28a6a80fec1599257d33fba61faacad4/tumblr_inline_ml27rugUeP1qz4rgp.png\" alt=\"image\"/></p>
+<p>
+2. When you click that link, you’ll be brought to a page with instructions on how to use the iCal
+file in Google Calendar and iCal.
+</p>
+<p>
+3. Once I followed those instructions, here’s what my calendar looked like with Dan Ariely’s
+class added (and yes, I’m happy to report that I already finished this week’s quizzes!): <br/><br/><img src=\"http://media.tumblr.com/49676c21262457becb56e7e444702503/tumblr_inline_ml27fpsaL31qz4rgp.png\" alt=\"image\"/></p>
+<p>
+4. I also followed the last step to set notifications on that calendar so that I’ll automatically get an email a day before: <br/><br/><img src=\"http://media.tumblr.com/53aadcc7dbb25e6ec0832adee883cef0/tumblr_inline_ml27g4mgzt1qz4rgp.png\" alt=\"image\"/></p>
+<p>
+Please try it out and let us know what you think. Hopefully it helps you plan and prioritize your life better,
+so that you can be a (bum ba BUM BUM) super student!
+</p>" "http://blog.coursera.org/post/47649042190" (20837 57808) old 2 nil nil ((title nil "Stay on Track with the Deadlines Calendar Feature!") (description nil "<i>Editor&#8217;s Note: <a href=\"http://www.pamelafox.org\">Pamela Fox</a> is Coursera’s Lead Student Team Engineer.  Here is her post about a useful new Coursera feature called &#8220;Deadline Calendar&#8221;!</i><br/><br/><p>
+I know it&#8217;s a matter of much debate, but I personally love that Coursera 
+classes actually impose schedules and deadlines on students. 
+I have a lot of things I want to get done in life, and if I don&#8217;t have a deadline for them, 
+I don&#8217;t accomplish 99% of them. There&#8217;s always something else that needs to be done first, you know?
+</p>
+
+<p>
+But I hate the feeling of missing a deadline in a class, especially if I&#8217;ve been meeting all the deadlines 
+for a few weeks and been feeling good about my steak of good-student-ness. It&#8217;s that sudden, sinking feeling of 
+&#8220;Awww, man, why didn&#8217;t I remember that an hour ago?&#8221; that can throw off your motivation for the rest of the class. 
+</p>
+
+<p>
+So we have been working on ways to make it easier for all of us to remember our deadlines, 
+because we think there should be less sinking feelings in the world. <br/><br/>Over the last week, 
+we&#8217;ve started enabling a new feature in our classes: Deadlines Calendar. <br/><br/><img src=\"http://media.tumblr.com/351b03b68c87dfcaff6a2a8201095f90/tumblr_inline_ml288q9wft1qz4rgp.png\" width=\"200\" alt=\"image\"/><br/>We&#8217;re outputting 
+the deadlines for all the currently opened quizzes, assignments, homeworks, exams, and assessments, 
+in the ICS or &#8220;iCal&#8221; format. This is a standard format that&#8217;s supported by many calendaring applications, 
+notably the two most popular: Google Calendar and iCal, so that you can visualize the deadlines alongside 
+your other very important life events.
+</p>
+
+<p>
+<b>Here is how it works</b>: <br/><br/>
+1. If the calendar is available for your class, you&#8217;ll see it on the sidebar underneath the upcoming 
+deadlines on the main page:<br/><br/><img src=\"http://media.tumblr.com/28a6a80fec1599257d33fba61faacad4/tumblr_inline_ml27rugUeP1qz4rgp.png\" alt=\"image\"/></p>
+
+<p>
+2. When you click that link, you&#8217;ll be brought to a page with instructions on how to use the iCal
+file in Google Calendar and iCal.
+</p>
+
+<p>
+3. Once I followed those instructions, here&#8217;s what my calendar looked like with Dan Ariely&#8217;s 
+class added (and yes, I&#8217;m happy to report that I already finished this week&#8217;s quizzes!): <br/><br/><img src=\"http://media.tumblr.com/49676c21262457becb56e7e444702503/tumblr_inline_ml27fpsaL31qz4rgp.png\" alt=\"image\"/></p>
+
+<p>
+4. I also followed the last step to set notifications on that calendar so that I&#8217;ll automatically get an email a day before: <br/><br/><img src=\"http://media.tumblr.com/53aadcc7dbb25e6ec0832adee883cef0/tumblr_inline_ml27g4mgzt1qz4rgp.png\" alt=\"image\"/></p>
+<p>
+Please try it out and let us know what you think. Hopefully it helps you plan and prioritize your life better, 
+so that you can be a (bum ba BUM BUM) super student!
+</p>") (link nil "http://blog.coursera.org/post/47649042190") (guid nil "http://blog.coursera.org/post/47649042190") (pubDate nil "Wed, 10 Apr 2013 18:04:00 -0400") (dc:creator nil "helloyinner"))) ("A Pilot Translation Collaboration with Digital October in Russia" "<p><span>Coursera’s mission is “learning without limits by connecting the world to a great education.” One way we are accomplishing this goal is by making select course lectures subtitles available in different languages.</span></p>
+<p><span>Since January 2013, Coursera has received more than 1.1 million unique visitors from Russia, and today, we’re </span><span>excited to announce a collaboration pilot </span><span>with <a href=\"http://www.digitaloctober.com\">Digital October</a>, a center for new technology and entrepreneurship located in the heart of Moscow. We’ll be working with Digital October to bring more courses to Russian-speaking students, starting with University of Pennsylvania’s popular course on </span><a href=\"https://www.coursera.org/course/gamification\"><span>Gamification</span></a><span>, taught by <a href=\"https://twitter.com/kwerb\">Kevin Werbach</a>.</span></p>
+<p></p><center><strong><img src=\"http://media.tumblr.com/e8f9214de612025259aeb925ac07f6dd/tumblr_inline_mkzul23c6B1qz4rgp.png\" alt=\"image\" width=\"350\"/></strong></center>
+<p><span>The Digital October team has already begun translating subtitles for this course.  They will also translate a talk that Kevin Werbach is giving today called the “Shall We Play,” available on </span><a href=\"http://knowledgestream.ru/en\"><span>KnowledgeStream</span></a><span>, an online distance-learning initiative run by Digital October.</span></p>
+<p><i>You can <a href=\"http://digitaloctober.com/events/knowledge_stream_biznes_poigraem\">watch</a> Professor Werbach’s talk live at 9AM PT this morning</i>.</p>
+<p><span>In addition to translating courses, Digital October will also host in-person meet-ups for Russia-based Courserians, beginning with a in-person meet-up for Gamification students at the Digital October headquarters soon.  “We hope that this is only the beginning,” says Yulia Lesnikova, Director of Educational Programs at Digital October.</span></p>
+<p><br/><span>Digital October describes themselves as a place “where great content meets great people.”  Like Coursera, they believe that knowledge should be available to everyone, regardless of location, income, language, age or gender.  We are excited to be working together on this pilot. </span></p>" "http://blog.coursera.org/post/47541935276" (20836 11924) old 3 nil nil ((title nil "A Pilot Translation Collaboration with Digital October in Russia") (description nil "<p><span>Coursera’s mission is “learning without limits by connecting the world to a great education.” One way we are accomplishing this goal is by making select course lectures subtitles available in different languages.</span></p>
+<p><span>Since January 2013, Coursera has received more than 1.1 million unique visitors from Russia, and today, we’re </span><span>excited to announce a collaboration pilot </span><span>with <a href=\"http://www.digitaloctober.com\">Digital October</a>, a center for new technology and entrepreneurship located in the heart of Moscow. We’ll be working with Digital October to bring more courses to Russian-speaking students, starting with University of Pennsylvania’s popular course on </span><a href=\"https://www.coursera.org/course/gamification\"><span>Gamification</span></a><span>, taught by <a href=\"https://twitter.com/kwerb\">Kevin Werbach</a>.</span></p>
+
+<p></p><center><strong><img src=\"http://media.tumblr.com/e8f9214de612025259aeb925ac07f6dd/tumblr_inline_mkzul23c6B1qz4rgp.png\" alt=\"image\" width=\"350\"/></strong></center>
+<p><span>The Digital October team has already begun translating subtitles for this course.  They will also translate a talk that Kevin Werbach is giving today called the “Shall We Play,” available on </span><a href=\"http://knowledgestream.ru/en\"><span>KnowledgeStream</span></a><span>, an online distance-learning initiative run by Digital October.</span></p>
+<p><i>You can <a href=\"http://digitaloctober.com/events/knowledge_stream_biznes_poigraem\">watch</a> Professor Werbach&#8217;s talk live at 9AM PT this morning</i>.</p>
+<p><span>In addition to translating courses, Digital October will also host in-person meet-ups for Russia-based Courserians, beginning with a in-person meet-up for Gamification students at the Digital October headquarters soon.  “We hope that this is only the beginning,” says Yulia Lesnikova, Director of Educational Programs at Digital October.</span></p>
+<p><br/><span>Digital October describes themselves as a place “where great content meets great people.”  Like Coursera, they believe that knowledge should be available to everyone, regardless of location, income, language, age or gender.  We are excited to be working together on this pilot. </span></p>") (link nil "http://blog.coursera.org/post/47541935276") (guid nil "http://blog.coursera.org/post/47541935276") (pubDate nil "Tue, 09 Apr 2013 11:07:00 -0400") (dc:creator nil "helloyinner"))) ("One of Coursera's Most Highly Anticipated Courses Is Finally Here!" "<p>Never before have so many <a href=\"http://www.coursera.org/team\">Coursera Team members</a> all enrolled for the same course… until now.  We are so thrilled to introduce to you a new course from world-renowned anthropologist, Phineas Dunne.  It is called <a href=\"http://bit.ly/YPz96z\">Underwater Basketweaving</a>.
+<br/><br/></p><center>
+<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/l1Vvyu99GxA\" frameborder=\"0\"></iframe><br/><br/></center>
+In this course, you will learn to weave beautiful, structurally superior wet-weave baskets in the ancient Aquacamamata style. Underwater basket weaving is a craft that seamlessly merges scientific intellectualism, manual dexterity, and deep spiritual engagement. We look forward to having you with us on this exciting journey into art and anthropology!
+<br/><br/>
+This course will consist of short lecture and demonstration videos, between 8 and 10 minutes in length, short quizzes, and practical weaving exercises. Course officially starts soon.  <font color=\"maroon\">Make sure you sign up and tell your friends, as this course is surely one of the most highly anticipated courses we have ever had.  The first 1000 students may be chosen to participate in a real life research project with the Professor!</font>
+<center><br/><br/><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"http://bit.ly/YPz96z\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll Now!</a></div></center>" "http://blog.coursera.org/post/46726153527" (20823 42372) old 4 nil nil ((title nil "One of Coursera's Most Highly Anticipated Courses Is Finally Here!") (description nil "<p>Never before have so many <a href=\"http://www.coursera.org/team\">Coursera Team members</a> all enrolled for the same course&#8230; until now.  We are so thrilled to introduce to you a new course from world-renowned anthropologist, Phineas Dunne.  It is called <a href=\"http://bit.ly/YPz96z\">Underwater Basketweaving</a>. 
+<br/><br/></p><center>
+<iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/l1Vvyu99GxA\" frameborder=\"0\"></iframe><br/><br/></center>
+In this course, you will learn to weave beautiful, structurally superior wet-weave baskets in the ancient Aquacamamata style. Underwater basket weaving is a craft that seamlessly merges scientific intellectualism, manual dexterity, and deep spiritual engagement. We look forward to having you with us on this exciting journey into art and anthropology!
+<br/><br/>
+This course will consist of short lecture and demonstration videos, between 8 and 10 minutes in length, short quizzes, and practical weaving exercises. Course officially starts soon.  <font color=\"maroon\">Make sure you sign up and tell your friends, as this course is surely one of the most highly anticipated courses we have ever had.  The first 1000 students may be chosen to participate in a real life research project with the Professor!</font>
+<center><br/><br/><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"http://bit.ly/YPz96z\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll Now!</a></div></center>") (link nil "http://blog.coursera.org/post/46726153527") (guid nil "http://blog.coursera.org/post/46726153527") (pubDate nil "Sat, 30 Mar 2013 22:55:00 -0400") (dc:creator nil "helloyinner"))) ("The 1 Year MOOC BA Experiment: Degree of Freedom" "<p><i><b>Editor’s note: Jonathan Haber is a Courserian who is taking classes for 12 months on Coursera to experiment with a project of his called “Degree of Freedom”.  He will be guest blogging on our site throughout this next year to keep us up-to-date on his progress!<br/><br/></b></i>
+Greetings fellow Courserians!
+<br/><br/>
+Like you, I am enjoying the thrill of learning new things from some of the world’s best professors for
+free. But, unlike you, I may be taking more courses than would generally be considered healthy.
+<br/><br/>
+You see, I decided earlier this year to try my own experiment within the greater MOOC experiment and
+find out if it’s possible to learn as much as I’d get out of a four year liberal arts degree in just twelve
+months using entirely free learning tools like Coursera.
+<br/><br/>
+At my <a href=\"http://degreeoffreedom.org/\">Degree of Freedom</a> web site, I’ve been writing about the experience in order to help students,
+teachers, educational technology providers, and policy makers understand what works and what still
+needs work in different areas of massive online learning.
+<br/><br/>
+But while my site is communicating with many audiences, the kind folks at Coursera thought it would be
+valuable to share insights with fellow students regarding how to get the most out of their own MOOC
+experiences. Which is why I’ll be visiting the Coursera blog semi-regularly to offer suggestions on how to
+maximize success (which really translates to maximizing learning) based on what I discover as I continue
+to cram four years of college into a single year.
+<br/><br/>
+Here’s a video to give you an idea of what I look like…
+<br/><br/><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/z2znYceI0Ys\" frameborder=\"0\"></iframe>
+<br/><br/>
+As you can see, I’m old enough to have gone to a traditional brick-and-mortar college (during a decade
+when we still used typewriters – albeit electric ones). Which has helped me identity a key theme for
+success in online learning that will inform most of the things I’ll be sharing with you over the coming
+months.
+<br/><br/>
+It’s kind of a cliché to say that you get as much out of college as you put into it, but this seemingly
+trite observation becomes critical in an online world where classroom attendance and attentiveness,
+dedication to keeping up with reading, and a commitment to doing your best on homework, tests,
+papers and other types of assignments are all in your hands.
+<br/><br/>
+I’ll be talking about what this translates to over the coming months, but in the meantime you should be
+thinking about not just what Coursera can do for you, but what you can do to maximize your own self-
+motivated learning experience.</p>" "http://blog.coursera.org/post/46610254827" (20821 56953) old 5 nil nil ((title nil "The 1 Year MOOC BA Experiment: Degree of Freedom") (description nil "<p><i><b>Editor&#8217;s note: Jonathan Haber is a Courserian who is taking classes for 12 months on Coursera to experiment with a project of his called &#8220;Degree of Freedom&#8221;.  He will be guest blogging on our site throughout this next year to keep us up-to-date on his progress!<br/><br/></b></i>
+Greetings fellow Courserians!
+<br/><br/>
+Like you, I am enjoying the thrill of learning new things from some of the world&#8217;s best professors for
+free. But, unlike you, I may be taking more courses than would generally be considered healthy.
+<br/><br/>
+You see, I decided earlier this year to try my own experiment within the greater MOOC experiment and
+find out if it&#8217;s possible to learn as much as I&#8217;d get out of a four year liberal arts degree in just twelve
+months using entirely free learning tools like Coursera.
+<br/><br/>
+At my <a href=\"http://degreeoffreedom.org/\">Degree of Freedom</a> web site, I&#8217;ve been writing about the experience in order to help students,
+teachers, educational technology providers, and policy makers understand what works and what still
+needs work in different areas of massive online learning.
+<br/><br/>
+But while my site is communicating with many audiences, the kind folks at Coursera thought it would be
+valuable to share insights with fellow students regarding how to get the most out of their own MOOC
+experiences. Which is why I&#8217;ll be visiting the Coursera blog semi-regularly to offer suggestions on how to
+maximize success (which really translates to maximizing learning) based on what I discover as I continue
+to cram four years of college into a single year.
+<br/><br/>
+Here&#8217;s a video to give you an idea of what I look like…
+<br/><br/><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/z2znYceI0Ys\" frameborder=\"0\"></iframe>
+
+<br/><br/>
+As you can see, I&#8217;m old enough to have gone to a traditional brick-and-mortar college (during a decade
+when we still used typewriters – albeit electric ones). Which has helped me identity a key theme for
+success in online learning that will inform most of the things I&#8217;ll be sharing with you over the coming
+months.
+<br/><br/>
+It&#8217;s kind of a cliché to say that you get as much out of college as you put into it, but this seemingly
+trite observation becomes critical in an online world where classroom attendance and attentiveness,
+dedication to keeping up with reading, and a commitment to doing your best on homework, tests,
+papers and other types of assignments are all in your hands.
+<br/><br/>
+I&#8217;ll be talking about what this translates to over the coming months, but in the meantime you should be
+thinking about not just what Coursera can do for you, but what you can do to maximize your own self-
+motivated learning experience.</p>") (link nil "http://blog.coursera.org/post/46610254827") (guid nil "http://blog.coursera.org/post/46610254827") (pubDate nil "Fri, 29 Mar 2013 14:33:29 -0400") (dc:creator nil "helloyinner"))) ("An Easier Way to Find Yourselves in the Forums" "<b><i>Editor’s Note: Coursera’s Lead Student Team Engineer <a href=\"http://www.pamelafox.org\">Pamela Fox</a> shares with us a useful new Coursera feature: Forum Activity Profiles!<br/><br/></i></b><p>
+I have to admit something embarrassing that all of our active forum participants know: before this week, the only way to find your posts or the posts of classmates in the forums was to search by name (or to keep a long list of browser bookmarks).
+</p>
+<p>
+We know that you are all really keen to keep up to date with the threads you’re participating in, and to find interesting posts by your classmates, so we’ve rolled out new functionality this week to make that all easier for you.
+</p>
+<h3>Forum Activity Profiles</h3>
+<p>
+For every student that participates in the forums, we’ve created a forum profile with their name, link to Coursera profile (if they’ve made one), and a list of their most recent threads, posts, and comments. There’s also an option to browse back further, for those prolific posters.
+</p>
+<p>Here’s what the forum profile looks like for Joe Warren, a professor from our Interactive Python course that loves to answer questions and give students more challenges:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/~_6z_6c6tmyl.png\" alt=\"screenshot of Joe's forum profile\" style=\"border:1px solid #ccc\"/></p>
+<h3>Your Own Activity</h3>
+<p>
+We’ve added a quick link for your own profile to the forums. Just visit the main page of the forums and click “View your own activity”:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/2bit~ni6oz5u.png\" alt=\"screenshot of link to your own profile\" style=\"border:1px solid #ccc\"/></p>
+<p>Like always, we will continue looking for ways to make it easier for you to learn with eachother.</p>" "http://blog.coursera.org/post/46449155066" (20819 26116) old 6 nil nil ((title nil "An Easier Way to Find Yourselves in the Forums") (description nil "<b><i>Editor’s Note: Coursera’s Lead Student Team Engineer <a href=\"http://www.pamelafox.org\">Pamela Fox</a> shares with us a useful new Coursera feature: Forum Activity Profiles!<br/><br/></i></b><p>
+I have to admit something embarrassing that all of our active forum participants know: before this week, the only way to find your posts or the posts of classmates in the forums was to search by name (or to keep a long list of browser bookmarks). 
+</p>
+<p>
+We know that you are all really keen to keep up to date with the threads you&#8217;re participating in, and to find interesting posts by your classmates, so we&#8217;ve rolled out new functionality this week to make that all easier for you.
+</p>
+
+<h3>Forum Activity Profiles</h3>
+
+<p>
+For every student that participates in the forums, we&#8217;ve created a forum profile with their name, link to Coursera profile (if they&#8217;ve made one), and a list of their most recent threads, posts, and comments. There&#8217;s also an option to browse back further, for those prolific posters.
+</p>
+<p>Here&#8217;s what the forum profile looks like for Joe Warren, a professor from our Interactive Python course that loves to answer questions and give students more challenges:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/~_6z_6c6tmyl.png\" alt=\"screenshot of Joe's forum profile\" style=\"border:1px solid #ccc\"/></p>
+
+<h3>Your Own Activity</h3>
+
+<p>
+We&#8217;ve added a quick link for your own profile to the forums. Just visit the main page of the forums and click &#8220;View your own activity&#8221;:
+<br/><br/><img src=\"http://dl.dropbox.com/u/10998095/Screenshots/2bit~ni6oz5u.png\" alt=\"screenshot of link to your own profile\" style=\"border:1px solid #ccc\"/></p>
+
+<p>Like always, we will continue looking for ways to make it easier for you to learn with eachother.</p>") (link nil "http://blog.coursera.org/post/46449155066") (guid nil "http://blog.coursera.org/post/46449155066") (pubDate nil "Wed, 27 Mar 2013 17:35:00 -0400") (dc:creator nil "helloyinner"))) ("Our New Front Page: So Fresh and So Clean!" "<i><b>Editor’s Note:  Coursera’s Lead Student Team Engineer <a href=\"http://www.pamelafox.org/\">Pamela Fox</a> shares her reflections on our <a href=\"http://www.coursera.org\">front page’s</a> new look!</b></i><br/><br/><p>I joined Coursera wayyyyy back in the day, almost a year ago, and I remember
+my first project was to redesign our front page in anticipation of our upcoming growth
+from 4 to 17 universities. So many! How would we showcase them all?! But hey, I figured it out and we moved on.
+</p>
+<p>
+We’ve grown quite a bit since then and we’re now up to 62 universities and  320+ courses, plus we’ve added the options for
+Signature Track and ACE, all the while managing never to upgrade our poor year-old front page.
+By the time we realized it was high time for renovation, it was quite the “fixer-upper.”
+</p>
+<p>
+With the combined efforts of our designer Payam, our prolific intern Marc, and our newest
+full-time web engineer Josh, we crafted a new front page and browsing experience.
+Our new <a href=\"http://www.coursera.org/welcome\">front page</a> includes:
+<br/><br/>• A prominent
+search box, which takes potential students directly to our new course catalog.
+<br/>• A showcase of beautiful imagery from our universities (seriously, have you seen <a href=\"https://www.coursera.org/ep\">École Polytechnique</a>? I know where I’m traveling for next vacation).
+<br/>• A highlight of the courses that are starting soon as well as recently added courses.
+</p>
+<p>
+We hope that we can help students find what they’re looking for faster, because
+that means more students to learn alongside all of you. ☺
+</p>
+<center><img src=\"http://media.tumblr.com/7092ae9fe0ab4f16565c99e84411bca9/tumblr_inline_mk4vf1YNnV1qz4rgp.png\" alt=\"image\"/><br/><br/><a href=\"https://www.coursera.org/welcome\" style=\"font-size:20px;\">See Our New Front Page</a></center>" "http://blog.coursera.org/post/46173491209" (20815 14180) old 7 nil nil ((title nil "Our New Front Page: So Fresh and So Clean! ") (description nil "<i><b>Editor&#8217;s Note:  Coursera&#8217;s Lead Student Team Engineer <a href=\"http://www.pamelafox.org/\">Pamela Fox</a> shares her reflections on our <a href=\"http://www.coursera.org\">front page&#8217;s</a> new look!</b></i><br/><br/><p>I joined Coursera wayyyyy back in the day, almost a year ago, and I remember
+my first project was to redesign our front page in anticipation of our upcoming growth
+from 4 to 17 universities. So many! How would we showcase them all?! But hey, I figured it out and we moved on.
+</p>
+<p>
+We&#8217;ve grown quite a bit since then and we&#8217;re now up to 62 universities and  320+ courses, plus we&#8217;ve added the options for
+Signature Track and ACE, all the while managing never to upgrade our poor year-old front page.
+By the time we realized it was high time for renovation, it was quite the &#8220;fixer-upper.&#8221;
+</p>
+<p>
+With the combined efforts of our designer Payam, our prolific intern Marc, and our newest
+full-time web engineer Josh, we crafted a new front page and browsing experience.
+Our new <a href=\"http://www.coursera.org/welcome\">front page</a> includes:
+<br/><br/>• A prominent
+search box, which takes potential students directly to our new course catalog.
+<br/>• A showcase of beautiful imagery from our universities (seriously, have you seen <a href=\"https://www.coursera.org/ep\">École Polytechnique</a>? I know where I&#8217;m traveling for next vacation). 
+<br/>• A highlight of the courses that are starting soon as well as recently added courses.
+</p>
+<p>
+We hope that we can help students find what they&#8217;re looking for faster, because 
+that means more students to learn alongside all of you. ☺
+</p>
+<center><img src=\"http://media.tumblr.com/7092ae9fe0ab4f16565c99e84411bca9/tumblr_inline_mk4vf1YNnV1qz4rgp.png\" alt=\"image\"/><br/><br/><a href=\"https://www.coursera.org/welcome\" style=\"font-size:20px;\">See Our New Front Page</a></center>") (link nil "http://blog.coursera.org/post/46173491209") (guid nil "http://blog.coursera.org/post/46173491209") (pubDate nil "Sun, 24 Mar 2013 13:27:00 -0400") (dc:creator nil "helloyinner"))) ("My Coursera Experience: Empowering Local Communities through MOOC" "<p><i><b>Editor’s note:  Sharon Watkins is a Coursera student who runs an Ohio-based  Non-Profit <a href=\"http://www.spr.k12.oh.us/LearningCafe.cfm?subpage=1418\">“The Learning Cafe”</a>.  She’s empowering her local community by encouraging people to take courses together &amp; improve their careers.</b></i>
+</p><center><img src=\"http://media.tumblr.com/4aad7166bd9ebe66cb4f386bcde62cc3/tumblr_inline_mjzc80zIAu1qz4rgp.jpg\" alt=\"image\"/></center>
+The Learning Cafe (TLC) is an evening hours community ‘learning environment’ housed
+in our public high school located in a high poverty community. The purpose of our
+program is to raise community engagement in education by providing fresh enrichment
+and advancement learning opportunities.We do what many community schools do: offer
+a dinner, transportation, access to social services and childcare along with a wide range
+of classes. We want to entice reluctant learners back to school while we challenge our
+seasoned students with new learning choices as well.
+<br/><br/>
+My husband brought MOOC’s and Coursera to my attention last fall. We host TED
+Talk discussion groups at TLC and so I watched Daphne Koller’s talk on Coursera.
+This seemed a perfect option to offer. It was free. It honored and enticed our people by
+providing instruction from some of the best in our country. It offered not only knowledge
+but the potential to lead to additional learning or employment pursuits.
+<br/><br/>
+We marketed the opportunity for 3 months by word of mouth, online newsletters and
+general announcements throughout the community. I wanted to deliberately reach out to
+adults who did not have a college background and to high school students. I personally
+approached several folks and asked them to take the risk with me. We had 14 show up
+to our informational meeting and ended up with 10 who enrolled in the business class
+they selected. Their ages ranged from 16 to 70+ and all but two had no college degree.
+I hired a facilitator to assist. Of the 10 who initially enrolled, nine completed the class,
+8 took the exam and 6 passed the exam! Most of them are on low or fixed income - not
+the typical successful MOOC student. But they are eager, enthusiastic learners and
+their pride in doing this was inspiring! I was so excited to hear about what this meant to
+them!
+<br/><br/>
+Working as a cohort matters. Everyone talked about the importance of a peer group and
+the facilitator in helping them complete the course. We provided access to a computer
+lab several hours a week and worked hard to regularly encourage and follow up with
+our students. They have greater confidence now as learners. I will never forget their
+courage and joy when they finished and we celebrated together!<br/><br/>—<i>Sharon Watkins</i><br/><br/><i>If you’re interested in taking a business course like The Learning Cafe group did, please click below!
+<br/><br/><br/></i><center>
+<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=business\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Business Courses</a></div></center>" "http://blog.coursera.org/post/45931984951" (20811 26990) old 8 nil nil ((title nil "My Coursera Experience: Empowering Local Communities through MOOC") (description nil "<p><i><b>Editor&#8217;s note:  Sharon Watkins is a Coursera student who runs an Ohio-based  Non-Profit <a href=\"http://www.spr.k12.oh.us/LearningCafe.cfm?subpage=1418\">&#8220;The Learning Cafe&#8221;</a>.  She&#8217;s empowering her local community by encouraging people to take courses together &amp; improve their careers.</b></i>
+
+</p><center><img src=\"http://media.tumblr.com/4aad7166bd9ebe66cb4f386bcde62cc3/tumblr_inline_mjzc80zIAu1qz4rgp.jpg\" alt=\"image\"/></center>
+
+The Learning Cafe (TLC) is an evening hours community ‘learning environment’ housed
+in our public high school located in a high poverty community. The purpose of our
+program is to raise community engagement in education by providing fresh enrichment
+and advancement learning opportunities.We do what many community schools do: offer
+a dinner, transportation, access to social services and childcare along with a wide range
+of classes. We want to entice reluctant learners back to school while we challenge our
+seasoned students with new learning choices as well.
+<br/><br/>
+My husband brought MOOC’s and Coursera to my attention last fall. We host TED
+Talk discussion groups at TLC and so I watched Daphne Koller’s talk on Coursera.
+This seemed a perfect option to offer. It was free. It honored and enticed our people by
+providing instruction from some of the best in our country. It offered not only knowledge
+but the potential to lead to additional learning or employment pursuits.
+<br/><br/>
+We marketed the opportunity for 3 months by word of mouth, online newsletters and
+general announcements throughout the community. I wanted to deliberately reach out to
+adults who did not have a college background and to high school students. I personally
+approached several folks and asked them to take the risk with me. We had 14 show up
+to our informational meeting and ended up with 10 who enrolled in the business class
+they selected. Their ages ranged from 16 to 70+ and all but two had no college degree.
+I hired a facilitator to assist. Of the 10 who initially enrolled, nine completed the class,
+8 took the exam and 6 passed the exam! Most of them are on low or fixed income - not
+the typical successful MOOC student. But they are eager, enthusiastic learners and
+their pride in doing this was inspiring! I was so excited to hear about what this meant to
+them!
+<br/><br/>
+Working as a cohort matters. Everyone talked about the importance of a peer group and
+the facilitator in helping them complete the course. We provided access to a computer
+lab several hours a week and worked hard to regularly encourage and follow up with
+our students. They have greater confidence now as learners. I will never forget their
+courage and joy when they finished and we celebrated together!<br/><br/>&#8212;<i>Sharon Watkins</i><br/><br/><i>If you&#8217;re interested in taking a business course like The Learning Cafe group did, please click below!
+
+<br/><br/><br/></i><center>
+
+												<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=business\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Business Courses</a></div></center>") (link nil "http://blog.coursera.org/post/45931984951") (guid nil "http://blog.coursera.org/post/45931984951") (pubDate nil "Thu, 21 Mar 2013 16:11:26 -0400") (dc:creator nil "helloyinner"))) ("Dan Ariely's Course on \"A Beginner's Guide to Irrational Behavior\" Open for Enrollment!" "<p><center><img src=\"http://media.tumblr.com/dacc1a27f13823c9d1e52436361859f3/tumblr_inline_mjvb657xFs1qz4rgp.png\" alt=\"image\"/><br/></center>
+Professor of Psychology and Behavioral Economics at Duke, Dan Ariely is no ordinary man. With 70% of his body burned in an explosion when he was a teenager, a day in the life of Dan is plagued with aching limbs and hands that don’t always work, much less fit into ski gloves. But that doesn’t stop him from conquering the field of behavioral economics as the expert on all things “irrational.” One of the main themes in Dan’s research is the contrast between what a rational agent should do, at least according to standard economic theory, and how we humans actually behave. In his upcoming course on Coursera, “A Beginner’s Guide to Irrational Behavior,” Dan will provide an introduction to behavioral economics that makes you scratch your head and wonder why we act in the curious ways we do. How stable and consistent are our preferences? How do we think about money? How do we justify unethical behavior? What motivates us to work? How can we exhibit self-control in our lives? And what effect can emotion have on our behavior?
+<br/><br/>
+Back home in Durham, North Carolina, Dan is taking advantage of his experience with Coursera in a different way. At Duke, he is currently teaching an interdisciplinary undergraduate class that culminates in the production of MOOC-like material from the students themselves (<a href=\"http://today.duke.edu/2013/02/davidsonariely\" target=\"_blank\">which you can read about here</a>), and will experiment with the flipped classroom approach with his next batch of MBA students using the videos he created for Coursera to generate discussion in the classroom.
+<br/><br/>
+If you’re interested, you can check out Dan’s book bundle.  The bundle isn’t required for the course but provides an interesting perspective on irrational behavior.  They are available here: <a href=\"http://www.amazon.com/The-Irrational-Bundle-Irrationality-ebook/dp/B00BHEJ4IW/ref=sr_1_1?ie=UTF8&amp;qid=1363210779&amp;sr=8-1&amp;keywords=irrational+bundle&amp;tag=coursera-course123-20\" target=\"_blank\">Kindle</a>, <a href=\"http://www.barnesandnoble.com/w/the-irrational-bundle-dan-ariely/1114763210?ean=9780062288745\" target=\"_blank\">Nook</a>, <a href=\"https://itunes.apple.com/us/book/the-irrational-bundle/id606715318?mt=11\" target=\"_blank\">iBookstore</a>, <a href=\"http://www.kobobooks.com/ebook/The-Irrational-Bundle/book-EhitrXpidUq3OFuPXr1jQw/page1.html?s=dSd0sPFawEuz-tMJmjSZjQ&amp;r=1\" target=\"_blank\">Kobo</a>, or <a href=\"https://play.google.com/store/books/details/Dan_Ariely_Dan_Ariely_s_Irrational_Bundle?id=ogcCO9qMTCAC\" target=\"_blank\">Google</a>.
+<br/><br/>
+Want to learn more about the class? See the Course Introduction Video:<br/><br/><center><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/dzSfmkbQClk\" frameborder=\"0\"></iframe></center>
+<br/><br/>Although the course will formally begin next Monday, the site is already open for you to start! See you in class!
+<br/><br/><center>
+<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/behavioralecon\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll In Irrational Behavior Course</a></div></center></p>" "http://blog.coursera.org/post/45684999023" (20807 23068) old 9 nil nil ((title nil "Dan Ariely's Course on \"A Beginner's Guide to Irrational Behavior\" Open for Enrollment!") (description nil "<p><center><img src=\"http://media.tumblr.com/dacc1a27f13823c9d1e52436361859f3/tumblr_inline_mjvb657xFs1qz4rgp.png\" alt=\"image\"/><br/></center>
+
+Professor of Psychology and Behavioral Economics at Duke, Dan Ariely is no ordinary man. With 70% of his body burned in an explosion when he was a teenager, a day in the life of Dan is plagued with aching limbs and hands that don’t always work, much less fit into ski gloves. But that doesn’t stop him from conquering the field of behavioral economics as the expert on all things “irrational.” One of the main themes in Dan’s research is the contrast between what a rational agent should do, at least according to standard economic theory, and how we humans actually behave. In his upcoming course on Coursera, “A Beginner’s Guide to Irrational Behavior,” Dan will provide an introduction to behavioral economics that makes you scratch your head and wonder why we act in the curious ways we do. How stable and consistent are our preferences? How do we think about money? How do we justify unethical behavior? What motivates us to work? How can we exhibit self-control in our lives? And what effect can emotion have on our behavior?
+<br/><br/>
+Back home in Durham, North Carolina, Dan is taking advantage of his experience with Coursera in a different way. At Duke, he is currently teaching an interdisciplinary undergraduate class that culminates in the production of MOOC-like material from the students themselves (<a href=\"http://today.duke.edu/2013/02/davidsonariely\" target=\"_blank\">which you can read about here</a>), and will experiment with the flipped classroom approach with his next batch of MBA students using the videos he created for Coursera to generate discussion in the classroom. 
+
+<br/><br/>
+If you’re interested, you can check out Dan’s book bundle.  The bundle isn&#8217;t required for the course but provides an interesting perspective on irrational behavior.  They are available here: <a href=\"http://www.amazon.com/The-Irrational-Bundle-Irrationality-ebook/dp/B00BHEJ4IW/ref=sr_1_1?ie=UTF8&amp;qid=1363210779&amp;sr=8-1&amp;keywords=irrational+bundle&amp;tag=coursera-course123-20\" target=\"_blank\">Kindle</a>, <a href=\"http://www.barnesandnoble.com/w/the-irrational-bundle-dan-ariely/1114763210?ean=9780062288745\" target=\"_blank\">Nook</a>, <a href=\"https://itunes.apple.com/us/book/the-irrational-bundle/id606715318?mt=11\" target=\"_blank\">iBookstore</a>, <a href=\"http://www.kobobooks.com/ebook/The-Irrational-Bundle/book-EhitrXpidUq3OFuPXr1jQw/page1.html?s=dSd0sPFawEuz-tMJmjSZjQ&amp;r=1\" target=\"_blank\">Kobo</a>, or <a href=\"https://play.google.com/store/books/details/Dan_Ariely_Dan_Ariely_s_Irrational_Bundle?id=ogcCO9qMTCAC\" target=\"_blank\">Google</a>. 
+
+<br/><br/>
+Want to learn more about the class? See the Course Introduction Video:<br/><br/><center><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/dzSfmkbQClk\" frameborder=\"0\"></iframe></center>
+
+<br/><br/>Although the course will formally begin next Monday, the site is already open for you to start! See you in class!
+
+
+<br/><br/><center>
+
+												<div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/behavioralecon\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll In Irrational Behavior Course</a></div></center></p>") (link nil "http://blog.coursera.org/post/45684999023") (guid nil "http://blog.coursera.org/post/45684999023") (pubDate nil "Mon, 18 Mar 2013 14:17:00 -0400") (dc:creator nil "helloyinner"))) ("Instructor Profile: Larry Randles Lagerstrom, getting creative with Einstein!" "<p><strong><em>Editor’s note: Dr. Larry Randles Lagerstrom from Stanford University will be teaching a new course on “<a href=\"https://www.coursera.org/course/einstein\">Understanding Einstein: The Special Theory of Relativity</a>,” starting on April 8. We caught up with him and asked him a few questions about his background and his course.</em></strong></p>
+<p></p><center><img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/460px-Albert_Einstein_Head.jpg\" width=\"200;\" align=\"center;\" padding=\"10px\"/></center><br/><br/>“Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as ‘Person of the Century’ by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity.” - Dr. Larry Randles Lagerstrom<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/einstein\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll in Einstein Course</a></div></center><br/><br/><br/><b>Here is the full Q&amp;A with Larry:</b><br/><br/><p><em><strong>Q: Tell us a little about yourself.</strong></em></p>
+<p><span>A: I have taken a circuitous academic path to where I am today at Stanford. As an undergraduate I focused on physics and mathematics, with a few forays into English literature. I then went to the University of California at Berkeley to pursue a Ph.D. in physics. Along the way, however, I discovered that I was most interested in the history and philosophy of science, so I ended up with an M.A. in physics and a Ph.D. in history. I then made another detour and taught computer science for a number of years, first at Berkeley and then at the University of California at Davis. Coming to Stanford four years ago as an Academic Director has allowed me to return to some of my interests in the history of science. The energy and vibrancy of a place like Stanford is incredible, for all the obvious reasons, but especially because of its emphasis on the importance of a liberal education that crosses disciplinary boundaries. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What attracted you to the history of science? </strong></em></p>
+<p><span>A: Besides the opportunity to retrace the paths of great thinkers like Galileo, Descartes, Newton, Darwin, and Einstein, I am particularly fascinated by the period of physics from the second half of the nineteenth century into the early twentieth century, because it’s a time of grand unifying theories (thermodynamics and electromagnetism), startling discoveries (X rays, radioactivity, and the electron), the rise of physics-based industries (the telegraph, electric lighting and power, and radio), and the transition from classical to modern physics (relativity and quantum mechanics). </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What course are you teaching?</strong> </em></p>
+<p><span>A: I am teaching “Understanding Einstein: The Special Theory of Relativity.” </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Why should students be interested in this course? </strong></em></p>
+<p><span>A: Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as “Person of the Century” by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Will students need to do a lot of math in the course? </strong></em></p>
+<p><span>A: The good news is that the level of math required to gain a deeper understanding of the special theory of relativity is basic algebra. The even better news is that students will have a choice as to how much math they want to do. I have designed the course so that students can choose to follow a more quantitative approach or a more qualitative approach to the material. Those who choose the more quantitative approach will be doing some math (at the level of algebra), while those who choose the more qualitative approach will have to do little or no math in their assignments (though they need to be willing to try to follow along with the math in some of the video clips). Instead, one of the main assignments for the qualitative approach will be the completion of a creative project. In addition, a brief math review will be provided for those whose algebra skills are rusty. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Can you tell us more about the creative project?</strong></em></p>
+<p><span>A: I hope that the opportunity to do a creative project on the young Einstein and/or the special theory of relativity will allow students to engage with the material in a way that’s different from what is usually done. The project might consist of a video, musical piece, work of art, poem, or animation, and the approach may be instructional, humorous, serious, or dramatic, or some combination thereof. So although I will have a few general guidelines within which students must work, there will be a lot of room for creativity.</span></p>
+<p><span> </span></p>
+<p><span><i><b>Q: What is the one thing that you hope students will take away from your course?</b></i> </span></p>
+<p><span>A: Einstein talked about how the quest for understanding is an enriching and even an ennobling experience, and I hope that students will find the course to be exactly that kind of experience for them.</span></p>
+<p><span> </span></p>
+See Larry’s Profile <a href=\"https://www.coursera.org/instructor/larrylagerstrom\">here</a>.<br/><img src=\"http://media.tumblr.com/5afdf5f1b734fe7125f27f84e3c334ee/tumblr_inline_mjkzvuSVMm1qz4rgp.png\" width=\"100\"/>" "http://blog.coursera.org/post/45249294376" (20800 1626) old 10 nil nil ((title nil "Instructor Profile: Larry Randles Lagerstrom, getting creative with Einstein!") (description nil "<p><strong><em>Editor’s note: Dr. Larry Randles Lagerstrom from Stanford University will be teaching a new course on “<a href=\"https://www.coursera.org/course/einstein\">Understanding Einstein: The Special Theory of Relativity</a>,” starting on April 8. We caught up with him and asked him a few questions about his background and his course.</em></strong></p>
+
+
+<p></p><center><img src=\"http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/460px-Albert_Einstein_Head.jpg\" width=\"200;\" align=\"center;\" padding=\"10px\"/></center><br/><br/>&#8220;Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as &#8216;Person of the Century&#8217; by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity.&#8221; - Dr. Larry Randles Lagerstrom<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/course/einstein\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">Enroll in Einstein Course</a></div></center><br/><br/><br/><b>Here is the full Q&amp;A with Larry:</b><br/><br/><p><em><strong>Q: Tell us a little about yourself.</strong></em></p>
+<p><span>A: I have taken a circuitous academic path to where I am today at Stanford. As an undergraduate I focused on physics and mathematics, with a few forays into English literature. I then went to the University of California at Berkeley to pursue a Ph.D. in physics. Along the way, however, I discovered that I was most interested in the history and philosophy of science, so I ended up with an M.A. in physics and a Ph.D. in history. I then made another detour and taught computer science for a number of years, first at Berkeley and then at the University of California at Davis. Coming to Stanford four years ago as an Academic Director has allowed me to return to some of my interests in the history of science. The energy and vibrancy of a place like Stanford is incredible, for all the obvious reasons, but especially because of its emphasis on the importance of a liberal education that crosses disciplinary boundaries. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What attracted you to the history of science? </strong></em></p>
+<p><span>A: Besides the opportunity to retrace the paths of great thinkers like Galileo, Descartes, Newton, Darwin, and Einstein, I am particularly fascinated by the period of physics from the second half of the nineteenth century into the early twentieth century, because it’s a time of grand unifying theories (thermodynamics and electromagnetism), startling discoveries (X rays, radioactivity, and the electron), the rise of physics-based industries (the telegraph, electric lighting and power, and radio), and the transition from classical to modern physics (relativity and quantum mechanics). </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: What course are you teaching?</strong> </em></p>
+<p><span>A: I am teaching “Understanding Einstein: The Special Theory of Relativity.” </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Why should students be interested in this course? </strong></em></p>
+<p><span>A: Nearly everyone has heard of Einstein—he is the most recognizable scientist of all time, he was chosen as “Person of the Century” by Time magazine and, if nothing else, his quotations seem to be all over the Internet (some of which are not actually by him, but that’s another story). They also may have heard that he came up with some of his revolutionary ideas, such as the special theory of relativity, while working as a lowly patent clerk. And they vaguely know that there’s some esoteric and mind-bending stuff involved. But they may not realize that the real story of his early troubles and triumphs is more interesting (and relevant) than the myths, and that it is well within their abilities to bend their minds a little and actually understand the basic concepts and implications of relativity. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Will students need to do a lot of math in the course? </strong></em></p>
+<p><span>A: The good news is that the level of math required to gain a deeper understanding of the special theory of relativity is basic algebra. The even better news is that students will have a choice as to how much math they want to do. I have designed the course so that students can choose to follow a more quantitative approach or a more qualitative approach to the material. Those who choose the more quantitative approach will be doing some math (at the level of algebra), while those who choose the more qualitative approach will have to do little or no math in their assignments (though they need to be willing to try to follow along with the math in some of the video clips). Instead, one of the main assignments for the qualitative approach will be the completion of a creative project. In addition, a brief math review will be provided for those whose algebra skills are rusty. </span></p>
+<p><span> </span></p>
+<p><em><strong>Q: Can you tell us more about the creative project?</strong></em></p>
+<p><span>A: I hope that the opportunity to do a creative project on the young Einstein and/or the special theory of relativity will allow students to engage with the material in a way that’s different from what is usually done. The project might consist of a video, musical piece, work of art, poem, or animation, and the approach may be instructional, humorous, serious, or dramatic, or some combination thereof. So although I will have a few general guidelines within which students must work, there will be a lot of room for creativity.</span></p>
+<p><span> </span></p>
+<p><span><i><b>Q: What is the one thing that you hope students will take away from your course?</b></i> </span></p>
+<p><span>A: Einstein talked about how the quest for understanding is an enriching and even an ennobling experience, and I hope that students will find the course to be exactly that kind of experience for them.</span></p>
+<p><span> </span></p>
+See Larry&#8217;s Profile <a href=\"https://www.coursera.org/instructor/larrylagerstrom\">here</a>.<br/><img src=\"http://media.tumblr.com/5afdf5f1b734fe7125f27f84e3c334ee/tumblr_inline_mjkzvuSVMm1qz4rgp.png\" width=\"100\"/>") (link nil "http://blog.coursera.org/post/45249294376") (guid nil "http://blog.coursera.org/post/45249294376") (pubDate nil "Wed, 13 Mar 2013 00:53:46 -0400") (dc:creator nil "helloyinner"))) ("My Coursera Experience: A Letter to Our Professor" "<p><i>Editor’s Note: The following is a letter written by a group of Iranian students who took “<a href=\"https://www.coursera.org/course/thinkagain\">Think Again: How to Reason and Argue</a>” taught by Walter Sinnott-Armstrong and Ram Neta of <a href=\"https://www.coursera.org/duke\">Duke University</a>.</i>
+<br/><br/>
+Dear Walter and Ram,
+<br/><br/>
+I am writing on behalf of a study group for your Think Again course in Mashad, Iran. You guys probably get this kind of reaction a lot, but I can barely begin to communicate all the excitement your course caused among us. Not only did it inspire us to study the material you provided on Coursera, but we also got hold of a copy of Walter’s book (Understanding Arguments) and read the corresponding chapters every week. So, in the spirit of thanking you for all the time and effort you put into preparing the material, we decided to email you guys to thank you personally. Also, apparently, you are planning to offer the course again shortly, but we were wondering if any of you were planning to offer any new courses with a similar theme?
+<br/><br/>
+We learned a lot, and hope we can put it to some good use in our lives, and we are forever grateful.
+<br/><br/>
+Best,<br/>
+Dan.
+<br/></p><center>[In the photo, from left to right, we are Zahra, Mahyar, Marjan, Danial, Maryam, Mostafa]<br/><br/><img src=\"http://media.tumblr.com/41f9041f7340724e39ca6c9e884f32b2/tumblr_inline_mjej1yVe2R1qz4rgp.jpg\" alt=\"image\"/><br/>
+To learn more about this class that Dan and his friends took as well as other humanities classes, see our humanities courses offerings.<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=humanities\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Humanities Classes</a></div></center></center>" "http://blog.coursera.org/post/45027354913" (20796 42300) old 11 nil nil ((title nil "My Coursera Experience: A Letter to Our Professor") (description nil "<p><i>Editor&#8217;s Note: The following is a letter written by a group of Iranian students who took &#8220;<a href=\"https://www.coursera.org/course/thinkagain\">Think Again: How to Reason and Argue</a>&#8221; taught by Walter Sinnott-Armstrong and Ram Neta of <a href=\"https://www.coursera.org/duke\">Duke University</a>.</i>
+<br/><br/>
+Dear Walter and Ram,
+<br/><br/>
+I am writing on behalf of a study group for your Think Again course in Mashad, Iran. You guys probably get this kind of reaction a lot, but I can barely begin to communicate all the excitement your course caused among us. Not only did it inspire us to study the material you provided on Coursera, but we also got hold of a copy of Walter&#8217;s book (Understanding Arguments) and read the corresponding chapters every week. So, in the spirit of thanking you for all the time and effort you put into preparing the material, we decided to email you guys to thank you personally. Also, apparently, you are planning to offer the course again shortly, but we were wondering if any of you were planning to offer any new courses with a similar theme?
+<br/><br/>
+We learned a lot, and hope we can put it to some good use in our lives, and we are forever grateful.
+<br/><br/>
+Best,<br/>
+Dan.
+<br/></p><center>[In the photo, from left to right, we are Zahra, Mahyar, Marjan, Danial, Maryam, Mostafa]<br/><br/><img src=\"http://media.tumblr.com/41f9041f7340724e39ca6c9e884f32b2/tumblr_inline_mjej1yVe2R1qz4rgp.jpg\" alt=\"image\"/><br/>
+To learn more about this class that Dan and his friends took as well as other humanities classes, see our humanities courses offerings.<br/><br/><center><div style=\"width:250px; height: 100%; color: #ffffff; background-color:#2e67b1; border: 1px solid #2e67b1; border-bottom: 1px solid #2a5fa3; background-image: -webkit-linear-gradient(top, #4d83c9, #2e67b1); background-image: -moz-linear-gradient(top, #4d83c9, #2e67b1); background-image: -ms-linear-gradient(top, #4d83c9, #2e67b1); background-image: -o-linear-gradient(top, #4d83c9, #2e67b1); background-image: linear-gradient(top, #4d83c9, #2e67b1); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; line-height: 1; padding: 7px 0 8px 0; text-align: center; -webkit-box-shadow: inset 0 1px 0 0 #6e9ad4; -moz-box-shadow: inset 0 1px 0 0 #96ca6d; box-shadow: inset 0 1px 0 0 #6e9ad4; text-shadow: 0 -1px 0 #204e99;\"><a href=\"https://www.coursera.org/courses?orderby=upcoming&amp;cats=humanities\" style=\"padding: 10px; text-decoration: none; color: #ffffff;\" target=\"_blank\">See Upcoming Humanities Classes</a></div></center></center>") (link nil "http://blog.coursera.org/post/45027354913") (guid nil "http://blog.coursera.org/post/45027354913") (pubDate nil "Sun, 10 Mar 2013 11:22:36 -0400") (dc:creator nil "helloyinner"))) ("In Celebration of International Women's Day..." "<p><i>Dear Courserians,<br/><br/>We believe that everyone should be able to learn without limits. We are proud to have a strong and growing women presence from over 220 countries, actively contributing to their communities, bringing positive change in society through education.  There are many long and enduring <a href=\"http://www.prb.org/Publications/PolicyBriefs/EmpoweringWomenDevelopingSocietyFemaleEducationintheMiddleEastandNorthAfrica.aspx\">benefits</a> to educating women not only in specific countries but across the globe.  I, along with all the members of the Coursera team, thank you for being part of this community.  <br/><br/>Happy Learning,<br/><a href=\"https://www.coursera.org/about/founders\">Daphne Koller</a><br/>Coursera Co-Founder<br/><br/><img src=\"http://media.tumblr.com/99e2ffea03c1affee307023e19ac18aa/tumblr_inline_mjdpkjcuXE1qz4rgp.png\" alt=\"image\"/><br/>[Daphne Koller]<br/><br/><img src=\"http://media.tumblr.com/f06e6631bb271bbe3c172eb967d34045/tumblr_inline_mjdruzLLys1qz4rgp.png\" alt=\"image\" style=\"text-align: center;\"/><br/>[Women at Coursera, celebrating <a href=\"http://www.internationalwomensday.com/\">International Women’s Day 2013</a>]</i></p>" "http://blog.coursera.org/post/44920820124" (20794 53516) old 12 nil nil ((title nil "In Celebration of International Women's Day...") (description nil "<p><i>Dear Courserians,<br/><br/>We believe that everyone should be able to learn without limits. We are proud to have a strong and growing women presence from over 220 countries, actively contributing to their communities, bringing positive change in society through education.  There are many long and enduring <a href=\"http://www.prb.org/Publications/PolicyBriefs/EmpoweringWomenDevelopingSocietyFemaleEducationintheMiddleEastandNorthAfrica.aspx\">benefits</a> to educating women not only in specific countries but across the globe.  I, along with all the members of the Coursera team, thank you for being part of this community.  <br/><br/>Happy Learning,<br/><a href=\"https://www.coursera.org/about/founders\">Daphne Koller</a><br/>Coursera Co-Founder<br/><br/><img src=\"http://media.tumblr.com/99e2ffea03c1affee307023e19ac18aa/tumblr_inline_mjdpkjcuXE1qz4rgp.png\" alt=\"image\"/><br/>[Daphne Koller]<br/><br/><img src=\"http://media.tumblr.com/f06e6631bb271bbe3c172eb967d34045/tumblr_inline_mjdruzLLys1qz4rgp.png\" alt=\"image\" style=\"text-align: center;\"/><br/>[Women at Coursera, celebrating <a href=\"http://www.internationalwomensday.com/\">International Women&#8217;s Day 2013</a>]</i></p>") (link nil "http://blog.coursera.org/post/44920820124") (guid nil "http://blog.coursera.org/post/44920820124") (pubDate nil "Sat, 09 Mar 2013 01:05:00 -0500") (dc:creator nil "helloyinner"))) ("Forum Refresh: Coming Soon to a Class Near You" "<p>
+When most people think of Coursera, they think about the video lectures,
+the quizzes,and the peer-graded assignments. But there is another part which we
+think is equally important: the discussion forums. That’s where students debate
+what they’ve learnt in class, where instructors see what creative things their
+students have done on the side, where community TAs help guide students through
+problems, and where students give feedback about improving the platform and course.
+</p>
+<p>
+We’ve been collecting feedback from students and instructors about the forums,
+and finally found the time to start addressing that feedback. To start with, we
+realized that we want to be able to iterate quickly on our forums in the future,
+so we’ve re-written the forum codebase to use a more modern architecture and
+web technologies (it’s now a Backbone single-page web app, for the techies out there).
+Along with that re-writing, we’ve addressed some of the top usability concerns.
+Here’s a run-down of the changes you might notice:
+</p>
+<ul><li>When you post, comment or vote, the page will not reload and you will
+not lose your place by going to the top of the page.</li>
+<li>You will be able to undo votes and vote in the opposite direction.</li>
+<li>You will be able to link to specific posts or comments, not just the whole thread.
+If you click the timestamp on a post or comment, your window URL will change to
+the permalink for that post and you can share that URL.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/pqhrx-gnd3_1.png\">See screenshot.</a>
+</li>
+<li>Forum notification emails will link to specific posts/comments, not
+just the whole thread, and the comment being linked to will be highlighted.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/w1qyz20-0-7p.png\">See screenshot.</a>
+</li>
+<li>The threads are no longer paginated, but instead use “infinite loading”, so that you can scroll
+up or down to load earlier/later posts in the thread.
+</li>
+<li>The original poster will now be able to edit the title of his/her thread without deleting it.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/uk6yiwbtukur.png\">See screenshot.</a></li>
+<li>The post labels (pinned, approved, etc) now use a yellow/red color scheme.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/gh8nw4vzq4-r.png\">See screenshot.</a>
+</li>
+<li>Forum posts are now composed using a Wysiwyg editor instead of the Markdown editor,
+so the preview is the same as when you’re typing it. The wysiwig editor includes options for inserting
+links, code, images, and MathJax.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/2zok6983aov1.png\">See screenshot.</a>
+</li>
+<li>When creating a new thread, you can change the subforum it will be posted in.
+<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/7~6m93~952c3.png\">See screenshot.</a>
+</li>
+<li>We added a way for students to see their own forum activity as well as see other students’ (non-anonymous) activities. To view the forum activity for another student, you can click on their name in bylines in the forum. To view your own activity, click “View your latest activity” from main forum page. (<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/b8_q6mg5b8dp.png\">See screenshot.</a>) </li>
+</ul><p>
+We will start to roll out the new forums to classes this week, so you should all
+see it quite soon. We look forward to continuing to iterate on the forums, like
+giving you ways to follow eachother’s posts, better subscription options,
+a better dashboard of the posts you care about, and forums embedded in other parts
+of the class experience.
+</p>
+<p>
+We love seeing what all of you post in the forums. Thank you for all of your feedback in making forum functionalities more connected and dynamic.
+</p>" "http://blog.coursera.org/post/44892051303" (20794 29276) old 13 nil nil ((title nil "Forum Refresh: Coming Soon to a Class Near You") (description nil "<p>
+When most people think of Coursera, they think about the video lectures, 
+the quizzes,and the peer-graded assignments. But there is another part which we 
+think is equally important: the discussion forums. That&#8217;s where students debate 
+what they&#8217;ve learnt in class, where instructors see what creative things their 
+students have done on the side, where community TAs help guide students through 
+problems, and where students give feedback about improving the platform and course. 
+</p>
+<p>
+We&#8217;ve been collecting feedback from students and instructors about the forums, 
+and finally found the time to start addressing that feedback. To start with, we 
+realized that we want to be able to iterate quickly on our forums in the future, 
+so we&#8217;ve re-written the forum codebase to use a more modern architecture and 
+web technologies (it&#8217;s now a Backbone single-page web app, for the techies out there). 
+Along with that re-writing, we&#8217;ve addressed some of the top usability concerns. 
+Here&#8217;s a run-down of the changes you might notice:
+</p>
+<ul><li>When you post, comment or vote, the page will not reload and you will
+ not lose your place by going to the top of the page.</li>
+ <li>You will be able to undo votes and vote in the opposite direction.</li>
+ <li>You will be able to link to specific posts or comments, not just the whole thread.
+ If you click the timestamp on a post or comment, your window URL will change to
+  the permalink for that post and you can share that URL.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/pqhrx-gnd3_1.png\">See screenshot.</a>
+  </li>
+  <li>Forum notification emails will link to specific posts/comments, not 
+  just the whole thread, and the comment being linked to will be highlighted.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/w1qyz20-0-7p.png\">See screenshot.</a>
+  </li>
+  <li>The threads are no longer paginated, but instead use &#8220;infinite loading&#8221;, so that you can scroll
+  up or down to load earlier/later posts in the thread.
+  </li>
+  <li>The original poster will now be able to edit the title of his/her thread without deleting it.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/uk6yiwbtukur.png\">See screenshot.</a></li>
+  <li>The post labels (pinned, approved, etc) now use a yellow/red color scheme.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/gh8nw4vzq4-r.png\">See screenshot.</a>
+  </li>
+  <li>Forum posts are now composed using a Wysiwyg editor instead of the Markdown editor,
+  so the preview is the same as when you’re typing it. The wysiwig editor includes options for inserting
+  links, code, images, and MathJax.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/2zok6983aov1.png\">See screenshot.</a>
+  </li>
+  <li>When creating a new thread, you can change the subforum it will be posted in.
+  <a href=\"http://dl.dropbox.com/u/10998095/Screenshots/7~6m93~952c3.png\">See screenshot.</a>
+  </li>
+  <li>We added a way for students to see their own forum activity as well as see other students&#8217; (non-anonymous) activities. To view the forum activity for another student, you can click on their name in bylines in the forum. To view your own activity, click &#8220;View your latest activity&#8221; from main forum page. (<a href=\"http://dl.dropbox.com/u/10998095/Screenshots/b8_q6mg5b8dp.png\">See screenshot.</a>) </li>
+</ul><p>
+We will start to roll out the new forums to classes this week, so you should all 
+see it quite soon. We look forward to continuing to iterate on the forums, like 
+giving you ways to follow eachother&#8217;s posts, better subscription options, 
+a better dashboard of the posts you care about, and forums embedded in other parts 
+of the class experience.  
+</p>
+<p>
+We love seeing what all of you post in the forums. Thank you for all of your feedback in making forum functionalities more connected and dynamic.
+</p>") (link nil "http://blog.coursera.org/post/44892051303") (guid nil "http://blog.coursera.org/post/44892051303") (pubDate nil "Fri, 08 Mar 2013 18:21:00 -0500") (dc:creator nil "footedandfabulous"))) ("University Spotlight: See courses offered by UCSD, Case Western, UNC, Northwestern and more!" "<p><span>At Coursera, w</span><span>e’re lucky to work amongst a </span><a href=\"https://www.coursera.org/about/team\"><span>team</span></a><span> comprised of people with a diverse array of nationalities, career paths, skills and cool talents (like teaching yoga and speaking Quechua). We also take pride in offering many different courses from universities around the world, like the ones we’ve highlighted this past week from Europe</span><span> and Latin America to Asia. Most importantly, we’re constantly inspired and humbled by Coursera students; right now, 2.8 million people from over 200 countries have signed up at least 1 course out of the<a href=\"http://www.coursera.org/courses\"> 327 course</a> catalogue. If you haven’t seen it already, our analytics team created a visualization of our universities and student population on an interactive </span><a href=\"http://viz.coursera.org/2013-02-20-globe/\"><span>map</span></a><span>! </span><span>We’re working hard to create even more great courses for Courserians to take. An important part of that strategy is to continually build partnerships with the top universities globally and in the United States. </span></p>
+<p><strong id=\"internal-source-marker_0.2467341753654182\"><span>Below are links to the courses offered by our awesome new US partner universities as well as some neat facts you may not have known! </span></strong></p>
+<ul><li><a href=\"https://www.coursera.org/casewestern\"><span>Case Western Reserve University</span></a><span>: Case Western Reserve is a leading national urban research university committed to imagining and influencing the future. Their alumni includes the inventor of the Nike Air Sole, the developer of Gmail and founders of Fortune 500 companies. Already ranked as one of the nation’s best colleges, Case Western Reserve was recently listed by </span><a href=\"http://www.huffingtonpost.com/2011/06/30/the-trendiest-colleges_n_887602.html?ref=fb&amp;src=sp#s299822&amp;title=Macalester_Trendiest_Quirky\"><span>Huffington Post</span></a><span> </span><span>as one of the “trendiest colleges” in the States. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/northwestern\"><span>Northwestern University</span></a><span>: Founded in 1851, Northwestern University is a private research and teaching university. The school combines innovative teaching and pioneering research in a highly collaborative environment that transcends traditional academic boundaries. The university’s twelve schools and colleges span disciplines from arts, sciences and communication to social policy, medicine, and music. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/psu\"><span>Penn State University</span></a><span>: Penn State was chartered in 1855 as one of the nation’s first colleges of agricultural science. Today, the institution has a broader mission of teaching, research, and public service, with an emphasis on encouraging student leadership with a global perspective. Annual enrollment at the school’s University Park campus totals more than 44,000 undergraduate and graduate students, making it one of the largest universities in the United States.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rutgers\"><span>Rutgers University</span></a><span>: Rutgers is the sole university in the United States that is a colonial college, a land-grant institution, and a public university. Founded in 1766, the heart of the Rutgers mission is preparing students to become productive members of society and good citizens of the world. Rutgers teaches across the full educational spectrum: preschool to precollege; undergraduate to graduate and postdoctoral; and continuing education for professional and personal advancement.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsd\"><span>UC San Diego</span></a><span>: UC San Diego is an academic powerhouse and economic engine, recognized as one of the top 10 public universities by </span><span>U.S. News and World Report</span><span>. Innovation is central to the university, which takes pride in teaching students that knowledge isn’t just acquired in the classroom—life is their laboratory. The campus is committed to community engagement, public service and industry partnerships in order to advance the health and well-being of our region, state, nation and the world.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsc\"><span>UC Santa Cruz</span></a><span>: UC Santa Cruz is an outstanding public research university with a deep commitment to undergraduate education. The institution connects people and programs in unexpected ways while providing unparalleled opportunities for students to learn through hands-on experience. In its 45 years, UC Santa Cruz has earned national and international recognition for quality research and world-class teaching.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/boulder\"><span>University of Colorado, Boulder</span></a><span>: CU-Boulder is a dynamic community of scholars and learners on one of the most spectacular college campuses in the country. As one of 34 U.S. public institutions in the prestigious Association of American Universities (AAU), the school has a proud tradition of academic excellence, with five Nobel laureates and more than 50 members of prestigious academic academies.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rochester\"><span>University of Rochester</span></a><span>: The University of Rochester is one of the nation’s leading private universities. Located in Rochester, N.Y., the university provides exceptional opportunities for interdisciplinary study and close collaboration with faculty through its unique cluster-based curriculum. Its College, School of Arts and Sciences, and Hajim School of Engineering and Applied Sciences are complemented by its Eastman School of Music, Simon School of Business, Warner School of Education, Laboratory for Laser Energetics, School of Medicine and Dentistry, School of Nursing, Eastman Institute for Oral Health, and the Memorial Art Gallery.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/minnesota\"><span>University of Minnesota, Twin Cities</span></a><span>: The University of Minnesota is among the largest public research universities in the country, offering undergraduate, graduate, and professional students a multitude of opportunities for study and research. Located at the heart of one of the nation’s most vibrant, diverse metropolitan communities, students on the campuses in Minneapolis and St. Paul benefit from extensive partnerships with world-renowned health centers, international corporations, government agencies, and arts, nonprofit, and public service organizations.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/unc\"><span>University of North Carolina, Chapel Hill</span></a><span>: The University of North Carolina at Chapel Hill, the nation’s first public university, is known around the world for innovative teaching and research. Regularly ranked as the nation’s best value for academic quality, UNC has produced the most Rhodes Scholars for the past 25 years among U.S. public research universities.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/wisconsin\"><span>University of Wisconsin, Madison</span></a><span>: In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America’s great universities. A public, land-grant institution, UW–Madison offers a complete spectrum of liberal arts studies, professional programs and student activities. Many of its programs are hailed as world leaders in instruction, research and public service.</span></li>
+</ul>" "http://blog.coursera.org/post/44688625384" (20790 53904) old 14 nil nil ((title nil "University Spotlight: See courses offered by UCSD, Case Western, UNC, Northwestern and more!") (description nil "<p><span>At Coursera, w</span><span>e’re lucky to work amongst a </span><a href=\"https://www.coursera.org/about/team\"><span>team</span></a><span> comprised of people with a diverse array of nationalities, career paths, skills and cool talents (like teaching yoga and speaking Quechua). We also take pride in offering many different courses from universities around the world, like the ones we&#8217;ve highlighted this past week from Europe</span><span> and Latin America to Asia. Most importantly, we’re constantly inspired and humbled by Coursera students; right now, 2.8 million people from over 200 countries have signed up at least 1 course out of the<a href=\"http://www.coursera.org/courses\"> 327 course</a> catalogue. If you haven&#8217;t seen it already, our analytics team created a visualization of our universities and student population on an interactive </span><a href=\"http://viz.coursera.org/2013-02-20-globe/\"><span>map</span></a><span>! </span><span>We’re working hard to create even more great courses for Courserians to take. An important part of that strategy is to continually build partnerships with the top universities globally and in the United States. </span></p>
+<p><strong id=\"internal-source-marker_0.2467341753654182\"><span>Below are links to the courses offered by our awesome new US partner universities as well as some neat facts you may not have known! </span></strong></p>
+<ul><li><a href=\"https://www.coursera.org/casewestern\"><span>Case Western Reserve University</span></a><span>: Case Western Reserve is a leading national urban research university committed to imagining and influencing the future. Their alumni includes the inventor of the Nike Air Sole, the developer of Gmail and founders of Fortune 500 companies. Already ranked as one of the nation’s best colleges, Case Western Reserve was recently listed by </span><a href=\"http://www.huffingtonpost.com/2011/06/30/the-trendiest-colleges_n_887602.html?ref=fb&amp;src=sp#s299822&amp;title=Macalester_Trendiest_Quirky\"><span>Huffington Post</span></a><span> </span><span>as one of the “trendiest colleges” in the States. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/northwestern\"><span>Northwestern University</span></a><span>: Founded in 1851, Northwestern University is a private research and teaching university. The school combines innovative teaching and pioneering research in a highly collaborative environment that transcends traditional academic boundaries. The university’s twelve schools and colleges span disciplines from arts, sciences and communication to social policy, medicine, and music. </span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/psu\"><span>Penn State University</span></a><span>: Penn State was chartered in 1855 as one of the nation’s first colleges of agricultural science. Today, the institution has a broader mission of teaching, research, and public service, with an emphasis on encouraging student leadership with a global perspective. Annual enrollment at the school’s University Park campus totals more than 44,000 undergraduate and graduate students, making it one of the largest universities in the United States.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rutgers\"><span>Rutgers University</span></a><span>: Rutgers is the sole university in the United States that is a colonial college, a land-grant institution, and a public university. Founded in 1766, the heart of the Rutgers mission is preparing students to become productive members of society and good citizens of the world. Rutgers teaches across the full educational spectrum: preschool to precollege; undergraduate to graduate and postdoctoral; and continuing education for professional and personal advancement.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsd\"><span>UC San Diego</span></a><span>: UC San Diego is an academic powerhouse and economic engine, recognized as one of the top 10 public universities by </span><span>U.S. News and World Report</span><span>. Innovation is central to the university, which takes pride in teaching students that knowledge isn&#8217;t just acquired in the classroom—life is their laboratory. The campus is committed to community engagement, public service and industry partnerships in order to advance the health and well-being of our region, state, nation and the world.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/ucsc\"><span>UC Santa Cruz</span></a><span>: UC Santa Cruz is an outstanding public research university with a deep commitment to undergraduate education. The institution connects people and programs in unexpected ways while providing unparalleled opportunities for students to learn through hands-on experience. In its 45 years, UC Santa Cruz has earned national and international recognition for quality research and world-class teaching.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/boulder\"><span>University of Colorado, Boulder</span></a><span>: CU-Boulder is a dynamic community of scholars and learners on one of the most spectacular college campuses in the country. As one of 34 U.S. public institutions in the prestigious Association of American Universities (AAU), the school has a proud tradition of academic excellence, with five Nobel laureates and more than 50 members of prestigious academic academies.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/rochester\"><span>University of Rochester</span></a><span>: The University of Rochester is one of the nation&#8217;s leading private universities. Located in Rochester, N.Y., the university provides exceptional opportunities for interdisciplinary study and close collaboration with faculty through its unique cluster-based curriculum. Its College, School of Arts and Sciences, and Hajim School of Engineering and Applied Sciences are complemented by its Eastman School of Music, Simon School of Business, Warner School of Education, Laboratory for Laser Energetics, School of Medicine and Dentistry, School of Nursing, Eastman Institute for Oral Health, and the Memorial Art Gallery.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/minnesota\"><span>University of Minnesota, Twin Cities</span></a><span>: The University of Minnesota is among the largest public research universities in the country, offering undergraduate, graduate, and professional students a multitude of opportunities for study and research. Located at the heart of one of the nation’s most vibrant, diverse metropolitan communities, students on the campuses in Minneapolis and St. Paul benefit from extensive partnerships with world-renowned health centers, international corporations, government agencies, and arts, nonprofit, and public service organizations.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/unc\"><span>University of North Carolina, Chapel Hill</span></a><span>: The University of North Carolina at Chapel Hill, the nation’s first public university, is known around the world for innovative teaching and research. Regularly ranked as the nation’s best value for academic quality, UNC has produced the most Rhodes Scholars for the past 25 years among U.S. public research universities.</span></li>
+</ul><p><strong><strong><span></span><br/></strong></strong></p>
+<ul><li><a href=\"https://www.coursera.org/wisconsin\"><span>University of Wisconsin, Madison</span></a><span>: In achievement and prestige, the University of Wisconsin–Madison has long been recognized as one of America&#8217;s great universities. A public, land-grant institution, UW–Madison offers a complete spectrum of liberal arts studies, professional programs and student activities. Many of its programs are hailed as world leaders in instruction, research and public service.</span></li>
+</ul>") (link nil "http://blog.coursera.org/post/44688625384") (guid nil "http://blog.coursera.org/post/44688625384") (pubDate nil "Wed, 06 Mar 2013 00:22:24 -0500") (dc:creator nil "helloyinner"))) ("My Coursera Experience: Modern Poetry for a Physics Major" "<p><strong><strong><em>Editor’s Note: </em></strong></strong><strong><strong><em>This is the third in a series of guest posts from Courserians, called “My Coursera Experience”.</em></strong></strong></p>
+<p><span>My name is Ines Cifuentes. I am 58 and living with Stage 4 breast cancer. One of the tough things about advanced cancer is how much it takes away. My days are long as I can no longer work.</span></p>
+<p><span>I took the Coursera course, “Modern and Contemporary American Poetry”, taught by Al Filreis of the University of Pennsylvania. I chose it because as a physics major in college I didn’t have time to take a poetry course. When I saw that we would be reading William Carlos Williams, one of my favorite poets, I signed up. I didn’t learn about Coursera until the course had already started so I began the third week in and tried to catch up. I never did; I am now signed up to take it again in September. I am very happy that I can do that. And they are adding Wallace Stevens!</span></p>
+<p><span>It was wonderful to be able to take a class on poetry taught by a fabulous teacher and a great group of TA’s. </span><span>I was impressed by how Professor Filreis used a variety of instructional strategies and technology to create a community of learners.</span></p>
+<p><span>The TA’s were great and they provided an in-house classroom that we could all watch and be a part of. We learned from watching and listening to them how to read poems closely and talk about them. The class included weekly live webcasts, online readings of the poems, quizzes and writing assignments. Participants joined online forums and in some parts of the world met in person. In the last live webcast several students talked about how the course was transformative. </span></p>
+<p><span>In my experience one is lucky to have a teacher who is passionate about what s/he studies and wants to share it with you. Al Filreis does that with modern poetry. His enthusiasm is infectious and his deep knowledge of literature reminds us that reading poetry matters in life.</span></p>" "http://blog.coursera.org/post/44385047250" (20786 17265) old 15 nil nil ((title nil "My Coursera Experience: Modern Poetry for a Physics Major") (description nil "<p><strong><strong><em>Editor’s Note: </em></strong></strong><strong><strong><em>This is the third in a series of guest posts from Courserians, called “My Coursera Experience”.</em></strong></strong></p>
+<p><span>My name is Ines Cifuentes. I am 58 and living with Stage 4 breast cancer. One of the tough things about advanced cancer is how much it takes away. My days are long as I can no longer work.</span></p>
+<p><span>I took the Coursera course, &#8220;Modern and Contemporary American Poetry&#8221;, taught by Al Filreis of the University of Pennsylvania. I chose it because as a physics major in college I didn&#8217;t have time to take a poetry course. When I saw that we would be reading William Carlos Williams, one of my favorite poets, I signed up. I didn&#8217;t learn about Coursera until the course had already started so I began the third week in and tried to catch up. I never did; I am now signed up to take it again in September. I am very happy that I can do that. And they are adding Wallace Stevens!</span></p>
+<p><span>It was wonderful to be able to take a class on poetry taught by a fabulous teacher and a great group of TA&#8217;s. </span><span>I was impressed by how Professor Filreis used a variety of instructional strategies and technology to create a community of learners.</span></p>
+<p><span>The TA&#8217;s were great and they provided an in-house classroom that we could all watch and be a part of. We learned from watching and listening to them how to read poems closely and talk about them. The class included weekly live webcasts, online readings of the poems, quizzes and writing assignments. Participants joined online forums and in some parts of the world met in person. In the last live webcast several students talked about how the course was transformative. </span></p>
+<p><span>In my experience one is lucky to have a teacher who is passionate about what s/he studies and wants to share it with you. Al Filreis does that with modern poetry. His enthusiasm is infectious and his deep knowledge of literature reminds us that reading poetry matters in life.</span></p>") (link nil "http://blog.coursera.org/post/44385047250") (guid nil "http://blog.coursera.org/post/44385047250") (pubDate nil "Sat, 02 Mar 2013 13:22:41 -0500") (dc:creator nil "helloyinner"))) ("Bienvenidos A Las Nuevas Universidades de Latinoamérica" "<p><br/>Two new universities joining Coursera are particularly exciting for two reasons: (1) they’re the first universities on Coursera located in Latin America, and (2) both universities will be offering select courses in Spanish! <br/><br/><a href=\"https://www.coursera.org/unam\">The Universidad Nacional Autónoma de México</a> and <a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a> are extremely high-ranking and well-respected universities located in Mexico, and will be offering classes across a broad range of disciplines. Here’s some more information about the schools:<br/><br/></p>
+<ul><li><a href=\"https://www.coursera.org/unam\">Universidad Nacional Autónoma de México:</a> Universidad Nacional Autónoma de México was founded in 1551,and is the only university in Mexico with Nobel Prize laureates among its alumni. The institution’s primary purpose is to serve the country and humanity, train professionals useful to society, organize and conduct research (mainly on national problems and conditions) and spread cultural benefits.</li>
+</ul>
+<ul><li><a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a>: Tecnológico de Monterrey is one of the largest private, non-profit educational institutions in Latin America, with over 90,000 students at the high school, undergraduate, and graduate levels. The school is known for becoming the first university ever connected to the Internet in Latin America!</li>
+</ul><p> </p>
+<p>If you want to learn more about Latin America, you might be interested in signing up for Tecnológico de Monterrey’s <a href=\"https://www.coursera.org/course/latinamericanculture\">Latin American Culture</a> course!</p>" "http://blog.coursera.org/post/44227940791" (20783 40252) old 16 nil nil ((title nil "Bienvenidos A Las Nuevas Universidades de Latinoamérica") (description nil "<p><br/>Two new universities joining Coursera are particularly exciting for two reasons: (1) they’re the first universities on Coursera located in Latin America, and (2) both universities will be offering select courses in Spanish! <br/><br/><a href=\"https://www.coursera.org/unam\">The Universidad Nacional Autónoma de México</a> and <a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a> are extremely high-ranking and well-respected universities located in Mexico, and will be offering classes across a broad range of disciplines. Here’s some more information about the schools:<br/><br/></p>
+<ul><li><a href=\"https://www.coursera.org/unam\">Universidad Nacional Autónoma de México:</a> Universidad Nacional Autónoma de México was founded in 1551,and is the only university in Mexico with Nobel Prize laureates among its alumni. The institution’s primary purpose is to serve the country and humanity, train professionals useful to society, organize and conduct research (mainly on national problems and conditions) and spread cultural benefits.</li>
+</ul>
+<ul><li><a href=\"https://www.coursera.org/tecdemonterrey\">Tecnológico de Monterrey</a>: Tecnológico de Monterrey is one of the largest private, non-profit educational institutions in Latin America, with over 90,000 students at the high school, undergraduate, and graduate levels. The school is known for becoming the first university ever connected to the Internet in Latin America!</li>
+</ul><p> </p>
+<p>If you want to learn more about Latin America, you might be interested in signing up for Tecnológico de Monterrey’s <a href=\"https://www.coursera.org/course/latinamericanculture\">Latin American Culture</a> course!</p>") (link nil "http://blog.coursera.org/post/44227940791") (guid nil "http://blog.coursera.org/post/44227940791") (pubDate nil "Thu, 28 Feb 2013 13:09:00 -0500") (dc:creator nil "helloyinner"))) ("University Spotlight: Take Courses from the #1 Business School in Europe" "<p><strong id=\"internal-source-marker_0.32612958922982216\"><span>We offer </span><a href=\"https://www.coursera.org/category/business\"><span>Business &amp; Management</span></a><span> courses from universities around the world, including courses from the newest universities to join Coursera. These courses cover everything from business strategy and leadership to finance and operations management. </span><br/><span></span><br/><span>Today, we’d like to share a little more information about </span><a href=\"https://www.coursera.org/ie\"><span>IE Business School in Spain</span></a><span>, which was ranked the #1 business school in Europe by the </span><a href=\"http://rankings.ft.com/businessschoolrankings/european-business-school-rankings-2012\"><span>Financial Times</span></a><span> last year! </span><br/><span></span><br/><span>IE is dedicated to educating business leaders around the world, with core values of global focus, entrepreneurial spirit, and a humanistic approach to learning. They have an international faculty with more than 500 professors; and their alumni (numbering more than 40,000) hold management positions in 100+ countries around the world.</span><br/><span></span><br/><span>The two courses IE currently lists are </span><a href=\"https://www.coursera.org/course/criticalmanagement\"><span>Critical Perspectives on Management</span></a><span> (which will begin in Fall 2013) and </span><a href=\"https://www.coursera.org/course/econpolicy\"><span>Undertaking Economic Policymaking</span></a><span> (start date to be announced). </span></strong></p>" "http://blog.coursera.org/post/44110657467" (20781 29201) old 17 nil nil ((title nil "University Spotlight: Take Courses from the #1 Business School in Europe") (description nil "<p><strong id=\"internal-source-marker_0.32612958922982216\"><span>We offer </span><a href=\"https://www.coursera.org/category/business\"><span>Business &amp; Management</span></a><span> courses from universities around the world, including courses from the newest universities to join Coursera. These courses cover everything from business strategy and leadership to finance and operations management. </span><br/><span></span><br/><span>Today, we’d like to share a little more information about </span><a href=\"https://www.coursera.org/ie\"><span>IE Business School in Spain</span></a><span>, which was ranked the #1 business school in Europe by the </span><a href=\"http://rankings.ft.com/businessschoolrankings/european-business-school-rankings-2012\"><span>Financial Times</span></a><span> last year! </span><br/><span></span><br/><span>IE is dedicated to educating business leaders around the world, with core values of global focus, entrepreneurial spirit, and a humanistic approach to learning. They have an international faculty with more than 500 professors; and their alumni (numbering more than 40,000) hold management positions in 100+ countries around the world.</span><br/><span></span><br/><span>The two courses IE currently lists are </span><a href=\"https://www.coursera.org/course/criticalmanagement\"><span>Critical Perspectives on Management</span></a><span> (which will begin in Fall 2013) and </span><a href=\"https://www.coursera.org/course/econpolicy\"><span>Undertaking Economic Policymaking</span></a><span> (start date to be announced). </span></strong></p>") (link nil "http://blog.coursera.org/post/44110657467") (guid nil "http://blog.coursera.org/post/44110657467") (pubDate nil "Tue, 26 Feb 2013 21:40:17 -0500") (dc:creator nil "helloyinner"))) ("University Spotlight: Learn from Top Universities in Hong Kong, Taiwan, Singapore and Japan" "<p><br/><span>In September 2012, </span><a href=\"http://www.ust.hk/eng/news/press_20120919-978.html\"><span>we announced</span></a><span> that courses from </span><a href=\"https://www.coursera.org/hkust\"><span>The Hong Kong University of Science and Technology</span></a><span> would be joining the Coursera platform. Now, we’re excited to welcome four more schools from Asia to our community! These universities will be offering courses across all disciplines, and select courses will be taught in Chinese.  </span><br/><span></span><br/><span>Learn more about these universities below: </span><br/><span></span></p>
+<ul><li><a href=\"https://www.coursera.org/cuhk\"><span>The Chinese University of Hong Kong</span><span>:</span><span> </span></a><span>Founded in 1963, The Chinese University of Hong Kong (CUHK) is a forward looking comprehensive research university. With the motto, “Through learning and temperance to virtue,” the university has a global vision and mission to nurture students with both specialized knowledge and wisdom for life. CUHK teachers and students hail from all corners of the world. <br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/taiwan\"><span>National Taiwan University</span></a><span>:</span><span>  National Taiwan University’s motto is “Cultivate virtue, advance intellect; love one’s country, love one’s people.” The school firmly believes that open access to learning is a powerful socioeconomic equalizer. By offering quality university courses to the Chinese-speaking population, they hope to transform the rich rewards of learning from a limited commodity to an experience available to all.<br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/nus\"><span>National University of Singapore</span></a><span>: The National University of Singapore is Singapore’s flagship university, and offers a global approach to education and research with a focus on Asian perspectives and expertise. Its transformative education includes a broad-based curriculum underscored by multi-disciplinary courses and cross-faculty enrichment; the institution aims to have a “no walls” culture and a spirit of enterprise which strives for positive influence and impact through education, research, and service.</span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/todai\"><span>University of Tokyo, Japan</span></a><span>: The University of Tokyo, also known as “Todai,” was established in 1877 as the first national university in Japan. As a leading research university, Todai is committed to fulfilling its public responsibility through academic research and by fostering new talent, thus providing a reliable compass to the future. The school offers courses in essentially all academic disciplines at both undergraduate and graduate levels and conducts research across the full spectrum of academic activity.</span></li>
+</ul>" "http://blog.coursera.org/post/44026583687" (20780 4328) old 18 nil nil ((title nil "University Spotlight: Learn from Top Universities in Hong Kong, Taiwan, Singapore and Japan") (description nil "<p><br/><span>In September 2012, </span><a href=\"http://www.ust.hk/eng/news/press_20120919-978.html\"><span>we announced</span></a><span> that courses from </span><a href=\"https://www.coursera.org/hkust\"><span>The Hong Kong University of Science and Technology</span></a><span> would be joining the Coursera platform. Now, we’re excited to welcome four more schools from Asia to our community! These universities will be offering courses across all disciplines, and select courses will be taught in Chinese.  </span><br/><span></span><br/><span>Learn more about these universities below: </span><br/><span></span></p>
+<ul><li><a href=\"https://www.coursera.org/cuhk\"><span>The Chinese University of Hong Kong</span><span>:</span><span> </span></a><span>Founded in 1963, The Chinese University of Hong Kong (CUHK) is a forward looking comprehensive research university. With the motto, “Through learning and temperance to virtue,” the university has a global vision and mission to nurture students with both specialized knowledge and wisdom for life. CUHK teachers and students hail from all corners of the world. <br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/taiwan\"><span>National Taiwan University</span></a><span>:</span><span>  National Taiwan University’s motto is “Cultivate virtue, advance intellect; love one&#8217;s country, love one&#8217;s people.” The school firmly believes that open access to learning is a powerful socioeconomic equalizer. By offering quality university courses to the Chinese-speaking population, they hope to transform the rich rewards of learning from a limited commodity to an experience available to all.<br/></span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/nus\"><span>National University of Singapore</span></a><span>: The National University of Singapore is Singapore’s flagship university, and offers a global approach to education and research with a focus on Asian perspectives and expertise. Its transformative education includes a broad-based curriculum underscored by multi-disciplinary courses and cross-faculty enrichment; the institution aims to have a “no walls” culture and a spirit of enterprise which strives for positive influence and impact through education, research, and service.</span></li>
+</ul><p><span> </span></p>
+<ul><li><a href=\"https://www.coursera.org/todai\"><span>University of Tokyo, Japan</span></a><span>: The University of Tokyo, also known as &#8220;Todai,&#8221; was established in 1877 as the first national university in Japan. As a leading research university, Todai is committed to fulfilling its public responsibility through academic research and by fostering new talent, thus providing a reliable compass to the future. The school offers courses in essentially all academic disciplines at both undergraduate and graduate levels and conducts research across the full spectrum of academic activity.</span></li>
+</ul>") (link nil "http://blog.coursera.org/post/44026583687") (guid nil "http://blog.coursera.org/post/44026583687") (pubDate nil "Mon, 25 Feb 2013 20:33:28 -0500") (dc:creator nil "helloyinner"))) ("Why not an option for online chat/conversation for a course ?" "<p>We’ve gotten a lot of good ideas on how to make the coursera experience more interactive, thank you for this suggestion!</p>" "http://blog.coursera.org/post/44025356473" (20780 3455) old 19 nil nil ((title nil "Why not an option for online chat/conversation for a course ?") (description nil "<p>We’ve gotten a lot of good ideas on how to make the coursera experience more interactive, thank you for this suggestion!</p>") (link nil "http://blog.coursera.org/post/44025356473") (guid nil "http://blog.coursera.org/post/44025356473") (pubDate nil "Mon, 25 Feb 2013 20:18:55 -0500") (dc:creator nil "helloyinner"))) ("Please create calendar events for each course. As a working professional, I create manually calendar events for my courses, I have enrolled for the coming months. It would be great if you can create google calendar/ iCal events for us." "<p>Thank you for the feedback, great suggestions!</p>" "http://blog.coursera.org/post/44025316210" (20780 3428) old 20 nil nil ((title nil "Please create calendar events for each course. As a working professional, I create manually calendar events for my courses, I have enrolled for the coming months. It would be great if you can create google calendar/ iCal events for us.") (description nil "<p>Thank you for the feedback, great suggestions!</p>") (link nil "http://blog.coursera.org/post/44025316210") (guid nil "http://blog.coursera.org/post/44025316210") (pubDate nil "Mon, 25 Feb 2013 20:18:28 -0500") (dc:creator nil "helloyinner"))) ("University Spotlight: Exploring Art and Music on Coursera" "<p><strong><span>Some people hear the phrase “online education” and think it refers to engineering, programming, math and science courses. If you’ve ever browsed our </span><a href=\"https://www.coursera.org/courses\"><span>course list</span></a><span>, you’ll notice that we offer a neat group of humanities courses, ranging from history to literature. We’ve also been working with some of the most well-known universities that specialize in the arts and music. In September 2012, </span><a href=\"http://www.marketwire.com/press-release/berklee-college-music-brown-columbia-emory-hebrew-university-jerusalem-hong-kong-university-1703075.htm\"><span>we announced</span></a><span> that </span><a href=\"https://www.coursera.org/berklee\"><span>Berklee College of Music</span></a><span> would be offering courses like </span><a href=\"https://www.coursera.org/course/songwriting\"><span>Songwriting</span></a><span> and </span><a href=\"https://www.coursera.org/course/guitar\"><span>Introduction to Guitar</span></a><span>; you can now sign up for those courses, which start on either March 1 or April 22, depending on the class.</span><br/><span></span><br/><span>Included in our </span><a href=\"http://blog.coursera.org/post/43625628117/29-new-schools-92-new-courses-5-languages-4\"><span>recent addition</span></a><span> of 29 new universities are California Institute of the Arts and Curtis Institute of Music, two highly ranked institutions that offer students creative courses in subjects like dance and performing arts, history of art and music and digital art. Here’s some more information about the universities:  </span><br/><span></span><br/></strong></p>
+<ul><li><a href=\"https://www.coursera.org/calarts\"><span>California Institute of the Arts</span></a><span>:</span><span> Established in 1970, California Institute of the Arts has been ranked as America’s top college for students in the arts by </span><a href=\"http://calarts.edu/news/2011-sep-1/calarts-ranked-number-1-newsweekdaily-beast\"><span>Newsweek/The Daily Beast</span></a><span>. The school champions creative excellence, critical reflection, and the development of new forms and expressions.</span></li>
+</ul><ul><li><a href=\"https://www.coursera.org/curtis\"><span>Curtis Institute of Music</span></a><span>:</span><span> Curtis has been educating and training musicians for careers as performing artists on the highest professional level since its founding in 1924. As a forward-thinking institution, Curtis is on a mission to spread the word about classical music, opening up their normally selective enrollment (which hovers around 165 students) to the Coursera community.</span></li>
+</ul><p><strong id=\"internal-source-marker_0.31701326137408614\"><span></span><br/><span>Whether you’re an artist, music enthusiast or someone just looking to explore your creativity, be sure to browse and sign up for some of the many Coursera classes in <a href=\"https://www.coursera.org/category/arts\">arts</a> and <a href=\"https://www.coursera.org/category/music\">music</a>!</span><span><br/></span></strong></p>" "http://blog.coursera.org/post/43797242088" (20776 44864) obsolete 20 nil nil ((title nil "University Spotlight: Exploring Art and Music on Coursera") (description nil "<p><strong><span>Some people hear the phrase “online education” and think it refers to engineering, programming, math and science courses. If you’ve ever browsed our </span><a href=\"https://www.coursera.org/courses\"><span>course list</span></a><span>, you’ll notice that we offer a neat group of humanities courses, ranging from history to literature. We’ve also been working with some of the most well-known universities that specialize in the arts and music. In September 2012, </span><a href=\"http://www.marketwire.com/press-release/berklee-college-music-brown-columbia-emory-hebrew-university-jerusalem-hong-kong-university-1703075.htm\"><span>we announced</span></a><span> that </span><a href=\"https://www.coursera.org/berklee\"><span>Berklee College of Music</span></a><span> would be offering courses like </span><a href=\"https://www.coursera.org/course/songwriting\"><span>Songwriting</span></a><span> and </span><a href=\"https://www.coursera.org/course/guitar\"><span>Introduction to Guitar</span></a><span>; you can now sign up for those courses, which start on either March 1 or April 22, depending on the class.</span><br/><span></span><br/><span>Included in our </span><a href=\"http://blog.coursera.org/post/43625628117/29-new-schools-92-new-courses-5-languages-4\"><span>recent addition</span></a><span> of 29 new universities are California Institute of the Arts and Curtis Institute of Music, two highly ranked institutions that offer students creative courses in subjects like dance and performing arts, history of art and music and digital art. Here’s some more information about the universities:  </span><br/><span></span><br/></strong></p>
+<ul><li><a href=\"https://www.coursera.org/calarts\"><span>California Institute of the Arts</span></a><span>:</span><span> Established in 1970, California Institute of the Arts has been ranked as America’s top college for students in the arts by </span><a href=\"http://calarts.edu/news/2011-sep-1/calarts-ranked-number-1-newsweekdaily-beast\"><span>Newsweek/The Daily Beast</span></a><span>. The school champions creative excellence, critical reflection, and the development of new forms and expressions.</span></li>
+</ul><ul><li><a href=\"https://www.coursera.org/curtis\"><span>Curtis Institute of Music</span></a><span>:</span><span> Curtis has been educating and training musicians for careers as performing artists on the highest professional level since its founding in 1924. As a forward-thinking institution, Curtis is on a mission to spread the word about classical music, opening up their normally selective enrollment (which hovers around 165 students) to the Coursera community.</span></li>
+</ul><p><strong id=\"internal-source-marker_0.31701326137408614\"><span></span><br/><span>Whether you’re an artist, music enthusiast or someone just looking to explore your creativity, be sure to browse and sign up for some of the many Coursera classes in <a href=\"https://www.coursera.org/category/arts\">arts</a> and <a href=\"https://www.coursera.org/category/music\">music</a>!</span><span><br/></span></strong></p>") (link nil "http://blog.coursera.org/post/43797242088") (guid nil "http://blog.coursera.org/post/43797242088") (pubDate nil "Sat, 23 Feb 2013 07:00:00 -0500") (dc:creator nil "helloyinner"))) ("Coursera's First Birthday!" "<p>Coursera turns 1! As our birthday wish, we want you to share your favorite course recommendation with the world through pictures. We hope to make a 1st birthday Courserians mural at Coursera HQ with your pictures! To Participate:</p>
+<p>1. Go to: <a href=\"http://bit.ly/15nlBXC\">http://bit.ly/15nlBXC</a><br/>
+2. Print and cut out shape<br/>
+3. Write in your favorite course<br/>
+4. Take a picture of yourself (smile, be silly!)<br/>
+5. Upload it to your FB/Twitter/G+ and tag @Coursera and #courserabirthday! <br/>
+[the picture here is an example of what you can submit!]</p>
+<p><img src=\"http://media.tumblr.com/c6b3ebd078b37bf752a75f11d9771e5d/tumblr_inline_mlhqogpUlQ1qz4rgp.jpg\" alt=\"image\"/></p>
+<p>We’ll take it and print these pictures into a mural and share the final product with you! Thank you for being an important part of this vibrant learning community of 3.2 million people all on a quest to create an ecosystem where education is a human right and learning has no limits!</p>" "http://blog.coursera.org/post/48343453924" (20848 60992) new 1 nil nil ((title nil "Coursera's First Birthday!") (description nil "<p>Coursera turns 1! As our birthday wish, we want you to share your favorite course recommendation with the world through pictures. We hope to make a 1st birthday Courserians mural at Coursera HQ with your pictures! To Participate:</p>
+
+<p>1. Go to: <a href=\"http://bit.ly/15nlBXC\">http://bit.ly/15nlBXC</a><br/>
+2. Print and cut out shape<br/>
+3. Write in your favorite course<br/>
+4. Take a picture of yourself (smile, be silly!)<br/>
+5. Upload it to your FB/Twitter/G+ and tag @Coursera and #courserabirthday! <br/>
+[the picture here is an example of what you can submit!]</p>
+
+<p><img src=\"http://media.tumblr.com/c6b3ebd078b37bf752a75f11d9771e5d/tumblr_inline_mlhqogpUlQ1qz4rgp.jpg\" alt=\"image\"/></p>
+
+<p>We&#8217;ll take it and print these pictures into a mural and share the final product with you! Thank you for being an important part of this vibrant learning community of 3.2 million people all on a quest to create an ecosystem where education is a human right and learning has no limits!</p>") (link nil "http://blog.coursera.org/post/48343453924") (guid nil "http://blog.coursera.org/post/48343453924") (pubDate nil "Fri, 19 Apr 2013 03:12:00 -0400") (dc:creator nil "helloyinner"))))
