@@ -248,6 +248,15 @@
 	("jQuery Grid Plugin - jqGrid"
         "http://www.trirand.com/blog/?feed=rss2"
         nil nil nil)
+	("Jquery: Getting Started"
+        "http://forum.jquery.com/getting-started/feed"
+        nil nil nil)
+	("Jquery: Using Jquery"
+        "https://forum.jquery.com/using-jquery/feed"
+        nil nil nil)
+	("Jquery: Developing Jquery Core"
+        "https://forum.jquery.com/developing-jquery-core/feed"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Free Software
