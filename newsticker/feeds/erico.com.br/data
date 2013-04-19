@@ -1,5 +1,5 @@
 ;; -*- coding: utf-8 -*-
-(("Blog" nil nil (20849 42547 191860) feed 0 nil nil ((link ((rel . "self") (href . "http://greenfinity.hu/en/blog/atom.xml"))) (div ((xmlns . "http://www.w3.org/1999/xhtml")) (a ((href . "http://www.atomenabled.org/feedvalidator/check.cgi?url=http://greenfinity.hu/en/blog/atom.xml")) (img ((title . "Validate my Atom feed") (width . "88") (height . "31") (src . "http://www.atomenabled.org/feedvalidator/images/valid-atom.png") (alt . "[Valid Atom]") (border . "0px")))) (p nil (span nil "
+(("Blog" nil nil (20849 44966 887350) feed 0 nil nil ((link ((rel . "self") (href . "http://greenfinity.hu/en/blog/atom.xml"))) (div ((xmlns . "http://www.w3.org/1999/xhtml")) (a ((href . "http://www.atomenabled.org/feedvalidator/check.cgi?url=http://greenfinity.hu/en/blog/atom.xml")) (img ((title . "Validate my Atom feed") (width . "88") (height . "31") (src . "http://www.atomenabled.org/feedvalidator/images/valid-atom.png") (alt . "[Valid Atom]") (border . "0px")))) (p nil (span nil "
         This is an Atom formatted XML site feed. It is intended to be viewed in
         a Newsreader or syndicated to another site. Please visit 
       ") (a ((href . "http://www.atomenabled.org/")) "Atom Enabled") (span nil "

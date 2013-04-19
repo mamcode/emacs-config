@@ -444,6 +444,10 @@
 	("Últimas novedades Desarrolloweb.com"
         "http://www.desarrolloweb.com/rss/general_rss.php"
         nil nil nil)
+	;; http://octopress.org
+	("Octopress"
+        "http://octopress.org/atom.xml"
+        nil nil nil)	
 	;; -------------------------------------------------------
 
 	;; Cakephp
