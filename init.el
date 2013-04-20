@@ -55,7 +55,7 @@
 (setq newsticker-html-renderer 'w3m-region)
 
 ; We want our feeds pulled every 10 minutes.
-(setq newsticker-retrieval-interval 6000)
+(setq newsticker-retrieval-interval 43200)
 
 ; Setup the feeds.
 (setq newsticker-url-list-defaults nil)

@@ -1,5 +1,5 @@
 ;; -*- coding: utf-8 -*-
-(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20849 42530 205644) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20850 35698 547267) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
 
 <p>Hola, mi nombre es Francisco, soy de argentina, estudiante de Ing. en Sistemas de Información, uso debian hace muchos años, espero poder dar una mano en lo que pueda y/o yo poder aprender algo nuevo de ustedes, un saludo  <img src=\"/sites/all/modules/smileys/packs/drupales/bigsmile.gif\" title=\"bigsmile\" alt=\"bigsmile\" /></p>
 ") (pubDate nil "Wed, 17 Apr 2013 10:48:24 -0500") (dc:creator nil "WSick") (guid ((isPermaLink . "false")) "comment 329309 at http://www.esdebian.org")) (item nil (title nil "ok ya lo reporte como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329308") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
@@ -83,55 +83,15 @@ Ese paquete parece ser que solo esta para dos arquitecturas, avr32 y m68k. Creo 
 <p>Comento esto por si a alguna persona le sirve.</p>
 <p>Saludos<br />
 Rodrigo</p>
-") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("En ese \"traceback\" faltan" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
-De todas formas... ¿que paquetes tienes instalados de wicd?</p>
-<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
-<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
-<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
-También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
-<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
-<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
-<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365" (20849 275) old 8 nil nil ((title nil "En ese \"traceback\" faltan") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329365") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-
-<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
-De todas formas... ¿que paquetes tienes instalados de wicd?</p>
-<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
-<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
-<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
-También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
-<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
-<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
-<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
-") (pubDate nil "Fri, 19 Apr 2013 03:32:19 -0500") (dc:creator nil "Panko") (guid ((isPermaLink . "false")) "comment 329365 at http://www.esdebian.org"))) ("no se que guiá seguiste," "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364" (20848 49104) old 9 nil nil ((title nil "no se que guiá seguiste,") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329364") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-
-<p>no se que guiá seguiste, según esta le llama <a href=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" title=\"http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf\" rel=\"nofollow\">http://s3.amazonaws.com/snort-org/www/assets/167/deb_snort_howto.pdf</a> /etc/init.d/snortbarn</p>
-") (pubDate nil "Thu, 18 Apr 2013 22:53:52 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329364 at http://www.esdebian.org"))) ("logre abrirlo como" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>" "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363" (20848 47954) old 10 nil nil ((title nil "logre abrirlo como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329363") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
-
-<p>logre abrirlo como administrador y esta vacio, donde puedo encontrar otro archivo runsnort.sh para reponerlo?</p>
-") (pubDate nil "Thu, 18 Apr 2013 22:34:42 -0500") (dc:creator nil "tigres") (guid ((isPermaLink . "false")) "comment 329363 at http://www.esdebian.org"))) ("Muy buena noticia. Es una" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366" (20849 10180) old 7 nil nil ((title nil "Muy buena noticia. Es una") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329366") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-
-<p>Muy buena noticia. Es una alegria, gracias a todos los desarrolladores y todos los involucrados en ello</p>
-") (pubDate nil "Fri, 19 Apr 2013 06:17:24 -0500") (dc:creator nil "cnicolas") (guid ((isPermaLink . "false")) "comment 329366 at http://www.esdebian.org"))) ("[COULD NOT DOWNLOAD HEADLINES!]" "viernes, 08:26: Newsticker could not retrieve news from esDebian.
+") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("[COULD NOT DOWNLOAD HEADLINES!]" "viernes, 08:26: Newsticker could not retrieve news from esDebian.
 Return status: `exited abnormally with code 4
 '
-Command was `(wget -q -O - http://www.esdebian.org/crss)'" "" (20849 16136 952994) obsolete 0 nil nil nil) ("Ya la noticia se está" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
-<p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
-<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367" (20849 16159) old 6 nil nil ((title nil "Ya la noticia se está") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329367") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-
-<p>Ya la noticia se está propagando por toda la blogolinuxfera  (qué palabreja).</p>
-<p>Aunque sí se ponen las pilas con los bugs que quedan, que son poquitos, igual lo tenemos antes. Para mí, que uso sistemas mixtos Testing+Unstable+Experimental, es una buena nueva porque podrán afluir los paquetes retenidos.</p>
-<p>Aunque debo decir que lo que pillo de Experimental (LibreOffice 4, Iceweasel 20, KDE 4.10), está funcionando muy bien: sólo KDE 4.10 da problemas muy menores en dos de los equipos, mientras que en otro va perfecto.</p>
-") (pubDate nil "Fri, 19 Apr 2013 07:57:03 -0500") (dc:creator nil "DanielAviles") (guid ((isPermaLink . "false")) "comment 329367 at http://www.esdebian.org"))) ("cuentos escribió:
+Command was `(wget -q -O - http://www.esdebian.org/crss)'" "" (20849 16136 952994) obsolete 0 nil nil nil) ("cuentos escribió:
 Esperando" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 <div class=\"quote-msg\">
 <div class=\"quote-author\"><em>cuentos</em> escribió:</div>
 <p>Esperando el día y empezamos con la cuenta regresiva.</div>
-<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372" (20849 42228) new 1 nil nil ((title nil "cuentos escribió:
+<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372" (20849 42228) old 9 nil nil ((title nil "cuentos escribió:
 Esperando") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 
 <div class=\"quote-msg\">
@@ -169,7 +129,7 @@ i   wicd-gtk                        - wired and wireless network manager - GTK+ 
 <div class=\"quote-author\">Citar</div>
 <p>:~$ sudo service wicd start<br />
 Starting Network connection manager: wicd failed</p>
-</div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371" (20849 36641) new 2 nil nil ((title nil "Panko escribió:
+</div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371" (20849 36641) old 10 nil nil ((title nil "Panko escribió:
 En ese") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
 
 <div class=\"quote-msg\">
@@ -205,17 +165,99 @@ Starting Network connection manager: wicd failed</p>
 ") (pubDate nil "Fri, 19 Apr 2013 13:38:25 -0500") (dc:creator nil "Chambe") (guid ((isPermaLink . "false")) "comment 329371 at http://www.esdebian.org"))) ("Hhmmm hay algo que me suena" "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
 <p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
 <p>¡Sí!, ¡es ELLA!</p>
-<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>" "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370" (20849 36381) new 3 nil nil ((title nil "Hhmmm hay algo que me suena") (link nil "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
+<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>" "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370" (20849 36381) obsolete 3 nil nil ((title nil "Hhmmm hay algo que me suena") (link nil "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
 
 <p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
 <p>¡Sí!, ¡es ELLA!</p>
 <p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>
 ") (pubDate nil "Fri, 19 Apr 2013 13:34:05 -0500") (dc:creator nil "pvaldes") (guid ((isPermaLink . "false")) "comment 329370 at http://www.esdebian.org"))) ("Esperando el día y" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Esperando el día y empezamos con la cuenta regresiva.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369" (20849 32234) new 4 nil nil ((title nil "Esperando el día y") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Esperando el día y empezamos con la cuenta regresiva.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369" (20849 32234) obsolete 4 nil nil ((title nil "Esperando el día y") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 
 <p>Esperando el día y empezamos con la cuenta regresiva.</p>
 ") (pubDate nil "Fri, 19 Apr 2013 12:24:58 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329369 at http://www.esdebian.org"))) ("muy buena noticia ... ya era" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>muy buena noticia ... ya era hora</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368" (20849 31788) new 5 nil nil ((title nil "muy buena noticia ... ya era") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>muy buena noticia ... ya era hora</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368" (20849 31788) obsolete 5 nil nil ((title nil "muy buena noticia ... ya era") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
 
 <p>muy buena noticia ... ya era hora</p>
-") (pubDate nil "Fri, 19 Apr 2013 12:17:32 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329368 at http://www.esdebian.org"))))
+") (pubDate nil "Fri, 19 Apr 2013 12:17:32 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329368 at http://www.esdebian.org"))) ("Tengo 9 preciosos cachorros" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</p>" "http://www.esdebian.org/que-haces#comment-329380" (20850 33818) new 1 nil nil ((title nil "Tengo 9 preciosos cachorros") (link nil "http://www.esdebian.org/que-haces#comment-329380") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+
+<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</p>
+") (pubDate nil "Sat, 20 Apr 2013 07:03:38 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329380 at http://www.esdebian.org"))) ("Una estación de trabajo de" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+<p>Una estación de trabajo de 16Gb de RAM es un tanto bestia, ¿no?</p>
+<p>Incluso aunque instales el kernel \"bigmem\" que trae el módulo PAE, el acceso a la parte extendida de la memoria resulta un poco más lento. Si no tienes motivos específicos para emplear arquitecturas de 32 bit, en equipos de tantísima RAM es mejor que simplifiques y vayas directamente a 64 bit.</p>
+<p>Con las máquinas virtuales no deberías tener ningún problema. Particularmente, si el procesador tiene capacidad de virtualización integrada por hardware ganas algo de flexibilidad en cuanto a las arquitecturas que puedes virtualizar desde 64 bit. Pero ese es otro tema.</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329379" (20850 33570) new 2 nil nil ((title nil "Una estación de trabajo de") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329379") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+
+<p>Una estación de trabajo de 16Gb de RAM es un tanto bestia, ¿no?</p>
+<p>Incluso aunque instales el kernel \"bigmem\" que trae el módulo PAE, el acceso a la parte extendida de la memoria resulta un poco más lento. Si no tienes motivos específicos para emplear arquitecturas de 32 bit, en equipos de tantísima RAM es mejor que simplifiques y vayas directamente a 64 bit.</p>
+<p>Con las máquinas virtuales no deberías tener ningún problema. Particularmente, si el procesador tiene capacidad de virtualización integrada por hardware ganas algo de flexibilidad en cuanto a las arquitecturas que puedes virtualizar desde 64 bit. Pero ese es otro tema.</p>
+") (pubDate nil "Sat, 20 Apr 2013 06:59:30 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329379 at http://www.esdebian.org"))) ("Estoy impaciente" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<p>Estoy impaciente  <img src=\"/sites/all/modules/smileys/packs/drupales/clap.gif\" title=\"clap\" alt=\"clap\" />  felicitaciones </p>
+<p>Son los  <img src=\"/sites/all/modules/smileys/packs/drupales/first.gif\" title=\"first\" alt=\"first\" /></p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329378" (20850 27519) new 3 nil nil ((title nil "Estoy impaciente   ") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329378") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+
+<p>Estoy impaciente  <img src=\"/sites/all/modules/smileys/packs/drupales/clap.gif\" title=\"clap\" alt=\"clap\" />  felicitaciones </p>
+<p>Son los  <img src=\"/sites/all/modules/smileys/packs/drupales/first.gif\" title=\"first\" alt=\"first\" /></p>
+") (pubDate nil "Sat, 20 Apr 2013 05:18:39 -0500") (dc:creator nil "ASEN007") (guid ((isPermaLink . "false")) "comment 329378 at http://www.esdebian.org"))) ("Citar
+*************** este" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49082/manual-bienvenido-debian\">Manual Bienvenido a Debian</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p>*************** este escrito deberia iren un POST nuevo, pero el sistema de restricciones no me permiter abrir nuevas aportaciones , se agradecera si se cree conveniente el que un moderador lo realice por mi, gracias ***************
+</div>
+<p>Hola amigos,</p>
+<p>Buscando organizar mis tareas y citas diarias para evitar el caos y buscando algun tipo de organizador en consola para Debian-Squeeze encontre calcurse, que funciona perfectamente, pero<br />
+no consigo hacer que a la hora del dia indicado, ejecute una orden shell, apesar de que en la propia configuracion del paquete esta configurado para poder incluirlo.</p>
+<p>Alguien conoce la utilidad del paquete calcurse ???</p>
+<p>Para quien quiera testearlo:<br />
+<strong># aptitude install calcurse</strong><br />
+para hacerlo funcionar solo hay que invocar la orden<br />
+<strong>$ calcurse</strong><br />
+que crea la configuracion (por usuario) en su $home/.calcurse<br />
+para configurarlo, solo hay que pulsar \" c \" cuando estemos dentro del programa.</p>
+<p>el # man calcurse no indica nada sobre avisos rodando en background, quizas es que no puede lanzar avisos ?<br />
+<a href=\"http://culot.org/calcurse/manual_es.html\" rel=\"nofollow\">http://culot.org/calcurse/manual_es.html</a></p>
+<p>alguien conoce algun paquete similar que contenga dicha caracteristica? ( consola)<br />
+alguien puede compartir su experiencia ?<br />
+Gracias</p>" "http://www.esdebian.org/foro/49082/manual-bienvenido-debian#comment-329377" (20850 27148) new 4 nil nil ((title nil "Citar
+*************** este") (link nil "http://www.esdebian.org/foro/49082/manual-bienvenido-debian#comment-329377") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49082/manual-bienvenido-debian\">Manual Bienvenido a Debian</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\">Citar</div>
+<p>*************** este escrito deberia iren un POST nuevo, pero el sistema de restricciones no me permiter abrir nuevas aportaciones , se agradecera si se cree conveniente el que un moderador lo realice por mi, gracias ***************
+</div>
+<p>Hola amigos,</p>
+<p>Buscando organizar mis tareas y citas diarias para evitar el caos y buscando algun tipo de organizador en consola para Debian-Squeeze encontre calcurse, que funciona perfectamente, pero<br />
+no consigo hacer que a la hora del dia indicado, ejecute una orden shell, apesar de que en la propia configuracion del paquete esta configurado para poder incluirlo.</p>
+<p>Alguien conoce la utilidad del paquete calcurse ???</p>
+<p>Para quien quiera testearlo:<br />
+<strong># aptitude install calcurse</strong><br />
+para hacerlo funcionar solo hay que invocar la orden<br />
+<strong>$ calcurse</strong><br />
+que crea la configuracion (por usuario) en su $home/.calcurse<br />
+para configurarlo, solo hay que pulsar \" c \" cuando estemos dentro del programa.</p>
+<p>el # man calcurse no indica nada sobre avisos rodando en background, quizas es que no puede lanzar avisos ?<br />
+<a href=\"http://culot.org/calcurse/manual_es.html\" rel=\"nofollow\">http://culot.org/calcurse/manual_es.html</a></p>
+<p>alguien conoce algun paquete similar que contenga dicha caracteristica? ( consola)<br />
+alguien puede compartir su experiencia ?<br />
+Gracias</p>
+") (pubDate nil "Sat, 20 Apr 2013 05:12:28 -0500") (dc:creator nil "rasta_barna") (guid ((isPermaLink . "false")) "comment 329377 at http://www.esdebian.org"))) ("Para simplificar puedes usar" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+<p>Para simplificar puedes usar tranquilamente la versión de Debian para arquitectura AMD64 usará todos esos gigabytes que tienes. En el foro se ha discutido ampliamente este asunto así que te recomiendo que si tienes dudas busques un poco por el foro.</p>
+<p>También debes saber que si por algún motivo necesitases un entorno puramente de 32 bits, también lo puedes tener utilizando la versión de Debian para arquitecturas 386, lo único a resaltar es que los procesadores IA-32 (así se llaman a los procesadores compatibles con el 80386) sólo direccionan directamente 4GB de memoria y que usan un método especial para poder direccionar por encima de los 4GB que se llama PAE. Es decir, que la arquitectura IA-32 también aprovechará los 16GB, eso por no entrar en más detalles. Si quieres saber más busca un poco por el foro como comenté antes.</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329376" (20850 17328) new 5 nil nil ((title nil "Para simplificar puedes usar") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329376") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+
+<p>Para simplificar puedes usar tranquilamente la versión de Debian para arquitectura AMD64 usará todos esos gigabytes que tienes. En el foro se ha discutido ampliamente este asunto así que te recomiendo que si tienes dudas busques un poco por el foro.</p>
+<p>También debes saber que si por algún motivo necesitases un entorno puramente de 32 bits, también lo puedes tener utilizando la versión de Debian para arquitecturas 386, lo único a resaltar es que los procesadores IA-32 (así se llaman a los procesadores compatibles con el 80386) sólo direccionan directamente 4GB de memoria y que usan un método especial para poder direccionar por encima de los 4GB que se llama PAE. Es decir, que la arquitectura IA-32 también aprovechará los 16GB, eso por no entrar en más detalles. Si quieres saber más busca un poco por el foro como comenté antes.</p>
+") (pubDate nil "Sat, 20 Apr 2013 02:28:48 -0500") (dc:creator nil "nerve_net") (guid ((isPermaLink . "false")) "comment 329376 at http://www.esdebian.org"))) ("Creo por lo de la" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+<p>Creo por lo de la arquitectura no hay problema, creo que lo del bigmen es para arquitectura 486, mas no estoy seguro al 100%.<br />
+Donde tienes que ver es en lo del disco SSD,</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329375" (20849 62377) new 6 nil nil ((title nil "Creo por lo de la") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329375") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+
+<p>Creo por lo de la arquitectura no hay problema, creo que lo del bigmen es para arquitectura 486, mas no estoy seguro al 100%.<br />
+Donde tienes que ver es en lo del disco SSD,</p>
+") (pubDate nil "Fri, 19 Apr 2013 20:47:21 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329375 at http://www.esdebian.org"))) ("Trata instalando" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>Trata instalando networkManager...</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329374" (20849 57553) new 7 nil nil ((title nil "Trata instalando") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329374") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<p>Trata instalando networkManager...</p>
+") (pubDate nil "Fri, 19 Apr 2013 19:26:57 -0500") (dc:creator nil "lauralizette") (guid ((isPermaLink . "false")) "comment 329374 at http://www.esdebian.org"))) ("Hola soy Vicent y soy un" "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+<p>Hola soy Vicent y soy un murcianico y \"nuevo\" en debian vengo de ubuntu por la inestabilidad que hay actualmente (parece windows vista con tanto forcar cierre... una pena) Estoy luchando  <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /> para poder configurar las gráficas híbridas espero que me ayudéis.</p>
+<p>Saludos</p>" "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329373" (20849 46832) new 8 nil nil ((title nil "Hola soy Vicent y soy un") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329373") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+
+<p>Hola soy Vicent y soy un murcianico y \"nuevo\" en debian vengo de ubuntu por la inestabilidad que hay actualmente (parece windows vista con tanto forcar cierre... una pena) Estoy luchando  <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /> para poder configurar las gráficas híbridas espero que me ayudéis.</p>
+<p>Saludos</p>
+") (pubDate nil "Fri, 19 Apr 2013 16:28:16 -0500") (dc:creator nil "vma1994") (guid ((isPermaLink . "false")) "comment 329373 at http://www.esdebian.org"))))
