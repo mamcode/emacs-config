@@ -1,2 +1,0 @@
-;; -*- coding: utf-8 -*-
-(("News" nil "http://2013.ploneconf.org" (20848 42251 729615) feed 0 nil nil ((title nil "News") (link nil "http://2013.ploneconf.org") (description nil) (syn:updatePeriod nil "daily") (syn:updateFrequency nil "1") (syn:updateBase nil "2013-01-10T16:47:15Z") (image ((rdf:resource . "http://2013.ploneconf.org/logo.png"))) (items nil (rdf:Seq nil)))))
