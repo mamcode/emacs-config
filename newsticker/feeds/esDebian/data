@@ -1,5 +1,5 @@
 ;; -*- coding: utf-8 -*-
-(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20850 35698 547267) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
+(("esDebian - Comments" "Comentarios" "http://www.esdebian.org" (20852 9728 236987) feed 0 nil nil ((title nil "esDebian - Comments") (link nil "http://www.esdebian.org") (description nil "Comentarios") (language nil "es") (item nil (title nil "Hola, mi nombre es") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329309") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
 
 <p>Hola, mi nombre es Francisco, soy de argentina, estudiante de Ing. en Sistemas de Información, uso debian hace muchos años, espero poder dar una mano en lo que pueda y/o yo poder aprender algo nuevo de ustedes, un saludo  <img src=\"/sites/all/modules/smileys/packs/drupales/bigsmile.gif\" title=\"bigsmile\" alt=\"bigsmile\" /></p>
 ") (pubDate nil "Wed, 17 Apr 2013 10:48:24 -0500") (dc:creator nil "WSick") (guid ((isPermaLink . "false")) "comment 329309 at http://www.esdebian.org")) (item nil (title nil "ok ya lo reporte como") (link nil "http://www.esdebian.org/foro/49270/actualizar-sistema#comment-329308") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49270/actualizar-sistema\">Actualizar sistema</a>:</p>
@@ -83,181 +83,200 @@ Ese paquete parece ser que solo esta para dos arquitecturas, avr32 y m68k. Creo 
 <p>Comento esto por si a alguna persona le sirve.</p>
 <p>Saludos<br />
 Rodrigo</p>
-") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("[COULD NOT DOWNLOAD HEADLINES!]" "viernes, 08:26: Newsticker could not retrieve news from esDebian.
-Return status: `exited abnormally with code 4
-'
-Command was `(wget -q -O - http://www.esdebian.org/crss)'" "" (20849 16136 952994) obsolete 0 nil nil nil) ("cuentos escribió:
-Esperando" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+") (pubDate nil "Wed, 17 Apr 2013 01:40:05 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329300 at http://www.esdebian.org")))) ("Black Rider escribió:
+Tengo" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
 <div class=\"quote-msg\">
-<div class=\"quote-author\"><em>cuentos</em> escribió:</div>
-<p>Esperando el día y empezamos con la cuenta regresiva.</div>
-<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372" (20849 42228) old 9 nil nil ((title nil "cuentos escribió:
-Esperando") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329372") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
+<div class=\"quote-author\"><em>Black Rider</em> escribió:</div>
+<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</div>
+<p>Por el momento estoy en un departamento y solo tengo un maltes y un <strong>gran</strong>pero <strong>grande</strong> perrito chihuahua</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>Black Rider</em> escribió:</div>
+<p>Una perra nuestra tuvo 12 de una vez, y nos costó un huevo colocarlos por la mala fama que tienen. Espero que los periodistas responsables se congelen en el infierno de Flazash por los siglos de los siglos.</p>
+<p>Buena suerte con tu cachorro salvaje, porque la vas a necesitar. Si es que por eso prefiero yo los potros, porque no dan un ruido <img src=\"/sites/all/modules/smileys/packs/drupales/meparto.gif\" title=\"meparto\" alt=\"meparto\" />.</div>
+<p>Y mi esposa creía en esas historias donde \"satanizan\" a los rottweiler, pero cambio al conocerlos bien.</p>" "http://www.esdebian.org/que-haces#comment-329386" (20850 43661) old 10 nil nil ((title nil "Black Rider escribió:
+Tengo") (link nil "http://www.esdebian.org/que-haces#comment-329386") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
 
 <div class=\"quote-msg\">
-<div class=\"quote-author\"><em>cuentos</em> escribió:</div>
-<p>Esperando el día y empezamos con la cuenta regresiva.</div>
-<p>Prefiero esperarme a que primero salga la primera revisión de Wheezy...</p>
-") (pubDate nil "Fri, 19 Apr 2013 15:11:32 -0500") (dc:creator nil "nerve_net") (guid ((isPermaLink . "false")) "comment 329372 at http://www.esdebian.org"))) ("Panko escribió:
-En ese" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<div class=\"quote-author\"><em>Black Rider</em> escribió:</div>
+<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</div>
+<p>Por el momento estoy en un departamento y solo tengo un maltes y un <strong>gran</strong>pero <strong>grande</strong> perrito chihuahua</p>
 <div class=\"quote-msg\">
-<div class=\"quote-author\"><em>Panko</em> escribió:</div>
-<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
-De todas formas... ¿que paquetes tienes instalados de wicd?</p>
-<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
-<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
-<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
-También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
-<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
-<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
-<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
+<div class=\"quote-author\"><em>Black Rider</em> escribió:</div>
+<p>Una perra nuestra tuvo 12 de una vez, y nos costó un huevo colocarlos por la mala fama que tienen. Espero que los periodistas responsables se congelen en el infierno de Flazash por los siglos de los siglos.</p>
+<p>Buena suerte con tu cachorro salvaje, porque la vas a necesitar. Si es que por eso prefiero yo los potros, porque no dan un ruido <img src=\"/sites/all/modules/smileys/packs/drupales/meparto.gif\" title=\"meparto\" alt=\"meparto\" />.</div>
+<p>Y mi esposa creía en esas historias donde \"satanizan\" a los rottweiler, pero cambio al conocerlos bien.</p>
+") (pubDate nil "Sat, 20 Apr 2013 09:47:41 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329386 at http://www.esdebian.org"))) ("Creo que las dudas te vienen" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+<p>Creo que las dudas te vienen por lo del nombre de la arquitectura: AMD64.<br />
+El que esté nombrada como amd64 no quiere decir que sea solo para placas que usen cpu's amd. El nombre de amd64 viene de que fué amd la 1ª que usó este juego de instrucciones, pero nada mas. Intel se refería a este juego de instrucciones como EM64 si no recuedo mal, y también se la nombra x86-64.<br />
+En todo caso no necesitas ninguna versión de kernel especial. Si no recuerdo mal esta arquitectura puede manejar memoria física hasta 256 Tb, así que tus 16 Gb se quedan en nà ;-)<br />
+Con 16 Gb yo haría un ram disk como una casa :-),y quizás hubiera optado por varios discos duros para ponerlos en raid en vez de un ssd, pero bueno, para gustos hay colores.</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329387" (20850 51951) old 9 nil nil ((title nil "Creo que las dudas te vienen") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329387") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
+
+<p>Creo que las dudas te vienen por lo del nombre de la arquitectura: AMD64.<br />
+El que esté nombrada como amd64 no quiere decir que sea solo para placas que usen cpu's amd. El nombre de amd64 viene de que fué amd la 1ª que usó este juego de instrucciones, pero nada mas. Intel se refería a este juego de instrucciones como EM64 si no recuedo mal, y también se la nombra x86-64.<br />
+En todo caso no necesitas ninguna versión de kernel especial. Si no recuerdo mal esta arquitectura puede manejar memoria física hasta 256 Tb, así que tus 16 Gb se quedan en nà ;-)<br />
+Con 16 Gb yo haría un ram disk como una casa :-),y quizás hubiera optado por varios discos duros para ponerlos en raid en vez de un ssd, pero bueno, para gustos hay colores.</p>
+") (pubDate nil "Sat, 20 Apr 2013 12:05:51 -0500") (dc:creator nil "empanada") (guid ((isPermaLink . "false")) "comment 329387 at http://www.esdebian.org"))) ("Trata de reconfigurar wicd:" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+<p>Trata de reconfigurar wicd: dpkg-reconfigure wicd<br />
+y lo vuelves a poner en los niveles de ejecucion: update-rc.d wicd defaults<br />
+Ve que pasa.</p>
+<p>La otra opcion es como comente anteriormente, instalando NetworkManager...</p>
+<p>Saludos amiguito... <img src=\"/sites/all/modules/smileys/packs/drupales/madi.gif\" title=\"madi\" alt=\"madi\" /></p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329392" (20852 769) old 4 nil nil ((title nil "Trata de reconfigurar wicd:") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329392") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
+
+<p>Trata de reconfigurar wicd: dpkg-reconfigure wicd<br />
+y lo vuelves a poner en los niveles de ejecucion: update-rc.d wicd defaults<br />
+Ve que pasa.</p>
+<p>La otra opcion es como comente anteriormente, instalando NetworkManager...</p>
+<p>Saludos amiguito... <img src=\"/sites/all/modules/smileys/packs/drupales/madi.gif\" title=\"madi\" alt=\"madi\" /></p>
+") (pubDate nil "Sun, 21 Apr 2013 10:17:21 -0500") (dc:creator nil "lauralizette") (guid ((isPermaLink . "false")) "comment 329392 at http://www.esdebian.org"))) ("\"El uso de las armas debe" "<p>In reply to <a href=\"http://www.esdebian.org/foro/28864/frases\">Frases </a>:</p>
+<p>\"El uso de las armas debe estar restringido a las agencias gubernamentales responsables, como la Gestapo, el Stasi o el KGB. Ellos saben lo que te conviene, ¿no?\"</p>
+<p>--Pegatina graciosa anónima.</p>" "http://www.esdebian.org/foro/28864/frases#comment-329391" (20851 53097) old 5 nil nil ((title nil "\"El uso de las armas debe") (link nil "http://www.esdebian.org/foro/28864/frases#comment-329391") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/28864/frases\">Frases </a>:</p>
+
+<p>\"El uso de las armas debe estar restringido a las agencias gubernamentales responsables, como la Gestapo, el Stasi o el KGB. Ellos saben lo que te conviene, ¿no?\"</p>
+<p>--Pegatina graciosa anónima.</p>
+") (pubDate nil "Sun, 21 Apr 2013 06:37:13 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329391 at http://www.esdebian.org"))) ("Ah, la famosa ventana de" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+<p>Ah, la famosa ventana de socializacion en perros y lobos... </p>
+<p>\"Para socializar a un perro con humanos o caballos, todo lo que se necesita es que se los presenten al cachorro durante unos 90 minutos entre las edades de 4 y 8 semanas, Tras eso, un perro no se sentirá asustado por humanos o cualquier otro animal que se le haya presentado. Por supuesto crear una relación más estrecha con el perro lleva más tiempo. Con un cachorro de lobo llegar al mismo nivel de reducción del miedo requiere contacto humano de 24 horas de duración empezando <em>antes</em> de las tres semanas, e incluso en ese caso no se consigue el mismo nivel de afección o falta de temor. Además aún cuando conozca el olor de algunas personas, una vez superada la ventana de socialización, seguirá teniendo miedo si se le presenta una persona diferente. En el perro la ventana nunca se cierra del todo así que puede aprender a tolerar a otras personas\".</p>
+<p>Kathryn Lord</p>" "http://www.esdebian.org/que-haces#comment-329390" (20850 62775) old 6 nil nil ((title nil "Ah, la famosa ventana de") (link nil "http://www.esdebian.org/que-haces#comment-329390") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+
+<p>Ah, la famosa ventana de socializacion en perros y lobos... </p>
+<p>\"Para socializar a un perro con humanos o caballos, todo lo que se necesita es que se los presenten al cachorro durante unos 90 minutos entre las edades de 4 y 8 semanas, Tras eso, un perro no se sentirá asustado por humanos o cualquier otro animal que se le haya presentado. Por supuesto crear una relación más estrecha con el perro lleva más tiempo. Con un cachorro de lobo llegar al mismo nivel de reducción del miedo requiere contacto humano de 24 horas de duración empezando <em>antes</em> de las tres semanas, e incluso en ese caso no se consigue el mismo nivel de afección o falta de temor. Además aún cuando conozca el olor de algunas personas, una vez superada la ventana de socialización, seguirá teniendo miedo si se le presenta una persona diferente. En el perro la ventana nunca se cierra del todo así que puede aprender a tolerar a otras personas\".</p>
+<p>Kathryn Lord</p>
+") (pubDate nil "Sat, 20 Apr 2013 15:06:15 -0500") (dc:creator nil "pvaldes") (guid ((isPermaLink . "false")) "comment 329390 at http://www.esdebian.org"))) ("Bienvenido a un mundo en el" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+<p>Bienvenido a un mundo en el que los ojos <em>moraos</em>, las castañas y los <em>knock outs</em> son el símbolo de una sana amistad.</p>
+<p>Imagino que al principio te tengan liado con los punch-ins y los sacos, y que el sparring lo dejen para un poco más tarde, ¿no?</p>
+<p>En fin, pásalo bien y no te rompas la mano como aluno que yo me sé <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /></p>" "http://www.esdebian.org/que-haces#comment-329389" (20850 58334) old 7 nil nil ((title nil "Bienvenido a un mundo en el") (link nil "http://www.esdebian.org/que-haces#comment-329389") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+
+<p>Bienvenido a un mundo en el que los ojos <em>moraos</em>, las castañas y los <em>knock outs</em> son el símbolo de una sana amistad.</p>
+<p>Imagino que al principio te tengan liado con los punch-ins y los sacos, y que el sparring lo dejen para un poco más tarde, ¿no?</p>
+<p>En fin, pásalo bien y no te rompas la mano como aluno que yo me sé <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /></p>
+") (pubDate nil "Sat, 20 Apr 2013 13:52:14 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329389 at http://www.esdebian.org"))) ("Termino la segunda semana" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+<p>Termino la segunda semana con el boxeo. Mi cuerpo ya se acostumbro a semejante esfuerzo. </p>
+<p>Preparate Rocki, porque hay te voy... broma. <img src=\"/sites/all/modules/smileys/packs/drupales/meparto.gif\" title=\"meparto\" alt=\"meparto\" /> </p>
+<p>Descargando cosas para entretenerme un poco, estoy un poco cansado para salir.</p>
+<p>Saludos...</p>" "http://www.esdebian.org/que-haces#comment-329388" (20850 54610) old 8 nil nil ((title nil "Termino la segunda semana") (link nil "http://www.esdebian.org/que-haces#comment-329388") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
+
+<p>Termino la segunda semana con el boxeo. Mi cuerpo ya se acostumbro a semejante esfuerzo. </p>
+<p>Preparate Rocki, porque hay te voy... broma. <img src=\"/sites/all/modules/smileys/packs/drupales/meparto.gif\" title=\"meparto\" alt=\"meparto\" /> </p>
+<p>Descargando cosas para entretenerme un poco, estoy un poco cansado para salir.</p>
+<p>Saludos...</p>
+") (pubDate nil "Sat, 20 Apr 2013 12:50:10 -0500") (dc:creator nil "Nami") (guid ((isPermaLink . "false")) "comment 329388 at http://www.esdebian.org"))) ("por mas esta decir que es" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+<p>por mas esta decir que es raro</p>
+<p>y ,as raro es que te siga saliendo</p>
+<p>El certificado de seguridad del sitio no es de confianza.<br />
+Intentaste acceder a <strong><em>debian.local </em></strong>, pero el servidor presentó un certificado emitido por una entidad no aceptada por el sistema operativo de tu equipo</p>
+<p>--http://i.imgur.com/8uxOQ6k.png<br />
+--http://i.imgur.com/rf5AG3j.png<br />
+despues de aceptarlo<br />
+--http://i.imgur.com/IsMS4Fr.png</p>
+<p>lo chistoso del chrome es que no te deja abrir otra ventana con el mismo ip, hasta que aceptas la anterior (estas son en xp)(en otras palabras si cargas la misma pagina varias veces no te deja hacer nada, hasta que aceptas en algun lado)<br />
+--http://i.imgur.com/nBU3Llh.png<br />
+--http://i.imgur.com/dgjjoeG.png (es lo que paso en esta al aceptar en la de arriba, me cargo la de abajo)</p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329395" (20852 9903) new 1 nil nil ((title nil "por mas esta decir que es") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329395") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+
+<p>por mas esta decir que es raro</p>
+<p>y ,as raro es que te siga saliendo</p>
+<p>El certificado de seguridad del sitio no es de confianza.<br />
+Intentaste acceder a <strong><em>debian.local </em></strong>, pero el servidor presentó un certificado emitido por una entidad no aceptada por el sistema operativo de tu equipo</p>
+<p>--http://i.imgur.com/8uxOQ6k.png<br />
+--http://i.imgur.com/rf5AG3j.png<br />
+despues de aceptarlo<br />
+--http://i.imgur.com/IsMS4Fr.png</p>
+<p>lo chistoso del chrome es que no te deja abrir otra ventana con el mismo ip, hasta que aceptas la anterior (estas son en xp)(en otras palabras si cargas la misma pagina varias veces no te deja hacer nada, hasta que aceptas en algun lado)<br />
+--http://i.imgur.com/nBU3Llh.png<br />
+--http://i.imgur.com/dgjjoeG.png (es lo que paso en esta al aceptar en la de arriba, me cargo la de abajo)</p>
+") (pubDate nil "Sun, 21 Apr 2013 12:49:35 -0500") (dc:creator nil "alambre") (guid ((isPermaLink . "false")) "comment 329395 at http://www.esdebian.org"))) ("siddharta" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>siddharta</em> escribió:</div>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>podrias simplemente modificar el hosts de windows (si estas en una lan), sino quiza el webmin tenga alguna restricion extra, alguna blacklist activada</div>
+<p>Sí, es una posibilidad, porque Webmin tiene un módulo en el que se puede configurar a qué direcciones IP se les permitirá acceder ... así que en Debian podría tener una dirección IP estática a la que sí se le permite, mientras que en Windows puede tener otra dirección IP a la que no se le permite.</p>
+<p>Creo que debemos esperar a que revise las cosas que le hemos dicho, antes de continuar, para no saltarnos esos puntos.</p>
+<p>Sidd.</div>
+<p>Entre a webmin-configuracion de webmin-Control de Acceso a IP-Allowed IP addresses y veo que la opcion \"Permitir desde todas las direcciones\" está activada, por lo tanto cualquier computadora de la red local deberia poder logearse en webmin pero no se que otra cosa le impide a un sistema windows ingresar a webmin por el navegador, desde mi otra pc con debian puedo entrar perfectamente a webmin remotamente asi que el problema es no poder acceder con windows y eventualmente me gustaria poder acceder desde cualquier pc a mi servidor desde afuera de la red local para poder administrar el servidor mientras estoy fuera de casa.<br />
+Esta es la configuracion de IP de mi webmin <img src=\"http://k42.kn3.net/5833964B1.png\" alt=\"\" /></p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329394" (20852 4528) new 2 nil nil ((title nil "siddharta") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329394") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>siddharta</em> escribió:</div>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>podrias simplemente modificar el hosts de windows (si estas en una lan), sino quiza el webmin tenga alguna restricion extra, alguna blacklist activada</div>
+<p>Sí, es una posibilidad, porque Webmin tiene un módulo en el que se puede configurar a qué direcciones IP se les permitirá acceder ... así que en Debian podría tener una dirección IP estática a la que sí se le permite, mientras que en Windows puede tener otra dirección IP a la que no se le permite.</p>
+<p>Creo que debemos esperar a que revise las cosas que le hemos dicho, antes de continuar, para no saltarnos esos puntos.</p>
+<p>Sidd.</div>
+<p>Entre a webmin-configuracion de webmin-Control de Acceso a IP-Allowed IP addresses y veo que la opcion \"Permitir desde todas las direcciones\" está activada, por lo tanto cualquier computadora de la red local deberia poder logearse en webmin pero no se que otra cosa le impide a un sistema windows ingresar a webmin por el navegador, desde mi otra pc con debian puedo entrar perfectamente a webmin remotamente asi que el problema es no poder acceder con windows y eventualmente me gustaria poder acceder desde cualquier pc a mi servidor desde afuera de la red local para poder administrar el servidor mientras estoy fuera de casa.<br />
+Esta es la configuracion de IP de mi webmin <img src=\"http://k42.kn3.net/5833964B1.png\" alt=\"\" /></p>
+") (pubDate nil "Sun, 21 Apr 2013 11:20:00 -0500") (dc:creator nil "Shenlong") (guid ((isPermaLink . "false")) "comment 329394 at http://www.esdebian.org"))) ("alambre escribió:
+y esta" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+<div class=\"quote-msg\">
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>y esta bien digamos, y cuando le haces click, da erro porque no encuentra el host (Error 105 ( Error _Name_Not_Solved) )) Chrome quiza?<br />
+en firefox me da </p>
+<div class=\"codeblock\"><code>Server not found</p>
+<p>Firefox can't find the server at debian.local.</p>
+<p>&nbsp;&nbsp;&nbsp; Check the address for typing errors such as ww.example.com instead of <a href=\"http://www.example.com<br />\" title=\"www.example.com<br />\" rel=\"nofollow\">www.example.com<br /></a>&nbsp;&nbsp;&nbsp; If you are unable to load any pages, check your computer's network connection.<br />&nbsp;&nbsp;&nbsp; If your computer or network is protected by a firewall or proxy, make sure that Nightly is permitted to access the Web.</code></div>
+<p>y esta bien, ese nombre no lo tengo en el dns y no lo tengo en la red</p>
+<p>ahora en tu caso<br />
+en parte es bueno, dice que el puerto esta abierto, se puede descartar el firewall en parte<br />
+toca probar en ves de hacerle click, en la barra del navegador escribir<br />
+<a href=\"https://192.168.1.103:10000\" title=\"https://192.168.1.103:10000\" rel=\"nofollow\">https://192.168.1.103:10000</a></p>
+<p>en mi caso<br />
+--http://i.imgur.com/p1R0fnj.png<br />
+--http://i.imgur.com/xGz9vwE.png<br />
+--http://i.imgur.com/vilFlOh.png<br />
+que es la que supongo te sugiere o usar el nombre del host apache (el nombre del sitio es mas manejable digamos para ponerlo en el archivo hosts)<br />
+--http://i.imgur.com/eE8Oiia.png<br />
+--http://i.imgur.com/TPOYgkj.png</p>
+<p>por mas que lo veas como un problema solo, creo que son dos, uno es el propio del dns, es solucionable, con un dns o con el hosts, el segundo es el del puerto y protocolo</p>
+<p>me llama la atención porque no me da el nombre, como en tu caso<br />
+quiza por<br />
+nslookup<br />
+&gt; set q=any<br />
+&gt; 10.0.0.97<br />
+Server:         10.0.0.97<br />
+Address:        10.0.0.97#53</p>
+<p>97.0.0.10.in-addr.arpa  name = debian.<br />
+97.0.0.10.in-addr.arpa  name = dns.<br />
+97.0.0.10.in-addr.arpa  name = www.</p>
 </div>
-<p>Hola,</p>
-<p>Despues de ejecutar <strong>sudo aptitude search ~iwicd</strong>  me salen todos los paquetes instalados.</p>
+<div class=\"codeblock\"><code>El certificado de seguridad del sitio no es de confianza.<br />Intentaste acceder a debian.local , pero el servidor presentó un certificado emitido por una entidad no aceptada por el sistema operativo de tu equipo. Esto puede significar que el servidor generó sus propias credenciales de seguridad, en las que Chromium no puede confiar para obtener información de identidad, o un intruso puede estar tratando de interceptar tus comunicaciones.<br />No deberías continuar, sobre todo si no has recibido nunca esta advertencia para este sitio.<br />Continuar de todos modos&nbsp; Volver a seguridad<br /> Más información<br />Cuando te conectas a un sitio web seguro, el servidor que lo aloja ofrece a tu navegador lo que se conoce con el nombre de &quot;certificado&quot; para verificar su identidad. Este certificado contiene información de identidad, como la dirección del sitio web, que es verificada por un tercero en el que confía tu equipo. Al comprobar que la dirección del certificado concuerda con la dirección del sitio web, se puede verificar la comunicación segura con el sitio web correspondiente y no con un tercero (como un atacante de tu red).</p>
+<p>En este caso, ningún tercero en quien tu computadora confía verificó el certificado. Cualquiera puede crear un certificado afirmando ser una página determinada, por lo que es necesario que un tercero confiable verifique el certificado. Sin esa verificación, la información de identidad del certificado no tiene sentido. Por lo tanto, no es posible verificar que te estás comunicando con debian.local en lugar de hacerlo con un atacante que generó su propio certificado afirmando ser debian.local. No debes avanzar.</p>
+<p>No obstante, si trabajas en una organización que genera sus propios certificados e intentas conectarte con un sitio web interno de esa organización utilizando un certificado, posiblemente puedas resolver este problema de forma segura. Puedes importar el certificado de raíz de tu organización como un &quot;certificado de raíz&quot; y luego, los certificados emitidos o verificados por tu organización serán fiables y no verás este error la próxima vez que intentes conectarte a un sitio web interno. Ponte en contacto con el personal de ayuda de la organización para obtener ayuda para agregar un nuevo certificado de raíz a tu computadora.</code></div>
+<p>Esto arroja a veces chromium</p>" "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329393" (20852 3826) new 3 nil nil ((title nil "alambre escribió:
+y esta") (link nil "http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian#comment-329393") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49177/webmin-no-accede-windows-error-dns-debian\">Webmin no accede desde windows (error DNS) pero desde Debian si</a>:</p>
+
 <div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p> sudo aptitude search ~iwicd<br />
-i   python-wicd                     - wired and wireless network manager - Pytho<br />
-i   wicd                            - wired and wireless network manager - metap<br />
-i   wicd-cli                        - wired and wireless network manager - scrip<br />
-i   wicd-curses                     - wired and wireless network manager - Curse<br />
-i   wicd-daemon                     - wired and wireless network manager - daemo<br />
-i   wicd-gtk                        - wired and wireless network manager - GTK+ </p>
+<div class=\"quote-author\"><em>alambre</em> escribió:</div>
+<p>y esta bien digamos, y cuando le haces click, da erro porque no encuentra el host (Error 105 ( Error _Name_Not_Solved) )) Chrome quiza?<br />
+en firefox me da </p>
+<div class=\"codeblock\"><code>Server not found</p>
+<p>Firefox can&#039;t find the server at debian.local.</p>
+<p>&nbsp;&nbsp;&nbsp; Check the address for typing errors such as ww.example.com instead of <a href=\"http://www.example.com<br />\" title=\"www.example.com<br />\" rel=\"nofollow\">www.example.com<br /></a>&nbsp;&nbsp;&nbsp; If you are unable to load any pages, check your computer&#039;s network connection.<br />&nbsp;&nbsp;&nbsp; If your computer or network is protected by a firewall or proxy, make sure that Nightly is permitted to access the Web.</code></div>
+<p>y esta bien, ese nombre no lo tengo en el dns y no lo tengo en la red</p>
+<p>ahora en tu caso<br />
+en parte es bueno, dice que el puerto esta abierto, se puede descartar el firewall en parte<br />
+toca probar en ves de hacerle click, en la barra del navegador escribir<br />
+<a href=\"https://192.168.1.103:10000\" title=\"https://192.168.1.103:10000\" rel=\"nofollow\">https://192.168.1.103:10000</a></p>
+<p>en mi caso<br />
+--http://i.imgur.com/p1R0fnj.png<br />
+--http://i.imgur.com/xGz9vwE.png<br />
+--http://i.imgur.com/vilFlOh.png<br />
+que es la que supongo te sugiere o usar el nombre del host apache (el nombre del sitio es mas manejable digamos para ponerlo en el archivo hosts)<br />
+--http://i.imgur.com/eE8Oiia.png<br />
+--http://i.imgur.com/TPOYgkj.png</p>
+<p>por mas que lo veas como un problema solo, creo que son dos, uno es el propio del dns, es solucionable, con un dns o con el hosts, el segundo es el del puerto y protocolo</p>
+<p>me llama la atención porque no me da el nombre, como en tu caso<br />
+quiza por<br />
+nslookup<br />
+&gt; set q=any<br />
+&gt; 10.0.0.97<br />
+Server:         10.0.0.97<br />
+Address:        10.0.0.97#53</p>
+<p>97.0.0.10.in-addr.arpa  name = debian.<br />
+97.0.0.10.in-addr.arpa  name = dns.<br />
+97.0.0.10.in-addr.arpa  name = www.</p>
 </div>
-<p>Vuelvo a intentar iniciar el servicio y nada.</p>
-<div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p>:~$ sudo service wicd start<br />
-Starting Network connection manager: wicd failed</p>
-</div>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371" (20849 36641) old 10 nil nil ((title nil "Panko escribió:
-En ese") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329371") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-
-<div class=\"quote-msg\">
-<div class=\"quote-author\"><em>Panko</em> escribió:</div>
-<p>En ese \"traceback\" faltan líneas, y el error posiblemente esté al final de el...<br />
-De todas formas... ¿que paquetes tienes instalados de wicd?</p>
-<div class=\"codeblock\"><code>~$ aptitude search ~iwicd<br />i A python-wicd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Python module<br />i&nbsp;&nbsp; wicd-curses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - Curses client<br />i A wicd-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - wired and wireless network manager - daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />i&nbsp;&nbsp; wicd-kde</code></div>
-<p>De estos, son necesarios python-wicd, wicd-daemon, y el que uses, wicd-kde o wicd-gtk.</p>
-<p>Por cierto, al momento de poner la contraseña, verás que hay dos formas, en ASCII (texto normal), o en HEX (hexadecimal). Si tu AP está configurado para usarla en hexadecimal, si seleccionas ASCII lo más probable es que no funcione y te de el error de contraseña incorrecta.<br />
-También sería interesante ver que version de los paquetes de wicd tienes instalado para ver si hay algún bug en dicha versión.</p>
-<p>Además, sudo wicd-client no es la forma correcta de iniciar wicd, ya que eso solo iniciaría la app que usas tu en tu entorno gráfico, y esta siempre se ejecuta como usuario normal. Para iniciar el servicio:</p>
-<div class=\"codeblock\"><code>~# /etc/init.d/wicd start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Inicia el servicio<br />~# /etc/init.d/wicd restart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;=== Reinicia el servicio</p>
-<p>En ambos casos puedes usar&nbsp; &quot;service wicd&quot; en vez de /etc/init.d/wicd</code></div>
-</div>
-<p>Hola,</p>
-<p>Despues de ejecutar <strong>sudo aptitude search ~iwicd</strong>  me salen todos los paquetes instalados.</p>
-<div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p> sudo aptitude search ~iwicd<br />
-i   python-wicd                     - wired and wireless network manager - Pytho<br />
-i   wicd                            - wired and wireless network manager - metap<br />
-i   wicd-cli                        - wired and wireless network manager - scrip<br />
-i   wicd-curses                     - wired and wireless network manager - Curse<br />
-i   wicd-daemon                     - wired and wireless network manager - daemo<br />
-i   wicd-gtk                        - wired and wireless network manager - GTK+ </p>
-</div>
-<p>Vuelvo a intentar iniciar el servicio y nada.</p>
-<div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p>:~$ sudo service wicd start<br />
-Starting Network connection manager: wicd failed</p>
-</div>
-") (pubDate nil "Fri, 19 Apr 2013 13:38:25 -0500") (dc:creator nil "Chambe") (guid ((isPermaLink . "false")) "comment 329371 at http://www.esdebian.org"))) ("Hhmmm hay algo que me suena" "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
-<p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
-<p>¡Sí!, ¡es ELLA!</p>
-<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>" "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370" (20849 36381) obsolete 3 nil nil ((title nil "Hhmmm hay algo que me suena") (link nil "http://www.esdebian.org/foro/24631/humor-grafico#comment-329370") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/24631/humor-grafico\">Humor gráfico</a>:</p>
-
-<p>Hhmmm hay algo que me suena familiar en esta foto... no acabo de caer...</p>
-<p>¡Sí!, ¡es ELLA!</p>
-<p><a href=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" title=\"http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg\" rel=\"nofollow\">http://www.schmidbauer.at/kunstkuh/kuh128_2.jpg</a></p>
-") (pubDate nil "Fri, 19 Apr 2013 13:34:05 -0500") (dc:creator nil "pvaldes") (guid ((isPermaLink . "false")) "comment 329370 at http://www.esdebian.org"))) ("Esperando el día y" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Esperando el día y empezamos con la cuenta regresiva.</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369" (20849 32234) obsolete 4 nil nil ((title nil "Esperando el día y") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329369") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-
-<p>Esperando el día y empezamos con la cuenta regresiva.</p>
-") (pubDate nil "Fri, 19 Apr 2013 12:24:58 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329369 at http://www.esdebian.org"))) ("muy buena noticia ... ya era" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>muy buena noticia ... ya era hora</p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368" (20849 31788) obsolete 5 nil nil ((title nil "muy buena noticia ... ya era") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329368") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-
-<p>muy buena noticia ... ya era hora</p>
-") (pubDate nil "Fri, 19 Apr 2013 12:17:32 -0500") (dc:creator nil "Froggy") (guid ((isPermaLink . "false")) "comment 329368 at http://www.esdebian.org"))) ("Tengo 9 preciosos cachorros" "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
-<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</p>" "http://www.esdebian.org/que-haces#comment-329380" (20850 33818) new 1 nil nil ((title nil "Tengo 9 preciosos cachorros") (link nil "http://www.esdebian.org/que-haces#comment-329380") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/que-haces\">¿Qué estás haciendo?</a>:</p>
-
-<p>Tengo 9 preciosos cachorros de Rottweiler recién nacidos por aquí. ¡Retorceros todos de envidia cochina!</p>
-") (pubDate nil "Sat, 20 Apr 2013 07:03:38 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329380 at http://www.esdebian.org"))) ("Una estación de trabajo de" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-<p>Una estación de trabajo de 16Gb de RAM es un tanto bestia, ¿no?</p>
-<p>Incluso aunque instales el kernel \"bigmem\" que trae el módulo PAE, el acceso a la parte extendida de la memoria resulta un poco más lento. Si no tienes motivos específicos para emplear arquitecturas de 32 bit, en equipos de tantísima RAM es mejor que simplifiques y vayas directamente a 64 bit.</p>
-<p>Con las máquinas virtuales no deberías tener ningún problema. Particularmente, si el procesador tiene capacidad de virtualización integrada por hardware ganas algo de flexibilidad en cuanto a las arquitecturas que puedes virtualizar desde 64 bit. Pero ese es otro tema.</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329379" (20850 33570) new 2 nil nil ((title nil "Una estación de trabajo de") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329379") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-
-<p>Una estación de trabajo de 16Gb de RAM es un tanto bestia, ¿no?</p>
-<p>Incluso aunque instales el kernel \"bigmem\" que trae el módulo PAE, el acceso a la parte extendida de la memoria resulta un poco más lento. Si no tienes motivos específicos para emplear arquitecturas de 32 bit, en equipos de tantísima RAM es mejor que simplifiques y vayas directamente a 64 bit.</p>
-<p>Con las máquinas virtuales no deberías tener ningún problema. Particularmente, si el procesador tiene capacidad de virtualización integrada por hardware ganas algo de flexibilidad en cuanto a las arquitecturas que puedes virtualizar desde 64 bit. Pero ese es otro tema.</p>
-") (pubDate nil "Sat, 20 Apr 2013 06:59:30 -0500") (dc:creator nil "Black Rider") (guid ((isPermaLink . "false")) "comment 329379 at http://www.esdebian.org"))) ("Estoy impaciente" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-<p>Estoy impaciente  <img src=\"/sites/all/modules/smileys/packs/drupales/clap.gif\" title=\"clap\" alt=\"clap\" />  felicitaciones </p>
-<p>Son los  <img src=\"/sites/all/modules/smileys/packs/drupales/first.gif\" title=\"first\" alt=\"first\" /></p>" "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329378" (20850 27519) new 3 nil nil ((title nil "Estoy impaciente   ") (link nil "http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo#comment-329378") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49279/debian-wheezy-4-o-5-mayo\">Debian Wheezy para el 4 o 5 de Mayo</a>:</p>
-
-<p>Estoy impaciente  <img src=\"/sites/all/modules/smileys/packs/drupales/clap.gif\" title=\"clap\" alt=\"clap\" />  felicitaciones </p>
-<p>Son los  <img src=\"/sites/all/modules/smileys/packs/drupales/first.gif\" title=\"first\" alt=\"first\" /></p>
-") (pubDate nil "Sat, 20 Apr 2013 05:18:39 -0500") (dc:creator nil "ASEN007") (guid ((isPermaLink . "false")) "comment 329378 at http://www.esdebian.org"))) ("Citar
-*************** este" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49082/manual-bienvenido-debian\">Manual Bienvenido a Debian</a>:</p>
-<div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p>*************** este escrito deberia iren un POST nuevo, pero el sistema de restricciones no me permiter abrir nuevas aportaciones , se agradecera si se cree conveniente el que un moderador lo realice por mi, gracias ***************
-</div>
-<p>Hola amigos,</p>
-<p>Buscando organizar mis tareas y citas diarias para evitar el caos y buscando algun tipo de organizador en consola para Debian-Squeeze encontre calcurse, que funciona perfectamente, pero<br />
-no consigo hacer que a la hora del dia indicado, ejecute una orden shell, apesar de que en la propia configuracion del paquete esta configurado para poder incluirlo.</p>
-<p>Alguien conoce la utilidad del paquete calcurse ???</p>
-<p>Para quien quiera testearlo:<br />
-<strong># aptitude install calcurse</strong><br />
-para hacerlo funcionar solo hay que invocar la orden<br />
-<strong>$ calcurse</strong><br />
-que crea la configuracion (por usuario) en su $home/.calcurse<br />
-para configurarlo, solo hay que pulsar \" c \" cuando estemos dentro del programa.</p>
-<p>el # man calcurse no indica nada sobre avisos rodando en background, quizas es que no puede lanzar avisos ?<br />
-<a href=\"http://culot.org/calcurse/manual_es.html\" rel=\"nofollow\">http://culot.org/calcurse/manual_es.html</a></p>
-<p>alguien conoce algun paquete similar que contenga dicha caracteristica? ( consola)<br />
-alguien puede compartir su experiencia ?<br />
-Gracias</p>" "http://www.esdebian.org/foro/49082/manual-bienvenido-debian#comment-329377" (20850 27148) new 4 nil nil ((title nil "Citar
-*************** este") (link nil "http://www.esdebian.org/foro/49082/manual-bienvenido-debian#comment-329377") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49082/manual-bienvenido-debian\">Manual Bienvenido a Debian</a>:</p>
-
-<div class=\"quote-msg\">
-<div class=\"quote-author\">Citar</div>
-<p>*************** este escrito deberia iren un POST nuevo, pero el sistema de restricciones no me permiter abrir nuevas aportaciones , se agradecera si se cree conveniente el que un moderador lo realice por mi, gracias ***************
-</div>
-<p>Hola amigos,</p>
-<p>Buscando organizar mis tareas y citas diarias para evitar el caos y buscando algun tipo de organizador en consola para Debian-Squeeze encontre calcurse, que funciona perfectamente, pero<br />
-no consigo hacer que a la hora del dia indicado, ejecute una orden shell, apesar de que en la propia configuracion del paquete esta configurado para poder incluirlo.</p>
-<p>Alguien conoce la utilidad del paquete calcurse ???</p>
-<p>Para quien quiera testearlo:<br />
-<strong># aptitude install calcurse</strong><br />
-para hacerlo funcionar solo hay que invocar la orden<br />
-<strong>$ calcurse</strong><br />
-que crea la configuracion (por usuario) en su $home/.calcurse<br />
-para configurarlo, solo hay que pulsar \" c \" cuando estemos dentro del programa.</p>
-<p>el # man calcurse no indica nada sobre avisos rodando en background, quizas es que no puede lanzar avisos ?<br />
-<a href=\"http://culot.org/calcurse/manual_es.html\" rel=\"nofollow\">http://culot.org/calcurse/manual_es.html</a></p>
-<p>alguien conoce algun paquete similar que contenga dicha caracteristica? ( consola)<br />
-alguien puede compartir su experiencia ?<br />
-Gracias</p>
-") (pubDate nil "Sat, 20 Apr 2013 05:12:28 -0500") (dc:creator nil "rasta_barna") (guid ((isPermaLink . "false")) "comment 329377 at http://www.esdebian.org"))) ("Para simplificar puedes usar" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-<p>Para simplificar puedes usar tranquilamente la versión de Debian para arquitectura AMD64 usará todos esos gigabytes que tienes. En el foro se ha discutido ampliamente este asunto así que te recomiendo que si tienes dudas busques un poco por el foro.</p>
-<p>También debes saber que si por algún motivo necesitases un entorno puramente de 32 bits, también lo puedes tener utilizando la versión de Debian para arquitecturas 386, lo único a resaltar es que los procesadores IA-32 (así se llaman a los procesadores compatibles con el 80386) sólo direccionan directamente 4GB de memoria y que usan un método especial para poder direccionar por encima de los 4GB que se llama PAE. Es decir, que la arquitectura IA-32 también aprovechará los 16GB, eso por no entrar en más detalles. Si quieres saber más busca un poco por el foro como comenté antes.</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329376" (20850 17328) new 5 nil nil ((title nil "Para simplificar puedes usar") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329376") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-
-<p>Para simplificar puedes usar tranquilamente la versión de Debian para arquitectura AMD64 usará todos esos gigabytes que tienes. En el foro se ha discutido ampliamente este asunto así que te recomiendo que si tienes dudas busques un poco por el foro.</p>
-<p>También debes saber que si por algún motivo necesitases un entorno puramente de 32 bits, también lo puedes tener utilizando la versión de Debian para arquitecturas 386, lo único a resaltar es que los procesadores IA-32 (así se llaman a los procesadores compatibles con el 80386) sólo direccionan directamente 4GB de memoria y que usan un método especial para poder direccionar por encima de los 4GB que se llama PAE. Es decir, que la arquitectura IA-32 también aprovechará los 16GB, eso por no entrar en más detalles. Si quieres saber más busca un poco por el foro como comenté antes.</p>
-") (pubDate nil "Sat, 20 Apr 2013 02:28:48 -0500") (dc:creator nil "nerve_net") (guid ((isPermaLink . "false")) "comment 329376 at http://www.esdebian.org"))) ("Creo por lo de la" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-<p>Creo por lo de la arquitectura no hay problema, creo que lo del bigmen es para arquitectura 486, mas no estoy seguro al 100%.<br />
-Donde tienes que ver es en lo del disco SSD,</p>" "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329375" (20849 62377) new 6 nil nil ((title nil "Creo por lo de la") (link nil "http://www.esdebian.org/foro/49280/instalacion-16g-ram#comment-329375") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49280/instalacion-16g-ram\">Instalación 16G ram</a>:</p>
-
-<p>Creo por lo de la arquitectura no hay problema, creo que lo del bigmen es para arquitectura 486, mas no estoy seguro al 100%.<br />
-Donde tienes que ver es en lo del disco SSD,</p>
-") (pubDate nil "Fri, 19 Apr 2013 20:47:21 -0500") (dc:creator nil "cuentos") (guid ((isPermaLink . "false")) "comment 329375 at http://www.esdebian.org"))) ("Trata instalando" "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-<p>Trata instalando networkManager...</p>" "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329374" (20849 57553) new 7 nil nil ((title nil "Trata instalando") (link nil "http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta#comment-329374") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/49268/error-conexion-fallidacontrasena-incorrecta\">Error Conexion fallida:Contraseña incorrecta</a>:</p>
-
-<p>Trata instalando networkManager...</p>
-") (pubDate nil "Fri, 19 Apr 2013 19:26:57 -0500") (dc:creator nil "lauralizette") (guid ((isPermaLink . "false")) "comment 329374 at http://www.esdebian.org"))) ("Hola soy Vicent y soy un" "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
-<p>Hola soy Vicent y soy un murcianico y \"nuevo\" en debian vengo de ubuntu por la inestabilidad que hay actualmente (parece windows vista con tanto forcar cierre... una pena) Estoy luchando  <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /> para poder configurar las gráficas híbridas espero que me ayudéis.</p>
-<p>Saludos</p>" "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329373" (20849 46832) new 8 nil nil ((title nil "Hola soy Vicent y soy un") (link nil "http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui#comment-329373") (description nil "<p>In reply to <a href=\"http://www.esdebian.org/foro/44822/eres-nuevo-esdebian-presentate-aqui\">Eres nuevo en esDebian, presentate aquí</a>:</p>
-
-<p>Hola soy Vicent y soy un murcianico y \"nuevo\" en debian vengo de ubuntu por la inestabilidad que hay actualmente (parece windows vista con tanto forcar cierre... una pena) Estoy luchando  <img src=\"/sites/all/modules/smileys/packs/drupales/boxing.gif\" title=\"boxing\" alt=\"boxing\" /> para poder configurar las gráficas híbridas espero que me ayudéis.</p>
-<p>Saludos</p>
-") (pubDate nil "Fri, 19 Apr 2013 16:28:16 -0500") (dc:creator nil "vma1994") (guid ((isPermaLink . "false")) "comment 329373 at http://www.esdebian.org"))))
+<div class=\"codeblock\"><code>El certificado de seguridad del sitio no es de confianza.<br />Intentaste acceder a debian.local , pero el servidor presentó un certificado emitido por una entidad no aceptada por el sistema operativo de tu equipo. Esto puede significar que el servidor generó sus propias credenciales de seguridad, en las que Chromium no puede confiar para obtener información de identidad, o un intruso puede estar tratando de interceptar tus comunicaciones.<br />No deberías continuar, sobre todo si no has recibido nunca esta advertencia para este sitio.<br />Continuar de todos modos&nbsp; Volver a seguridad<br /> Más información<br />Cuando te conectas a un sitio web seguro, el servidor que lo aloja ofrece a tu navegador lo que se conoce con el nombre de &quot;certificado&quot; para verificar su identidad. Este certificado contiene información de identidad, como la dirección del sitio web, que es verificada por un tercero en el que confía tu equipo. Al comprobar que la dirección del certificado concuerda con la dirección del sitio web, se puede verificar la comunicación segura con el sitio web correspondiente y no con un tercero (como un atacante de tu red).</p>
+<p>En este caso, ningún tercero en quien tu computadora confía verificó el certificado. Cualquiera puede crear un certificado afirmando ser una página determinada, por lo que es necesario que un tercero confiable verifique el certificado. Sin esa verificación, la información de identidad del certificado no tiene sentido. Por lo tanto, no es posible verificar que te estás comunicando con debian.local en lugar de hacerlo con un atacante que generó su propio certificado afirmando ser debian.local. No debes avanzar.</p>
+<p>No obstante, si trabajas en una organización que genera sus propios certificados e intentas conectarte con un sitio web interno de esa organización utilizando un certificado, posiblemente puedas resolver este problema de forma segura. Puedes importar el certificado de raíz de tu organización como un &quot;certificado de raíz&quot; y luego, los certificados emitidos o verificados por tu organización serán fiables y no verás este error la próxima vez que intentes conectarte a un sitio web interno. Ponte en contacto con el personal de ayuda de la organización para obtener ayuda para agregar un nuevo certificado de raíz a tu computadora.</code></div>
+<p>Esto arroja a veces chromium</p>
+") (pubDate nil "Sun, 21 Apr 2013 11:08:18 -0500") (dc:creator nil "Shenlong") (guid ((isPermaLink . "false")) "comment 329393 at http://www.esdebian.org"))))

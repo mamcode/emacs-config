@@ -324,6 +324,10 @@
 	("Joomla Tutorials by Joomla Core Developer Andrew Eddie | New Life in IT | The Art of Joomla"
         "http://www.theartofjoomla.com/?format=feed&amp;type=rss"
         nil nil nil)
+	;; http://www.rockettheme.com/
+	("RocketTheme Blog"
+        "http://www.rockettheme.com/blog?format=feed&type=rss"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Security
