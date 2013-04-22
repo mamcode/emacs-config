@@ -556,6 +556,14 @@
 	("What Is New"
         "http://www.omg.org/rss/What_Is_New.xml"
         nil nil nil)
+	;; www.myphilanthropedia.org/
+	("Philanthropedia"
+        "http://feeds.feedburner.com/Philanthropedia"
+        nil nil nil)
+	;; https://www.yourcause.com/
+	("YourCause.com"
+        "https://www.yourcause.com/GenerateRssFeed.aspx?404;http://www.yourcause.com:80/rss.xml"
+        nil nil nil)
 	;; -------------------------------------------------------
 
         )
