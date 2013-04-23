@@ -522,6 +522,26 @@
         nil nil nil)
 	;; -------------------------------------------------------
 
+	;; Family
+
+	;; http://espanol.babycenter.com/blog/
+	("Blog de BabyCenter"
+        "http://feeds.feedburner.com/babycenterenespanol/blog"
+        nil nil nil)
+	;; http://espanol.babycenter.com/blog/
+	("Historias de Mamás"
+        "http://espanol.babycenter.com/blog/mamas/feed/"
+        nil nil nil)
+	;; http://espanol.babycenter.com/blog/
+	("Vida y Hogar"
+        "http://espanol.babycenter.com/blog/vida_y_hogar/feed/"
+        nil nil nil)
+	;; http://espanol.babycenter.com/blog/
+	("Hoy en los foros"
+        "http://espanol.babycenter.com/blog/hoy_en_los_foros/feed/"
+        nil nil nil)
+	;; -------------------------------------------------------
+
 	;; Miscellaneous
 
 	;; http://codersvenezuela.com
