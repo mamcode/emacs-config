@@ -129,6 +129,10 @@
 	("Television, radio and TV coverage | guardian.co.uk"
         "http://www.guardian.co.uk/tv-and-radio/rss"
         nil nil nil)
+	;; http://actualidad.rt.com/
+	("RT"
+        "http://actualidad.rt.com/feeds/short_news.rss"
+        nil nil nil)	
 	;; -------------------------------------------------------
 
 	;; Health
@@ -316,6 +320,10 @@
 	("Color + Design Blog by COLOURlovers"
 	 "http://feeds.feedburner.com/Colourlovers"
 	 nil nil nil)
+	;; http://www.sapphiregd.com
+	("SaPpHiRe"
+	 "http://www.sapphiregd.com/feed/"
+	 nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Joomla
@@ -451,6 +459,10 @@
 	;; http://octopress.org
 	("Octopress"
         "http://octopress.org/atom.xml"
+        nil nil nil)	
+	;; http://lea.verou.me/
+	("Lea Verou"
+        "http://feeds2.feedburner.com/leaverou"
         nil nil nil)	
 	;; -------------------------------------------------------
 
