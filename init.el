@@ -263,7 +263,7 @@
         nil nil nil)
 	;; -------------------------------------------------------
 
-	;; Free Software
+	;; Free Software & Open Source
 
 	;; http://cesarius.net
 	("Cesarius Revolutions | Cibercultura, GNU/Linux y Software Libre"
@@ -303,6 +303,10 @@
 	;; http://planet.gnu.org/
 	("Planet GNU"
         "http://planet.gnu.org/atom.xml"
+        nil nil nil)
+	;; http://google-opensource.blogspot.com/
+	("Google Open Source Blog"
+        "http://feeds.feedburner.com/GoogleOpenSourceBlog"
         nil nil nil)
 	;; -------------------------------------------------------
 
