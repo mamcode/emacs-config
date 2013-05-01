@@ -340,6 +340,130 @@
 	("RocketTheme Blog"
         "http://www.rockettheme.com/blog?format=feed&type=rss"
         nil nil nil)
+	;; http://www.joomlablogger.net/
+	("JoomlaBlogger"
+        "http://feeds.feedburner.com/joomlabloggerfeed"
+        nil nil nil)
+	;; http://joomla.org
+	("Joomla Announcements"
+        "http://feeds.joomla.org/JoomlaAnnouncements"
+        nil nil nil)
+	;; http://joomla.org
+	("Joomla Security"
+        "http://feeds.joomla.org/JoomlaSecurityNews"
+        nil nil nil)
+	;; http://joomla.org
+	("Joomla! Extensions directory"
+        "http://feeds.joomla.org/JoomlaExtensions"
+        nil nil nil)
+	;; http://joomla.org
+	("Joomla! Documentation - Recent changes [en]"
+        "http://feeds.joomla.org/JoomlaDocumentation"
+        nil nil nil)
+	;; http://joomla.org
+	("All Events"
+        "http://feeds.joomla.org/JoomlaEvents"
+        nil nil nil)
+	;; http://joomla.org
+	("calendar@joomla.org"
+        "http://feeds.joomla.org/JoomlaOfficialEventsCalendar"
+        nil nil nil)
+	;; http://joomla.org
+	("JUG Calendar"
+        "http://feeds.joomla.org/JoomlaUserGroupCalendar"
+        nil nil nil)
+	;; http://joomla.org
+	("Site of the Month"
+        "http://feeds.joomla.org/JoomlaSitesOfTheMonth"
+        nil nil nil)
+	;; http://joomla.org
+	("Recently Added Sites"
+        "http://feeds.joomla.org/JoomlaCommunityShowcase"
+        nil nil nil)	
+	;; http://joomla.org
+	("Communications Team"
+        "http://feeds.joomla.org/JoomlaCommunicationsTeamBlog"
+        nil nil nil)
+	;; http://joomla.org
+	("Core Team"
+        "http://feeds.joomla.org/JoomlaCommunityCoreTeamBlog"
+        nil nil nil)	
+	;; http://joomla.org
+	("Development Team"
+        "http://feeds.joomla.org/JoomlaDeveloperBlogs"
+        nil nil nil)
+	;; http://joomla.org
+	("Documentation Team"
+        "http://feeds.joomla.org/JoomlaDocumentationBlog"
+        nil nil nil)	
+	;; http://joomla.org
+	("Extensions Directory Team"
+        "http://feeds.joomla.org/JoomlaExtensionDirectoryEditorBlog"
+        nil nil nil)
+	;; http://joomla.org
+	("Forum Moderators"
+        "http://feeds.joomla.org/JoomlaForumModeratorBlog"
+        nil nil nil)	
+	;; http://joomla.org
+	("Open Source Matters"
+        "http://feeds.joomla.org/JoomlaOpensourcemattersBlog"
+        nil nil nil)
+	;; http://joomla.org 
+	("Translations Team"
+        "http://feeds.joomla.org/JoomlaTranslationBlog"
+        nil nil nil)	
+	;; http://joomla.org
+	("All Community Blogs"
+        "http://feeds.joomla.org/JoomlaContributorBlogs"
+        nil nil nil)
+	;; http://joomla.org
+	("Joomla Magazine"
+        "http://feeds.joomla.org/JoomlaMagazine"
+        nil nil nil)	
+	;; http://joomla.org
+	("Latest JoomlaConnect™ News"
+        "http://feeds.joomla.org/JoomlaConnect"
+        nil nil nil)
+	;; http://joomla.org
+	("JoomlaConnect™ Consultants"
+        "http://feeds.joomla.org/JoomlaConnectConsultants"
+        nil nil nil)	
+	;; http://joomla.org
+	("JoomlaConnect™ Extension Developers"
+        "http://feeds.joomla.org/JoomlaConnectExtensionDevelopers"
+        nil nil nil)
+	;; http://joomla.org
+	("JoomlaConnect™ User Groups"
+        "http://feeds.joomla.org/JoomlaConnectUserGroups"
+        nil nil nil)	
+	;; http://joomla.org
+	("JoomlaConnect™ Joomla Days"
+        "http://feeds.joomla.org/JoomlaConnectJoomlaDays"
+        nil nil nil)
+	;; http://joomla.org
+	("JoomlaConnect™ SEO"
+        "http://feeds.joomla.org/JoomlaConnectSEO"
+        nil nil nil)	
+	;; http://joomla.org
+	("JoomlaConnect™ Template Designers"
+        "http://feeds.joomla.org/JoomlaConnectTemplateDesigners"
+        nil nil nil)
+	;; http://joomla.org
+	("Developer News"
+        "http://feeds.joomla.org/JoomlaDeveloper"
+        nil nil nil)	
+	;; http://joomla.org
+	("Joomla Developer List"
+        "http://feeds.joomla.org/JoomlaDeveloperMailingList"
+        nil nil nil)	
+	;; http://joomla.org
+	("Joomla Bug Squad List"
+        "http://feeds.joomla.org/JoomlaBugSquadMailingList"
+        nil nil nil)	
+	;; JoomlaCode
+	("JoomlaCode"
+        "http://feeds.joomla.org/JoomlaCode"
+        nil nil nil)	
 	;; -------------------------------------------------------
 
 	;; Security
