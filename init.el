@@ -308,6 +308,10 @@
 	("Google Open Source Blog"
         "http://feeds.feedburner.com/GoogleOpenSourceBlog"
         nil nil nil)
+	;; http://slashroot.in/
+	("slashroot.in"
+        "http://slashroot.in/rss.xml"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Business
@@ -592,6 +596,10 @@
 	("Lea Verou"
         "http://feeds2.feedburner.com/leaverou"
         nil nil nil)	
+	;; http://alistapart.com/
+	("A List Apart: The Full Feed"
+        "http://feeds.feedburner.com/alistapart/main"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Cakephp
