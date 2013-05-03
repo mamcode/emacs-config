@@ -600,6 +600,14 @@
 	("A List Apart: The Full Feed"
         "http://feeds.feedburner.com/alistapart/main"
         nil nil nil)
+	;; http://www.css3.info/
+	("CSS3.Info"
+        "http://feeds2.feedburner.com/css3"
+        nil nil nil)
+	;; https://hacks.mozilla.org/
+	("Mozilla Hacks - the Web developer blog"
+        "https://hacks.mozilla.org/feed/"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Cakephp
