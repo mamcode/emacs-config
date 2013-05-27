@@ -312,6 +312,14 @@
 	("slashroot.in"
         "http://slashroot.in/rss.xml"
         nil nil nil)
+	;; http://blog.phenobarbital.info/
+	("Phenobarbital con Soda!"
+        "http://blog.phenobarbital.info/feed/"
+        nil nil nil)
+	;; http://usman.it/
+	("Muhammad Usman"
+        "http://feeds.feedburner.com/usmanit"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Business
