@@ -616,6 +616,10 @@
 	("Mozilla Hacks - the Web developer blog"
         "https://hacks.mozilla.org/feed/"
         nil nil nil)
+	;; http://daringfireball.net
+	("Daring Fireball"
+        "http://daringfireball.net/index.xml"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Cakephp
