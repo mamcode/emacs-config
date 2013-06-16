@@ -710,6 +710,14 @@
         nil nil nil)
 	;; -------------------------------------------------------
 
+	;; Databases
+
+	;; http://monty-says.blogspot.com/ 
+	("MONTY SAYS"
+        "http://monty-says.blogspot.com/feeds/posts/default"
+        nil nil nil)
+	;; -------------------------------------------------------
+
 	;; Miscellaneous
 
 	;; http://codersvenezuela.com
