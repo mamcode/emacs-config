@@ -620,6 +620,10 @@
 	("Daring Fireball"
         "http://daringfireball.net/index.xml"
         nil nil nil)
+	;; http://www.hongkiat.com/blog/
+	("hongkiat.com"
+        "http://feeds2.feedburner.com/24thfloor"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Cakephp
