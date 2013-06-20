@@ -320,6 +320,10 @@
 	("Muhammad Usman"
         "http://feeds.feedburner.com/usmanit"
         nil nil nil)
+	;; http://www.unixmen.com
+	("Unixmen"
+        "http://feeds.feedburner.com/unixmenhowtos"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Business
