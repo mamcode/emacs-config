@@ -244,6 +244,14 @@
 	("Silvercorp"
         "http://silvercorp.wordpress.com/feed/"
         nil nil nil)
+	;; http://pyvideo.org/
+	("Pyvideo"
+        "http://pyvideo.org/video/rss"
+        nil nil nil)
+	;; http://www.protocolostomy.com/
+	("Brian K. Jones"
+        "http://feeds.feedburner.com/MusingsOfAnAnonymousGeek"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Jquery
