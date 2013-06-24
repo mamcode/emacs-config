@@ -252,6 +252,14 @@
 	("Brian K. Jones"
         "http://feeds.feedburner.com/MusingsOfAnAnonymousGeek"
         nil nil nil)
+	;; http://jakevdp.github.io/ 
+	("Jake Vanderplas"
+        "http://jakevdp.github.io/atom.xml"
+        nil nil nil)
+	;; http://blog.ascher.ca/
+	("David Ascher"
+        "http://blog.ascher.ca/feed/"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Jquery
