@@ -37,7 +37,7 @@
 
 (erc :server "irc.freenode.net" :port 6667 :nick "punketo28")
 (setq erc-autojoin-channels-alist
-      '(("freenode.net" "#emacs" "#joomla" "#cakephp")))
+      '(("freenode.net" "#emacs" "#joomla" "#cakephp" "#django")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nxhtml for web development --nXhtml is an addon to Emacs for editing XHTML, PHP and similar things-- ;;
@@ -739,6 +739,38 @@
 	;; http://monty-says.blogspot.com/ 
 	("MONTY SAYS"
         "http://monty-says.blogspot.com/feeds/posts/default"
+        nil nil nil)
+	;; -------------------------------------------------------
+
+	;; Django
+
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Latest entries"
+        "https://www.djangoproject.com/rss/weblog/"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Recent code changes"
+        "https://code.djangoproject.com/timeline?daysback=90&max=50&wiki=on&ticket=on&changeset=on&milestone=on&format=rss"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Community blog posts"
+        "https://www.djangoproject.com/rss/community/blogs/"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Django jobs"
+        "https://www.djangoproject.com/rss/community/jobs/"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Django Q&A"
+        "https://www.djangoproject.com/rss/community/q-and-a/"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | Django links"
+        "https://www.djangoproject.com/rss/community/links/"
+        nil nil nil)
+	;; https://www.djangoproject.com/weblog/
+	("Django Weblog | New/update Django packages"
+        "https://www.djangoproject.com/rss/community/packages/"
         nil nil nil)
 	;; -------------------------------------------------------
 
