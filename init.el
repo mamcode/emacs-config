@@ -772,6 +772,10 @@
 	("Django Weblog | New/update Django packages"
         "https://www.djangoproject.com/rss/community/packages/"
         nil nil nil)
+	;; http://www.holovaty.com
+	("Adrian Holovaty"
+        "http://www.holovaty.com/rss/"
+        nil nil nil)
 	;; -------------------------------------------------------
 
 	;; Miscellaneous
