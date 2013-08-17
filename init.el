@@ -29,7 +29,7 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-arjen)))
+     (color-theme-dark-blue2)))
 
 ;;;;;;;;;;;;;;;;;;
 ;; IRC with ERC ;;
@@ -340,6 +340,10 @@
 	("Unixmen"
         "http://feeds.feedburner.com/unixmenhowtos"
         nil nil nil)
+	;; http://www.cyrius.com/journal
+	("Martin Michlmayr's journal"
+        "http://www.cyrius.com/journal/index.atom"
+        nil nil nil)	
 	;; -------------------------------------------------------
 
 	;; Business
