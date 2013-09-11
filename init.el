@@ -21,15 +21,22 @@
   (c-set-offset 'arglist-close 0))
 (add-hook 'php-mode-hook 'pear/php-mode-init)
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Enable color-theme ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path "~/.emacs.d/color-theme")
 (require 'color-theme)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Enable emacs-color-theme-solarized ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
+(require 'color-theme-solarized)
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-dark-blue2)))
+     (color-theme-solarized-dark)))
 
 ;;;;;;;;;;;;;;;;;;
 ;; IRC with ERC ;;
@@ -847,3 +854,4 @@
 ;; -> M-x newsticker-treeview-save
 ;; For move feeds to groups M-x newsticker-group-move-feed NAME GROUP 
 ;; -> M-x newsticker-treeview-save
+
