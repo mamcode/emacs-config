@@ -38,26 +38,6 @@
      (color-theme-initialize)
      (color-theme-solarized-dark)))
 
-;;;;;;;;;;;;;;;;;;
-;; IRC with ERC ;;
-;;;;;;;;;;;;;;;;;;
-
-;; (erc :server "irc.freenode.net" :port 6667 :nick "punketo28")
-;; (setq erc-autojoin-channels-alist
-;;       '(
-;; 	(
-;; 	 "freenode.net" 
-;; 	 "#emacs" 
-;; 	 "#joomla" 
-;; 	 "#cakephp" 
-;; 	 "#django" 
-;; 	 "#python-ve" 
-;; 	 "#Octopress" 
-;; 	 "#openobject"
-;; 	 "#bzr"
-;; 	 )
-;; 	))
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nxhtml for web development --nXhtml is an addon to Emacs for editing XHTML, PHP and similar things-- ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
