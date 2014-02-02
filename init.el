@@ -46,3 +46,13 @@
 ;; nxhtml for web development --nXhtml is an addon to Emacs for editing XHTML, PHP and similar things-- ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; (load "~/.emacs.d/nxhtml/autostart.el")
+
+;;;;;;;;;;;;;;;;;;;
+;; less-css-mode ;;
+;;;;;;;;;;;;;;;;;;;
+;; This mode provides syntax highlighting for LESS CSS files, plus
+;; optional support for compilation of .less files to .css files at
+;; the time they are saved: use `less-css-compile-at-save' to enable
+;; this.
+(add-to-list 'load-path "~/.emacs.d/less-css-mode")
+(require 'less-css-mode)
