@@ -30,17 +30,17 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-clarity)))
+     (color-theme-dark-blue2)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Enable emacs-color-theme-solarized ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
-;; (require 'color-theme-solarized)
-;; (eval-after-load "color-theme"
-;;   '(progn
-;;      (color-theme-initialize)
-;;      (color-theme-solarized-dark)))
+(add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
+(require 'color-theme-solarized)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-solarized-light)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; nxhtml for web development --nXhtml is an addon to Emacs for editing XHTML, PHP and similar things-- ;;
@@ -56,3 +56,8 @@
 ;; this.
 (add-to-list 'load-path "~/.emacs.d/less-css-mode")
 (require 'less-css-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;; Set the font size ;;
+;;;;;;;;;;;;;;;;;;;;;;;
+(set-face-attribute 'default nil :height 110)
