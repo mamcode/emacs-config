@@ -30,3 +30,15 @@
 ;; Set the font size ;;
 ;;;;;;;;;;;;;;;;;;;;;;;
 (set-face-attribute 'default nil :height 110)
+
+
+;;;;;;;;;;;;;;;;;;;
+;; Cask          ;;
+;;;;;;;;;;;;;;;;;;;
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+;;;;;;;;;;;;;;
+;; Flycheck ;;
+;;;;;;;;;;;;;;
+(add-hook 'after-init-hook #'global-flycheck-mode)
