@@ -86,7 +86,7 @@
 
 ;; Highlight the column where a line must stop
 ;; Highlight character at "fill-column" position.
-(set-face-background 'column-marker-1 "red")
+(set-face-background 'column-marker-1 "white")
 (add-hook 'python-mode-hook
           (lambda () (interactive)
             (column-marker-1 fill-column)))
